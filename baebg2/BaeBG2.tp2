@@ -1,0 +1,44 @@
+BACKUP ~baebg2/backup~
+AUTHOR ~dark0dave~
+
+VERSION ~v0.1~
+AUTO_TRA ~baebg2/tra/%s~
+
+LANGUAGE ~English~
+         ~english~
+         ~baebg2/tra/english/setup.tra~
+
+BEGIN @001
+DESIGNATED 0 LABEL ~baeloth_bg2~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @002
+
+COPY ~baebg2/misc~ ~override~
+COPY ~baebg2/sound~ ~override~
+
+COPY ~baebg2/cre/BAELOTH.CRE~ ~override~
+SAY BIO @100
+SAY BATTLE_CRY1 @003
+SAY LEADER @004
+SAY TIRED @005
+SAY BORED @006
+SAY HURT @007
+SAY SELECT_COMMON1 @008
+SAY SELECT_COMMON2 @009
+SAY SELECT_COMMON3 @010
+SAY SELECT_ACTION1 @011
+SAY SELECT_ACTION2 @012
+SAY SELECT_ACTION3 @013
+SAY DAMAGE @014
+SAY DYING @015
+
+// Compile dialog
+COMPILE ~baebg2/dialog/BAELOTH.D~
+COMPILE ~baebg2/dialog/BDBAELOJ.D~
+COMPILE ~baebg2/dialog/BDBAELOT.D~
+
+// Spawn Baeloth in Red Wizard Enclave
+EXTEND_TOP ~oh6300.bcs~ ~baebg2/baf/SPAWNBAE.BAF~
+
+// Appending dialog files
+APPEND ~pdialog.2da~ ~BAELOTH      BDBAELOT           BDBAELOJ          ***       ***           ***              ***              ***~ UNLESS ~BAELOTH~
+APPEND ~interdia.2da~ ~BAELOTH NONE NONE~ UNLESS ~BAELOTH~
