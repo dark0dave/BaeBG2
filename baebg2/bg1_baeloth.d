@@ -5,8 +5,14 @@ IF ~  Global("BA_BEGIN","GLOBAL",0)
   SAY @0001
 END
 
+Come one, come all! See the cream of the Sword Coast's combatant crop! Witness the brilliant and bizarre battles in the Black Pits of the one and only Baeloth the Entertainer! 
+Greetings, friendly, ah, surface-dweller. You wouldn't happen to know the direction of the nearest entrance to the Underdark, would you?
+From the Underdark. Was that not clear? Goodness, are you blind? Eugh, I hadn't realized how sickly you surfacer sort are.
+No, I suppose you wouldn't. This is particularly problematic for a popular power player such as myself!
+How could I forget?! Allow me to introduce myself. I am Baeloth Barrityl, more commonly known as BAELOTH THE ENTERTAINER! Yes, I know. THAT Baeloth. Fall to your knees and beg for mercy; I'm sure you know the drill.
+
 IF ~~ THEN BEGIN 1 // from:
-  SAY #31861 /* ~Najim? Are you even LISTENING? My most obedient serv—friend! WHERE ARE YOU?! Surely you aren't going to leave me UP HERE!~ [bab003] */
+  SAY @0002 /* ~Najim? Are you even LISTENING? My most obedient serv—friend! WHERE ARE YOU?! Surely you aren't going to leave me UP HERE!~ [bab003] */
   IF ~~ THEN EXTERN ~BAELOTH~ 2
 END
 

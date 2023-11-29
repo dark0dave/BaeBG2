@@ -1,0 +1,9 @@
+IF
+    Global("BAEExists","OH6300",0)
+THEN
+RESPONSE #100
+    SetGlobal("BG2BA_BEGIN","GLOBAL",0)
+    SetGlobal("BAEExists","OH6300",1)
+    CreateCreature("BG2BAE",[1665.1665],5)
+    Continue()
+END
