@@ -15,14 +15,14 @@
 
 The circumstances of his defeat within the pits are unclear; he claims dishonesty on the part of his combatants was a key factor.~
 
-@2001 =~Well, well, well, what do we have here? Another face among the multitude of mundane mediocrity. You, my unwitting savior, stand before the one and only Baeloth the Entertainer.~
-@2002 =~Do you see these confining walls, my unwitting companion? A temporary setback, I assure you. I, Baeloth, am not one to be ensnared for long. But perhaps, just perhaps, you could expedite my exit with a small, mutually beneficial arrangement?~
-@2003 =~Ah, yes, naturally! How could one possibly forget a face as... discreetly memorable as yours? In any case, rest assured that I would never overlook the distinct pleasure of your company, reveling in the glory that is, well, me.~
-@2004 =~My dear friend, let's not squabble over trifles. I am a man well, a drow of refinement and discerning taste.~
-@2005=~Picture this, my enterprising ally: You set me free, and in return, I shall be an instrument of vengeance against the Red Wizards. Their demise will be a magnum opus, a masterpiece conducted by none other than I, Baeloth the Magnificent. Your role, small though modest, will be crucial, as you witness and contribute to the unfolding symphony of chaos and retribution.~
-@2009 =~This is your parting gift, then? Leaving me in this cell like a common criminal? You'll rue the day you chose such a fate.~
-@2010 =~I sense a spark of intelligence in those eyes. Yes, yes, I can see you understand the value of aligning yourself with greatness.~
-@2011 =~Step lively, my newfound ally! We have a grand spectacle to orchestrate, and the Red Wizards are the unwitting audience. Oh, the poetic justice of it all they thought to imprison me, but now they shall witness the true extent of my power.~
+@2001 =~Well, well, well, what whimsical wonder do we witness here? Another face amidst the multitude of mundane mediocrity. You, my unwitting savior, stand before the ineffable Baeloth the Entertainer.~
+@2002 =~Do you perceive these restricting walls, my unsuspecting companion? A brief setback, I assure you. I, Baeloth, am not one to be entangled for an extended duration. However, perchance, just perchance, you could hasten my exit through a petite, mutually advantageous arrangement?~
+@2003 =~Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, reveling in the glory that is, well, me.~
+@2004 =~My mirthful mate, let's not meander in minor matters. I am a dashing drow of discernment and delicious taste, indeed!~
+@2005 =~Imagine this, my enterprising ally: You release me, and in return, I shall be an avant-garde avenger against the Red Wizards. Their downfall will be a magnum opus, a masterpiece magnificently managed by none other than me, Baeloth the Magnificent. Your role, petite yet pivotal, will be to partake and play a part in the uproarious opera of disorder and retribution.~
+@2009 =~Is this your parting present, then? Leaving me languishing thusly in this loathsome cell like a lowly miscreant? You'll rue the day you dared deliver such a dire destiny.~
+@2010 =~I discern a glimmer of intelligence in those eyes. Yes, yes, I perceive that you comprehend the worth of aligning yourself with magnificence.~
+@2011 =~Step spryly, my serendipitous sidekick! We've a spectacular show to splendidly stage, and the Red Wizards unwittingly waltz within our whimsical web. Oh, the poetic panorama of it all! They sought to stifle my spectacular self, but now they shall witness the wondrous weight of my wizardry!~
 
 @1001 =~Well met, I am <CHARNAME>.~
 @1003 =~Baeloth! Do you remember me?~
@@ -32,13 +32,17 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @1007 =~My trust in you is thin, Baeloth, but if releasing you means paving the way for the demise of the Red Wizards, then I'll agree for now.~
 @1008 =~I won't release you. Stay in that cell and rot, for all I care.~
 
-@01 =~Barrityl's Burden~
-@02 =~Created by a djinni as a "gift" to the drow sorcerer Baeloth Barrityl, this obsidian ring with blood-red ruby almost hypnotically draws the eye to it. Acting as additional storage space for magical knowledge, once placed upon a spellcaster's finger it imbues [him] with the ability to learn additional spells beyond what [his] skill normally allows.[2] It also gives the wearer the chance to spontaneously create wealth once a day in the form of some gemstone, but that is a double-edged sword; should the gem fail to materialize, the wearer endures a period of searing pain.
+@91 =~Barrityl's Burden~
+@92 =~Created by a djinni as a "gift" to the drow sorcerer Baeloth Barrityl, this obsidian ring with blood-red ruby almost hypnotically draws the eye to it. Acting as additional storage space for magical knowledge, once placed upon a spellcaster's finger it imbues [him] with the ability to learn additional spells beyond what [his] skill normally allows.[2] It also gives the wearer the chance to spontaneously create wealth once a day in the form of some gemstone, but that is a double-edged sword; should the gem fail to materialize, the wearer endures a period of searing pain.
 
 The djinni that created the ring, not entirely trusting the person to whom it was gifted, wove a curse into the black stone band. In battle with a djinni, the ring's wearer will find [him]self at an extreme disadvantage. Once donned, it cannot be removed from its wearer's finger, no matter how much [he] might wish it so.
+
+Charge abilities:
+- Create a random gem or damage the wearer, once per rest
+
 Equipped abilities:
-- Can cast two extra spells of each level
+- Can cast three extra spells of each level
 - THAC0: -5 penalty vs Genies
 - Damage: -5 penalty vs Genies~
-@03 =~Speedily Stolen Slaves' Salve~
-@04 =~When wholly consumed, this oddly murky potion appears to restore 9 Hit Points to the person. The effect is instantaneous and the potion is destroyed in the process.~
+@93 =~Speedily Stolen Slaves' Salve~
+@94 =~When wholly consumed, this oddly murky potion appears to restore 9 Hit Points to the person. The effect is instantaneous and the potion is destroyed in the process.~
