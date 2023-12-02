@@ -3,9 +3,8 @@ BEGIN BG2BAE
 // Joining dialogue
 IF ~Global("BG2BA_BEGIN","GLOBAL",0)~ THEN BEGIN BG2BAE0
   SAY @2001 /* Well, well, well, what whimsical wonder do we witness here? Another face amidst the multitude of mundane mediocrity. You, my unwitting savior, stand before the ineffable Baeloth the Entertainer. */
-  IF ~~ DO ~SetGlobal("BG2BA_BEGIN","GLOBAL",1)~ EXIT
-  IF ~~ THEN REPLY @1001 /* ~Well met, I am <CHARNAME>.~ */ GOTO BG2BAE2
-  IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY @1003 /* ~Baeloth! Do you remember me?~ */ GOTO BG2BAE3
+  IF ~~ THEN REPLY @1001 /* ~Well met, I am <CHARNAME>.~ */ DO ~SetGlobal("BG2BA_BEGIN","GLOBAL",1)~ GOTO BG2BAE2
+  IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY @1003 /* ~Baeloth! Do you remember me?~ */ DO ~SetGlobal("BG2BA_BEGIN","GLOBAL",1)~ GOTO BG2BAE3
   IF ~~ THEN REPLY @1004 /* ~Die, drow!~ */ GOTO BG2BAE100
 END
 
