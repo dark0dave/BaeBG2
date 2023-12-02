@@ -15,12 +15,14 @@ REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ ~This mod requires BG2EE or EET~
 COPY ~baebg2/misc~ ~override~
 COPY ~baebg2/sound~ ~override~
 
-ACTION_IF NOT FILE_EXISTS ~override/BAELOTHM.BMP~ BEGIN
-    COPY ~baebg2/portraits/BAELOTHM.BMP~ ~override~
-END
 ACTION_IF NOT FILE_EXISTS ~override/BAELOTHL.BMP~ BEGIN
     COPY ~baebg2/portraits/BAELOTHL.BMP~ ~override~
 END
+
+ACTION_IF NOT FILE_EXISTS ~override/BAELOTHM.BMP~ BEGIN
+    COPY ~baebg2/portraits/BAELOTHM.BMP~ ~override~
+END
+
 ACTION_IF NOT FILE_EXISTS ~override/BAELOTHS.BMP~ BEGIN
     COPY ~baebg2/portraits/BAELOTHS.BMP~ ~override~
 END
@@ -39,30 +41,24 @@ COMPILE ~baebg2/dialog/BG2BAEB.D~
 COMPILE ~baebg2/dialog/BG2BAED.D~
 COMPILE ~baebg2/dialog/BG2BAEJ.D~
 COMPILE ~baebg2/dialog/BG2BAEP.D~
+
+// Scripts
 COMPILE ~baebg2/baf/BG2BAE.BAF~
 COMPILE ~baebg2/baf/BG2BAE25.BAF~
 
 // Appending dialog files
 // (https://www.gibberlings3.net/forums/topic/15833-dialog-files-and-how-they-are-referenced/)
-// SoA
-APPEND ~pdialog.2da~
-    ~BG2BAE BG2BAEP BG2BAEJ BG2BAED~
-UNLESS ~BG2BAE~ UNLESS ~25POST~
-// ToB
 APPEND ~pdialog.2da~
     ~BG2BAE BG2BAEP BG2BAEJ BG2BAED BG2BAE25P BG2BAE25J BG2BAE25D BG2BAE25S~
-UNLESS ~BG2BAE~ IF ~25POST~
+UNLESS ~BG2BAE~
 
-// Banter //
-// SoA only
-APPEND ~interdia.2da~ 
-    ~BG2BAE     BG2BAEB~
-UNLESS ~BG2BAE~ UNLESS ~25FILE~
-// ToB
+// Banter
 APPEND ~interdia.2da~
     ~BG2BAE BG2BAEB BG2BAEB~
-UNLESS ~BG2BAE~ IF ~25FILE~
+UNLESS ~BG2BAE~
 
+// Creature files //
+// SoA
 COPY ~baebg2/cre/BG2BAE.CRE~ ~override/BG2BAE.CRE~
 SAY BIO @100
 SAY BATTLE_CRY1 @001
@@ -84,6 +80,7 @@ WRITE_ASCII DIALOG ~bg2bae~  #8
 WRITE_ASCII 0X34 ~baelothm~ #8   //medium portrait
 WRITE_ASCII 0x3c ~baelothl~ #8   //large portrait
 
+// ToB
 COPY ~baebg2/cre/BG2BAE.CRE~ ~override/BG2BAE25.CRE~
 SAY BIO @100
 SAY BATTLE_CRY1 @001
@@ -120,3 +117,5 @@ SAY DESC  @94
 
 // Spawn Baeloth in Red Wizard Enclave
 EXTEND_TOP ~OH6300.BCS~ ~baebg2/baf/SPAWNBG2BAE.BAF~
+// Add Baeloth to ToB
+COMPILE ~baebg2/dialog/FATESP.D~

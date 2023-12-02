@@ -1,8 +1,8 @@
 BEGIN BG2BAE25
 
-IF ~Global("BG2BAESummoned","GLOBAL",1)~ BG2BAE25_1
+IF ~Global("BG2BAE25Summoned","GLOBAL",1)~ BG2BAE25_1
     SAY ~Well, blast it all! The bumbling boob who beckoned me has boorishly banjaxed a business deal beyond belief! What bothersome buffoonery is this?~
-    IF ~~ THEN REPLY ~I didn't mean to interrupt anything.~ DO ~SetGlobal("BG2BAESummoned","GLOBAL",2)~ GOTO BG2BAE25_2
+    IF ~~ THEN REPLY ~I didn't mean to interrupt anything.~ DO ~SetGlobal("BG2BAE25Summoned","GLOBAL",2)~ GOTO BG2BAE25_2
 END
 
 IF ~~ BG2BAE25_2
@@ -32,7 +32,7 @@ IF ~~ BG2BAE25_3_2
     IF ~~ DO ~MoveToPointNoInterrupt([1517.1517]) Face(1)~ EXIT
 END
 
-IF ~Global("BG2BAESummoned","GLOBAL",2)~ BG2BAE25_5
+IF ~Global("BG2BAE25Summoned","GLOBAL",2)~ BG2BAE25_5
     SAY ~Ah, finally acknowledging the almighty archmage abandoned in this abominable abyss! What took you so long, my pocket-placed patron?~
     IF ~~ THEN REPLY ~Join me, then.~ GOTO BG2BAE25_3
     IF ~~ THEN REPLY ~Wait a little longer.~ GOTO BG2BAE25_6

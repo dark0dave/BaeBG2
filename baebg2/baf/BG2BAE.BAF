@@ -1,12 +1,3 @@
-// IF
-//     !InParty(Myself)
-//     !Global("Baeloth_Joined","GLOBAL",1)
-// THEN
-// RESPONSE #100
-//     SetGlobal("Baeloth_Joined","GLOBAL",1)
-//     JoinParty()
-// END
-
 IF
     InParty(Myself) 
     !Global("BG2BAE_LEFT","GLOBAL",1)
