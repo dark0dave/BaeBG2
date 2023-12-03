@@ -117,5 +117,26 @@ SAY DESC  @94
 
 // Spawn Baeloth in Red Wizard Enclave
 EXTEND_TOP ~OH6300.BCS~ ~%MOD_FOLDER%/baf/SPAWNBG2BAE.BAF~
+
 // Add Baeloth to ToB
-COMPILE ~%MOD_FOLDER%/dialog/FATESP.D~
+ACTION_IF GAME_IS ~eet~ THEN BEGIN // EET related code & summoning script
+  INCLUDE ~EET/other/EET_functions.tph~ //declaration of external EET functions used below
+  LAF ~EET_NPC_TRANSITION~ //function used to automatically implement EET continuity system
+    INT_VAR
+      type = 3 // NPC with BG1 and BG2 content (full transition to SoA/ToB)
+      default_ToB = 1 // Summonable in ToB
+    STR_VAR
+      dv = "BAELOTH" // Death Variable (script name)
+      override_BG1 = "BAELOTH" //name of the override NPC script in BG1
+      override_SoD = "BAELOT7" //name of the override NPC script in SoD (use BG1 one if doesn't exist)
+      override_SoA = "BG2BAE" //SoA Override script
+      override_ToB = "BG2BAE25" //ToB Override script
+      dialog_ToB = "BG2BAE25" //ToB dialogue file
+      cre_ToB = "BG2BAE25"
+      traFile = EVAL "AllThingsMazzy/translations/%LANGUAGE%/setup.tra"
+      string = "@9999" // Bring me Baeloth, the drow sorcerer.
+      stringPosDV = "Baeloth" // Baeloth
+  END
+END ELSE BEGIN
+    COMPILE ~%MOD_FOLDER%/dialog/FATESP.D~
+END
