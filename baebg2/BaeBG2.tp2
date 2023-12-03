@@ -2,49 +2,49 @@ BACKUP ~baebg2/backup~
 AUTHOR ~dark0dave~
 
 VERSION ~v0.1~
-AUTO_TRA ~baebg2/tra/%s~
+AUTO_TRA ~%MOD_FOLDER%/tra/%s~
 
 LANGUAGE ~English~
          ~english~
-         ~baebg2/tra/english/setup.tra~
+         ~%MOD_FOLDER%/tra/english/setup.tra~
 
 BEGIN ~Baeloth BG2~
 DESIGNATED 0 LABEL ~baebg2~
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ ~This mod requires BG2EE or EET~
 
-COPY ~baebg2/misc~ ~override~
-COPY ~baebg2/sound~ ~override~
+COPY ~%MOD_FOLDER%/misc~ ~override~
+COPY ~%MOD_FOLDER%/sound~ ~override~
 
 ACTION_IF NOT FILE_EXISTS ~override/BAELOTHL.BMP~ BEGIN
-    COPY ~baebg2/portraits/BAELOTHL.BMP~ ~override~
+    COPY ~%MOD_FOLDER%/portraits/BAELOTHL.BMP~ ~override~
 END
 
 ACTION_IF NOT FILE_EXISTS ~override/BAELOTHM.BMP~ BEGIN
-    COPY ~baebg2/portraits/BAELOTHM.BMP~ ~override~
+    COPY ~%MOD_FOLDER%/portraits/BAELOTHM.BMP~ ~override~
 END
 
 ACTION_IF NOT FILE_EXISTS ~override/BAELOTHS.BMP~ BEGIN
-    COPY ~baebg2/portraits/BAELOTHS.BMP~ ~override~
+    COPY ~%MOD_FOLDER%/portraits/BAELOTHS.BMP~ ~override~
 END
 
 /// Dialog ///
 
 // Compile dialog
-COMPILE ~baebg2/dialog/BG2BAE.D~
-COMPILE ~baebg2/dialog/BG2BAE25.D~
-COMPILE ~baebg2/dialog/BG2BAE25B.D~
-COMPILE ~baebg2/dialog/BG2BAE25D.D~
-COMPILE ~baebg2/dialog/BG2BAE25J.D~
-COMPILE ~baebg2/dialog/BG2BAE25P.D~
-COMPILE ~baebg2/dialog/BG2BAE25S.D~
-COMPILE ~baebg2/dialog/BG2BAEB.D~
-COMPILE ~baebg2/dialog/BG2BAED.D~
-COMPILE ~baebg2/dialog/BG2BAEJ.D~
-COMPILE ~baebg2/dialog/BG2BAEP.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAE.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25B.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25D.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25J.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25P.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25S.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAEB.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAED.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAEJ.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAEP.D~
 
 // Scripts
-COMPILE ~baebg2/baf/BG2BAE.BAF~
-COMPILE ~baebg2/baf/BG2BAE25.BAF~
+COMPILE ~%MOD_FOLDER%/baf/BG2BAE.BAF~
+COMPILE ~%MOD_FOLDER%/baf/BG2BAE25.BAF~
 
 // Appending dialog files
 // (https://www.gibberlings3.net/forums/topic/15833-dialog-files-and-how-they-are-referenced/)
@@ -59,7 +59,7 @@ UNLESS ~BG2BAE~
 
 // Creature files //
 // SoA
-COPY ~baebg2/cre/BG2BAE.CRE~ ~override/BG2BAE.CRE~
+COPY ~%MOD_FOLDER%/cre/BG2BAE.CRE~ ~override/BG2BAE.CRE~
 SAY BIO @100
 SAY BATTLE_CRY1 @001
 SAY LEADER @002
@@ -81,7 +81,7 @@ WRITE_ASCII 0X34 ~baelothm~ #8   //medium portrait
 WRITE_ASCII 0x3c ~baelothl~ #8   //large portrait
 
 // ToB
-COPY ~baebg2/cre/BG2BAE.CRE~ ~override/BG2BAE25.CRE~
+COPY ~%MOD_FOLDER%/cre/BG2BAE.CRE~ ~override/BG2BAE25.CRE~
 SAY BIO @100
 SAY BATTLE_CRY1 @001
 SAY LEADER @002
@@ -103,19 +103,19 @@ WRITE_ASCII 0X34 ~baelothm~ #8   //medium portrait
 WRITE_ASCII 0x3c ~baelothl~ #8   //large portrait
 
 /// Items ///
-COPY ~baebg2/items/BARING.ITM~ ~override/BARING.ITM~
+COPY ~%MOD_FOLDER%/items/BARING.ITM~ ~override/BARING.ITM~
 SAY NAME1 @91
 SAY NAME2 @91
 SAY UNIDENTIFIED_DESC @92
 SAY DESC  @92
 
-COPY ~baebg2/items/BAPOTION.ITM~ ~override/BAPOTION.ITM~
+COPY ~%MOD_FOLDER%/items/BAPOTION.ITM~ ~override/BAPOTION.ITM~
 SAY NAME1 @93
 SAY NAME2 @93
 SAY UNIDENTIFIED_DESC @94
 SAY DESC  @94
 
 // Spawn Baeloth in Red Wizard Enclave
-EXTEND_TOP ~OH6300.BCS~ ~baebg2/baf/SPAWNBG2BAE.BAF~
+EXTEND_TOP ~OH6300.BCS~ ~%MOD_FOLDER%/baf/SPAWNBG2BAE.BAF~
 // Add Baeloth to ToB
-COMPILE ~baebg2/dialog/FATESP.D~
+COMPILE ~%MOD_FOLDER%/dialog/FATESP.D~
