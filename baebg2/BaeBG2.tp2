@@ -12,6 +12,18 @@ BEGIN ~Baeloth BG2~
 DESIGNATED 0 LABEL ~baebg2~
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ ~This mod requires BG2EE or EET~
 
+/* continuous chapter for EET */
+ACTION_IF GAME_IS ~eet~ BEGIN
+    OUTER_SET bg2_chapter = 12
+END ELSE BEGIN
+    OUTER_SET bg2_chapter = 0
+END
+    OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+        OUTER_SET bg2_chapter = bg2_chapter + 1
+        OUTER_SPRINT name_source ~bg2_chapter_%i%~
+        OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+END
+
 COPY ~%MOD_FOLDER%/misc~ ~override~
 COPY ~%MOD_FOLDER%/sound~ ~override~
 
