@@ -12,8 +12,56 @@ This mod provides continuation for our lovable Baeloth in BG2EE and EET.
 
 Baeloth has been captured by the red wizards and is willing to make a deal in exchange for his freedom.
 
+## Installation
 
-### Technical Notes
+We don't include an exe, you'll need use weidu to install:
+
+### Move files
+
+Copy baebg2 subfolder to your game directory:
+
+Linux/Macos:
+
+```sh
+cp -r BaeBG2/baebg2 <GAME DIRECTORY>
+```
+
+Windows copy via file manager.
+
+Then run weidu against the .tp2 file, in the game directory
+
+Linux/Macos
+```sh
+weidu weidu baebg2/BaeBG2.tp2
+```
+
+Windows:
+```sh
+weidu.exe baebg2\BaeBG2.tp2
+```
+
+Should get something like this:
+
+```sh
+Using Language [English]
+[English] has 1 top-level TRA files
+[baebg2/tra/english/setup.tra] has 61 translation strings
+
+Using ./lang/en_us/dialog.tlk
+
+Install Component [Baeloth BG2]?
+[I]nstall, or [N]ot Install or [Q]uit?
+```
+
+Enter I, then press enter and thats it!
+
+```sh
+SUCCESSFULLY INSTALLED      Baeloth BG2
+
+Press ENTER to exit.
+```
+
+## Technical Notes
 
 Baeloth files come from BGEE and SOD files:
 
