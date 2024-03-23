@@ -1,5 +1,7 @@
 # Baeloth's Deal
 
+[![main](https://github.com/dark0dave/BaeBG2/actions/workflows/main.yaml/badge.svg)](https://github.com/dark0dave/BaeBG2/actions/workflows/main.yaml)
+
 This mod provides continuation for our lovable Baeloth in BG2EE and EET.
 
 ![All right... but NOT because you TOLD me to.](baebg2/portraits/BAELOTHL.BMP)
