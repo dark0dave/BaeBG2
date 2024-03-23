@@ -4,6 +4,6 @@ THEN
 RESPONSE #100
     SetGlobal("BG2BA_BEGIN","GLOBAL",0)
     SetGlobal("BAEExists","OH6300",1)
-    CreateCreature("BG2BAE",[1665.1665],5)
+    CreateCreature("BG2BAE",[1450.1700],5)
     Continue()
 END
