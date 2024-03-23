@@ -9,3 +9,11 @@ This mod provides continuation for our lovable Baeloth in BG2EE and EET.
 ## Introduction
 
 Baeloth has been captured by the red wizards and is willing to make a deal in exchange for his freedom.
+
+
+### Technical Notes
+
+Baeloth files come from BGEE and SOD files:
+
+- BAELOTH.CRE
+- BAELOT7.CRE
