@@ -20,22 +20,24 @@ We don't include an exe, you'll need use weidu to install:
 
 Copy baebg2 subfolder to your game directory:
 
-Linux/Macos:
+#### Linux/Macos:
 
 ```sh
 cp -r BaeBG2/baebg2 <GAME DIRECTORY>
 ```
 
-Windows copy via file manager.
+#### Windows:
+
+Copy files via explorer.exe
 
 Then run weidu against the .tp2 file, in the game directory
 
-Linux/Macos
+#### Linux/Macos:
 ```sh
-weidu weidu baebg2/BaeBG2.tp2
+weidu baebg2/BaeBG2.tp2
 ```
 
-Windows:
+#### Windows:
 ```sh
 weidu.exe baebg2\BaeBG2.tp2
 ```
