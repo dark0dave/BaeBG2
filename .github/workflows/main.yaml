@@ -15,7 +15,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: baebg2
-          path: baebg2/
+          path: baebg2
   release:
     needs: [build]
     runs-on: ubuntu-latest
