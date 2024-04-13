@@ -1,5 +1,4 @@
-﻿Link to Target Document
-DOCUMENT INTRODUCTION & SCOPE
+﻿DOCUMENT INTRODUCTION & SCOPE
 Introduction
 This document’s primary purpose is to overview and perhaps also explain the intended scope and progress made regarding the mod I set out to make.
 While I haven’t settled on a formal title yet - “Endarire’s Eclectica” is a tentative title - it started with making Hull from Candlekeep into a recruitable NPC throughout EET and expanded into also making Volo playable throughout EET (minus SoD for plot reasons), making Baeloth playable in BG2EE & EET, and adding the half-green dragon orc Trinden Felsad of my custom Metaphysical Revolution campaign to ToB as a recruitable NPC.
