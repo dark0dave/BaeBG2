@@ -1,13 +1,15 @@
 BEGIN BG2BAEB
 
+// Aerie Banter
 CHAIN
-IF ~InParty(Myself)
-    See(Myself)
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Aerie")
     !StateCheck("Aerie",CD_STATE_NOTVALID)
     !StateCheck("BG2BAE",CD_STATE_NOTVALID)
-    Global("BG2BAEAerie1","GLOBAL",0)~ 
+    Global("BG2BAEAerie1","GLOBAL",0)~
 THEN BAERIE BG2BAEAerie1
-~Baeloth, your spells pack a punch, but have you ever considered the havoc they might wreak on the weave?~
+~Baeloth, your spells pack a punch, but have you ever considered the havoc they might wreak?~
 DO ~SetGlobal("BG2BAEAerie1","GLOBAL",1)~
 == BG2BAEB ~Havoc, honeyed harpy? Bah! The only havoc I worry about is the insipid howls of the meek who can't appreciate the hypnotic hurricane of my magical histrionics. Havoc is for the humorless and the hapless.~
 == BAERIE ~But shouldn't we be careful with our magic? It's a force that demands respect.~
@@ -18,4 +20,702 @@ DO ~SetGlobal("BG2BAEAerie1","GLOBAL",1)~
 == BG2BAEB ~Goodness, gracious gryphon! But tell me, tender thrush, wouldn't you wonder if the line between goodness and ghastliness gets gruesomely grayed by the grandeur of power?~
 == BAERIE ~I don't think power has to corrupt. We can choose to use it responsibly.~
 == BG2BAEB ~Ah, the adorable aspirations of an angelic acolyte. But brace yourself, bewitching bird, for power will pirouette into the palms of those who paint with its pulsating palette.~
+EXIT
+
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Aerie")
+    !StateCheck("Aerie",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEAerie1","GLOBAL",1)
+    Global("BG2BAEAerie2","GLOBAL",0)~
+THEN BG2BAEB BG2BAEAerie2
+~Ah, my sweet adjutant Aerie. You seemed shocked we would supplement one another!~
+DO ~SetGlobal("BG2BAEAerie2","GLOBAL",1)~
+== BAERIE ~Well, yes. You're a Drow and-~
+== BG2BAEB ~-and you, my angelic aspirant, are an Avariel. We are, not so different, you and I.~
+== BAERIE ~Are you saying that because of my wings?~
+== BG2BAEB ~Only minorly, my dear. I heard you were a slave, stolen from your home at a still early seniority.~
+== BAERIE ~Well, yes. The circus took me in, even if they took me as a slave. Life in the circus troupe was cruel and I wasn't given enough space to spread my wings, so they just stopped working little by little.~
+== BG2BAEB ~Aw, what a plainly pitiful past - but I don't blame you for the blight that befell you.~
+== BAERIE ~Thanks... I think.~
+== BAERIE  ~What about you?~
+== BG2BAEB ~I sort of ran a circus, acted as its combat coordinator and commentator, and I was contemptuously canned when I bet it all on black.~
+== BAERIE ~You were a gladiator?~
+== BG2BAEB ~<Baeloth sighs>~
+== BG2BAEB ~By necessity and -not- by need, my endeared darling. I was part of a game that was rigged to always win. Surely you see the pain of losing a 'foolproof' game. The circus is similar, or so I hear.~
+== BAERIE ~Maybe my circus was kinder than others. People did sometimes win the games.~
+== BAERIE ~Winning the ring toss was the hardest. I'm not sure if people were -meant- to win that.~
+== BG2BAEB ~My dear, imagine if every time someone won the ring toss, one of your circus workers died. What a wonderful spectacle of shame that would be!~
+EXIT
+
+// Anomen Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Anomen")
+    !StateCheck("Anomen",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEAnomen1","GLOBAL",0)~
+THEN BANOMEN BG2BAEAnomen1
+~What is it, Drow?  What new means of mockery have you concocted?~
+DO ~SetGlobal("BG2BAEAnomen1","GLOBAL",1)~
+== BG2BAEB ~Mockery? No, my clever Cleric. Inquiry!~
+== BANOMEN ~I suppose answering your... inquiry will cause you to stand farther away for a while so we can get back to more -worthy- pursuits!~
+== BG2BAEB ~Why did you have such a -burning desire- to join the knightly order?~
+== BANOMEN ~I simply wished to prove my worth to my family and "BG2BAEB". I know beyond all doubt that I -can- follow my path.~
+== BG2BAEB ~And how did you plan to do that by joining that dog kennel of an order?~
+== BANOMEN ~How -dare- you insult the Most Noble Order?~
+== BG2BAEB ~Think about it, my confident Cleric contemporary: This order of knights and Paladins is one of the strictest around! By joining, they put you on a permanent leash just like the ones -they- are on!~
+== BG2BAEB ~You might do well for them and one day become top dog, but they demand -quick- and -reliable- obedience, just like a master whistling to his pet to come and slay. The ability to think and act freely is taken from you, then -maybe- earned back with rank.~
+== BG2BAEB ~But make one mistake they don't like and they'll neuter you. No more position, powers, nor patron.~
+== BANOMEN ~Is this 'cage' how you see my order?  That we are dogs in the eyes of our superiors and patron?~
+== BG2BAEB ~It's easier to be your own man when no one is staring at you and expecting you to fail.~
+== BANOMEN ~Do you jest, Drow?~
+== BG2BAEB ~Oh, my Clerical companion, I can jest, but now I am being -sternly serious.-~
+== BKELDOR IF ~IsValidForPartyDialogue("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN 
+~Anomen, the Drow is correct in the strictness of our order, but we understand that our reputation and the good we do are worth the price of our freedom. We help many who cannot help themselves.~
+== BANOMEN IF ~IsValidForPartyDialogue("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN ~Thank you, teacher, for your insight.~
+== BANOMEN ~<Anomen turns to Baeloth.>  Drow?~
+== BG2BAEB ~Hmm?~
+== BANOMEN ~I -may- consider your counsel.~
+== BG2BAEB ~That is -all- I ask.~
+EXIT
+
+// Cernd Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Cernd")
+    !StateCheck("Cernd",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAECernd1","GLOBAL",0)~
+THEN CERNDJ BG2BAECernd1
+~Tell me, Baeloth, What is 'nature' to you in the Underdark?~
+DO ~SetGlobal("BG2BAECernd1","GLOBAL",1)~
+== BG2BAEB ~Dim and dreary darkness as far as the eye can see, illuminated by giant fluorescent mushrooms. Pocket portals picket the place. These openings to the Elemental Planes to give us air to breath, water to drink, earth to mask our scent, and fire with which to brand our slaves.~
+== BG2BAEB ~It's a circle of violence, Cernd, just like on the surface.~
+== CERNDJ ~You speak of violence and slavery. How are these things natural?~
+== BG2BAEB ~Where there's life, there's war! -Everyone- and -everything- wants to rule!~
+== BG2BAEB ~Look at the trees of the forest! They're all in a slow death race to the top to prevent each other from getting the life they need to grow!~
+== BG2BAEB ~Look at the animals and creatures of the wild! They'll fight and kill each other out of hunger, yes, but also out of boredom!~
+== BG2BAEB ~Look at the so-called 'civilized' places and races! All it takes is the right crisis for civilization to crumble and show its -true- nature: Hungry, desperate men turn into animals and savages to survive or if it suits them!~
+== BG2BAEB ~So, the Underdark just happens to be an -exemplary- ecosystem to demonstrate just how -destructive- all life can be!~
+== CERNDJ ~Do you think that being underground changes things?~
+== BG2BAEB ~Why, of course! We have ready access to so many spell components from corpses and mining that -of course- we'll use these on the nearest thing we don't like!~
+== CERNDJ ~So, in short, ready access to magic materials underground inspires blood feuds?~
+== BG2BAEB ~Think of it like natural predators and prey, except in the Underdark, they're all magically talented, sometimes predators and prey switch places, and they have more eyes or tentacles than you have fingers.~
+EXIT
+
+// Dorn Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Dorn")
+    !StateCheck("Dorn",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEDorn1","GLOBAL",0)~
+THEN DORNJ BG2BAEDorn1
+~Drow, why do you again bother me with your banter?~
+DO ~SetGlobal("BG2BAEDorn1","GLOBAL",1)~
+== BG2BAEB ~I'm here to understand your ambition instead of assuming it asininely.~
+== DORNJ ~Blood, death, and vengeance suit me well, Drow. -That- much you should know.~
+== BG2BAEB ~Surely your style is not suited to act as a safe whose sole purpose is to elude entry.~
+== DORNJ ~Consider this, Drow: My goal is to make my mark upon the realms and obtain the vengeance I seek.~
+== BG2BAEB ~Perhaps our priorities align! I propose preparing your prowess in an arena purveyed and promoted by me.~
+== DORNJ ~I have considered your offer, Drow, but know this: A mere pit ring is too small to contain my ambition. I am to test my limits against foes on a worldwide scale.~
+== BG2BAEB ~Ah, my armored associate! Is this not what you sought - nation against nation and brother against brother for a drama like no other? It seems our assumptions and affinities align.~
+== DORNJ ~Seemingly so, Drow. Don't be surprised if you fall over backwards in writhing agony once you realize how much I seek to conquer!~
+== BG2BAEB ~Oh, trust me, Dorn. You conquer the champions and common folk while I entertain whatever remains!~
+== DORNJ ~In your bloody pit battles? It sounds like a challenge. I'm in.~
+EXIT
+
+// Edwin Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    Gender("Edwin",MALE)
+    IsValidForPartyDialogue("Edwin")
+    !StateCheck("Edwin",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEEdwin1","GLOBAL",0)~
+THEN BG2BAEB BG2BAEEdwin1
+~Ah, if it isn't my favorite Red Wizard! It's gloriously good to greet you!~
+DO ~SetGlobal("BG2BAEEdwin1","GLOBAL",1)~
+== BEDWIN ~Yes, yes, Baeloth. You are right. Your flattery will get you far. (What's this guy scheming now?)~
+== BG2BAEB ~I can heeeeeear you!~
+== BEDWIN ~Yes, yes. You were thinking it, anyway.~
+== BG2BAEB ~As recognized by my research, Thay contains one of Faerun's finest fighting arenas, and I would -love- an introduction from you to those in charge.~
+== BEDWIN ~What makes you think they would give a rat's ass about what you think, Drow?~
+== BG2BAEB ~ I have -quite- the acute arcane ability myself, and -years- of experience yanking slaves into obedience to have them duel to the death! Truly, we can talk tips!~
+== BEDWIN~ Hmm. Perhaps, Drow, perhaps. Make it worth my while and I can send someone a message.~
+EXIT
+
+// Haer'dalis Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("HaerDalis")
+    !StateCheck("HaerDalis",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEHaerDalis1","GLOBAL",0)~
+THEN BG2BAEB BG2BAEHaerDalis1
+~Why have you repeatedly questioned my choice of profession? I am satisfied with where I am, thank you.~
+DO ~SetGlobal("BG2BAEHaerDalis1","GLOBAL",1)~
+== BG2BAEB ~Why traipse about with that troupe of yours when you are such a competent combatant?~
+== BHAERDA ~We have been friends for longer than I have known you. We compliment each other.~
+== BG2BAEB ~Certainly you can! But have you considered leaving the low-budget life of the stage to gain something greater?~
+== BHAERDA ~I already know what you mean - life as a gladiator where the arena is the stage and all the action is real.~
+== BG2BAEB ~Absolutely, though acknowledging one's individual abilities is also an admirable attribute. (From here.)~
+== BHAERDA ~The challenge of fighting for survival and for the thrill of the crowd has its appeal, I admit, but I also enjoy engaging with my fans before and after the show.~
+== BG2BAEB ~You still can! Nothing a little resurrection and restoration won't remedy if it comes to that. You're rich enough that death is but a diminutive dent in your demeanor.~
+== BHAERDA ~Baeloth, perhaps I shall agree to your terms. I had been seeking inspiration for a similar character I intended to portray in a work I am writing called “The Reign of Blades.”~
+== BG2BAEB ~Practice makes perfect - and permanent.~
+EXIT
+
+// Hexxat Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Hexxat")
+    !StateCheck("Hexxat",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEHexxat1","GLOBAL",0)~
+THEN BHEXXA25 BG2BAEHexxat1
+~Drow, why do you follow me around as if I were a child? Are you afraid I'll suck your blood?~
+DO ~SetGlobal("BG2BAEHexxat1","GLOBAL",1)~
+== BG2BAEB ~Verily, but you are vivacious for a vampire, even in full view of the light.~
+== BHEXXA25 ~Yes, Drow, and I know your proposal: You want me to fight in your underground arena and earn my meals through being a predator of whatever prey you throw at me.~
+== BG2BAEB ~Correct, my clever and cordial companion! Partaking as a pit warrior would properly prepare you to be in peak performance in siphoning sanguine substances.~
+== BHEXXA25 ~Do you -demand- I be your pet pit vampire?~
+== BG2BAEB ~It is an offer, but not an outstanding order. However, your agreement would be much obliged.~
+== BHEXXA25 ~If I am in the mood, Drow, I shall consider it.~
+== BG2BAEB ~Your vampiric vivacity could make for a very violent delight! My main demand is you refrain from siphoning the showgoers' lives as a matter of professional courtesy.~
+== BHEXXA25 ~So long as they bet for me and not against me.~
+== BG2BAEB ~I can already imagine your arena alias!~
+== BHEXXA25 ~It had better not be anything embarrassing, Drow.~
+== BG2BAEB ~"Death delivered."~
+== BHEXXA25 ~Not my first choice, Drow, but I may go agree to it.~
+EXIT
+
+// Imoen Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Imoen2")
+    !StateCheck("Imoen2",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEImoen21","GLOBAL",0)~
+THEN BG2BAEB BG2BAEImoen21
+~Imoen, why the wailing? Your cheerful countenance even got me to crack a smile!~
+DO ~SetGlobal("BG2BAEImoen21","GLOBAL",1)~
+== BIMOEN2 ~I've been... experimented on. Tortured. I tried keeping my head up and staying cheery, but, it's like my captor made my -soul- hurt!~
+== BG2BAEB ~You have me quite curious: What wounds did he inflict and where? What methodology led him?~
+== BIMOEN2 ~I... I'm not entirely sure I know. Just thinking about it hurts.~
+== BG2BAEB ~If I -knew- then I could better try to -undo- it, my dear.~
+== BIMOEN2 ~Thanks, but why do you care so much about this, anyway?~
+== BG2BAEB ~Subjugating slaves is my -specialty.- Your captor's technique seemed curiously cultivated for copious quantities of cricks and cramps and convulsions. I dare say he overdid it.~
+== BIMOEN2 ~Thanks. I didn't like his torment, either!~
+== BG2BAEB ~There exists a threshold beyond which further torment is trivial to the task of training slaves to obey and marks a master's abuse for his amusement or anger abatement.~
+== BIMOEN2 ~Does knowing this change anything?~
+== BG2BAEB ~Not noticeably. No notches on your noggin. Back bruises and lacerations seem minimal. It was like your tormenter's main aim was to maximize the mitigation of your morale.~
+== BIMOEN2 ~It seems strange to me to ask you for this, but will you help cheer me up - for everyone's benefit?~
+== BG2BAEB ~<Baeloth grins.>~
+== BG2BAEB ~Let me entertain you!~
+EXIT
+
+// Jaheria Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Jaheira")
+    !StateCheck("Jaheira",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEJaheira1","GLOBAL",0)~
+THEN BG2BAEB BG2BAEJaheira1
+~Ah, Jaheira. Round up any runts to remove to better the balance? You were quite fond of quoting, “Nature take the life she gave!”~
+DO ~SetGlobal("BG2BAEJaheira1","GLOBAL",1)~
+== BJAHEIR ~Don't patronize me, Drow.~
+== BG2BAEB ~Patronize? Preposterous! I peacefully propose partaking in your purpose in life - unless the 'natural balance' is no longer your priority.~
+== BJAHEIR ~What would you know about -balance?-~
+== BG2BAEB ~Well, my well-traveled companion, what say you to the notion that this 'balance' is but a subjective opinion on how it operates? Are not all you Druids keen on avoiding conglomeration?~
+== BJAHEIR ~I'll tell you this much, -Drow.- I'm my own person. What you consider friendly flattery I call an affront to nature and my training!
+== BG2BAEB But do I speak deceit when I declare what part of the balance you keep is your discretion?~
+== BJAHEIR ~You are unfortunately correct.~
+== BG2BAEB ~"Unfortunately?" How unexpected!~
+== BJAHEIR ~I know enough of your past and you know enough of mine. It's like you prod and pry to get me to agree with something that's technically true but all part of a scheme I simply want to avoid!~
+== BG2BAEB ~It's an earnest inquiry. Truly, am I the antagonist?~
+== BJAHEIR ~To me right now you are. If you're here to butcher animals for meat or to make them fight for your amusement, don't look to me for my blessing, Baeloth.~
+EXIT
+
+// Jan Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Jan")
+    !StateCheck("Jan",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEJan1","GLOBAL",0)~
+THEN BG2BAEB BG2BAEJan1
+~Oh, Jan!~
+DO ~SetGlobal("BG2BAEJan1","GLOBAL",1)~
+== BJAN ~Y-yes?~
+== BG2BAEB ~You wouldn't be interested in playing a little GAME, would you? Mmm?~
+== BJAN ~Game? I -love- games!~
+== BJAN ~There was this time about thirty years ago when my second cousin on my mother's side and I played our longest game of Chess yet. We were at it for over a day, and we kept moving our pieces to prevent being checkmated, but she passed out from exhaustion first, so she forfeited the game. She violently appealed to my mother after this and claimed that I did something to make her lose when I did not.~
+== BG2BAEB ~Ahem.~
+== BJAN ~Ahem what? Oh. Your game?~
+== BG2BAEB ~<Baeloth silently blinks.>~
+== BG2BAEB ~Yes, my light-skinned Svirfneblin.~
+== BJAN ~<Jan also blinks.>~
+== BJAN ~There! We're tied!~
+== BG2BAEB ~<Baeloth shakes his head and sighs.>~
+== BG2BAEB ~Nevermind.~
+EXIT
+
+// Keldorn Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Keldorn")
+    !StateCheck("Keldorn",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEKeldorn1","GLOBAL",0)~
+THEN BKELDOR BG2BAEKeldorn1
+~A Drow among us? What madness is this?~
+DO ~SetGlobal("BG2BAEKeldorn1","GLOBAL",1)~
+== BG2BAEB ~I'm not bad. I just detect that way.~
+== BKELDOR ~<Keldorn narrows his eyes suspiciously at Baeloth.>~
+== BG2BAEB ~You're a Paladin. I can tell. Big, strong type. Fondness for heavy armor and big swords. I'm a Sorcerer and look like something you were trained to -hate!-~
+== BKELDOR ~What is your point?~
+== BG2BAEB ~Oh, Keldorn, despite appearances, we're not so different - you and I. In fact, I think we'll get along -just fine.-~
+== BKELDOR ~What trickery is this?~
+== BG2BAEB ~I can tell you're sworn to eradicate demons, devils, deviants, beholders, and all sorts of baddies. I -too- want many of them dead.~
+== BG2BAEB ~In fact, I'd be -happy- to help point out many of them to you. -Plenty- of them pissed me off, and we can enjoy ridding the realms and the planes of them. Together.~
+== BKELDOR ~<Keldorn looks suspiciously at Baeloth.> What do you get from this?~
+== BG2BAEB ~Oh, I -know- you get pleasure from killing things and making these surface dwellers happier for it. -I- get the pleasure of making sure these -creatures- never ask me for money or favors again. It's win-win!~
+== BKELDOR ~What am I? Your muscle in a collections agency?~
+== BG2BAEB ~Oh, my dear Keldorn, your order has already made you that! You're a reaper of souls! You slay demons and devils and dragons and deviants of all sorts and collect their corpses as trophies to make Big Daddy Paladin in the order feel better. With me, you're just doing under my guidance and with my help. I won't even charge you for my services.~
+== BKELDOR ~I... see. Perhaps I was mistaken about you, Drow. But know this: I -will- strike you down at the first sign of betrayal!~
+== BG2BAEB ~I would expect nothing less from my righteous executioner!~
+== BG2BAEB ~ Come, my pet Paladin! There's some foul fiend who owes me its gold or its guts, and we're gonna collect - together!~
+EXIT
+
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Keldorn")
+    !StateCheck("Keldorn",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEKeldorn1","GLOBAL",1)
+    Global("BG2BAEKeldorn2","GLOBAL",0)~
+THEN BKELDOR BG2BAEKeldorn2
+~What is it, -Baeloth?- Another affection or something more pressing?~
+DO ~SetGlobal("BG2BAEKeldorn2","GLOBAL",1)~
+== BG2BAEB ~My precious paladin and insightful inquisitor, I have an important inquiry.~
+== BKELDOR ~<Keldorn sighs at Baeloth.>~
+== BKELDOR ~I am hesitant to let you indulge your tongue my way, but go on.~
+== BG2BAEB ~What is the primary purpose of paladinhood - to uplift the unfortunate underdog or to smite the sinner?~
+== BKELDOR ~That is... a remarkably -sensible- question to ask of me, Baeloth. It is one I asked my teachers many years ago.~
+== BKELDOR ~The truest answer is that everyone has a calling, a ministry. Some are first and foremost teachers or preachers or healers or charity workers. Some are scholars or investigators.~
+== BKELDOR ~Being a paladin also means being a lawman, which means being a soldier. We are held to a high standard of moral and military character which is meant to inspire others to follow our lifestyles by example.~
+== BG2BAEB ~That's -precisely- my pickle!~
+== BKELDOR ~Go on.~
+== BG2BAEB ~Let's postulate a pair of paladins is praised as saviors because they slay demons. That same day, should they also be hailed as heroes for upholding the laws of the land for punishing a peddler for being too poor to pay his prescribed taxes?
+== BKELDOR To what cause are these hypothetical paladins sworn? What are the laws of the land and who enforces them? What is their calling in life? All these matter more than you know.~
+== BKELDOR ~You ask if it is better to uphold the letter of the law or to do good by showing mercy when it is appropriate.~
+== BG2BAEB ~An important inquiry, inquisitor.~
+== BKELDOR ~It is easier to make and break rules than it is to help those in need as they should be helped. Bringing about the greater good is my calling, even though I am still bound by certain oaths.~
+== BG2BAEB ~Wise words, my prudent paladin.~
+EXIT
+
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Keldorn")
+    !StateCheck("Keldorn",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEKeldorn2","GLOBAL",1)
+    Global("BG2BAEKeldorn3","GLOBAL",0)~
+THEN BG2BAEB BG2BAEKeldorn3
+~What noble notions noodle through your noggin?~
+DO ~SetGlobal("BG2BAEKeldorn3","GLOBAL",1)~
+== BKELDOR ~There may be hope for your redemption yet, Baeloth.~
+== BG2BAEB ~Redemption? Do you have a winning lottery ticket?~
+== BKELDOR ~No.~
+== BKELDOR ~The cosmic forces of good and evil war with each other in a fight that rages across the planes. Each side claims whatever souls it can.~
+== BKELDOR ~It was... unfortunate for cosmic good that you were born a drow and influenced as you were, but you are a free-willed being, Baeloth. As you said, some of our goals are greatly aligned.~
+== BG2BAEB ~Do you expect me to partake of the profession of paladin with your particular personification of penance and prayer?~
+== BKELDOR ~Not specifically, Baeloth, but there is hope you would desire to bestow mercy and not sacrifice others in your arenas.~
+== BG2BAEB ~I'm... indisposed! My career and calling in life are completely dependent upon a steady stream of suckers seeking fame and fortune from fighting.~
+== BKELDOR ~Is that all you are, Baeloth - a promoter of your Black Pits? What happens if you're no longer Baeloth the Entertainer but just Baeloth the man, or the drow as the case may be? It's happened before.~
+== BG2BAEB ~What a hurt to the heart that was, to contemplate the possibility that I could no longer be Baeloth the Entertainer! The realms would be ever so -boring- without me!~
+== BG2BAEB ~But you got me thinking, a decidely dangerous decision on your part! If I were different, then what?~
+== BKELDOR ~That is a good start, Baeloth. We shall talk more later about this.~
+EXIT
+
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Keldorn")
+    !StateCheck("Keldorn",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEKeldorn3","GLOBAL",1)
+    Global("BG2BAEKeldorn4","GLOBAL",0)~
+THEN BG2BAEB BG2BAEKeldorn4
+~What you call 'cosmic good' seems radically racist to me!~
+DO ~SetGlobal("BG2BAEKeldorn4","GLOBAL",1)~
+== BKELDOR ~<Keldorn raises his eyebrow in suspicion at Baeloth.>~
+== BG2BAEB ~Here you are, you fair-skinned human and knight in shining armor and you claim you embody cosmic good. Meanwhile the denizens of the Underdark and dragons whose scales are a certain color are asking for eradication because they're 'cosmic evil' and 'born badly.' That's the embodiment of unfair!~
+== BKELDOR ~Many of these creatures you listed are free-willed and intelligent enough to be able to think for themselves.~
+== BG2BAEB ~So, if some unintelligent ant or animal lives by survival of the fittest, it's excused from this cosmic morality, but if something with a bring as big as yours - and possibly with a greater skin pigmentation - believes in survival of the fittest, it's part of this cosmic morality? Didn't one of your -human- scholars who looked a bit like you write about survival of the fittest in the first place?~
+== BKELDOR ~<Keldorn ponders uncomfortably a moment.>~
+== BG2BAEB ~The look on your face tells me -all- I need to know! I've been interrogating this inequality for longer than you've lived!~
+== BKELDOR ~I cannot speak of what you call 'survival of the fittest,' but these cosmic forces -absolutely exist!- I -know- you're smart enough to understand this.~
+== BG2BAEB ~Oh, indeed, my pet Paladin! I understand the underlying theory, but for someone blessed or burdened with an ability to see who or what your god or cosmic morality permitted you to punish, have you ever wondered -specifically- how it worked?~
+== BKELDOR~ Not in the way that you propose. I understand there are certain things I simply do not need to know. I should focus on the things I do.~
+== BG2BAEB ~Well worded my pious patriarch! I whole-heartedly agree that my time is too treasured to put toward trivial tasks.~
+== BKELDOR ~For once I understand your position. Your kind was hunted because you looked like you were of the darkness by surface-dwellers who believed they alone were of the light.~
+== BG2BAEB ~There's hope for you yet, Keldorn! I've been saying that for ages!~
+== BKELDOR ~Even with this understanding, do not think me hesitant to punish you for your unwanted behavior, Baeloth. I am still a soldier with an oath to uphold cosmic morality.~
+== BG2BAEB ~Oh, my pet Paladin! I am grateful and glad we get along! After all, we are not so different: You want to slay evil to uphold cosmic morality and I want to slay evil because it's ugly and it owes me money. Either way, evil is eliminated.~
+== BKELDOR ~And what about charity? Is there room in your heart for -that?-~
+== BG2BAEB ~You want to do charity because it makes people want to like and follow you while cosmic morality's causes are cuddled. I can, ahem, -tolerate- charity because it makes people want to like and follow me.~
+== BKELDOR ~Hmm. You are a skilled debater. I grant you that, drow.~
+== BG2BAEB ~I could say I'm a -master- of the craft, but I prefer the title of 'Baeloth the Entertainer' and I'm not trying to argue a case like one of your attorneys or magistrates.~
+EXIT
+
+// Korgan Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Korgan")
+    !StateCheck("Korgan",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEKorgan1","GLOBAL",0)~
+THEN BKORGAN BG2BAEKorgan1
+~What do -you- know about fightin', Drow? All I've seen you carry around is a prissy little stick!~
+DO ~SetGlobal("BG2BAEKorgan1","GLOBAL",1)~
+== BG2BAEB ~Aw. Did someone wake up on the wrong side of the keg? Hmm?~
+== BKORGAN ~And I've ne'er seen ye cart around no holy symbols nor spellbooks, either. It's like you dance and prance around all prissy-like magic sparks come odda yer hands!~
+== BG2BAEB ~Aw! Is the short one jealous that he can't kill anything he'd please with a well-placed sneeze?~
+== BKORGAN ~I sneezed all over ye earlier.~
+== BG2BAEB ~It was downright -disgusting!- Rightfully -revolting!-~
+== BKORGAN ~Give it time, Drow. It'll still kill ye.~
+== BG2BAEB ~It's like you -want- me to hate you. Noticing more melancholy from your mediocre stature is amusing, at least!~
+== BKORGAN ~Alright, ye damned Drow. Ye pass.~
+== BG2BAEB ~With my usual panache, I assume.~
+== BKORGAN ~Ye've been sneezed at, pissed on, insulted, and survived my beer 'n' sausage farts. Ye got my respect, spell-slinger.~
+== BG2BAEB ~What a woeful pain it was at first, being subjected to your -primitive- palette of -pain.-~
+== BKORGAN ~Whaddaya mean?~
+== BG2BAEB ~Let's see. I've been disfigured, dismembered, disemboweled, dead, dishonored, depressed, diseased, and detritus. Your little disgusting ditty was... dainty.~
+== BKORGAN ~Whatever, Drow. Just do your prissy dancin' toward our enemies. Maybe they'll run away in fear or fall down laughin'.~
+== BG2BAEB ~Come, my dear Dwarf. I have -plans.-~
+EXIT
+
+// Mazzy Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Mazzy")
+    !StateCheck("Mazzy",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEMazzy1","GLOBAL",0)~
+THEN BG2BAEB BG2BAEMazzy1
+~What have we here? A light-skinned Svirfneblin?~
+DO ~SetGlobal("BG2BAEMazzy1","GLOBAL",1)~
+== BG2BAEB ~No, the skull's slightly too small.~
+== BMAZZY ~I'm a Halfling, not a Gnome.~
+== BG2BAEB ~I was just about to say that!~
+== BMAZZY ~Drow, what is your point? I tolerated the decision of our leader for us to travel together.~
+== BG2BAEB ~Oh, I was just learning more about you surface folk. Apparently, we have a lot in common - besides skin color, of course!~
+== BMAZZY ~I think I know where this is going, but tell me anyway.~
+== BG2BAEB ~I am -so very glad- you asked!~
+== BG2BAEB ~We have plenty of -common enemies!- Being around the surface for so long has taught me that it seems -everyone- hates -everything- in the Underdark!~
+== BMAZZY ~-Hate- is a -strong- term, and maybe not the right one, but I see your point. We on the surface have had -strong suspicions- toward your malignant kind!~
+== BG2BAEB ~Any guesses as to why?~
+== BMAZZY ~Have you seen Beholders? Illithids? Demons? Devils? Liches? Many of them are rich, powerful, ugly-looking things that seem to be fighting amongst themselves for the chance to take over the surface as tyrants and puppet masters!~
+== BG2BAEB ~When you put it that way my dear Mazzy, I think we'll get along -just fine.-~
+== BMAZZY ~Just remember, BAELOTH: I am -not- your puppet!~
+== BG2BAEB ~No, but for now we're partners. Let's go cull the Underdark herd - together. Ready when you are!~
+EXIT
+
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Mazzy")
+    !StateCheck("Mazzy",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEMazzy1","GLOBAL",1)
+    Global("BG2BAEMazzy2","GLOBAL",0)~
+THEN BMAZZY BG2BAEMazzy2
+~Drow, I noticed you meditating in my general direction. What are you pondering? Do I dare ask?~
+DO ~SetGlobal("BG2BAEMazzy2","GLOBAL",1)~
+== BG2BAEB ~Due to your determined desire to deduce what I was wondering, surely I shall share it!~
+== BMAZZY ~At the very least, I invited this.~
+== BG2BAEB ~I was musing on how wonderfully wanted the short folk - the Svirbneblin - were backstage in the Black Pits among the bigger beings.~
+== BMAZZY ~Why would you wonder this around me?~
+== BG2BAEB ~If you could smile and give into levity around me, surely we would be -wonderful- at parties!~
+== BMAZZY ~What evil depravity is this?~
+== BG2BAEB ~Nothing sensual, I assure you. The Svirfneblin were similarly celibate.~
+== BMAZZY ~Well, Drow, I am hesitant to say I am honored you think of me as something more than a mere marionette or sexual prey to be conquered. At least you possess -that- basic dignity.~
+== BG2BAEB ~That was only a -third- of the thought.~
+== BMAZZY ~And now I shall walk away, lest I hear the rest.~
+== BG2BAEB ~If you are to be the epicenter of any entertaining party endeavors, you simply -need- to know.~
+== BMAZZY ~<Mazzy rolls her eyes.>~
+== BG2BAEB ~The short ones were such a smash since they had bound bowls of beautiful food to their heads as they meandered and mingled. Guests never had to stoop to scoop!~
+== BMAZZY ~You just proved my point, -Drow.-~
+== BG2BAEB ~So, are you partial to casks of red wine? Caviar? Crackers? Whatever you deliver shall -surely- be a -delight!-~
+EXIT
+
+// Minsc Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Minsc")
+    !StateCheck("Minsc",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEMinsc1","GLOBAL",0)~
+THEN BMINSC BG2BAEMinsc1
+~Boo sniffs the -evil- in the air around you, Drow, but he doesn't want to attack! I am confused! Explain this bewitchment!~
+DO ~SetGlobal("BG2BAEMinsc1","GLOBAL",1)~
+== BG2BAEB ~I assure you your hamster is downright -delighted- to be entertained by the best in the business!~
+== BMINSC ~But how do you explain Boo wanting to dance?~
+== BG2BAEB ~Your rodent is right in wanting to revel around me. Delight is my desire and gladiatorial glee my goal.~
+== BMINSC ~But why is my hamster dancing?~
+== BG2BAEB ~My skin secretes a scent sweet to the small creatures like him. I assumed it as an anomaly.~
+== BMINSC ~Well, so long as it doesn't prevent us from fighting the evil we need to fight, I think it's fine.~
+== BMINSC ~Come here, Boo! I need to teach you words to sing with your dance! Ha ha!~
+== BG2BAEB ~This seems like a very personal priority and I would prefer a -private- performance with the pair of you.~
+== BMINSC ~Ha ha! Minsc and Boo shall slay evil and sing and dance happily together!~
+EXIT
+
+// Nalia Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Nalia")
+    !StateCheck("Nalia",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAENalia1","GLOBAL",0)~
+THEN BG2BAEB BG2BAENalia1
+~Nalia, what's nagged me about you is that you don't seem to know how to -rule!- I thought you were a noble!~
+DO ~SetGlobal("BG2BAENalia1","GLOBAL",1)~
+== BNALIA ~Well, I am. I'm just not sure I -enjoy- being one.~
+== BG2BAEB ~How can you hate having others be legally liable to wait on you and do all the menial deeds you'd prefer to defer?~
+== BNALIA ~Day after day I see injustices in the world. The poor walk miles to get food while the rich walk miles to get rid of the food they ate so they don't get too fat.~
+== BG2BAEB ~So you say.~
+== BNALIA ~But can't you see the painful inequality here?~
+== BG2BAEB ~My precious, naive Nalia, let me educate your noble noggin in the ways of the world. You assume asininely that all lives are of equal worth.~
+== BNALIA ~But aren't we all born under the sun? Can we truly trade one life for another so easily?~
+== BG2BAEB ~Don't understand me, my dear: Even the most vulnerable vessel has value if used properly. -Someone- is providing the bread for all the circus goers!~
+== BNALIA ~All life has value? I never thought I'd hear -that- from a Drow!~
+== BG2BAEB ~Oh, -trust- me my dear. Surely, a god has more merit than a gauth or a gibberling, and a man is mightier than an ant but meeker than a dragon - a typical man, that is.~
+== BNALIA ~So you're saying all life has value and everyone is just playing their parts?~
+== BG2BAEB ~Aye?~
+== BG2BAEB ~But there's one triumphant truth in -all- life: Greater power -always- wins. That's why it is -so satisfying- to see a superior species struggle when it is undone by an underdog.~
+EXIT
+
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Nalia")
+    !StateCheck("Nalia",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAENalia1","GLOBAL",1)
+    Global("BG2BAENalia2","GLOBAL",0)~
+THEN BNALIA BG2BAENalia2
+~Baeloth, I still don't know your stance about how I feel about the poor. So many people are against it. Even my own family has doubted me.~
+DO ~SetGlobal("BG2BAENalia2","GLOBAL",1)~
+== BG2BAEB ~Let me lay it out for you this way, my dear: You have your pets and I have mine.~
+== BNALIA ~The poor are just -pets- to you?~
+== BG2BAEB ~Yes. You throw them some food, devise them a new dwelling, clean up their waste, and feel fine for the charity that came about at your hand.~
+== BG2BAEB ~They're like darling dogs to you: They bark at you when they're cold or hot or hungry or afraid or danger draws near.~
+== BG2BAEB ~You want all the diminutive dirty peasants to praise you when big mama Noble Nalia draws near and doles out some desirable outcome like a guard dog getting a grilled steak.~
+== BG2BAEB ~You have -all- the keys to their kennels and do enough to ensure they don't depose you. If they do, their lot in life can't change much: They're poor, they're weak, and they're -absolutely adamant- about being in charge when they have nothing in their noggins but nonsensical notions!~
+== BG2BAEB ~You can -try- to change them, but -they will never be noble!- A shiny new settlement or a bigger bed won't warp them into warriors or wizards - ones you -could- and -should- be courting.~
+== BNALIA ~Wait! What?~
+== BG2BAEB ~No invading army is amply agitated by ascetic agrarians. Warriors? Wizards? They keep your home -yours.- Not some fleabag farmer.~
+== BNALIA ~But... shouldn't we try to elevate the status of the poor so they -become- the wizards and warriors you mentioned?~
+== BG2BAEB ~Perhaps, my girl. Perhaps. But at what cost?~
+== BNALIA ~It all comes down to money and priorities then, doesn't it? We can save our lands from outside invaders by just staying with the old system, or risk losing it all to pay to bring more people up from poverty and train them to be more useful to society.~
+== BG2BAEB ~Totally true, my perceptive princess!~
+== BNALIA ~Then what should I do?~
+== BG2BAEB ~-Embrace- your position! Don't be afraid that others may die. You're a noble: That's your duty and maybe your delight!~
+EXIT
+
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Nalia")
+    !StateCheck("Nalia",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAENalia2","GLOBAL",1)
+    Global("BG2BAENalia3","GLOBAL",0)~
+THEN BNALIA BG2BAENalia3
+~Baeloth, if you were to seriously try to help the poor improve, what would you do?~
+DO ~SetGlobal("BG2BAENalia3","GLOBAL",1)~
+== BG2BAEB ~Oh, my curious compatriot, I am -so- satisfied you asked!~
+== BG2BAEB ~Finding the worthiest warriors is easy: Surround yourself with the strongest bodies available then demand they duel to the death in duets!~
+== BNALIA ~That's so cruel!~
+== BG2BAEB ~It's -compassionate- compared to conquerors who care not of what you call 'kind.' Survival of the strongest is simple, my dear, and the 'luckiest' will live.~
+== BNALIA ~I... hate to admit it, Baeloth, but you have a point. I did rush to the Copper Coronet because de'Arnise Hold was conquered by trolls who didn't care what happened to the inhabitants.~
+== BG2BAEB ~Casters demand more training and tutelage from an early age, even if their sorcerous skills manifest meteors from temper tantrums. An open-air arena duel to the death won't do.~
+== BNALIA ~What should be done?~
+== BG2BAEB ~Use your noble noggin! What does your nation need now and later?~
+== BNALIA ~Thanks, but how do you know all this?~
+== BG2BAEB ~Being Baeloth the Entertainer meant my domain was a covert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain.~
+EXIT
+
+// Neera Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Neera")
+    !StateCheck("Neera",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAENeera1","GLOBAL",0)~
+THEN BG2BAEB BG2BAENeera1
+~Neera, sometimes I envy you.~
+DO ~SetGlobal("BG2BAENeera1","GLOBAL",1)~
+== BNEERA ~Me? Why? Is it my pink hair and inability to grow a beard?~
+== BG2BAEB ~No, no. Nothing that trite. Your affinity for Wild Magic is admirable.~
+== BNEERA ~Really? Because much of the time people around me leave me feeling really, really sorry that this tangled strand of the Weave chose me!~
+== BG2BAEB ~That's -exactly- why sometimes I envy you. Your magic is inherently -chaotic.- Every 'mistake' in your casting - your positioning, your timing, your choice of spells - has an inherent layer of plausible deniability.~
+== BNEERA ~Are you saying Wild Magic is -good- for me? Because you'd probably be the first!~
+== BG2BAEB ~Whether Wild Magic is good for you is debatable, but the fact that you cannot entirely control your powers means that some 'accidents' can be staged and fewer people can blame you directly for them. It's like adding an extra roll of the dice to every spell you cast instead of just picking the result you want.~
+== BNEERA ~You mean bluffing with my spellcasting? That's... Huh. I don't know how I should say this.~
+== BG2BAEB ~Then don't. You know enough already.~
+EXIT
+
+// Rasaad Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Rasaad")
+    !StateCheck("Rasaad",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAERasaad1","GLOBAL",0)~
+THEN BRASAAD BG2BAERasaad1
+~Why do you look at me so curiously, Baeloth?~
+DO ~SetGlobal("BG2BAERasaad1","GLOBAL",1)~
+== BG2BAEB ~I. Don't. Get. You.~
+== BRASAAD ~What do you mean?~
+== BG2BAEB ~You prance around nearly naked with - at most - a modicum of magical might manifest. However do you handle yourself and -live?-~
+== BRASAAD ~You are not the first to ask such a question. While my monastic training was never intended to make me a wizard, I learned martial arts well enough that many of my feats are preternatural or even seemingly supernatural in origin.~
+== BG2BAEB ~So you say.~
+== BRASAAD ~Why are you surprised?~
+== BG2BAEB ~My research revealed - and rightly so - that living so scantily clad is, to use an aphorism from the Underdark - roughly translated - "asking for a smacking." By my counts, you should be dismembered, dead, disintegrated, disillusioned, depressed, or at the very least, discouraged! Yet, here you are, determined!~
+== BRASAAD~ What does your research about the Underdark reveal about the attitude of, "Try harder?"~
+== BG2BAEB ~Eloquence and efficiency are the antithesis of effort in execution. Trying is for training.~
+== BRASAAD ~Are you saying that I am disadvantaged because I have trained more diligently and put forth a more maximal effort than you to master your innate magical powers?~
+== BG2BAEB ~An interesting insight, but not inherently. No, you straddle the gap between the mundane and the magical, but lack the sorcerous skills of a caster and the warrior's well-armed and well-armored ways.~
+== BRASAAD ~Ah, now I understand you. I confuse you because my monastic training makes me seem like a paradox.~
+== BG2BAEB ~Precisely my point!~
+== BRASAAD ~Well, I shall consider ways to make my superior feats of athleticism and acrobatics acceptable to us - and any audience we aim to impress.~
+== BG2BAEB ~Your accentuation excites me. Perhaps I shall accept you as my apprentice - at least in all things auditory.~
+== BRASAAD ~I thank you for your offer, Baeloth, but I shall follow my own path for now.~
+EXIT
+
+// Valygar Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Valygar")
+    !StateCheck("Valygar",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEValygar1","GLOBAL",0)~
+THEN BVALYGA BG2BAEValygar1
+~Drow, your very presence in this group offends me! You are birthed into evil, and I sense magical talent in your blood!~
+DO ~SetGlobal("BG2BAEValygar1","GLOBAL",1)~
+== BG2BAEB ~Ooh! Tell me something I haven't heard!~
+== BVALYGA ~What?~
+== BG2BAEB ~Look, Valygar, I get you. You think that magic is like farting: It's so, -so- bad when others do it, but if you do it, it's -totally- justified!~
+== BVALYGA ~That is not at ALL what I said!~
+== BG2BAEB ~I've heard your whimperings and murmurings about how magic is vile and relying on magic makes you weak.~
+== BVALYGA ~'Whimperings?' What am I, your dog?~
+== BG2BAEB ~Let me offer you the -majority- opinion in this case: This -world- is made by and from magic. Your very -life- has been touched by the supernatural, and your mind -twisted- it into evil!~
+== BVALYGA ~What spells have I cast-~
+== BG2BAEB ~Spells? Did I -claim- you were a caster, Valygar? No? Good!~
+== BG2BAEB ~You want to fight casters? You need better -magical- defenses to survive, lest you become a chicken, a mind slave, or a pile of ash! You need better -magical- weaponry to hurt them -and- their minions! And I don't think you want to wait -weeks- to recover from a fight when you could have some caster use a healing spell on you!~
+== BG2BAEB ~Life is a magical arms race, Valygar. The only way to avoid it is to stay out of it and hope your side wins.~
+== BVALYGA ~<Valygar's face contorts into one of hesitant resignation.>~
+== BVALYGA ~I... see. Do not think my stance will change so drastically nor as soon as you hope, Drow!~
+== BG2BAEB ~Life is -quite- the expedient teacher!~
+EXIT
+
+// Viconia Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Viconia")
+    !StateCheck("Viconia",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEViconia1","GLOBAL",0)~
+THEN BVICONI BG2BAEViconia1
+~What are you scheming now, -male?-~
+DO ~SetGlobal("BG2BAEViconia1","GLOBAL",1)~
+== BG2BAEB ~The sutures from your staking haven't fully healed. I'm -so sorry- for that set of unfortunate circumstances.~
+== BVICONI ~Your tone sounds mocking. It's hard for me to believe you're sincere.~
+== BG2BAEB ~We've each been usurped from the Underdark, forced to flee to the surface for sustenance. We've thrived in ways those underground thought we never would!~
+== BVICONI ~Do you have a point beyond mere conversation?~
+== BG2BAEB ~Certainly, my inquisitive one: The Drow of the Underdark seemed stifled in their lifestyle. Expansion to the surface is a logical leap of progress. I suspect it would shrink their desire to be bound in age-old blood feuds.~
+== BVICONI ~More Drow living well on the surface? Have you forgotten how much we have been assaulted by others just because of who we are by birth?~
+== BG2BAEB ~Not one bit. I've been beaten, burned, shipwrecked, stoned, buried, and endured excrutiations far -beyond- what anyone should -ever- aim to endure!~
+== BVICONI ~What's your point?~
+== BG2BAEB ~If those in the Underdark could quit bickering long enough to leave their low-light dwellings, they could step outside and find a -new- world to dominate! We are well-versed in age-old feuds: We'd merely be -finishing- what our progenitors' prejudices began ages ago!~
+== BVICONI ~I'm not here to make even -more- enemies for me to amuse you, even if it helps our race somehow in a later generation!~
+== BG2BAEB ~Suit yourself.~
+EXIT
+
+// Wilson Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("WILSON")
+    !StateCheck("WILSON",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEWILSON1","GLOBAL",0)~
+THEN BG2BAEB BG2BAEWILSON1
+~I've let slip the dogs of war and heard of bear baiting, but a friendly bear? What shall I do with you?~
+DO ~SetGlobal("BG2BAEWILSON1","GLOBAL",1)~
+== WILSON ~<Wilson snorfles.>~
+== BG2BAEB ~You're akin to a Dire Dog with an enormous appetite and fewer oral displays of affection.~
+== WILSON ~<Wilson snorts then snorts again.>~
+== BG2BAEB ~An obvious implementation of your unique ursine ability would be to properly prepare you as a pit fighter. Surely, you could satisfactorily shoulder such a shift!~
+== WILSON ~<Wilson whines.>~
+== BG2BAEB ~Worry not, my warrior. We can call you, "The Ursine Usurper!" Eating opponents' innards is optional, obviously, however ostentatious.~
+EXIT
+
+// Yoshimo Banter
+CHAIN
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("Yoshimo")
+    !StateCheck("Yoshimo",CD_STATE_NOTVALID)
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    Global("BG2BAEYoshimo1","GLOBAL",0)~
+THEN BG2BAEB BG2BAEYoshimo1
+~Ooh! What wondrous delights did you bring us for dinner?~
+DO ~SetGlobal("BG2BAEYoshimo1","GLOBAL",1)~
+== BYOSHIM ~What do you mean, Baeloth?~
+== BG2BAEB ~Look at all those tricky toy traps you use! Did you get us some bear? Behir? Beholder?~
+== BYOSHIM ~I see, Baeloth.~
+== BG2BAEB ~I do, too.~
+== BYOSHIM ~But, no. I don't normally try to catch animals or creatures of the night to eat.~
+== BG2BAEB ~What would you prefer to trigger your traps?~
+== BYOSHIM ~I'm a bounty hunter. I catch men.~
+== BG2BAEB ~A hopeless romantic?~
+== BYOSHIM ~<Yoshimo shakes his head.>~
+== BG2BAEB ~Ah, so you're one of -those- mancatchers!~
+== BYOSHIM ~What's your point?~
+== BG2BAEB ~Well, as a purveyor of violent entertainment throughout the Underdark, Sword Coast, and beyond in the form of THE BLACK PITS, I need a notable number of neutralized nobodies to fatten the ranks of our gladiators. You seem like my man for the mission.~
+== BYOSHIM ~Duels to the death, I assume?~
+== BG2BAEB ~Oh, yes! -Evisceration- makes for the most -electrifying- entertainment!~
+== BYOSHIM ~Then I charge extra because of the complications. Bringing criminals to justice is one thing, but trapping men knowing they'll likely die fighting each other? Well, I have a reputation to uphold!~
+== BG2BAEB ~You play the part of a professional. How delightful.~
+== BYOSHIM ~What are your terms?~
+== BG2BAEB ~<Baeloth grins at Yoshimo.>~
+== BG2BAEB ~Let's deal, my friend.~
 EXIT

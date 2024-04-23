@@ -12,6 +12,10 @@ This mod provides continuation for our lovable Baeloth in BG2EE and EET.
 
 Baeloth has been captured by the red wizards and is willing to make a deal in exchange for his freedom.
 
+### Collaboration
+
+I must say a big thank you to [Endarire](https://www.gibberlings3.net/profile/5772-endarire/), who has provided dialog and ideas for this mod. Without them, this mod would not be possible. A personal shout out to [morpheus562](https://www.gibberlings3.net/profile/11591-morpheus562/), [CamDawg](https://www.gibberlings3.net/profile/8-camdawg/), and the rest of the G3 community.
+
 ## Installation
 
 We don't include an exe, you'll need use weidu to install:
