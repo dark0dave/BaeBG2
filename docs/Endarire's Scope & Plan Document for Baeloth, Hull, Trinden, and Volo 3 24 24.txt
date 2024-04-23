@@ -1,418 +1,188 @@
 ﻿DOCUMENT INTRODUCTION & SCOPE
-Introduction
 This document’s primary purpose is to overview and perhaps also explain the intended scope and progress made regarding the mod I set out to make.
 While I haven’t settled on a formal title yet - “Endarire’s Eclectica” is a tentative title - it started with making Hull from Candlekeep into a recruitable NPC throughout EET and expanded into also making Volo playable throughout EET (minus SoD for plot reasons), making Baeloth playable in BG2EE & EET, and adding the half-green dragon orc Trinden Felsad of my custom Metaphysical Revolution campaign to ToB as a recruitable NPC.
 This mod is intended to have crossmod functionality with other mods while not requiring any other mod to be installed to work aside from perhaps DLCMerger.  (Generally crossmod is done with permission with the Sandrah Saga being the most notable exception since its author has had a rightfully poor reputation in the community.)  Mostly, this crossmod content means banter, but the author of Golem Construction for Spellcasters has an open source license, and I added a golem building quest based on his mod.
 Overall, this eclectic content mod aims to set new high standards of quality of content - at least for writing.  It deals with some characters with which I am quite familiar (Baeloth & Trinden), and some characters where I know enough to be able to improvise (Hull & Volo).
-
-
-________________
-
-
 General Mod Scope
 These are the overall goals of this eclectic mod:
-
-
 * Be EET compatible.  This means that certain content should only install on a non-EET game depending on which game people are using.  Specifically, BG1 content goes on a BGEE/SoD game and BG2 content goes on a BG2EE game.
-
 * Provide a separate crossmod component to be installed after other mods that apply.  For example, Love Conquers All adds Corwin and Caelar to BGII, and the crossmod component should be installed after all other mods that include crossmod content for best results.
-
 * Provide various recruitable NPCs to the world, each with a distinct personality and reason to be in the party aside from “Player wanted this character in.”  Each character also has at least 1 associated quest throughout EET.
-
 * Add interesting mechanics to the game, such as a Portable Hole Tavern and a SoA quest series about paying certain NPCs to add creatures (Constructs, Elementals, Oozes, Giants, and more) to the Copper Coronet.  Baeloth can act as the announcer for the PCs’ fights.
-
 * Aside from Baeloth who was wonderfully voiced by Mark Meer and whose voiced lines I adapted from various parts of BGEE & BG2EE, I planned to handle the voice acting myself - unless we find someone else to do it better.  I have a background in voice acting, but my present setup is my room, not a professional-style recording booth.  I was hesitant to use anyone else including AI voices since I know these characters and how to perform their lines.
-
 * Add all spells from this document as a separate optional install component.
-
-
-________________
-
-
-Q&A
    * Why is the target document so long?
-
 This started as a script in October of 2022 for Hull from Candlekeep as a recruitable NPC.  My plan was to expand the project’s scope to also include Baeloth among other content.
-
    * Why does the target document have dialog for so many characters?
-
 While I originally kept various characters’ dialogs, reactions, and text more separate, I consolidated them for the sake of flow and interoperability.
         For example, if Baeloth and Volo are reacting to a scene, explicitly putting their reactions in order creates a specific flow to the scene that would be missing otherwise.
-
-
       * Why write most ToB content before SoA content?
-
 Since I wrote for Trinden, who at present is intended to be ToB only, it was simpler for me in concept to write the reactions of all relevant characters.  I also thought ToB would be faster to write for than SoA.  I’m still unsure about that.
-________________
-
-
 PROGRESS: BAELOTH
   Baeloth the Entertainer - sometimes called Baeloth Barrityl - begs the question of his bereft appearance in Baldur’s Gate II’s campaign.
 Baeloth Barrityl was laid bare after The Black Pits broke him but brought him back to bargain with CHARNAME.  SoD saw the return of Baeloth’s Black Pits as a barren shadow of its former self.
-
 Then there was silence.
-
 Baeloth was back incognito in The Black Pits II, but he was never properly playable in Baldur’s Gate II’s campaign... until now!
-
 Baeloth is most known for his alliteration/assonance, arcane ability, agreements with genies, and antics.  Expect Baeloth the Entertainer to excite and delight, but don’t forget - he’s still a drow.
-
 “Come one, come all! See the cream of the Sword Coast's combatant crop! Witness the brilliant and bizarre battles in the Black Pits of the one and only Baeloth the Entertainer!”
-________________
-
-
-Intro
 Baeloth the Entertainer!  We know him.  We love him.
-
-
 I also started this Google Doc that listed Baeloth’s voice lines.  I didn’t do much regarding SoD nor Black Pits II lines yet.  The intent of this document is to let us know what Baeloth says to edit voice clips and adapt his voiced lines to various situations.
-
-
-BG1
          * N/A.  At present, more BG1 Baeloth content is out of scope.
-
-SoD
             * [Link] I revised Baeloth’s intro scene to account for beating him in Black Pits in BGEE/EET or for him dying in BG1.
-
-
 SoA - Done
             * Dialog for meeting the party.  The scene was originally planned to be in Small Teeth Pass since it’s barely used in vanilla, but other mods use it.
         The community recently received permission to use these wintry rocky/mountain backgrounds which means I may move him to a new, custom world map location in a snowy mountainous region near Athkatla, likely in the Cloud Peaks.  (The area name would likely be Cloud Peaks Pass to separate it from the normal Cloud Peaks map.)
-
             * Baeloth’s starting stats and starting gear, including new items based on Mark Meer’s Baeloth costume.
-
-
 SoA - Started but In Progress
                * Battlemaster Baeloth quest series.  The Constructs section is done due to it being in the Portable Hole Tavern.
         For more details on this quest series, refer to the Battlemaster Baeloth section below.
-
                * Some of Baeloth’s dialog lines are in place.
-
-
-________________
-
-
 SoA - Planned but Not Yet Started
                   * Most of Baeloth’s interjections and plot-related dialog.
-
                   * Baeloth the Slaver quest.  After rescuing Baeloth, CHARNAME can take him to the Athkatla Slaver Stockade and negotiate with the boss to provide slaves for the Copper Coronet Coliseum if the party has gone through the slave revolt quest.  If they haven’t yet, Baeloth can pay off the slavers to temporarily stop supplying slaves to the Copper Coronet.
-
                   * Baeloth Caught Red-Handed quest.  Once the party returns from the Underdark and heads to the North Forest, the party wanders around and eventually finds Baeloth talking discreetly with some Red Wizards.  Baeloth and the head Red will warp away and the rest of the Reds will turn hostile.  If Neera is in the group, they’ll remark that they’ve found their target.  (Using one of Baeloth’s favor coins here will have him act as an allied NPC against the Reds in this fight.)
         If Baeloth warps away, then Baeloth will warp back in 1 game hour (5 real time minutes) assuming the party is out of combat.  If the PCs rest in this area, they’ll also trigger Baeloth’s return.
-
                   * Ahmal the Business Djinn.  Baeloth bound a genie to serve him, but chose one who was very business-focused and demanding of money instead of dealing with trickery like a typical genie.  Ahmal sells a single copy of a small number of mid- to high-end items at very high prices, but doesn’t buy items.
-
-
 ToB - Done
                      * Most of Baeloth’s interjections and plot-related dialog, including Volo’s writeup.
-
                      * Baeloth’s epilog.
-
                      * Battlemaster Baeloth - Inquire Within.  This quest only triggers if Baeloth is in the party when they warp with Neera to Thay.  Baeloth has a moment away from the group while he persuades Dennaton to let him join the arena - after finishing with the Bhaalspawn Saga of course!  It isn’t every day in Faerun that godlings are killing each other openly in a bid for power!
-
                      * Baeloth’s starting stats.
-
-
 ToB - Started but In Progress
                         * Dialog for EE-added character quests.  As of this writing, I did Rasaad’s and Neera’s.
-
-
 ToB - Planned but Not Yet Started
                         * X
-
-
-
-
 Crossmod Content - Planned but Not Yet Started
                         * Baeloth/Nordic banter and reactions for BG1 NPCs in BGII.
-
-
 Other - Done
                         * Biography.
-
-
 Other - Started but In Progress
                         * Banter between party members.  My favorite so far has been between Keldorn and Baeloth.
-
                         * Baeloth’s favor mechanic.  Since Mark Meer showed off this coin in his Baeloth cosplay, I integrated this into Baeloth’s BGII character.
         Gaining Baeloth’s Skull Coin is a rare event.  Each coin represents 1 favor Baeloth will do for the party that he wouldn’t do otherwise if he can do it.  My main question has been what to make worth a favor while balancing it for those who get some favors and those who get none.
         At present, PCs can spend a coin for Baeloth to side with or against them in Hull’s Final Duel.
-
-
 Other - Planned but Not Yet Started
                            * Player-initiated dialog (PID).  Instead of a one-time friendship dialog track like with Minsc Friendship, there are no timered dialogs.  Players who want to talk more with Baeloth and discover him as a character can at their own pace.  Everyone else can ignore this.
-
-
 Out of Scope
                            * Romance.
-
-
-________________
-
-
 PROGRESS: BATTLEMASTER BAELOTH & THE COPPER CORONET COLISEUM
-Intro
 Once Baeloth is recused in SoA, talking to Bernard in the Copper Coronet will allow fighting any sort of creature you’ve earned the right to fight vai talking with NPCs, sometimes doing quests for them, and usually paying cash to supply creatures to fight.  If Baeloth is in the Copper Coronet interior map, players can choose to witness him announce the fight.  (This is skippable for the sake of convenience.)
 Fights are normally 1 on 1 against a specific creature (a Fire Elemental, a Green Slime, etc.), though just like the Black Pits, there are some multi-creature themed fights.  (BP1 had Bugged, Unfriendly Neighborhood Spider-Man, etc.)  Players choose who’s fighting via dialog options before each fight.
 Rewards from fighting are simply EXP and whatever creatures normally drop.  Generally, creature stats are the same as default, such as a Spirit Troll in the Copper Coronet Coliseum having the same stats as a standard Spirit Troll.
 This Copper Coronet Coliseum melds mechanics and aesthetics:  Baeloth is all about organized war, and this lets PCs partake of it.  This also allows characters to gain EXP (especially to catch up characters who are behind in EXP) and test their tactics against a variety of creatures.
-
-
 SoA - Done
                            * [Constructs] Carlisle from the Portable Hole Tavern in this mod.
-
-
 SoA - Started but In Progress
                            * Battlemaster Baeloth quest series.  The Constructs section is done due to it being in the Portable Hole Tavern.
-
-
 SoA - Planned but Not Yet Started
                            * [Angels] Sister Garlena
-
                            * [Animals] Cernd after someone becomes leader of the Athkatlan Druid Grove.
-
                            * [Cowled Wizards] Corneil in the Council of Six structure
-
                            * [Elementals] Sister Garlena
-
                            * [Extraplanar Humanoids (Aasimar, Gith, Tieflings)] Sister Garlena
-
                            * {Genies] Khan Zarhaa in Trademeet
-
                            * [Humanoid Slaves (Drow, Halfling, Human, Orc, etc.)] Captain Haegan
-
                            * [Red Wizards] Finishing quest Baeloth Caught Red-Handed.
-
                            * [Rogues] Gorch of Mae’Var’s Guildhall
-
                            * [Trolls] Grae
-
-
 EET Only - Planned but Not Yet Started
                               * [Oozes] Ramazith from Baldur’s Gate city.  His required price improves if the party returned his captive nymph to him.
-
-
 Out of Scope
                               * X
-
-
-________________
-
-
 PROGRESS: HULL
-  
-
 Hull’s portrait was generated by Dream by Wombo, an AI art site.  Its base image was Hull’s portrait from Portraits Portraits Everywhere.
 In BG, Hull has some personality:  He’s liked to drink alcohol.  He’s a Candlekeep guard.  He has some understanding of how Candlekeep and its citizens operate.  He’s probably helped CHARNAME and Imoen in exchange for some minor help from them.
-
 Mostly, Hull is a blank slate.  By default, he’s intentionally a minor character unlike Gorion or Imoen.  (Imoen was originally intended as a minor character in BG1, but her importance was increased because the dev team wanted a recruitable, non-”psychotic” Thief in BG1.)
-
 This mod fills in many of the details of Hull’s personality and aims to answer certain questions regarding Candlekeep and Gorion.
-
 Hull admires Gorion.  He’s heard some of the tales of how Gorion was a Harper, befriended Elminster, and they did wonderful stuff together.  Gorion is the sort of father Hull wished he had, and after Gorion’s death, decides to try to help CHARNAME by acting sorta like Gorion.  Partly over the guilt he felt in letting Gorion through the gate the night of his murder and also because he wanted to see the world, protect CHARNAME, and avert the war with Amn he heard about, he’ll offer to join your party.  Besides, he was very tired of staring at walls for days at a time and drinking himself silly to dumb the boredom!
-
 Drizzt is one of his heroes as well, and has admired him for being a hero to the people.  Just don’t hurt Drizzt with Hull in or near the party if you value your friendship with Hull.
-
 Hull tries to maintain a cheery, protective personality throughout the game.  (He was a Candlekeep guard for many years, and he’s somewhat trying to pick up from where Gorion left off.)  Get used to him being your ‘Uncle Hull’ and calling you ‘kid’ - just like other Candlekeep guardsmen did.
-
 Hull tries to be a permissive parent and tries to get along with everyone, but he just can’t stand persistent evil nor injustice.  He’ll gladly warn you about how Dorn seems to him like a murderer, and how all shorties are sneak thieves by default.  He knows that Gorion did his best to see the best in Imoen and you and tries to be patient with the two of you, but he has limits.  And, yes, you can be cruel or caring to him.
-
 Magic has fascinated him since he was around casters most of his life, and, yes, Gorion being a caster was a large part of this.  He’ll probably get along well with Edwin and Baeloth despite their EVIL alignments just due to him liking and respecting their offices and the power they wield.
-
 Hull is intentionally more quiet in BG1 than BG2.  He’s new to the outside world just like CHARNAME is and has fewer opinions on how he should act like a parent.  He’s trying to adjust to life outside Candlekeep just like CHARNAME and Imoen are.  He still has a small number of scenes where he acts like a lawman because his guard training never fully left him.
-
 Once you recruit him in BG2, he’ll have more to say for reasons I’d prefer not to spoil here.  In short, he’s loyal to Imoen and you, and things he learned in Candlekeep turn out to be useful later in the story.
-
 Hull will sometimes leave the party for plot reasons - and not just because of the transition between BG1 & BG2 - but there should be ample guidance on where to find him again if you remember his dialog.
-
 (Hull also was written this way in response to Sandrah from the Sandrah Saga being an attention hog.  Hull wants to be a loyal, fun friend that’s sometimes the center of attention, but even he has standards.  He’s like a more humorous version of Virgil from ARCANUM, a companion available from just about the start of the game who’s pretty tolerant and trusting, but prefers the party act nobly.)
-
 Hull at least tries to get along well with the Paladins Ajantis and Keldorn.  He respects the office of Paladinhood and part of him wants to be this way.
-
-
-
-
-________________
-
-
-Intro
         Hull is a male LN Human Fighter (no kit).  He starts with high enough stats to dual into any class legal for a Fighter.
-
-
-All
                               * Hull is pretty much entirely done.  If something significantly new is added - like reactions to a new quest - then that needs adding.
-
                               * Hull has quests that start in BG1, SoA, and ToB.  His ToB quest, Hull’s Homecoming, can only be completed on EET.
-
 Other - Done
                                  * Hull has a unique mechanic in ToB - Hull’s Final Duel.  If CHARNAME is about to ascend as an evil deity after beating the final boss, Hull will try to persuade him to stay a mortal instead.  If that fails, Hull will gather whatever allies in the area he can to attack and kill CHARNAME to prevent him from ascending.  If CHARNAME loses this fight, CHARNAME’s epilog is changed to reflect this.
-
-
-________________
-
-
 PROGRESS: TRINDEN
   Trinden Felsad - author of The Metaphysical Revolution, god in training, expert craftsman,  and man of many talents - is available to be CHARNAME’s assistant - and not replacement - for attaining godhood.
 AI-generated image from Dream by Wombo, “portrait male half green dragon wearing silver full plate chest covered no horns facing front portrait centered fierce” with the HDR v3 filter.
-
-________________
 Trinden Felsad, nephew of the famed Conrad Linus Felsad, is the leader of House Felsad on the plane of Yevir, a house focused on the industrialization of divine magic.  Yevir is a plane where humans, elves, and dwarves recently caused a war which nearly annihilated everyone on the surface of the world, but Yevir is also a world of great innovation and metaphysical industrializing as lead by the once-shunned ‘monstrous’ races such as orcs, goblins, kobolds, and ogres.
-
 My, how things have changed!
-
 Trinden is full-blooded orc who underwent various versions of a draconic ritual until the ritual was perfected.  Why?  Trinden is a warrior and a priest of House Felsad, its merchant prince, and its primary muscle.  Trinden understands and believes in winning at psychological and emotional warfare as well as physical warfare, preferring intimidation and manipulation in addition to being exceptionally brutal and difficult to permanently kill.  Trinden is also a master metaphysical item craftsman, but his uncle is a better one and he has often outsourced such duties due to the time required.
-
 Furthermore, Trinden is a god in training, having undergone various trials throughout the planes and is performing in-person research and advising regarding beings that are likely to soon ascend to divinity.
-
-
 Trinden’s personality is often severe, but it is sincere toward those he trusts.  Since your (CHARNAME’s) divine heritage is part of his research, expect him to be better tempered toward you and the situation than if you two had no common goals.  “Magic solves everything, violence solves everything, and money solves everything” - also known as Trinden’s Trinity - is a phrase you should expect Trinden to live by.
-
-
 Trinden is savage, intelligent, persuasive, and resourceful - all characteristics of having to live in a time of a cold war and an age of subterfuge to prevent overtly breaking international treaties and possibly causing the end of all life on his home plane.
-________________
-
-
-Intro
 Trinden is a male LN Orc Half-Dragon Fighter/Cleric specializing in Longswords and Longbows.  If Martial Adepts are installed (a mod also in progress), Trinden is instead a Fighter/Cleric (Ruby Knight Vindicator).
 Trinden is presently intended for ToB only, though I may later add SoA content for him.  His character and story are primarily intended for high-level, late-game play.
-
-
 ToB - Done
                                  * Most of Trinden’s interjections and plot-related dialog, including Volo’s writeup.
-
                                  * Trinden’s epilog.
-
                                  * Trinden’s starting stats minus any unique equipment he has.
-
-
 ToB - Started but In Progress
                                     * Trinden’s starting equipment.
-
                                     * Trinden’s autobiographical novel “The Metaphysical Revolution” split into numerous chapters/books for technical reasons.
-
-
 ToB - Planned but Not Yet Started
                                        * [EET Only] Trinden’s Donation quest.  Bring a full set of The Metaphysical Revolution books to Tethtoril in Candlekeep.
-
                                        * Trinden’s Mission quest.  Trinden takes the party through a one-way portal to the heart of the world of Yevir as if in a dream and they go through what is effectively the final dungeon/final act of The Metaphysical Revolution.
         Note that this would require a significant amount of new backgrounds and possibly new creature sprites/models to properly express.
-
-
 Other - Done
                                           * Biography.
-
-
 Other - Started but In Progress
                                           * X
-
-
-________________
-
-
 Other - Planned but Not Yet Started
                                           * Player-initiated dialog (PID).  Instead of a one-time friendship dialog track like with Minsc Friendship, there are no timered dialogs.  Players who want to talk more with Trinden and discover him as a character can at their own pace.  Everyone else can ignore this.
-
                                           * Banter between party members.
-
-
 Out of Scope
                                              * Romance.
-
-
-________________
-
-
 PROGRESS: VOLO
   Volo, as marvelously modeled in Baldur’s Gate III.  Bard, historian, surgeon, braggart, playright, entertainer, and Jack of ALL Trades.  Yes, even that.
 (Image Source)
-________________
 If you’ve played Baldur’s Gate, you’ve probably interacted with Volothamp Geddarm, better known as Volo.  He’s a Faerunian historian, scholar, storyteller, and man of many trades.  His work has canonically been edited and proofread by Elminster himself!  He’s also an author self-insert character who’s been around since early 2nd edition D&D.  In short, while Elminster is considered more of a power fantasy and diegetic GM character due to his great power, Volo is a diegetic GM character in the sense that he just knows a lot and focuses on sharing this information in an entertaining way, regardless of how helpful or accurate it is to the receiver.
-
-
 For someone who’s been so well-traveled in the realms and the planes, why does he never want to join the party?  Baldur’s Gate III and other D&D official material plainly state that Volo survived Saradush and ToB.
-
-
 This mod answers some of the questions I had about what would happen if Volo had a more active role in the events of BG1 and 2.  I imagined him as the one who wrote the in-game books detailing your party’s lives and deeds, and Volo has been known to be a semi-reliable narrator.
-
 Volo is still recruitable in the same places as in vanilla, meaning no Volo for SoD for plot reasons past the early phases. (I did this to justify him writing so much about the party’s exploits, among other things.)  He’s recruitable in Vyatri’s Pub in Trademeet in SoA and the Tankard Tree in Saradush in ToB.
-
 Volo is also given some abilities and gear to make his extraordinary antics and feats of survival more plausible.  His stats have been adapted for this mod:  As a Bard, he’s still technically a Mage kit due to how things were coded, but he’s a basic, trueclass Bard.  He’s intelligent, persuasive, and not meant to be in melee, but you can play him as you like.
-
-Enjoy!
-________________
-
-
-Intro
         Volo is a male CG human Bard.  By default in the game’s file’s he’s a Wizard, but Bard just fits him better flavor-wise!
-
-
 All - Done
                                              * Tome of Untold Legends quest.  This is intended for a ToB-powered party but can be done at any time the party can talk to Tethtoril (any game), Volo (any game), or Sister Garlena (BG2).
         This quest involves finding all 8 pages of the Tome of Untold Legends.  Multiple copies of each page exist.  Bring a full set to Tethtoril, Volo, or Sister Garlena and they’ll warp the party to a new area where they get a reward (one per full copy of the Tome of Untold Legends they submitted, up to the maximum) and fight a -very- difficult fight.
-
-
 BG1 - Done
                                                 * Volo’s initial party interactions and joining dialogs.
-
                                                 * Volo’s starting stats and gear.
-
 SoD - Planned but Not Yet Done
                                                    * Volo leaves the party soon after the attack on Ducal Palace and becomes inaccessible for the rest of SoD.
-
-
 SoA - Done
                                                    * Minor dialogs.
-
                                                    * Volo’s starting stats and starting gear.
-
-
 SoA - Started but In Progress
                                                       * Some of Volo’s dialogs & interjections are done.
-
-
 SoA - Planned but Not Yet Started
                                                       * Most of Volo’s interjections and plot-related dialog.
-
                                                       * Volo’s Guide to Everything Magical quest.  Finishing this is needed to allow Volo to join the party.
         To finish this, the party must either beat Zallanora the Cowled Wizard OR buy a casting license AND pay an extra 10,000G to Corneil in the Council of Six building to have Volo’s curse removed.  (He offended a variety of casters with his book, “Volo’s Guide to Everything Magical.”  Attempting to walk around Athkatla would make him a major target.)
-
-
 ToB - Done
                                                          * Most of Volo’s interjections and dialog, including Volo’s notes on various recruitable NPCs.
-
                                                          * Volo’s starting stats.
-
-
 ToB - Started but In Progress
                                                             * Dialog for EE-added character quests.  As of this writing, I did Rasaad’s and Neera’s.
-
-
 ToB - Planned but Not Yet Started
                                                             * Volo’s epilog.
-
-
 Other - Done
                                                             * Biography.
-
-
 Other - Started but In Progress
                                                             * X
-
-
 Other - Planned but Not Yet Started
                                                             * Player-initiated dialog (PID).  Instead of a one-time friendship dialog track like with Minsc Friendship, there are no timered dialogs.  Players who want to talk more with Baeloth and discover him as a character can at their own pace.  Everyone else can ignore this.
-
                                                             * Intraparty banter.
-
-
 Out of Scope
                                                                * Romance.
-
-
-________________
-
-
 PROGRESS: PORTABLE HOLE TAVERN
-Intro
 The Portable Hole Tavern is accessible by buying a Collapsing Portable Hole item from various vendors throughout BG1 & BG2.  Having CHARNAME use it grants him an ability to warp to the Portable Hole Tavern, somewhat like the Pocket Plane ability but obtainable sooner and costing in-game currency.  Accessing the Portable Hole Tavern is possible from most maps.
 The Portable Hole Tavern is just that - an area where PCs can trade, rest, get drinks, store stuff, and swap out party members.  It’s primarily a convenience feature.   (For those using Golem Construction, the Portable Hole also allows crafting constructs by those who meet all prerequisites.)
 This Portable Hole has been modified by its maker, a male Human Mage/Thief (Artificer) named Carlisle of House Cannith of Eberron.  (For technical reasons, I only used ONE tavern map and flavored it with an Eberronian style instead of trying to make a city or big area of Eberron for this mod.)  Assuming the party doesn’t make him hostile when they first meet him, Carlisle proves to be a friend who adds stock to the otherwise sparsely-stocked shops.  Items are added depending on where in the plot the party is, and completing Carlisle’s quest (Carlisle’s Metal Perfection which also requires Golem Construction be installed) adds more high-end items to the shop.
@@ -421,20 +191,10 @@ The Portable Hole shops stock items that are intended to be suitable for the gam
 The Portable Hole also includes a Juke Bot, a robot that plays music files chosen from a list by the player.  This way, people can relax in style.
 Overall, the Portable Hole or something similar is something I’ve played with in tabletop, and something that someone else started to bring to the Infinity Engine games, but was never finished.
 PS: Carlisle is also the guy to talk to for supplying Baeloth’s constructs for the Copper Coronet Coliseum.
-
-
-________________
-
-
 PROGRESS: NEW SPELLS
-Intro
 New spells are an optional component.  I haven’t designed any mechanics yet to require/use them.
 These new spells are meant to add spiffy new functionality to the game (like Dominate Construct) or otherwise just add something to the game I’ve wanted for a long time (like Darklight’s Lightning Web).
-
-
 Spell Location
 All spells are in this Google Doc.
-
-
 Spell Icons
 The community recently received permission to use and edit these icons.  May they be useful to us!
