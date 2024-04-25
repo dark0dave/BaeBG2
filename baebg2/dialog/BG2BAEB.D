@@ -669,7 +669,7 @@ DO ~SetGlobal("BG2BAEViconia1","GLOBAL",1)~
 == BG2BAEB ~Suit yourself.~
 EXIT
 
-// Wilson Banter
+// Wilson Banter (BWILSON?)
 CHAIN
 IF ~InParty("BG2BAEB")
     See("BG2BAEB")

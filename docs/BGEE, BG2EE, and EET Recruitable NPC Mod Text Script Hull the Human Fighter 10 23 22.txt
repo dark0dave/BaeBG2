@@ -111,8 +111,6 @@ In essence the below requirements are, “Respect the existing contents and impr
    * Hull doesn’t start off knowing the true heritage of CHARNAME and Imoen.  Eventually, he learns it and is somewhat uneasy about it, but figures that since Gorion knew, he (Hull) should stay too.
       * For lines that you also want me to voice over, the above rules regarding text apply.  In addition, I must agree to whatever lines you want me to read for Hull, as well as their context.  In short, this is a very collaborative process!  Also, for the sake of my sanity, I simply cannot guarantee that I will agree to voice these extra lines even if I agree with their contents and contexts due to my schedule; thus, my answer is a definite ‘maybe.’
       * On a technical level, Hull NPC and Candlekeep Expansion must remain compatible with EET (Enhanced Edition Trilogy).  Supporting other platforms like BG:EE, BG2:EE, and the pre-EE BG1, BG2, or/and BGT is allowed and encouraged.  (If you think Hull would make for an interesting enough IWD:EE or/and IWDII companion and you want to port him there, go ahead!  Just be prepared for all the relevant dialog, among other things!)
-Lord Jesus Christ of Nazareth
-Thank you, Abba, that you inspired me to make this mod!  Alleluia!
 I wrote the dialog and provided voice acting for Hull.  I also asked and obtained the permission of various modders to use their stuff.
 Authors, Updaters, Testers, and Maintainers of Mods Used for Cross-Mod Content
 Thanks to the various authors of cross-mod content!  Refer to the Cross-Mod Content section for full details!

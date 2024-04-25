@@ -14,29 +14,29 @@ REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ ~This mod requires BG2EE or EET~
 
 /* continuous chapter for EET */
 ACTION_IF GAME_IS ~eet~ BEGIN
-    OUTER_SET bg2_chapter = 12
+  OUTER_SET bg2_chapter = 12
 END ELSE BEGIN
-    OUTER_SET bg2_chapter = 0
+  OUTER_SET bg2_chapter = 0
 END
-    OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
-        OUTER_SET bg2_chapter = bg2_chapter + 1
-        OUTER_SPRINT name_source ~bg2_chapter_%i%~
-        OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+    OUTER_SET bg2_chapter = bg2_chapter + 1
+    OUTER_SPRINT name_source ~bg2_chapter_%i%~
+    OUTER_SET EVAL ~%name_source%~ = bg2_chapter
 END
 
 COPY ~%MOD_FOLDER%/misc~ ~override~
 COPY ~%MOD_FOLDER%/sound~ ~override~
 
 ACTION_IF NOT FILE_EXISTS ~override/BAELOTHL.BMP~ BEGIN
-    COPY ~%MOD_FOLDER%/portraits/BAELOTHL.BMP~ ~override~
+  COPY ~%MOD_FOLDER%/portraits/BAELOTHL.BMP~ ~override~
 END
 
 ACTION_IF NOT FILE_EXISTS ~override/BAELOTHM.BMP~ BEGIN
-    COPY ~%MOD_FOLDER%/portraits/BAELOTHM.BMP~ ~override~
+  COPY ~%MOD_FOLDER%/portraits/BAELOTHM.BMP~ ~override~
 END
 
 ACTION_IF NOT FILE_EXISTS ~override/BAELOTHS.BMP~ BEGIN
-    COPY ~%MOD_FOLDER%/portraits/BAELOTHS.BMP~ ~override~
+  COPY ~%MOD_FOLDER%/portraits/BAELOTHS.BMP~ ~override~
 END
 
 /// Dialog ///
@@ -61,12 +61,12 @@ COMPILE ~%MOD_FOLDER%/baf/BG2BAE25.BAF~
 // Appending dialog files
 // (https://www.gibberlings3.net/forums/topic/15833-dialog-files-and-how-they-are-referenced/)
 APPEND ~pdialog.2da~
-    ~BG2BAE BG2BAEP BG2BAEJ BG2BAED BG2BAE25P BG2BAE25J BG2BAE25D BG2BAE25S~
+  ~BG2BAE BG2BAEP BG2BAEJ BG2BAED BG2BAE25P BG2BAE25J BG2BAE25D BG2BAE25S~
 UNLESS ~BG2BAE~
 
 // Banter
 APPEND ~interdia.2da~
-    ~BG2BAE BG2BAEB BG2BAEB~
+  ~BG2BAE BG2BAEB BG2BAEB~
 UNLESS ~BG2BAE~
 
 // Creature files //
@@ -183,6 +183,8 @@ SAY DESC  @94
 
 // Spawn Baeloth in Red Wizard Enclave
 EXTEND_TOP ~OH6300.BCS~ ~%MOD_FOLDER%/baf/SPAWNBG2BAE.BAF~
+  EVALUATE_BUFFER
+
 
 // LCA compatibility
 ACTION_IF FILE_EXISTS_IN_GAME ~xacorwin.cre~ AND FILE_EXISTS_IN_GAME ~xacaelar.cre~
@@ -211,5 +213,5 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN // EET related code & summoning script
       stringPosDV = "Baeloth" // Baeloth
   END
 END ELSE BEGIN
-    COMPILE ~%MOD_FOLDER%/dialog/FATESP.D~
+  COMPILE ~%MOD_FOLDER%/dialog/FATESP.D~
 END
