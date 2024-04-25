@@ -14,7 +14,7 @@ Baeloth has been captured by the red wizards and is willing to make a deal in ex
 
 ### Collaboration
 
-I must say a big thank you to [Endarire](https://www.gibberlings3.net/profile/5772-endarire/), who has provided dialog and ideas for this mod. Without them, this mod would not be possible. A personal shout out to [morpheus562](https://www.gibberlings3.net/profile/11591-morpheus562/), [CamDawg](https://www.gibberlings3.net/profile/8-camdawg/), and the rest of the G3 community.
+I must say a big thank you to [Endarire](https://www.gibberlings3.net/profile/5772-endarire/), who has provided dialog and ideas for this mod. Without them, this mod would not be possible. A personal shout out to @morpheus562[G3](https://www.gibberlings3.net/profile/11591-morpheus562/), @CamDawg[G3](https://www.gibberlings3.net/profile/8-camdawg/), @K4thos[G3](https://www.gibberlings3.net/profile/6804-k4thos/) for EET, and the rest of the G3 community.
 
 ## Installation
 

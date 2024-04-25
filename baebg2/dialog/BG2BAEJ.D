@@ -1,6 +1,6 @@
 BEGIN BG2BAEJ
 
-// Spellhold Asylum - Exterior
+// Spellhold Asylum - Exterior (AR1500)
 IF ~InParty("BG2BAEB")
     See("BG2BAEB")
     IsValidForPartyDialogue("BG2BAEB")
@@ -27,7 +27,7 @@ IF ~~ THEN BEGIN BG2BAESpellhold3
   IF ~~ THEN REPLY ~Time to go, Baeloth.~ EXIT
 END
 
-// Forest of Tethyr
+// Forest of Tethyr (AR2600)
 IF ~InParty("BG2BAEB")
     See("BG2BAEB")
     IsValidForPartyDialogue("BG2BAEB")
@@ -69,7 +69,34 @@ IF ~~ THEN BEGIN BG2BAEForest6
   IF ~~ DO ~SetGlobal("BG2BAEForest","GLOBAL",1)~ EXIT
 END
 
-// Resurrection Gorge
+// Watcher's Keep (AR3000)
+IF ~InParty("BG2BAEB")
+    See("BG2BAEB")
+    IsValidForPartyDialogue("BG2BAEB")
+    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    AreaCheck("AR3000")
+    Global("BG2BAESWatcher","GLOBAL",0)~
+THEN BEGIN BG2BAESWatcher
+  SAY ~We can -finally- watch the watchers of Watcher's Keep. From what I've read, this castle's interior is a colossal coliseum kept to contain a copious count of curs.~
+  IF ~~ THEN REPLY ~Curs? What?~ DO ~SetGlobal("BG2BAESWatcher","GLOBAL", 1)~ GOTO BG2BAESWatcher1
+END
+
+IF ~~ THEN BEGIN BG2BAESWatcher1
+  SAY ~What else do you call people in an interplanar prison? Patrons?~
+  IF ~~ THEN REPLY ~How do you know about this place, Baeloth?~ GOTO BG2BAESWatcher2
+END
+
+IF ~~ THEN BEGIN BG2BAESWatcher2
+  SAY ~Some curious customer of the Copper Coronet kept books of certain subjects before he became a contender and I kept them from his corpse.~
+  IF ~~ THEN REPLY ~Let's go, Baeloth. Progress awaits.~ GOTO BG2BAESWatcher3
+END
+
+IF ~~ THEN BEGIN BG2BAESWatcher3
+  SAY ~<Baeloth flashes you a knowing smile.>~
+  IF ~~ EXIT
+END
+
+// Resurrection Gorge (OH5100)
 CHAIN
 IF ~InParty("BG2BAEB")
     See("BG2BAEB")
@@ -82,9 +109,9 @@ THEN BG2BAE BG2BAEGorge
 DO ~SetGlobal("BG2BAEGorge","GLOBAL",1)~
 == DORNJ IF ~IsValidForPartyDialogue("Dorn") !StateCheck("Dorn",CD_STATE_NOTVALID)~ THEN ~I expected more from you, -drow-, not what could pass as simple-minded poetry!~
 == BG2BAE ~Our violent venture will wait a bit, but our reprieve has ended.~
-END
+EXIT
 
-// Tree of Life
+// Tree of Life (AR2608)
 CHAIN
 IF ~InParty("BG2BAEB")
     See("BG2BAEB")
@@ -95,4 +122,4 @@ IF ~InParty("BG2BAEB")
 THEN BG2BAE BG2BAETree
 ~Fresh air? Bird song? Wind whistling through the branches? I despise it all!~ 
 DO ~SetGlobal("BG2BAETree","GLOBAL",1)~
-END
+EXIT
