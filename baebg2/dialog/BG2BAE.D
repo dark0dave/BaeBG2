@@ -12,6 +12,7 @@ END
 IF ~~ THEN BEGIN BG2BAE3
   SAY @2003 /* Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, reveling in the glory that is, well, me. */
   IF ~~ THEN REPLY @1005 /* ~You don't remember me at all do you.~ */ GOTO BG2BAE4
+  IF ~Global("BA_BEGIN","GLOBAL",1) Global("BA_ATTACKED","LOCALS",1)~ THEN REPLY ~Travelling with me endly badly for you last time.~ GOTO BG2BAE4
 END
 
 IF ~~ THEN BEGIN BG2BAE4

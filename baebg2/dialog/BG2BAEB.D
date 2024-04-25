@@ -2,11 +2,11 @@ BEGIN BG2BAEB
 
 // Aerie Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Aerie")
-    !StateCheck("Aerie",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("AERIE")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEAerie1","GLOBAL",0)~
 THEN BAERIE BG2BAEAerie1
 ~Baeloth, your spells pack a punch, but have you ever considered the havoc they might wreak?~
@@ -23,11 +23,11 @@ DO ~SetGlobal("BG2BAEAerie1","GLOBAL",1)~
 EXIT
 
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Aerie")
-    !StateCheck("Aerie",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("Aerie")
+    See("Aerie")
+    IfValidForPartyDialogue("AERIE")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEAerie1","GLOBAL",1)
     Global("BG2BAEAerie2","GLOBAL",0)~
 THEN BG2BAEB BG2BAEAerie2
@@ -52,11 +52,11 @@ EXIT
 
 // Anomen Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Anomen")
-    !StateCheck("Anomen",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("ANOMEN")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEAnomen1","GLOBAL",0)~
 THEN BANOMEN BG2BAEAnomen1
 ~What is it, Drow?  What new means of mockery have you concocted?~
@@ -64,7 +64,7 @@ DO ~SetGlobal("BG2BAEAnomen1","GLOBAL",1)~
 == BG2BAEB ~Mockery? No, my clever Cleric. Inquiry!~
 == BANOMEN ~I suppose answering your... inquiry will cause you to stand farther away for a while so we can get back to more -worthy- pursuits!~
 == BG2BAEB ~Why did you have such a -burning desire- to join the knightly order?~
-== BANOMEN ~I simply wished to prove my worth to my family and "BG2BAEB". I know beyond all doubt that I -can- follow my path.~
+== BANOMEN ~I simply wished to prove my worth to my family and "myself". I know beyond all doubt that I -can- follow my path.~
 == BG2BAEB ~And how did you plan to do that by joining that dog kennel of an order?~
 == BANOMEN ~How -dare- you insult the Most Noble Order?~
 == BG2BAEB ~Think about it, my confident Cleric contemporary: This order of knights and Paladins is one of the strictest around! By joining, they put you on a permanent leash just like the ones -they- are on!~
@@ -74,9 +74,11 @@ DO ~SetGlobal("BG2BAEAnomen1","GLOBAL",1)~
 == BG2BAEB ~It's easier to be your own man when no one is staring at you and expecting you to fail.~
 == BANOMEN ~Do you jest, Drow?~
 == BG2BAEB ~Oh, my Clerical companion, I can jest, but now I am being -sternly serious.-~
-== BKELDOR IF ~IsValidForPartyDialogue("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN 
+== BKELDOR IF ~IfValidForPartyDialogue("KELDORN")
+IfValidForPartyDialogue("BG2BAE") !StateCheck("Keldorn",STATE_SLEEPING)~ THEN 
 ~Anomen, the Drow is correct in the strictness of our order, but we understand that our reputation and the good we do are worth the price of our freedom. We help many who cannot help themselves.~
-== BANOMEN IF ~IsValidForPartyDialogue("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN ~Thank you, teacher, for your insight.~
+== BANOMEN IF ~IfValidForPartyDialogue("KELDORN")
+IfValidForPartyDialogue("BG2BAE") !StateCheck("Keldorn",STATE_SLEEPING)~ THEN ~Thank you, teacher, for your insight.~
 == BANOMEN ~<Anomen turns to Baeloth.>  Drow?~
 == BG2BAEB ~Hmm?~
 == BANOMEN ~I -may- consider your counsel.~
@@ -85,11 +87,11 @@ EXIT
 
 // Cernd Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Cernd")
-    !StateCheck("Cernd",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("CERND")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAECernd1","GLOBAL",0)~
 THEN CERNDJ BG2BAECernd1
 ~Tell me, Baeloth, What is 'nature' to you in the Underdark?~
@@ -110,11 +112,11 @@ EXIT
 
 // Dorn Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Dorn")
-    !StateCheck("Dorn",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("DORN")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEDorn1","GLOBAL",0)~
 THEN DORNJ BG2BAEDorn1
 ~Drow, why do you again bother me with your banter?~
@@ -133,12 +135,12 @@ EXIT
 
 // Edwin Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
+IF ~InParty("Edwin")
+    See("Edwin")
     Gender("Edwin",MALE)
-    IsValidForPartyDialogue("Edwin")
-    !StateCheck("Edwin",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+    IfValidForPartyDialogue("EDWIN")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEEdwin1","GLOBAL",0)~
 THEN BG2BAEB BG2BAEEdwin1
 ~Ah, if it isn't my favorite Red Wizard! It's gloriously good to greet you!~
@@ -154,11 +156,11 @@ EXIT
 
 // Haer'dalis Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("HaerDalis")
-    !StateCheck("HaerDalis",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("HaerDalis")
+    See("HaerDalis")
+    IfValidForPartyDialogue("HAERDALIS")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEHaerDalis1","GLOBAL",0)~
 THEN BG2BAEB BG2BAEHaerDalis1
 ~Why have you repeatedly questioned my choice of profession? I am satisfied with where I am, thank you.~
@@ -176,11 +178,11 @@ EXIT
 
 // Hexxat Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Hexxat")
-    !StateCheck("Hexxat",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("HEXXAT")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEHexxat1","GLOBAL",0)~
 THEN BHEXXA25 BG2BAEHexxat1
 ~Drow, why do you follow me around as if I were a child? Are you afraid I'll suck your blood?~
@@ -201,11 +203,11 @@ EXIT
 
 // Imoen Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Imoen2")
-    !StateCheck("Imoen2",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("Imoen2")
+    See("Imoen2")
+    IfValidForPartyDialogue("IMOEN2")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEImoen21","GLOBAL",0)~
 THEN BG2BAEB BG2BAEImoen21
 ~Imoen, why the wailing? Your cheerful countenance even got me to crack a smile!~
@@ -227,11 +229,11 @@ EXIT
 
 // Jaheria Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Jaheira")
-    !StateCheck("Jaheira",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("Jaheira")
+    See("Jaheira")
+    IfValidForPartyDialogue("JAHEIRA")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEJaheira1","GLOBAL",0)~
 THEN BG2BAEB BG2BAEJaheira1
 ~Ah, Jaheira. Round up any runts to remove to better the balance? You were quite fond of quoting, “Nature take the life she gave!”~
@@ -251,11 +253,11 @@ EXIT
 
 // Jan Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Jan")
-    !StateCheck("Jan",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("Jan")
+    See("Jan")
+    IfValidForPartyDialogue("JAN")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEJan1","GLOBAL",0)~
 THEN BG2BAEB BG2BAEJan1
 ~Oh, Jan!~
@@ -276,11 +278,11 @@ EXIT
 
 // Keldorn Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Keldorn")
-    !StateCheck("Keldorn",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("KELDORN")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEKeldorn1","GLOBAL",0)~
 THEN BKELDOR BG2BAEKeldorn1
 ~A Drow among us? What madness is this?~
@@ -303,11 +305,11 @@ DO ~SetGlobal("BG2BAEKeldorn1","GLOBAL",1)~
 EXIT
 
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Keldorn")
-    !StateCheck("Keldorn",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("KELDORN")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEKeldorn1","GLOBAL",1)
     Global("BG2BAEKeldorn2","GLOBAL",0)~
 THEN BKELDOR BG2BAEKeldorn2
@@ -331,11 +333,11 @@ DO ~SetGlobal("BG2BAEKeldorn2","GLOBAL",1)~
 EXIT
 
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Keldorn")
-    !StateCheck("Keldorn",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("Keldorn")
+    See("Keldorn")
+    IfValidForPartyDialogue("KELDORN")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEKeldorn2","GLOBAL",1)
     Global("BG2BAEKeldorn3","GLOBAL",0)~
 THEN BG2BAEB BG2BAEKeldorn3
@@ -356,11 +358,11 @@ DO ~SetGlobal("BG2BAEKeldorn3","GLOBAL",1)~
 EXIT
 
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Keldorn")
-    !StateCheck("Keldorn",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("Keldorn")
+    See("Keldorn")
+    IfValidForPartyDialogue("KELDORN")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEKeldorn3","GLOBAL",1)
     Global("BG2BAEKeldorn4","GLOBAL",0)~
 THEN BG2BAEB BG2BAEKeldorn4
@@ -388,11 +390,11 @@ EXIT
 
 // Korgan Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Korgan")
-    !StateCheck("Korgan",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("KORGAN")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEKorgan1","GLOBAL",0)~
 THEN BKORGAN BG2BAEKorgan1
 ~What do -you- know about fightin', Drow? All I've seen you carry around is a prissy little stick!~
@@ -416,11 +418,11 @@ EXIT
 
 // Mazzy Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Mazzy")
-    !StateCheck("Mazzy",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("Mazzy")
+    See("Mazzy")
+    IfValidForPartyDialogue("MAZZY")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEMazzy1","GLOBAL",0)~
 THEN BG2BAEB BG2BAEMazzy1
 ~What have we here? A light-skinned Svirfneblin?~
@@ -442,11 +444,11 @@ DO ~SetGlobal("BG2BAEMazzy1","GLOBAL",1)~
 EXIT
 
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Mazzy")
-    !StateCheck("Mazzy",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("MAZZY")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEMazzy1","GLOBAL",1)
     Global("BG2BAEMazzy2","GLOBAL",0)~
 THEN BMAZZY BG2BAEMazzy2
@@ -471,11 +473,11 @@ EXIT
 
 // Minsc Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Minsc")
-    !StateCheck("Minsc",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("MINSC")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEMinsc1","GLOBAL",0)~
 THEN BMINSC BG2BAEMinsc1
 ~Boo sniffs the -evil- in the air around you, Drow, but he doesn't want to attack! I am confused! Explain this bewitchment!~
@@ -493,11 +495,11 @@ EXIT
 
 // Nalia Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Nalia")
-    !StateCheck("Nalia",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("Nalia")
+    See("Nalia")
+    IfValidForPartyDialogue("NALIA")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAENalia1","GLOBAL",0)~
 THEN BG2BAEB BG2BAENalia1
 ~Nalia, what's nagged me about you is that you don't seem to know how to -rule!- I thought you were a noble!~
@@ -518,11 +520,11 @@ DO ~SetGlobal("BG2BAENalia1","GLOBAL",1)~
 EXIT
 
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Nalia")
-    !StateCheck("Nalia",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("NALIA")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAENalia1","GLOBAL",1)
     Global("BG2BAENalia2","GLOBAL",0)~
 THEN BNALIA BG2BAENalia2
@@ -546,11 +548,11 @@ DO ~SetGlobal("BG2BAENalia2","GLOBAL",1)~
 EXIT
 
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Nalia")
-    !StateCheck("Nalia",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("NALIA")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAENalia2","GLOBAL",1)
     Global("BG2BAENalia3","GLOBAL",0)~
 THEN BNALIA BG2BAENalia3
@@ -570,11 +572,11 @@ EXIT
 
 // Neera Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Neera")
-    !StateCheck("Neera",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("NEERA")
+    See("NEERA")
+    IfValidForPartyDialogue("NEERA")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAENeera1","GLOBAL",0)~
 THEN BG2BAEB BG2BAENeera1
 ~Neera, sometimes I envy you.~
@@ -591,11 +593,11 @@ EXIT
 
 // Rasaad Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Rasaad")
-    !StateCheck("Rasaad",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("RASAAD")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAERasaad1","GLOBAL",0)~
 THEN BRASAAD BG2BAERasaad1
 ~Why do you look at me so curiously, Baeloth?~
@@ -620,11 +622,11 @@ EXIT
 
 // Valygar Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Valygar")
-    !StateCheck("Valygar",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("VALYGAR")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEValygar1","GLOBAL",0)~
 THEN BVALYGA BG2BAEValygar1
 ~Drow, your very presence in this group offends me! You are birthed into evil, and I sense magical talent in your blood!~
@@ -647,11 +649,11 @@ EXIT
 
 // Viconia Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Viconia")
-    !StateCheck("Viconia",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("VICONIA")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEViconia1","GLOBAL",0)~
 THEN BVICONI BG2BAEViconia1
 ~What are you scheming now, -male?-~
@@ -671,11 +673,11 @@ EXIT
 
 // Wilson Banter (BWILSON?)
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("WILSON")
-    !StateCheck("WILSON",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("WILSON")
+    See("WILSON")
+    IfValidForPartyDialogue("WILSON")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEWILSON1","GLOBAL",0)~
 THEN BG2BAEB BG2BAEWILSON1
 ~I've let slip the dogs of war and heard of bear baiting, but a friendly bear? What shall I do with you?~
@@ -690,11 +692,11 @@ EXIT
 
 // Yoshimo Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("Yoshimo")
-    !StateCheck("Yoshimo",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("Yoshimo")
+    See("Yoshimo")
+    IfValidForPartyDialogue("YOSHIMO")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
     Global("BG2BAEYoshimo1","GLOBAL",0)~
 THEN BG2BAEB BG2BAEYoshimo1
 ~Ooh! What wondrous delights did you bring us for dinner?~

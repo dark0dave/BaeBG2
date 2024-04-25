@@ -4,9 +4,9 @@ BEGIN BG2BAE25B
 CHAIN
 IF ~InParty("BG2BAE25B")
     See("BG2BAE25B")
-    IsValidForPartyDialogue("Sarevok")
-    !StateCheck("Sarevok",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE25B",CD_STATE_NOTVALID)
+    See("Sarevok")
+    !StateCheck("Sarevok",STATE_SLEEPING)
+    !StateCheck("BG2BAE25B",STATE_SLEEPING)
     Global("BG2BAE25BSarevok1","GLOBAL",0)~
 THEN BSAREV25 BG2BAE25BSarevok1
 ~Drow, the more I know you the more I wish I had found you sooner.~

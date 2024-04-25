@@ -26,48 +26,7 @@ END
 
 COPY ~%MOD_FOLDER%/misc~ ~override~
 COPY ~%MOD_FOLDER%/sound~ ~override~
-
-ACTION_IF NOT FILE_EXISTS ~override/BAELOTHL.BMP~ BEGIN
-  COPY ~%MOD_FOLDER%/portraits/BAELOTHL.BMP~ ~override~
-END
-
-ACTION_IF NOT FILE_EXISTS ~override/BAELOTHM.BMP~ BEGIN
-  COPY ~%MOD_FOLDER%/portraits/BAELOTHM.BMP~ ~override~
-END
-
-ACTION_IF NOT FILE_EXISTS ~override/BAELOTHS.BMP~ BEGIN
-  COPY ~%MOD_FOLDER%/portraits/BAELOTHS.BMP~ ~override~
-END
-
-/// Dialog ///
-
-// Compile dialog
-COMPILE ~%MOD_FOLDER%/dialog/BG2BAE.D~
-COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25.D~
-COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25B.D~
-COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25D.D~
-COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25J.D~
-COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25P.D~
-COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25S.D~
-COMPILE ~%MOD_FOLDER%/dialog/BG2BAEB.D~
-COMPILE ~%MOD_FOLDER%/dialog/BG2BAED.D~
-COMPILE ~%MOD_FOLDER%/dialog/BG2BAEJ.D~
-COMPILE ~%MOD_FOLDER%/dialog/BG2BAEP.D~
-
-// Scripts
-COMPILE ~%MOD_FOLDER%/baf/BG2BAE.BAF~
-COMPILE ~%MOD_FOLDER%/baf/BG2BAE25.BAF~
-
-// Appending dialog files
-// (https://www.gibberlings3.net/forums/topic/15833-dialog-files-and-how-they-are-referenced/)
-APPEND ~pdialog.2da~
-  ~BG2BAE BG2BAEP BG2BAEJ BG2BAED BG2BAE25P BG2BAE25J BG2BAE25D BG2BAE25S~
-UNLESS ~BG2BAE~
-
-// Banter
-APPEND ~interdia.2da~
-  ~BG2BAE BG2BAEB BG2BAEB~
-UNLESS ~BG2BAE~
+COPY ~%MOD_FOLDER%/portraits~ ~override~
 
 // Creature files //
 // SoA
@@ -180,6 +139,38 @@ SAY NAME1 @93
 SAY NAME2 @93
 SAY UNIDENTIFIED_DESC @94
 SAY DESC  @94
+
+/// Dialog ///
+
+// Compile dialog
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAE.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25B.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25D.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25J.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25P.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAE25S.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAEB.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAED.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAEJ.D~
+COMPILE ~%MOD_FOLDER%/dialog/BG2BAEP.D~
+
+// Scripts
+COMPILE ~%MOD_FOLDER%/baf/BG2BAE.BAF~
+COMPILE ~%MOD_FOLDER%/baf/BG2BAE25.BAF~
+
+// Appending dialog files
+// (https://www.gibberlings3.net/forums/topic/15833-dialog-files-and-how-they-are-referenced/)
+// cre post_dialog_file join_dialog_file dream_script_file 25post_dialog_file 25join_dialog_file 25dream_script_file 25override_script_file
+APPEND ~pdialog.2da~
+  ~BG2BAE BG2BAEP BG2BAEJ BG2BAED BG2BAE25P BG2BAE25J BG2BAE25D BG2BAE25S~
+UNLESS ~BG2BAE~
+
+// Banter
+// cre FILE 25FILE
+APPEND ~interdia.2da~
+  ~BG2BAE BG2BAEB BG2BAE25B~
+UNLESS ~BG2BAE~
 
 // Spawn Baeloth in Red Wizard Enclave
 EXTEND_TOP ~OH6300.BCS~ ~%MOD_FOLDER%/baf/SPAWNBG2BAE.BAF~

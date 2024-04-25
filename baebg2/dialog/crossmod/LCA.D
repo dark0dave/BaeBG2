@@ -1,10 +1,10 @@
 // Caelar Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("XACAELAB")
-    !StateCheck("XACAELAB",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    See("XACAELAB")
+    !StateCheck("XACAELAB",STATE_SLEEPING)
+    !StateCheck("BG2BAE",STATE_SLEEPING)
     Global("BG2BAEXACAELAB1","GLOBAL",0)~
 THEN BG2BAEB BG2BAEXACAELAB1
 ~Behold how high you have risen, Caelar, ascending from abyssal depths of Avernus! How -hot- it must have been! Such -blazing battles- befitting of stage and song!~
@@ -22,11 +22,11 @@ EXIT
 
 // Corwin Banter
 CHAIN
-IF ~InParty("BG2BAEB")
-    See("BG2BAEB")
-    IsValidForPartyDialogue("XACORWIN")
-    !StateCheck("XACORWIN",CD_STATE_NOTVALID)
-    !StateCheck("BG2BAE",CD_STATE_NOTVALID)
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    See("XACORWIN")
+    !StateCheck("XACORWIN",STATE_SLEEPING)
+    !StateCheck("BG2BAE",STATE_SLEEPING)
     Global("BG2BAEXACORWIN1","GLOBAL",0)~
 THEN XACORWIB BG2BAEXACORWIB1
 ~Baeloth, you survived the siege of Dragonspear, the assault on Avernus, and came here? I'm not sure if I should be surprised.~
