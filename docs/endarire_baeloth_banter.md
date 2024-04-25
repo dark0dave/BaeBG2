@@ -1,7 +1,5 @@
-﻿# BAELOTH PARTY BANTER
-
+# BAELOTH PARTY BANTER
 ## BG2: AERIE/BAELOTH BANTER
-
 If Aerie & Baeloth are in the party
 - BAELOTH: Ah, my dear Aerie. You seemed shocked we would accompany one another!
 - AERIE: Well, yes. You're a Drow and-
@@ -19,9 +17,7 @@ If Aerie & Baeloth are in the party
 - AERIE: Maybe my circus was kinder than others. People did sometimes win the games.
 - AERIE: Winning the ring toss was the hardest. I'm not sure if people were -meant- to win that.
 - BAELOTH: My dear, imagine if every time someone won the ring toss, one of your circus workers died. What a wonderful spectacle of shame that would be!
-
 ## BG2: AFAAQ/BAELOTH BANTER
-
 If Afaaq & Baeloth are in the party
 - BAELOTH: Do you happen to know a Djinn named Najim?
 - AFAAQ: <Afaaq ponders a moment, mouthing the name.>
@@ -34,9 +30,7 @@ If Afaaq & Baeloth are in the party
 - BAELOTH: What?!
 - AFAAQ: You were clearly powerful enough to trap a genie in your schemes and Najim was powerful enough to escape and extract payment for his services. The fact that you still live with your mind and body so intact should be regarded positively.
 - AFAAQ: I know that was not what you wanted to hear, but it is wise to avoid meddling in the affairs of powerful creatures.
-
 ## BG2: ANOMEN/BAELOTH BANTER
-
 If Anomen & Baeloth are in the party
 - ANOMEN: What is it, Drow? What new means of mockery have you concocted?
 - BAELOTH: Mockery? No, my clever Cleric. Inquiry!
@@ -64,46 +58,43 @@ If Anomen & Baeloth are in the party
 If Anomen & Baeloth are in the party AND Anomen hasn't failed his knight training 
 - ANOMEN: Drow, why all these inquiries? Do you not know that I would bear any burden to obtain my dream?
 - BAELOTH: Careful with your words, Cleric. I spoke that very phrase to a Djinn and it cost me -dearly.-
-- BAELOTH: "Baeloth shows his left hand with a severed finger.""
+- BAELOTH: 'Baeloth shows his left hand with a severed finger.''
 - ANOMEN: What is the meaning of this?
 - BAELOTH: Simple words before powerful gods and monsters make you their dog. Careful about which leash you choose, Cleric.
 - ANOMEN: But why that finger?
 - BAELOTH: Oh, I was not -born- this way if that's what you mean. I accepted a ring soulbound to my finger, a burden of wealth and power from a Djinn who later betrayed me, but he never removed the ring. I decided that burden was no longer worthwhile, and so I ended it.
 - ANOMEN: What of your ring that pledged your loyalty?
 - BAELOTH: Oh, it's -somewhere-, I assure you.
-ALL: ARTEMIS ENTRERI (BG1, BG2)/BAELOTH BANTER
+## ARTEMIS ENTRERI (BG1, BG2)/BAELOTH BANTER
 If Artemis & Baeloth are in the party
 - BAELOTH: If it isn't Artemis Entreri, revered rival of the -distinguished- Drizzt Do'Urden!
-ARTEMIS: What is your point, drow? Speak it quickly.
+- ARTEMIS: What is your point, drow? Speak it quickly.
 - BAELOTH: Witnessing the wonderful resolution of your feud in the Black Pits would be a beautiful battle to behold in the Black Pits!
-ARTEMIS: For you it would. My 'rivals' and I would not stand still long enough for you to finish your opening speech.
+- ARTEMIS: For you it would. My 'rivals' and I would not stand still long enough for you to finish your opening speech.
 - BAELOTH: Oh, fixes and furnishings would be found, my friend!
-ARTEMIS: Have you not noticed that Drizzt's Champions of the Hall and I do not fight for mere entertainment but to -kill?-
+- ARTEMIS: Have you not noticed that Drizzt's Champions of the Hall and I do not fight for mere entertainment but to -kill?-
 - BAELOTH: Oh, I -perfectly- understand your point. The pits add a pinch of pageantry upon your pugilism.
-ARTEMIS: For you, it's all about the spectacle and the coin that comes with the crowd calling for someone's death.
+- ARTEMIS: For you, it's all about the spectacle and the coin that comes with the crowd calling for someone's death.
 - BAELOTH: Of course, of course! There's also the -prestige- of raising champions just to have them -plummet- to something a pinch more powerful!
-- BAELOTH: Trust me my associate Artemis: I too have been seeking Drizzt for some time to play with him in my pits.
-ARTEMIS: Just remember, drow, that my goal is to -kill- Drizzt. I do -not- toy with him!
+- BAELOTH: Trust me my associate 
+- ARTEMIS: I too have been seeking Drizzt for some time to play with him in my pits.
+- ARTEMIS: Just remember, drow, that my goal is to -kill- Drizzt. I do -not- toy with him!
 - BAELOTH: <Baeloth sighs.> 
 - BAELOTH: Yes, yes, efficiency and all that. I also want -my- turn with him!
-ARTEMIS: Finders killers, drow.
-
+- ARTEMIS: Finders killers, drow.
 ## BG2: CAELAR/BAELOTH BANTER
-
 If Caelar & Baeloth are in the party
 - BAELOTH: Behold how high you've risen, Caelar, ascending from Avernus! How -hot- it must have been! Such -blazing battles- befitting of stage and song!
-CAELAR: Coming from you, -Drow-, I question your sincerity.
+- CAELAR: Coming from you, -Drow-, I question your sincerity.
 - BAELOTH: -Insincere?- Me? You must mistake me for a jester!
-CAELAR: Your 'entertaining' and 'dramatic' attitude, Drow, have made me question your motives and what you're hiding.
+- CAELAR: Your 'entertaining' and 'dramatic' attitude, Drow, have made me question your motives and what you're hiding.
 - BAELOTH: Such suspicion! It is not every day that an angel assails her way free from Avernus with or without outside help!
-CAELAR: I... see. I did not expect someone who could easily be my enemy celebrating my success.
+- CAELAR: I... see. I did not expect someone who could easily be my enemy celebrating my success.
 - BAELOTH: Oh, I know well the feeling of loud crowds and splendid celebrations. Often, the very most voluminous voices were from those who wanted me dead, disemboweled, disgraced, or deposed.
-CAELAR: You have lived strangely, Drow. Still, why?
+- CAELAR: You have lived strangely, Drow. Still, why?
 - BAELOTH: Because I -survived- their assaults and my very vitality outrages their assassination attempts!
-CAELAR: Success is the greatest revenge. I see your point.
-
+- CAELAR: Success is the greatest revenge. I see your point.
 ## BG2: CERND/BAELOTH BANTER
-
 If Cernd & Baeloth are in the party
 - CERND: Tell me, - BAELOTH: What is 'nature' to you in the Underdark?
 - BAELOTH: Darkness as far as the eye can see - and beyond - with giant fluorescent mushrooms to give some color in a vast expanse of blackness. Portals to the Elemental Planes to give us air to breath, water to drink, earth to mask our scent, and fire with which to brand our slaves.
@@ -118,9 +109,7 @@ If Cernd & Baeloth are in the party
 - BAELOTH: Why, of course! We have ready access to so many spell components from corpses and mining that -of course- we'll use these on the nearest thing we don't like!
 - CERND: So, in short, ready access to magic materials underground inspires blood feuds?
 - BAELOTH: Think of it like natural predators and prey, except in the Underdark, they're all magically talented, sometimes predators and prey switch places, and they have more eyes or tentacles than you have fingers.
-
 ## BG2: CORWIN/BAELOTH BANTER
-
 If Corwin & Baeloth are in the party
 - CORWIN: Baeloth, you survived the siege of Dragonspear, the assault on Avernus, and came here? I'm not sure if I should be surprised.
 - BAELOTH: Oh, captain, my captain, dare you underestimate this Drow?
@@ -131,9 +120,7 @@ If Corwin & Baeloth are in the party
 - CORWIN: Well, -someone's- proud of his mission in life.
 - BAELOTH: Aye?
 - BAELOTH: Let me entertain you!
-
 ## BG2: DORN/BAELOTH BANTER
-
 If Dorn & Baeloth are in the party
 - DORN: Drow, why do you again bother me with your banter?
 - BAELOTH: I'm here to understand your ambition instead of assuming it asininely.
@@ -146,9 +133,7 @@ If Dorn & Baeloth are in the party
 - DORN: Seemingly so, Drow. Don't be surprised if you fall over backwards in writhing agony once you realize how much I seek to conquer!
 - BAELOTH: Oh, trust me, Dorn. You conquer the champions and common folk while I entertain whatever remains!
 - DORN: In your bloody pit battles? It sounds like a challenge. I'm in.
-
 ## BG2: DRIZZT/BAELOTH BANTER
-
 If Drizzt & Baeloth are in the party
 - DRIZZT: So, what do you want with me, you sadistic ringmaster and slave driver?
 - BAELOTH: Drizzt, Drizzt! I'm not here to malign you with pointless banter!
@@ -162,9 +147,7 @@ If Drizzt & Baeloth are in the party
 - BAELOTH: In Drow society, -everyone's- a scheming bastard! I know! I schemed!
 - DRIZZT: Well, -Baeloth-, this little progress is evident in your path toward the light. Keep on this path and we can continue our dealings together.
 - BAELOTH: Agreed, my associate.
-
 ## BG2: EDWIN/BAELOTH BANTER
-
 If Edwin & Baeloth are in the party
 - BAELOTH: Ah, if it isn't my favorite Red Wizard! It's gloriously good to greet you!
 - EDWIN: Yes, yes, Baeloth. You are right. Your flattery will get you far. (What's this guy scheming now?)
@@ -175,9 +158,7 @@ If Edwin & Baeloth are in the party
 - BAELOTH: I have -quite- the acute arcane ability myself, and -years- of experience yanking slaves into obedience to have them duel to the death! Truly, we can talk tips!
 - EDWIN: Hmm. Perhaps, Drow, perhaps. Make it worth my while and I can send someone a message.
 - BAELOTH: Let me entertain you!
-
 ## BG2: ELARYN/BAELOTH BANTER (BEAURIN LEGACY)
-
 If Elaryn & Baeloth are in the party - first dialog
 - ELARYN: -Drow-, you just -disgust- me! You are the spitting image of a villain!
 - BAELOTH: Oh, why -someone- surely seems surly this century! What do you wonder is wrong with Baeloth the Entertainer?
@@ -188,9 +169,7 @@ If Elaryn & Baeloth are in the party - first dialog
 - BAELOTH: Recognize your role, you repellent wretch. I am the Entertainer. I speak. You watch and applaud - or remove yourself if you'd rather. (from Baeloth's intro scene in SoD)
 - ELARYN: The only thing stopping me from ripping out that blackened tongue of yours and making you choke on it is the respect I have for our leader and myself.
 - BAELOTH: Oh, you silly self-righteous prissy. I'm -not- a man to mess with. I'm not here to start a fight with you, but I -promise- you, I -will- end one!
-
 ## BG2: GARRICK/BAELOTH BANTER
-
 If Garrick & Baeloth are in the party
 - BAELOTH: Ah, my masculine minstrel muses over his music.
 - GARRICK: Back for more attempts to name whatever tune I play?
@@ -206,23 +185,19 @@ If Garrick & Baeloth are in the party
 - BAELOTH: And not a single simple song, either! I seek a suite of songs, a symphony of slaughter!
 - GARRICK: That will take time... and coin.
 - BAELOTH: But it is worth it when ready!
-
 ## BG2: HAER'DALIS/BAELOTH BANTER
-
 If Haer'Dalis & Baeloth are in the party
-= HAER'DALIS: Why have you repeatedly questioned my choice of profession? I am satisfied with where I am, thank you.
+- HAER'DALIS: Why have you repeatedly questioned my choice of profession? I am satisfied with where I am, thank you.
 - BAELOTH: Why traipse about with that troupe of yours when you are such a competent combatant?
-= HAER'DALIS: We have been friends for longer than I have known you. We compliment each other.
+- HAER'DALIS: We have been friends for longer than I have known you. We compliment each other.
 - BAELOTH: Certainly you can! But have you considered leaving the low-budget life of the stage to gain something greater?
-= HAER'DALIS: I already know what you mean - life as a gladiator where the arena is the stage and all the action is real.
+- HAER'DALIS: I already know what you mean - life as a gladiator where the arena is the stage and all the action is real.
 - BAELOTH: Absolutely, though acknowledging one's individual abilities is also an admirable attribute.
-= HAER'DALIS: The challenge of fighting for survival and for the thrill of the crowd has its appeal, I admit, but I also enjoy engaging with my fans before and after the show. 
+- HAER'DALIS: The challenge of fighting for survival and for the thrill of the crowd has its appeal, I admit, but I also enjoy engaging with my fans before and after the show. 
 - BAELOTH: You still can! Nothing a little resurrection and restoration won't remedy if it comes to that. You're rich enough that death is but a diminutive dent in your demeanor.
-= HAER'DALIS: Baeloth, perhaps I shall agree to your terms. I had been seeking inspiration for a similar character I intended to portray in a work I am writing called "The Reign of Blades."
+- HAER'DALIS: Baeloth, perhaps I shall agree to your terms. I had been seeking inspiration for a similar character I intended to portray in a work I am writing called 'The Reign of Blades.'
 - BAELOTH: Practice makes perfect - and permanent.
-
 ## BG2: HEXXAT/BAELOTH BANTER
-
 If Hexxat & Baeloth are in the party
 - HEXXAT: Drow, why do you follow me around as if I were a child? Are you afraid I'll suck your blood?
 - BAELOTH: Verily, but you are vivacious for a vampire, even in full view of the light.
@@ -235,11 +210,9 @@ If Hexxat & Baeloth are in the party
 - HEXXAT: So long as they bet for me and not against me.
 - BAELOTH: I can already imagine your arena alias!
 - HEXXAT: It had better not be anything embarrassing, Drow.
-- BAELOTH: "Death delivered."
+- BAELOTH: 'Death delivered.'
 - HEXXAT: Not my first choice, Drow, but I may go agree to it.
-
 ## BG2: HUBELPOT/BAELOTH BANTER
-
 If Hubelpot & Baeloth are in the party
 - BAELOTH: Bah! What is this -disgusting drivel- you wanted me to down?
 - HUBELPOT: Relax, Baeloth! They're only mushrooms!
@@ -254,9 +227,7 @@ If Hubelpot & Baeloth are in the party
 - BAELOTH: Attempted poisoning and now throat stabbing? You're -quite- the lethal Druid, Hubelpot. You might even survive a day of Drow intrigue in the Underdark!
 - HUBELPOT: <Hubelpot playfully bows.>
 - HUBELPOT: Thank you. Thank you. I live to serve.
-
 ## BG2: HULL/BAELOTH BANTER
-
 If Hull & Baeloth are in the party AND Hull finished his Knighthood training
 - BAELOTH: What's this, Hull? Did you join that Paladin order in Athkatla?
 - HULL: What? Are you not impressed?
@@ -271,9 +242,7 @@ If Hull & Baeloth are in the party AND Hull finished his Knighthood training
 - HULL: All it takes for a rumor to start is for someone in power to have some bad experiences with the Drow, then the rumor spreads that all Drow are bad and untrustworthy. Enough people believe it and it becomes true.
 - BAELOTH: Well, Hull, I am -glad- we trust each other more than that! Hmm?
 - HULL: Me too, Baeloth. Me too.
-
 ## BG2: IMOEN/BAELOTH BANTER
-
 If Imoen & Baeloth are in the party
 - BAELOTH: Imoen, why the wailing? Your cheerful countenance even got me to crack a smile!
 - IMOEN: I've been... experimented on. Tortured. I tried keeping my head up and staying cheery, but, it's like my captor made my -soul- hurt!
@@ -289,9 +258,7 @@ If Imoen & Baeloth are in the party
 - IMOEN: It seems strange to me to ask you for this, but will you help cheer me up - for everyone's benefit?
 - BAELOTH: <Baeloth grins.>
 - BAELOTH: Let me entertain you!
-
 ## ToB: IRENICUS/BAELOTH BANTER
-
 If Irenicus & Baeloth are in the party
 - BAELOTH: Your arcane affinity is alarming! How did you acquire all this ability?
 - IRENICUS: Most likely in the same manner that you did, -Drow.- I have spent an -age- refining my craft.
@@ -305,11 +272,9 @@ If Irenicus & Baeloth are in the party
 - IRENICUS: As we seemingly agree on this point, let me make it unmistakably clear to you that your 'entertainment' holds no value to me. It wastes your breath and my time, each of which is better spent fulfilling our mission.
 - IRENICUS: Act in accordance with this or be not surprised if your antics lead to your downfall, just like with the downfall of Ust Natha.
 - BAELOTH: I'm here, and I hear.
-
 ## BG2: JAHEIRA/BAELOTH BANTER
-
 If Jaheira & Baeloth are in the party
-- BAELOTH: Ah, Jaheira. Round up any runts to remove to better the balance? You were quite fond of quoting, "Nature take the life she gave!"
+- BAELOTH: Ah, Jaheira. Round up any runts to remove to better the balance? You were quite fond of quoting, 'Nature take the life she gave!'
 - JAHEIRA: Don't patronize me, Drow.
 - BAELOTH: Patronize? Preposterous! I peacefully propose partaking in your purpose in life - unless the 'natural balance' is no longer your priority.
 - JAHEIRA: What would you know about -balance?-
@@ -317,13 +282,11 @@ If Jaheira & Baeloth are in the party
 - JAHEIRA: I'll tell you this much, -Drow.- I'm my own person. What you consider friendly flattery I call an affront to nature and my training!
 - BAELOTH: But do I speak deceit when I declare what part of the balance you keep is your discretion?
 - JAHEIRA: You are unfortunately correct.
-- BAELOTH: "Unfortunately?" How unexpected!
+- BAELOTH: 'Unfortunately?' How unexpected!
 - JAHEIRA: I know enough of your past and you know enough of mine. It's like you prod and pry to get me to agree with something that's technically true but all part of a scheme I simply want to avoid!
 - BAELOTH: It's an earnest inquiry. Truly, am I the antagonist?
 - JAHEIRA: To me right now you are. If you're here to butcher animals for meat or to make them fight for your amusement, don't look to me for my blessing, -Baeloth.-
-
 ## BG2: JAN/BAELOTH BANTER
-
 If Jan & Baeloth are in the party
 - BAELOTH: Oh, Jan!
 - JAN: Y-yes?
@@ -338,9 +301,7 @@ If Jan & Baeloth are in the party
 - JAN: There! We're tied!
 - BAELOTH: <Baeloth shakes his head and sighs.>
 - BAELOTH: Nevermind.
-
 ## BG2: KELDORN/BAELOTH BANTER
-
 If Keldorn & Baeloth are in the party
 - KELDORN: A Drow among us? What madness is this?
 - BAELOTH: I'm not bad. I just detect that way.
@@ -358,9 +319,7 @@ If Keldorn & Baeloth are in the party
 - KELDORN: I... see. Perhaps I was mistaken about you, Drow. But know this: I -will- strike you down at the first sign of betrayal!
 - BAELOTH: I would expect nothing less from my righteous executioner!
 - BAELOTH: Come, my pet Paladin! There's some foul fiend who owes me its gold or its guts, and we're gonna collect - together!
-
 ### Second Banter
-
 If Keldorn & Baeloth are in the party 
 - KELDORN: What is it, -Baeloth?- Another affection or something more pressing?
 - BAELOTH: My precious paladin and insightful inquisitor, I have an important inquiry.
@@ -378,9 +337,7 @@ If Keldorn & Baeloth are in the party
 - BAELOTH: An important inquiry, inquisitor.
 - KELDORN: It is easier to make and break rules than it is to help those in need as they should be helped. Bringing about the greater good is my calling, even though I am still bound by certain oaths.
 - BAELOTH: Wise words, my prudent paladin.
-
 ### Third Banter
-
 If Keldorn & Baeloth are in the party 
 - BAELOTH: What noble notions noodle through your noggin?
 - KELDORN: There may be hope for your redemption yet, Baeloth.
@@ -395,9 +352,7 @@ If Keldorn & Baeloth are in the party
 - BAELOTH: What a hurt to the heart that was, to contemplate the possibility that I could no longer be Baeloth the Entertainer! The realms would be ever so -boring- without me!
 - BAELOTH: But you got me thinking, a -dangerous- decision on your part! If I were different, then what?
 - KELDORN: That is a good start, Baeloth. We shall talk more later about this.
-
 ### Fourth Banter
-
 If Keldorn & Baeloth are in the party
 - BAELOTH: What you call 'cosmic good' seems radically racist to me!
 - KELDORN: <Keldorn raises his eyebrow in suspicion at Baeloth.>
@@ -419,9 +374,7 @@ If Keldorn & Baeloth are in the party
 - KELDORN: Hmm. You are a skilled debater. I grant you that, drow.
 - BAELOTH: I could say I'm a -master- of the craft, but I prefer the title of 'Baeloth the Battlemaster' or more commonly 'Baeloth the Entertainer' and I'm not trying to argue a case like one of your attorneys or magistrates.
 - BAELOTH: I say we drop the matter. No sense in making a mess after all our progress!
-
 ## BG2: KIVAN/BAELOTH BANTER FROM HERE OR HERE
-
 If Kivan & Baeloth are in the party
 - BAELOTH: Oh, Kivan! How is my arching associate acclimating?
 - KIVAN: Stay away from me, dark elf.
@@ -437,9 +390,7 @@ If Kivan & Baeloth are in the party
 - BAELOTH: Absolutely, my associate!
 - KIVAN: And keep quiet toward me. I simply need time to think.
 - BAELOTH: Beckon Baeloth when need be. 
-
 ## BG2: KORGAN/BAELOTH BANTER
-
 If Korgan & Baeloth are in the party
 - KORGAN: What do -you- know about fightin', Drow? All I've seen you carry around is a prissy little stick!
 - BAELOTH: Aw. Did someone wake up on the wrong side of the keg? Hmm?
@@ -457,9 +408,7 @@ If Korgan & Baeloth are in the party
 - BAELOTH: Let's see. I've been disfigured, dismembered, disemboweled, dead, dishonored, depressed, diseased, and detritus. Your little disgusting ditty was... dainty.
 - KORGAN: Whatever, Drow. Just do your prissy dancin' toward our enemies. Maybe they'll run away in fear or fall down laughin'.
 - BAELOTH: Come, my dear Dwarf. I have -plans.-
-
 ## BG2: MAZZY/BAELOTH BANTER
-
 If Mazzy & Baeloth are in the party - first dialog
 - BAELOTH: What have we here? A light-skinned Svirfneblin?
 - BAELOTH: No, the skull's slightly too small.
@@ -476,9 +425,7 @@ If Mazzy & Baeloth are in the party - first dialog
 - BAELOTH: When you put it that way my dear Mazzy, I think we'll get along -just fine.-
 - MAZZY: Just remember, BAELOTH: I am -not- your puppet!
 - BAELOTH: No, but for now we're partners. Let's go cull the Underdark herd - together. Ready when you are!
-
 ### Second Banter
-
 If Mazzy & Baeloth are in the party 
 - MAZZY: Drow, I noticed you meditating in my general direction. What are you pondering? Do I dare ask?
 - BAELOTH: Due to your determined desire to deduce what I was wondering, surely I shall share it!
@@ -496,9 +443,7 @@ If Mazzy & Baeloth are in the party
 - BAELOTH: The short ones were such a smash since they had bound bowls of beautiful food to their heads as they meandered and mingled. Guests never had to stoop to scoop!
 - MAZZY: You just proved my point, -Drow.-
 - BAELOTH: So, are you partial to casks of red wine? Caviar? Crackers? Whatever you deliver shall -surely- be a -delight!-
-
 ## BG2: MINSC/BAELOTH BANTER
-
 If Minsc & Baeloth are in the party
 - MINSC: Boo sniffs the -evil- in the air around you, Drow, but he doesn't want to attack! I am confused! Explain this bewitchment!
 - BAELOTH: I assure you your hamster is downright -delighted- to be entertained by the best in the business!
@@ -510,9 +455,7 @@ If Minsc & Baeloth are in the party
 - MINSC: Come here, Boo! I need to teach you words to sing with your dance! Ha ha!
 - BAELOTH: This seems like a very personal priority and I would prefer a -private- performance with the pair of you.
 - MINSC: Ha ha! Minsc and Boo shall slay evil and sing and dance happily together!
-
 ## BG2: MINYAE/BAELOTH BANTER (BEAURIN LEGACY)
-
 If Minyae & Baeloth are in the party - first dialog
 - MINYAE: Baeloth, you are quite the accomplished magician, and I can appreciate that.
 - BAELOTH: Why thank you, m'lady! Are you after an autograph?
@@ -526,9 +469,7 @@ If Minyae & Baeloth are in the party - first dialog
 - BAELOTH: Of course, my dear! Drizzt Do'Urden has his scimitars. Elminster Aumar has his crimson garb. Baeloth Barrityl is an entertainer of entertainers in our out of his Black Pits!
 - MINYAE: Try entertaining our enemies with your fancy speech. Maybe you can lecture them to sleep. Or death. Either way works for me.
 - BAELOTH: Oh, you mock my manner of speech or notice what I already know? Nevermind. This nonsense gets us nowhere.
-
 ## BG2: NALIA/BAELOTH BANTER
-
 If Nalia & Baeloth are in the party
 - BAELOTH: Nalia, what's nagged me about you is that you don't seem to know how to -rule!- I thought you were a noble!
 - NALIA: Well, I am. I'm just not sure I -enjoy- being one.
@@ -544,9 +485,7 @@ If Nalia & Baeloth are in the party
 - NALIA: So you're saying all life has value and everyone is just playing their parts?
 - BAELOTH: Aye?
 - BAELOTH: But there's one triumphant truth in -all- life: Greater power -always- wins. That's why it is -so satisfying- to see a superior species struggle when it is undone by an underdog.
-
 ### Second Banter
-
 If Nalia & Baeloth are in the party
 - NALIA: Baeloth, I still don't know your stance about how I feel about the poor. So many people are against it. Even my own family has doubted me.
 - BAELOTH: Let me lay it out for you this way, my dear: You have your pets and I have mine.
@@ -564,9 +503,7 @@ If Nalia & Baeloth are in the party
 - BAELOTH: Totally true, my perceptive princess!
 - NALIA: Then what should I do?
 - BAELOTH: -Embrace- your position! Don't be afraid that others may die. You're a noble: That's your duty and maybe your delight!
-
 ### Third Banter
-
 If Nalia & Baeloth are in the party 
 - NALIA: Baeloth, if you were to seriously try to help the poor improve, what would you do?
 - BAELOTH: Oh, my curious compatriot, I am -so- satisfied you asked!
@@ -579,9 +516,7 @@ If Nalia & Baeloth are in the party
 - BAELOTH: Use your noble noggin! What does your nation need now and later?
 - NALIA: Thanks, but how do you know all this?
 - BAELOTH: Being Baeloth the Entertainer and Baeloth the Battlemaster meant my domain was a covert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain.
-
 ## BG2: NEERA/BAELOTH BANTER
-
 If Neera & Baeloth are in the party
 - BAELOTH: Neera, sometimes I envy you.
 - NEERA: Me? Why? Is it my pink hair and inability to grow a beard?
@@ -592,9 +527,7 @@ If Neera & Baeloth are in the party
 - BAELOTH: Whether Wild Magic is good for you is debatable, but the fact that you cannot entirely control your powers means that some 'accidents' can be staged and fewer people can blame you directly for them. It's like adding an extra roll of the dice to every spell you cast instead of just picking the result you want.
 - NEERA: You mean bluffing with my spellcasting? That's... Huh. I don't know how I should say this.
 - BAELOTH: Then don't. You know enough already.
-
 ## BG2: RASAAD/BAELOTH BANTER
-
 If Rasaad & Baeloth are in the party
 - RASAAD: Why do you look at me so curiously, Baeloth?
 - BAELOTH: I. Don't. Get. You.
@@ -603,8 +536,8 @@ If Rasaad & Baeloth are in the party
 - RASAAD: You are not the first to ask such a question. While my monastic training was never intended to make me a wizard, I learned martial arts well enough that many of my feats are preternatural or even seemingly supernatural in origin.
 - BAELOTH: So you say.
 - RASAAD: Why are you surprised?
-- BAELOTH: My research revealed - and rightly so - that living so scantily clad is, to use an aphorism from the Underdark - roughly translated - "asking for a smacking." By my counts, you should be dismembered, dead, disintegrated, disillusioned, depressed, or at the very least, discouraged! Yet, here you are, determined!
-- RASAAD: What does your research about the Underdark reveal about the attitude of, "Try harder?"
+- BAELOTH: My research revealed - and rightly so - that living so scantily clad is, to use an aphorism from the Underdark - roughly translated - 'asking for a smacking.' By my counts, you should be dismembered, dead, disintegrated, disillusioned, depressed, or at the very least, discouraged! Yet, here you are, determined!
+- RASAAD: What does your research about the Underdark reveal about the attitude of, 'Try harder?'
 - BAELOTH: Eloquence and efficiency are the antithesis of effort in execution. Trying is for training.
 - RASAAD: Are you saying that I am disadvantaged because I have trained more diligently and put forth a more maximal effort than you to master your innate magical powers?
 - BAELOTH: An interesting insight, but not inherently. No, you straddle the gap between the mundane and the magical, but lack the sorcerous skills of a caster and the warrior's well-armed and well-armored ways.
@@ -613,9 +546,7 @@ If Rasaad & Baeloth are in the party
 - RASAAD: Well, I shall consider ways to make my superior feats of athleticism and acrobatics acceptable to us - and any audience we aim to impress.
 - BAELOTH: Your accentuation excites me. Perhaps I shall accept you as my apprentice - at least in all things auditory.
 - RASAAD: I thank you for your offer, Baeloth, but I shall follow my own path for now.
-
 ## ToB: SARADAS/BAELOTH BANTER
-
 If Saradas & Baeloth are in the party
 - BAELOTH: Your subtle sagacity surprises me, old man. You devise many new spells and yet you've -refused- to use your renown to advertise your ability!
 - SARADAS: Baeloth, I have been content creating these spells for myself and those whom I trust. Leave Mordenkainen, Elminster, and other famous casters to their works. They sought fame, but I have been satisfied with a shut-in scholarly and simple life.
@@ -625,9 +556,7 @@ If Saradas & Baeloth are in the party
 - SARADAS: Yes, Baeloth. I agree. That's why when I heard the uproar about Amn and the Bhaalspawn situation, I could wait no longer.
 - BAELOTH: Delaying decades to act? On a human, that's downright -delirious!-
 - SARADAS: Perhaps, Baeloth, but it is what it is.
-
 ## ToB: SAREVOK/BAELOTH BANTER
-
 If Sarevok & Baeloth are in the party
 - SAREVOK: Drow, the more I know you the more I wish I had found you sooner.
 - BAELOTH: Ooh! What wonderful words!
@@ -639,9 +568,7 @@ If Sarevok & Baeloth are in the party
 - SAREVOK: Drow, you assume that -all- Bhaalspawn want this.
 - BAELOTH: Is that not your nature? The nature of a dog is to love steaks, but it'll settle for bones so long as they keep its mouth busy. You Bhaalspawn want to -murder- each other, but may settle for something else - diplomacy, dancing, or drunkenness.
 - SAREVOK: Drow, you have a point.
-
 ## BG2: VALYGAR/BAELOTH BANTER
-
 If Valygar & Baeloth are in the party
 - VALYGAR: Drow, your very presence in this group offends me! You are birthed into evil, and I sense magical talent in your blood!
 - BAELOTH: Ooh! Tell me something I haven't heard!
@@ -658,25 +585,21 @@ If Valygar & Baeloth are in the party
 - VALYGAR: <Valygar's face contorts into one of hesitant resignation.>
 - VALYGAR: I... see. Do not think my stance will change so drastically nor as soon as you hope, Drow!
 - BAELOTH: Life is -quite- the expedient teacher!
-
 ## BG2: VICONIA/BAELOTH BANTER
-
 If Viconia & Baeloth are in the party
-VICONIA: What are you scheming now, -male?-
+- VICONIA: What are you scheming now, -male?-
 - BAELOTH: The sutures from your staking haven't fully healed. I'm -so sorry- for that set of unfortunate circumstances.
-VICONIA: Your tone sounds mocking. It's hard for me to believe you're sincere.
+- VICONIA: Your tone sounds mocking. It's hard for me to believe you're sincere.
 - BAELOTH: We've each been usurped from the Underdark, forced to flee to the surface for sustenance. We've thrived in ways those underground thought we never would!
-VICONIA: Do you have a point beyond mere conversation?
+- VICONIA: Do you have a point beyond mere conversation?
 - BAELOTH: Certainly, my inquisitive one: The Drow of the Underdark seemed stifled in their lifestyle. Expansion to the surface is a logical leap of progress. I suspect it would shrink their desire to be bound in age-old blood feuds.
-VICONIA: More Drow living well on the surface? Have you forgotten how much we have been assaulted by others just because of who we are by birth?
+- VICONIA: More Drow living well on the surface? Have you forgotten how much we have been assaulted by others just because of who we are by birth?
 - BAELOTH: Not one bit. I've been beaten, burned, shipwrecked, stoned, buried, and endured excrutiations far -beyond- what anyone should -ever- aim to endure!
-VICONIA: What's your point?
+- VICONIA: What's your point?
 - BAELOTH: If those in the Underdark could quit bickering long enough to leave their low-light dwellings, they could step outside and find a -new- world to dominate! We are well-versed in age-old feuds: We'd merely be -finishing- what our progenitors' prejudices began ages ago!
-VICONIA: I'm not here to make even -more- enemies for me to amuse you, even if it helps our race somehow in a later generation!
+- VICONIA: I'm not here to make even -more- enemies for me to amuse you, even if it helps our race somehow in a later generation!
 - BAELOTH: Suit yourself.
-
 ## BG2: VOLO/BAELOTH BANTER
-
 If Volo & Baeloth are in the party
 - VOLO: A Drow on the surface that -isn't- Drizzt? You're a rare bird.
 - BAELOTH: Of the most valuable variety, I assure you. I am Baeloth, the Entertainer, premier purveyor of entertainment in the realms!
@@ -689,9 +612,7 @@ If Volo & Baeloth are in the party
 - BAELOTH: Life -loves- violence, Volo. Life -loves- violence! May as well capitalize on the conflict and corpses!
 - VOLO: Well, I suppose many historical wars would agree with your worldview.
 - BAELOTH: Oh, most certainly so!
-
 ## BG2: WILSON/BAELOTH BANTER
-
 If Wilson & Baeloth are in the party
 - BAELOTH: I've let slip the dogs of war and heard of bear baiting, but a friendly bear? What shall I do with you?
 - WILSON: <Wilson snorfles.>
@@ -699,18 +620,14 @@ If Wilson & Baeloth are in the party
 - WILSON: <Wilson snorts then snorts again.>
 - BAELOTH: An obvious implementation of your unique ursine ability would be to properly prepare you as a pit fighter. Surely, you could satisfactorily shoulder such a shift!
 - WILSON: <Wilson whines.>
-- BAELOTH: Worry not, my warrior. We can call you, "The Ursine Usurper!" Eating opponents' innards is optional, obviously, however ostentatious.
-
+- BAELOTH: Worry not, my warrior. We can call you, 'The Ursine Usurper!' Eating opponents' innards is optional, obviously, however ostentatious.
 ## BG2: XZAR/BAELOTH BANTER
-
 If Xzar & Baeloth are in the party
 - BAELOTH: Xzar, I think we do well together.
 - XZAR: Hmm?
 - BAELOTH: With my gift for gladiatorial fights to the death and your knack for necromancy, nothing goes to waste!
-- BAELOTH: As I once heard a Lich say, "Reduce, reuse, reanimate!"
-
+- BAELOTH: As I once heard a Lich say, 'Reduce, reuse, reanimate!'
 ## BG2: YOSHIMO/BAELOTH BANTER
-
 If Yoshimo & Baeloth are in the party
 - BAELOTH: Ooh! What wondrous delights did you bring us for dinner?
 - YOSHIMO: What do you mean, Baeloth?
@@ -732,9 +649,7 @@ If Yoshimo & Baeloth are in the party
 - YOSHIMO: What are your terms?
 - BAELOTH: <Baeloth grins at Yoshimo.>
 - BAELOTH: Let's deal, my friend.
-
 ## BG2: ZAKRION/BAELOTH BANTER
-
 If Zakrion & Baeloth are in the party
 - ZAKRION: Drow, what are you doing with my sea charts?
 - BAELOTH: I was simply amidst surmising where I was shipwrecked.
