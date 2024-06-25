@@ -110,6 +110,30 @@ DO ~SetGlobal("BG2BAECernd1","GLOBAL",1)~
 == BG2BAEB ~Think of it like natural predators and prey, except in the Underdark, they're all magically talented, sometimes predators and prey switch places, and they have more eyes or tentacles than you have fingers.~
 EXIT
 
+CHAIN
+IF ~InParty("BG2BAE")
+    See("BG2BAE")
+    IfValidForPartyDialogue("CERND")
+    IfValidForPartyDialogue("BG2BAE")
+    !AreaType(DUNGEON)
+    Global("BG2BAECernd1","GLOBAL", 1)
+    Global("BG2BAECernd2","GLOBAL",0)~
+THEN CERNDJ BG2BAECernd1
+~Baeloth, I have been meditating on what you said about nature in the Underdark.  How do you perceive nature on the surface?~
+DO ~SetGlobal("BG2BAECernd2","GLOBAL",1)~
+== BG2BAEB ~Nature is naughty, my darling Druid! 'Balance' is but a brittle breath amidst a bloody battle! Each canyon is a coliseum and every forest a fight!~
+== BG2BAEB ~Fauna's fights are fairly forward: Predators and prey proliferate in each other's absence.~
+== BG2BAEB ~Flora is fond of struggling in a slow death race to the top!~
+== CERNDJ ~What about the serenity of nature?~
+== BG2BAEB ~This 'serenity' is simply a short stop in the suffering. "Out of sight means out of mind!"~
+== BG2BAEB ~To call nature 'balanced' and 'orderly' is to call pit fighting 'fair.' These systems are rarely fair and mostly rigged for the enjoyment of the masses!~
+== BG2BAEB ~Besides, didn't you rip and tear as a bear or fume fire on your foe? Where was the serenity then?  Hmm?~
+== CERNDJ ~I did what I did to survive and preserve what I believe to be right.~
+== BG2BAEB ~Exactly! Nature is naught but a veneer for romanticized ransacking! At least my Black Pits are honest about their intent - violent delights made for the paying masses!~
+== CERNDJ ~What you described is simply called 'survival of the fittest,' but it is wisdom nonetheless.~
+== BG2BAEB ~Of course, my darling Druid!~
+EXIT
+
 // Dorn Banter
 CHAIN
 IF ~InParty("BG2BAE")
