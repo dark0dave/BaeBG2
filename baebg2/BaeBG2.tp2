@@ -1,16 +1,17 @@
 BACKUP ~baebg2/backup~
 AUTHOR ~dark0dave~
 
-VERSION ~v0.2~
+VERSION ~v0.3~
 AUTO_TRA ~%MOD_FOLDER%/tra/%s~
 
 LANGUAGE ~English~
          ~english~
          ~%MOD_FOLDER%/tra/english/setup.tra~
 
-BEGIN ~Baeloth BG2~
+// ----------------------------------------- //
+BEGIN @900
 DESIGNATED 0 LABEL ~baebg2~
-REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ ~This mod requires BG2EE or EET~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @910
 
 /* continuous chapter for EET */
 ACTION_IF GAME_IS ~eet~ BEGIN
@@ -26,7 +27,6 @@ END
 
 COPY ~%MOD_FOLDER%/misc~ ~override~
 COPY ~%MOD_FOLDER%/sound~ ~override~
-COPY ~%MOD_FOLDER%/portraits~ ~override~
 
 // Creature files //
 // SoA
@@ -176,7 +176,6 @@ UNLESS ~BG2BAE~
 EXTEND_TOP ~OH6300.BCS~ ~%MOD_FOLDER%/baf/SPAWNBG2BAE.BAF~
   EVALUATE_BUFFER
 
-
 // LCA compatibility
 ACTION_IF FILE_EXISTS_IN_GAME ~xacorwin.cre~ AND FILE_EXISTS_IN_GAME ~xacaelar.cre~
 THEN BEGIN
@@ -206,3 +205,17 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN // EET related code & summoning script
 END ELSE BEGIN
   COMPILE ~%MOD_FOLDER%/dialog/FATESP.D~
 END
+
+// ----------------------------------------- //
+BEGIN @921
+SUBCOMPONENT @920
+DESIGNATED 1 LABEL ~baebg2~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @910
+COPY ~%MOD_FOLDER%/portraits/upscaled~ ~override~
+
+// ----------------------------------------- //
+BEGIN @922
+SUBCOMPONENT @920
+DESIGNATED 2 LABEL ~baebg2~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @910
+COPY ~%MOD_FOLDER%/portraits/vivid~ ~override~

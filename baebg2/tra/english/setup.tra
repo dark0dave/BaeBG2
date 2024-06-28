@@ -1,3 +1,11 @@
+// Mod tp2
+@900 = ~Baeloth BG2~
+@910 = ~This mod requires BG2EE or EET~
+@920 = ~Baeloth Portrait~
+@921 = ~Baeloth upscaled Portrait~
+@922 = ~Baeloth vivid upscaled Portrait~
+
+// Baeloth Lines
 @001 =~Oohoohoohoo, I'm gonna work out some anger on you.~ [BG2BAEA]
 @002 =~OBVIOUSLY, this was going to happen, but the amount of TIME it took borders on insanity! How do you function on a day-to-day basis?~ [BG2BAEB]
 @003 =~*yawn* I have little taste for sleeping in a dog pile with you rivvil. Find me an inn!~ [BG2BAEC]

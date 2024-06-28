@@ -4,7 +4,7 @@
 
 This mod provides continuation for our lovable Baeloth in BG2EE and EET.
 
-![All right... but NOT because you TOLD me to.](baebg2/portraits/BAELOTHL.BMP)
+![All right... but NOT because you TOLD me to.](baebg2/portraits/vivid/BAELOTHL.BMP)
 
 > OBVIOUSLY, this was going to happen, but the amount of TIME it took borders on insanity! How do you function on a day-to-day basis?
 
