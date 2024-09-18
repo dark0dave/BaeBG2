@@ -1,5 +1,4 @@
 // Caelar Banter
-CHAIN
 IF ~InParty("BG2BAE")
     See("BG2BAE")
     See("XACAELAB")
@@ -12,8 +11,8 @@ DO ~SetGlobal("BG2BAEXACAELAB1","GLOBAL",1)~
 == XACAELAB ~Coming from you, -Drow-, I question your sincerity.~
 == BG2BAEB ~-Insincere?- Me? You must mistake me for a meddling moronic miscreant!~
 == XACAELAB ~Your 'entertaining' and 'dramatic' attitude, Drow, have made me question your motives and what you're hiding.~
-== BG2BAEB ~Such suspicion! It is not every day that an angel assails her way free from Avernus with or without outside help!~
-== XACAELAB ~I... see.  I did not expect someone who could easily be my enemy celebrating my success.~
+== BG2BAEB ~Such suspicion! It is not every day that an angel assails herself free from Avernus without outside assistance!~
+== XACAELAB ~I... see. I did not expect someone who could easily be my enemy celebrating my success.~
 == BG2BAEB ~Oh, I know well the feeling of loud crowds and splendid celebrations. Often, the very most voluminous voices were from those who wanted me dead, disemboweled, disgraced, or deposed.~
 == XACAELAB ~You have lived strangely, Drow. Still, why?~
 == BG2BAEB ~Because I -survived- their assaults and my very vitality outrages their asinine assassination attempts!~
@@ -21,7 +20,6 @@ DO ~SetGlobal("BG2BAEXACAELAB1","GLOBAL",1)~
 EXIT
 
 // Corwin Banter
-CHAIN
 IF ~InParty("BG2BAE")
     See("BG2BAE")
     See("XACORWIN")
@@ -36,5 +34,5 @@ THEN XACORWIB BG2BAEXACORWIB1
 == XACORWIB ~You're still determined to build up from that... calling it a side show would be generous.~
 == BG2BAEB ~Now, now. You can take Baeloth out the Black Pits over his blackened dead body, but you can't take the Black Pits for they are burned into my very SOUL!~
 == XACORWIB ~Well, -someone's- proud of his mission in life.~
-== BG2BAEB ~~
+== BG2BAEB ~...~
 EXIT

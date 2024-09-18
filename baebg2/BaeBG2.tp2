@@ -1,7 +1,7 @@
 BACKUP ~baebg2/backup~
 AUTHOR ~dark0dave~
 
-VERSION ~v0.2~
+VERSION ~v0.4~
 AUTO_TRA ~%MOD_FOLDER%/tra/%s~
 
 LANGUAGE ~English~
@@ -10,7 +10,7 @@ LANGUAGE ~English~
 
 BEGIN ~Baeloth BG2~
 DESIGNATED 0 LABEL ~baebg2~
-REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ ~This mod requires BG2EE or EET~
+REQUIRE_PREDICATE GAME_IS ~tob bg2ee eet~ ~This mod cannot be installed on this game~
 
 /* continuous chapter for EET */
 ACTION_IF GAME_IS ~eet~ BEGIN
@@ -73,59 +73,16 @@ SAY HIDDEN_IN_SHADOWS @038
 SAY SPELL_DISRUPTED @039
 SAY SET_A_TRAP @040
 WRITE_ASCII SCRIPT_OVERRIDE ~bg2bae~  #8
-WRITE_ASCII 0x280 ~bg2bae~  #32
-WRITE_ASCII DIALOG ~bg2bae~  #8
+WRITE_ASCII 0x280 ~bg2bae~ #32
+WRITE_ASCII DIALOG ~bg2bae~ #8
 WRITE_ASCII 0X34 ~BAELOTHS~ #8   //medium portrait
 WRITE_ASCII 0x3c ~BAELOTHL~ #8   //large portrait
 
 // ToB
-COPY ~%MOD_FOLDER%/cre/BG2BAE.CRE~ ~override/BG2BAE25.CRE~
-SAY BIO @100
-SAY BATTLE_CRY1 @001
-SAY BATTLE_CRY2 @014
-SAY BATTLE_CRY3 @015
-SAY BATTLE_CRY4 @016
-SAY BATTLE_CRY5 @017
-SAY LEADER @002
-SAY TIRED @003
-SAY BORED @004
-SAY HURT @005
-SAY DAMAGE @012
-SAY DYING @013
-SAY MORALE @018
-SAY HAPPY @019
-SAY UNHAPPY_ANNOYED @020
-SAY UNHAPPY_SERIOUS @021
-SAY UNHAPPY_BREAKING @022
-SAY SELECT_COMMON1 @006
-SAY SELECT_COMMON2 @007
-SAY SELECT_COMMON3 @008
-SAY SELECT_COMMON4 @023
-SAY SELECT_COMMON5 @024
-SAY SELECT_COMMON6 @025
-SAY SELECT_ACTION1 @009
-SAY SELECT_ACTION2 @010
-SAY SELECT_ACTION3 @011
-SAY SELECT_ACTION4 @026
-SAY SELECT_ACTION5 @027
-SAY SELECT_ACTION6 @028
-SAY REACT_TO_DIE_GENERAL @029
-SAY REACT_TO_DIE_SPECIFIC @030
-SAY SELECT_RARE1 @031
-SAY SELECT_RARE2 @032
-SAY CRITICAL_HIT @033
-SAY CRITICAL_MISS @034
-SAY TARGET_IMMUNE @035
-SAY INVENTORY_FULL @036
-SAY PICKED_POCKET @037
-SAY HIDDEN_IN_SHADOWS @038
-SAY SPELL_DISRUPTED @039
-SAY SET_A_TRAP @040
-WRITE_ASCII SCRIPT_OVERRIDE ~bg2bae25~  #8
-WRITE_ASCII 0x280 ~bg2bae25~  #32
-WRITE_ASCII DIALOG ~bg2bae25~  #8
-WRITE_ASCII 0X34 ~BAELOTHS~ #8   //medium portrait
-WRITE_ASCII 0x3c ~BAELOTHL~ #8   //large portrait
+COPY_EXISTING ~BG2BAE.CRE~ ~override/BG2BAE25.CRE~
+WRITE_ASCII SCRIPT_OVERRIDE ~bg2bae25~ #8
+WRITE_ASCII 0x280 ~bg2bae25~ #32
+WRITE_ASCII DIALOG ~bg2bae25~ #8
 
 /// Items ///
 COPY ~%MOD_FOLDER%/items/BARING.ITM~ ~override/BARING.ITM~
@@ -160,7 +117,7 @@ COMPILE ~%MOD_FOLDER%/baf/BG2BAE.BAF~
 COMPILE ~%MOD_FOLDER%/baf/BG2BAE25.BAF~
 
 // Appending dialog files
-// (https://www.gibberlings3.net/forums/topic/15833-dialog-files-and-how-they-are-referenced/)
+// See [here](https://www.gibberlings3.net/forums/topic/15833-dialog-files-and-how-they-are-referenced/)
 // cre post_dialog_file join_dialog_file dream_script_file 25post_dialog_file 25join_dialog_file 25dream_script_file 25override_script_file
 APPEND ~pdialog.2da~
   ~BG2BAE BG2BAEP BG2BAEJ BG2BAED BG2BAE25P BG2BAE25J BG2BAE25D BG2BAE25S~
@@ -175,14 +132,6 @@ UNLESS ~BG2BAE~
 // Spawn Baeloth in Red Wizard Enclave
 EXTEND_TOP ~OH6300.BCS~ ~%MOD_FOLDER%/baf/SPAWNBG2BAE.BAF~
   EVALUATE_BUFFER
-
-
-// LCA compatibility
-ACTION_IF FILE_EXISTS_IN_GAME ~xacorwin.cre~ AND FILE_EXISTS_IN_GAME ~xacaelar.cre~
-THEN BEGIN
-  PRINT ~Adding compatibility for LCA~
-COMPILE ~%MOD_FOLDER%/dialogue/crossmod/LCA.D~
-END
 
 // Add Baeloth to ToB
 ACTION_IF GAME_IS ~eet~ THEN BEGIN // EET related code & summoning script
@@ -199,10 +148,21 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN // EET related code & summoning script
       override_ToB = "BG2BAE25" // ToB Override script
       dialog_ToB = "BG2BAE25" // ToB dialogue file
       cre_ToB = "BG2BAE25"
-      traFile = EVAL "AllThingsMazzy/translations/%LANGUAGE%/setup.tra"
+      traFile = EVAL "%MOD_FOLDER%/translations/%LANGUAGE%/setup.tra"
       string = "@9999" // Bring me Baeloth, the drow sorcerer.
       stringPosDV = "Baeloth" // Baeloth
   END
 END ELSE BEGIN
   COMPILE ~%MOD_FOLDER%/dialog/FATESP.D~
+END
+
+BEGIN ~crossmod~
+DESIGNATED 1 LABEL ~crossmod~
+REQUIRE_PREDICATE GAME_IS ~tob bg2ee eet~ ~This mod cannot be installed on this game~
+
+// LCA compatibility
+ACTION_IF FILE_EXISTS_IN_GAME ~xacorwin.cre~ AND FILE_EXISTS_IN_GAME ~xacaelar.cre~
+THEN BEGIN
+  PRINT ~Adding compatibility for LCA~
+COMPILE ~%MOD_FOLDER%/dialogue/crossmod/LCA.D~
 END
