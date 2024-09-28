@@ -1,0 +1,9 @@
+IF
+    Global("D0BAEExists","GLOBAL",0)
+THEN
+RESPONSE #100
+    SetGlobal("D0BAE_BEGIN","GLOBAL",0)
+    SetGlobal("D0BAEExists","GLOBAL",1)
+    CreateCreature("0DBAE",[1400.1650],5)
+    Continue()
+END

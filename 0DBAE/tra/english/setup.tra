@@ -1,0 +1,88 @@
+// Baeloth Sounds
+@1 =~Oohoohoohoo, I'm gonna work out some anger on you.~ [0DBAEA]
+@2 =~OBVIOUSLY, this was going to happen, but the amount of TIME it took borders on insanity! How do you function on a day-to-day basis?~ [0DBAE0]
+@3 =~*yawn* I have little taste for sleeping in a dog pile with you rivvil. Find me an inn!~ [0DBAEC]
+@4 =~You wouldn't be interested in playing a little GAME, would you? Mmm?~ [0DBAED]
+@5 =~Agh! Exit stage... left?~ [0DBAEE]
+@6 =~Eh? What do YOU want?~ [0DBAEF]
+@7 =~Is there REALLY no one else you can bother?~ [0DBAEG]
+@8 =~Touch someone else, you filthy swine!~ [0DBAEH]
+@9 =~With my usual panache, I assume.~ [0DBAEI]
+@10 =~You must be loving this.~ [0DBAEJ]
+@11 =~All right... but NOT because you TOLD me to.~ [0DBAEK]
+@12 =~Argh!~ [0DBAEL]
+@13 =~Augh... NOT AGAIN!! *gurgle*~ [0DBAEM]
+@14 =~Fistfuls of flaming finality!~ [0DBAE1]
+@15 =~Death delivered!~ [0DBAE2]
+@16 =~Fight or flee, either way you fall!~ [0DBAE3]
+@17 =~You stand no chance.~ [0DBAE4]
+@18 =~Run! Rapidly! Right now!~ [0DBAE5]
+@19 =~We do wonderful work! I'm impressed.~ [0DBAE6]
+@20 =~What noble notions noodle through your noggin?~ [0DBAE7]
+@21 =~This won't work. My path might pare off from yours presently.~ [0DBAE8]
+@22 =~Enough! Baeloth the Entertainer goes ELSEWHERE.~ [0DBAE9]
+@23 =~Ask someone else!~ [0DBAE10]
+@24 =~What is it NOW?~ [0DBAE11]
+@25 =~Mmmm?~ [0DBAE12]
+@26 =~I'm huge in the Underdark.~ [0DBAE13]
+@27 =~Alveus Malcanter? Never heard of him.~ [0DBAE14]
+@28 =~Let me entertain you!~ [0DBAE15]
+@29 =~Another contender collapses!~ [0DBAE16]
+@30 =~Sleep well, dalninil.~ [0DBAE17]
+@31 =~I'm huge in the Underdark.~ [0DBAE18]
+@32 =~Let me entertain you!~ [0DBAE19]
+@33 =~And take that, vile villain!~ [0DBAE20]
+@34 =~A fail. A flub!~ [0DBAE21]
+@35 =~My attacks atrophy. This isn't working.~ [0DBAE22]
+@36 =~My bags are bursting! Had to drop it.~ [0DBAE23]
+@37 =~I've nabbed a knicknack!~ [0DBAE24]
+@38 =~Invisible.~ [0DBAE25]
+@39 =~My magic misfires!~ [0DBAE26]
+@40 =~Trap at your toes. Step softly.~ [0DBAE27]
+
+// Items
+@91 =~Barrityl's Burden~
+@92 =~Created by a djinni as a "gift" to the drow sorcerer Baeloth Barrityl, this obsidian ring with blood-red ruby almost hypnotically draws the eye to it. Acting as additional storage space for magical knowledge, once placed upon a spellcaster's finger it imbues [him] with the ability to learn additional spells beyond what [his] skill normally allows.[2] It also gives the wearer the chance to spontaneously create wealth once a day in the form of some gemstone, but that is a double-edged sword; should the gem fail to materialize, the wearer endures a period of searing pain.
+
+The djinni that created the ring, not entirely trusting the person to whom it was gifted, wove a curse into the black stone band. In battle with a djinni, the ring's wearer will find [him]self at an extreme disadvantage. Once donned, it cannot be removed from its wearer's finger, no matter how much [he] might wish it so.
+
+Charge abilities:
+- Create a random gem or damage the wearer, once per rest
+
+Equipped abilities:
+- Can cast three extra spells of each level
+- THAC0: -5 penalty vs Genies
+- Damage: -5 penalty vs Genies~
+
+// Journal/Bio Entries
+@100 =~When asked about his past, Baeloth Barrityl, or "Baeloth the Entertainer" as he prefers to be called, claims to be a drow sorcerer of some repute. While he keeps some of his earlier exploits vague, he brags excessively about his most recent endeavor, the Black Pits. While it all ended in failure, he maintains that it was "the best show in all the realms."
+
+The circumstances of his defeat within the pits are unclear; he claims dishonesty on the part of his combatants was a key factor.~
+
+// BG2 Player reponses
+@1001 =~Well met, I am <CHARNAME>.~
+@1003 =~Baeloth! Do you remember me?~
+@1004 =~Die, drow!~
+@1005 =~You don't remember me at all do you.~
+@1006 =~I accept this loose premise; let's hope your bark is as big as your bite.~
+@1007 =~My trust in you is thin, Baeloth, but if releasing you means paving the way for the demise of the Red Wizards, then I'll agree for now.~
+@1008 =~I won't release you. Stay in that cell and rot, for all I care.~
+@1009 =~Travelling with me ended badly for you last time.~
+@1010 =~You should, Baeloth! Don't you recognize your former champion?~
+
+// BG2 Baeloth Lines
+@2001 =~Well, well, well, what whimsical wonder do we witness here? Another face amidst the multitude of mundane mediocrity. You, my unwitting savior, stand before the ineffable Baeloth the Entertainer.~
+@2002 =~Do you perceive these restricting walls, my unsuspecting companion? A brief setback, I assure you. I, Baeloth, am not one to be entangled for an extended duration. However, perchance, just perchance, you could hasten my exit through a petite, mutually advantageous arrangement?~
+@2003 =~Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, revelling in the glory that is, well, me.~
+@2004 =~My mirthful mate, let's not meander in minor matters. I am a dashing drow of discernment and delicious taste, indeed!~
+@2005 =~Imagine this, my enterprising ally: You release me, and in return, I shall be an avant-garde avenger against the Red Wizards. Their downfall will be a magnum opus, a masterpiece magnificently managed by none other than me, Baeloth the Magnificent. Your role, petite yet pivotal, will be to partake and play a part in the uproarious opera of disorder and retribution.~
+@2009 =~Is this your parting present, then? Leaving me languishing thusly in this loathsome cell like a lowly miscreant? You'll rue the day you dared deliver such a dire destiny.~
+@2010 =~I discern a glimmer of intelligence in those eyes. Yes, yes, I perceive that you comprehend the worth of aligning yourself with magnificence.~
+@2011 =~Step spryly, my serendipitous sidekick! We've a spectacular show to splendidly stage, and the Red Wizards unwittingly waltz within our whimsical web. Oh, the poetic panorama of it all! They sought to stifle my spectacular self, but now they shall witness the wondrous weight of my wizardry!~
+
+// BG2 NPC Lines
+
+
+
+// ToB Fates
+@9999 =~Bring me Baeloth, the drow sorcerer.~
