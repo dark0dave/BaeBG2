@@ -5,8 +5,8 @@ CHAIN
 IF ~InParty("0DBAE25B")
     See("0DBAE25B")
     See("Sarevok")
-    !StateCheck("Sarevok",STATE_SLEEPING)
-    !StateCheck("0DBAE25B",STATE_SLEEPING)
+    !StateCheck("Sarevok", CD_STATE_NOTVALID)
+    !StateCheck("0DBAE25B", CD_STATE_NOTVALID)
     Global("0DBAE25BSarevok1","GLOBAL",0)~
 THEN BSAREV25 0DBAE25BSarevok1
 @6000 /* Drow, the more I know you the more I wish I had found you sooner. */

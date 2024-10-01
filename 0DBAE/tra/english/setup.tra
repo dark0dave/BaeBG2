@@ -42,8 +42,10 @@
 @50 =~Oh, COME ON!~
 
 // Items
-@91 =~Barrityl's Burden~
-@92 =~Created by a djinni as a "gift" to the drow sorcerer Baeloth Barrityl, this obsidian ring with blood-red ruby almost hypnotically draws the eye to it. Acting as additional storage space for magical knowledge, once placed upon a spellcaster's finger it imbues [him] with the ability to learn additional spells beyond what [his] skill normally allows.[2] It also gives the wearer the chance to spontaneously create wealth once a day in the form of some gemstone, but that is a double-edged sword; should the gem fail to materialize, the wearer endures a period of searing pain.
+@91 =~Small Ring~
+@92 =~Barrityl's Burden~
+@93 =~This ring promises power at a great cost.~
+@94 =~Created by a djinni as a "gift" to the drow sorcerer Baeloth Barrityl, this obsidian ring with blood-red ruby almost hypnotically draws the eye to it. Acting as additional storage space for magical knowledge, once placed upon a spellcaster's finger it imbues [him] with the ability to learn additional spells beyond what [his] skill normally allows.[2] It also gives the wearer the chance to spontaneously create wealth once a day in the form of some gemstone, but that is a double-edged sword; should the gem fail to materialize, the wearer endures a period of searing pain.
 
 The djinni that created the ring, not entirely trusting the person to whom it was gifted, wove a curse into the black stone band. In battle with a djinni, the ring's wearer will find [him]self at an extreme disadvantage. Once donned, it cannot be removed from its wearer's finger, no matter how much [he] might wish it so.
 
@@ -56,6 +58,7 @@ Equipped abilities:
 - Damage: -5 penalty vs Genies~
 
 // Journal/Bio Entries
+@99 =~Baeloth~
 @100 =~When asked about his past, Baeloth Barrityl, or "Baeloth the Entertainer" as he prefers to be called, claims to be a drow sorcerer of some repute. While he keeps some of his earlier exploits vague, he brags excessively about his most recent endeavor, the Black Pits. While it all ended in failure, he maintains that it was "the best show in all the realms."
 
 The circumstances of his defeat within the pits are unclear; he claims dishonesty on the part of his combatants was a key factor.~
