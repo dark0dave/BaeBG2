@@ -118,7 +118,7 @@ END
 // END
 
 IF ~~ THEN BEGIN 0DBAE100
-  SAY ~Oh, COME ON!~
+  SAY @50
   IF ~~ THEN DO ~
     SetGlobal("0DBAE_HOSTILE","GLOBAL",1)
     ChangeAIScript("OHMADD01",CLASS)

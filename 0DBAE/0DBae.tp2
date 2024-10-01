@@ -1,7 +1,7 @@
 BACKUP ~0DBAE/backup~
 AUTHOR ~dark0dave~
 
-VERSION ~v0.5~
+VERSION ~v0.4~
 AUTO_TRA ~%MOD_FOLDER%/tra/%s~
 
 LANGUAGE ~English~
@@ -27,6 +27,10 @@ END
 COPY ~%MOD_FOLDER%/misc~ ~override~
 COPY ~%MOD_FOLDER%/sound~ ~override~
 COPY ~%MOD_FOLDER%/portraits/BAELOTHL.BMP~ ~override/0DBAE.BMP~
+
+// CD_STATE_NOTVALID
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
 
 // Creature files //
 // SoA
@@ -143,7 +147,7 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN // EET related code & summoning script
       dialog_ToB = "0DBAE25" // ToB dialogue file
       cre_ToB = "0DBAE25"
       traFile = EVAL "%MOD_FOLDER%/translations/%LANGUAGE%/setup.tra"
-      string = "@9999" // Bring me Baeloth, the drow sorcerer.
+      string = "@5999" // Bring me Baeloth, the drow sorcerer.
       stringPosDV = "Baeloth" // Baeloth
   END
 END ELSE BEGIN
