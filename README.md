@@ -4,7 +4,7 @@
 
 This mod provides continuation for our lovable Baeloth in BG2EE and EET.
 
-![All right... but NOT because you TOLD me to.](baebg2/portraits/BAELOTHL.BMP)
+![All right... but NOT because you TOLD me to.](0DBAE/portraits/BAELOTHL.BMP)
 
 > OBVIOUSLY, this was going to happen, but the amount of TIME it took borders on insanity! How do you function on a day-to-day basis?
 
@@ -22,12 +22,12 @@ We don't include an exe, you'll need use weidu to install:
 
 ### Move files
 
-Copy baebg2 subfolder to your game directory:
+Copy 0DBAE subfolder to your game directory:
 
 #### Linux/Macos:
 
 ```sh
-cp -r BaeBG2/baebg2 <GAME DIRECTORY>
+cp -r BaeBG2/0DBAE <GAME DIRECTORY>
 ```
 
 #### Windows:
@@ -38,12 +38,12 @@ Then run weidu against the .tp2 file, in the game directory
 
 #### Linux/Macos:
 ```sh
-weidu baebg2/BaeBG2.tp2
+weidu 0DBAE/BaeBG2.tp2
 ```
 
 #### Windows:
 ```sh
-weidu.exe baebg2\BaeBG2.tp2
+weidu.exe 0DBAE\BaeBG2.tp2
 ```
 
 Should get something like this:

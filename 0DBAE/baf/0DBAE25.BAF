@@ -1,0 +1,11 @@
+// Expirence
+IF
+    Global("0DBAE25JOINXP","GLOBAL",0)
+    InParty(Myself)
+THEN
+RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("0DBAE25JOINXP","GLOBAL",1)
+    ChangeStat(Myself,XP,2500000,SET)
+    SetInterrupt(TRUE)
+END

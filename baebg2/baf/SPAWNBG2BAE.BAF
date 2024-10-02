@@ -1,9 +1,0 @@
-IF
-    Global("BG2BAEExists","GLOBAL",0)
-THEN
-RESPONSE #100
-    SetGlobal("BG2BAE_BEGIN","GLOBAL",0)
-    SetGlobal("BG2BAEExists","GLOBAL",1)
-    CreateCreature("BG2BAE",[1400.1650],5)
-    Continue()
-END
