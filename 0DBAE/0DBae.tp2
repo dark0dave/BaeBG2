@@ -1,0 +1,183 @@
+BACKUP ~0DBAE/backup~
+AUTHOR ~dark0dave~
+
+VERSION ~v0.4~
+AUTO_TRA ~%MOD_FOLDER%/tra/%s~
+
+LANGUAGE ~English~
+         ~english~
+         ~%MOD_FOLDER%/tra/english/setup.tra~
+
+BEGIN ~Baeloth BG2~
+DESIGNATED 0 LABEL ~0DBAE~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ ~This mod cannot be installed on this game~
+
+/* continuous chapter for EET */
+ACTION_IF GAME_IS ~eet~ BEGIN
+  OUTER_SET bg2_chapter = 12
+END ELSE BEGIN
+  OUTER_SET bg2_chapter = 0
+END
+  OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+    OUTER_SET bg2_chapter = bg2_chapter + 1
+    OUTER_SPRINT name_source ~bg2_chapter_%i%~
+    OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+END
+
+COPY ~%MOD_FOLDER%/misc~ ~override~
+COPY ~%MOD_FOLDER%/sound~ ~override~
+COPY ~%MOD_FOLDER%/portraits~ ~override~
+
+// CD_STATE_NOTVALID
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+/// Creature files ///
+// SoA
+COPY ~%MOD_FOLDER%/cre/0DBAE.CRE~ ~override/0DBAE.CRE~
+  SAY NAME1 @99
+  SAY NAME2 @99
+  SAY BIO @100
+  SAY BATTLE_CRY1 @1
+  SAY BATTLE_CRY2 @14
+  SAY BATTLE_CRY3 @15
+  SAY BATTLE_CRY4 @16
+  SAY BATTLE_CRY5 @17
+  SAY LEADER @2
+  SAY TIRED @3
+  SAY BORED @4
+  SAY HURT @5
+  SAY DAMAGE @12
+  SAY DYING @13
+  SAY MORALE @18
+  SAY HAPPY @19
+  SAY UNHAPPY_ANNOYED @20
+  SAY UNHAPPY_SERIOUS @21
+  SAY UNHAPPY_BREAKING @22
+  SAY SELECT_COMMON1 @6
+  SAY SELECT_COMMON2 @7
+  SAY SELECT_COMMON3 @8
+  SAY SELECT_COMMON4 @23
+  SAY SELECT_COMMON5 @24
+  SAY SELECT_COMMON6 @25
+  SAY SELECT_ACTION1 @9
+  SAY SELECT_ACTION2 @10
+  SAY SELECT_ACTION3 @11
+  SAY SELECT_ACTION4 @26
+  SAY SELECT_ACTION5 @27
+  SAY SELECT_ACTION6 @28
+  SAY REACT_TO_DIE_GENERAL @29
+  SAY REACT_TO_DIE_SPECIFIC @30
+  SAY SELECT_RARE1 @31
+  SAY SELECT_RARE2 @32
+  SAY CRITICAL_HIT @33
+  SAY CRITICAL_MISS @34
+  SAY TARGET_IMMUNE @35
+  SAY INVENTORY_FULL @36
+  SAY PICKED_POCKET @37
+  SAY HIDDEN_IN_SHADOWS @38
+  SAY SPELL_DISRUPTED @39
+  SAY SET_A_TRAP @40
+  WRITE_ASCII SCRIPT_OVERRIDE ~0DBAE~ #8
+  WRITE_ASCII DEATHVAR ~0DBAE~ #32
+  WRITE_ASCII DIALOG ~0DBAE~ #8
+  REMOVE_CRE_ITEMS
+  ADD_CRE_ITEM ~CLCK17~ #0 #0 #0 ~identified&stolen~ ~armor~ EQUIP
+  ADD_CRE_ITEM ~STAF18~ #0 #0 #0 ~identified&stolen~ ~weapon1~ EQUIP
+  ADD_CRE_ITEM ~0DRING~ #0 #0 #0 ~identified&undroppable~ ~rring~ EQUIP
+
+// ToB
+COPY_EXISTING ~0DBAE.CRE~ ~override/0DBAE25.CRE~
+  WRITE_ASCII SCRIPT_OVERRIDE ~0DBAE25~ #8
+  WRITE_ASCII DEATHVAR ~0DBAE25~ #32
+  WRITE_ASCII DIALOG ~0DBAE25~ #8
+
+/// Items ///
+COPY ~%MOD_FOLDER%/items/0DRING.ITM~ ~override/0DRING.ITM~
+  WRITE_ASCII 0x3a ~0dring2~ #8
+  WRITE_ASCII 0x44 ~0dring3~ #8
+  WRITE_ASCII 0x76 ~0dring2~ #8
+  SAY NAME1 @91 /* Small Ring */
+  SAY NAME2 @92 /* Barrityl's Burden */
+  SAY UNIDENTIFIED_DESC @93 /* This ring promises power at a great cost. */
+  SAY DESC @94 /* Created by a djinni as a "gift" to the drow sorcerer Baeloth Barrityl, this obsidian ring with blood-red ruby almost hypnotically draws the eye to it. Acting as additional storage space for magical knowledge, once placed upon a spellcaster's finger it imbues [him] with the ability to learn additional spells beyond what [his] skill normally allows.[2] It also gives the wearer the chance to spontaneously create wealth once a day in the form of some gemstone, but that is a double-edged sword; should the gem fail to materialize, the wearer endures a period of searing pain.
+
+  The djinni that created the ring, not entirely trusting the person to whom it was gifted, wove a curse into the black stone band. In battle with a djinni, the ring's wearer will find [him]self at an extreme disadvantage. Once donned, it cannot be removed from its wearer's finger, no matter how much [he] might wish it so.
+
+  Charge abilities:
+  - Create a random gem or damage the wearer, once per rest
+
+  Equipped abilities:
+  - Can cast three extra spells of each level
+  - THAC0: -5 penalty vs Genies
+  - Damage: -5 penalty vs Genies */
+
+/// Dialog ///
+
+// Compile dialog
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialog/0DBAE.D~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialog/0DBAE25.D~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialog/0DBAE25B.D~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialog/0DBAE25D.D~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialog/0DBAE25J.D~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialog/0DBAE25P.D~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialog/0DBAE25S.D~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialog/0DBAEB.D~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialog/0DBAED.D~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialog/0DBAEJ.D~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialog/0DBAEP.D~
+
+// Scripts
+COMPILE ~%MOD_FOLDER%/baf/0DBAE.BAF~
+COMPILE ~%MOD_FOLDER%/baf/0DBAE25.BAF~
+
+// Appending dialog files
+// See [here](https://www.gibberlings3.net/forums/topic/15833-dialog-files-and-how-they-are-referenced/)
+// cre post_dialog_file join_dialog_file dream_script_file 25post_dialog_file 25join_dialog_file 25dream_script_file 25override_script_file
+APPEND ~pdialog.2da~
+  ~0DBAE 0DBAEP 0DBAEJ 0DBAED 0DBAE25P 0DBAE25J 0DBAE25D 0DBAE25S~
+UNLESS ~0DBAE~
+
+// Banter
+// cre FILE 25FILE
+APPEND ~interdia.2da~
+  ~0DBAE 0DBAEB 0DBAE25B~
+UNLESS ~0DBAE~
+
+// Spawn Baeloth in Red Wizard Enclave
+EXTEND_TOP ~OH6300.BCS~ ~%MOD_FOLDER%/baf/OH6300.BAF~
+  EVALUATE_BUFFER
+
+// Add Baeloth to ToB
+ACTION_IF GAME_IS ~eet~ THEN BEGIN // EET related code & summoning script
+  INCLUDE ~EET/other/EET_functions.tph~ //declaration of external EET functions used below
+  LAF ~EET_NPC_TRANSITION~ //function used to automatically implement EET continuity system
+    INT_VAR
+      type = 3 // NPC with BG1 and BG2 content (full transition to SoA/ToB)
+      default_ToB = 1 // Summonable in ToB
+    STR_VAR
+      dv = "BAELOTH" // Death Variable (script name)
+      override_BG1 = "BAELOTH" // name of the override NPC script in BG1
+      override_SoD = "BAELOTH" // name of the override NPC script in SoD (use BG1 one if doesn't exist)
+      override_SoA = "0DBAE" // SoA Override script
+      override_ToB = "0DBAE25" // ToB Override script
+      dialog_ToB = "0DBAE25" // ToB dialogue file
+      cre_ToB = "0DBAE25"
+      traFile = EVAL "%MOD_FOLDER%/translations/%LANGUAGE%/setup.tra"
+      string = "@5999" // Bring me Baeloth, the drow sorcerer.
+      stringPosDV = "Baeloth" // Baeloth
+  END
+END ELSE BEGIN
+  COMPILE ~%MOD_FOLDER%/dialog/FATESP.D~
+END
+
+BEGIN ~crossmod~
+DESIGNATED 1 LABEL ~crossmod~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ ~This mod cannot be installed on this game~
+
+// LCA compatibility
+ACTION_IF FILE_EXISTS_IN_GAME ~xacorwin.cre~ AND FILE_EXISTS_IN_GAME ~xacaelar.cre~
+THEN BEGIN
+  PRINT ~Adding compatibility for LCA~
+  COMPILE ~%MOD_FOLDER%/dialogue/crossmod/0DLCA.D~
+END
