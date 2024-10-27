@@ -1,5 +1,5 @@
 IF
-    InParty(Myself) 
+    InParty(Myself)
     !Global("0DBAE_LEFT","GLOBAL",1)
     !Global("0DBAE_HOSTILE","GLOBAL",1)
     !Global("0DBAE_JOINED","GLOBAL",1)
@@ -10,7 +10,7 @@ RESPONSE #101
 END
 
 IF
-    InParty(Myself) 
+    InParty(Myself)
     !Global("0DBAE_LEFT","GLOBAL",1)
     !Global("0DBAE_REMOVED","GLOBAL",1)
     !Global("0DBAE_JOINED","GLOBAL",1)
@@ -20,7 +20,7 @@ RESPONSE #102
 END
 
 IF
-    !InParty(Myself) 
+    !InParty(Myself)
     Global("0DBAE_LEFT","GLOBAL",1)
     !Global("0DBAE_JOINED","GLOBAL",1)
 THEN
@@ -30,7 +30,7 @@ RESPONSE #103
     JoinParty()
 END
 
-// Expirence
+// Experience
 IF
     Global("0DBAEJOINXP","GLOBAL",0)
     InParty(Myself)

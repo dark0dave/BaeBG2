@@ -12,7 +12,7 @@ If Aerie & Baeloth are in the party
 * AERIE: What about you?
 * BAELOTH: I sort of ran a circus, acted as its combat coordinator and commentator, and lost it all when I bet my life on black.
 * AERIE: You were a gladiator?
-* BAELOTH: <Baeloth sighs.> 
+* BAELOTH: <Baeloth sighs.>
 * BAELOTH: By necessity and -not- by desire, my dear. I was part of a game that was rigged to always win. Surely you see the pain of losing a 'foolproof' game. The circus is similar, or so I hear.
 * AERIE: Maybe my circus was kinder than others. People did sometimes win the games.
 * AERIE: Winning the ring toss was the hardest. I'm not sure if people were -meant- to win that.
@@ -55,7 +55,7 @@ If Anomen & Baeloth are in the party
 * ANOMEN: I -may- consider your counsel.
 * BAELOTH: That's -all- I ask.
 ### Second Banter
-If Anomen & Baeloth are in the party AND Anomen hasn't failed his knight training 
+If Anomen & Baeloth are in the party AND Anomen hasn't failed his knight training
 * ANOMEN: Drow, why all these inquiries? Do you not know that I would bear any burden to obtain my dream?
 * BAELOTH: Careful with your words, Cleric. I spoke that very phrase to a Djinn and it cost me -dearly.-
 * BAELOTH: 'Baeloth shows his left hand with a severed finger.''
@@ -76,10 +76,10 @@ If Artemis & Baeloth are in the party
 * BAELOTH: Oh, I -perfectly- understand your point. The pits add a pinch of pageantry upon your pugilism.
 * ARTEMIS: For you, it's all about the spectacle and the coin that comes with the crowd calling for someone's death.
 * BAELOTH: Of course, of course! There's also the -prestige- of raising champions just to have them -plummet- to something a pinch more powerful!
-* BAELOTH: Trust me my associate 
+* BAELOTH: Trust me my associate
 * ARTEMIS: I too have been seeking Drizzt for some time to play with him in my pits.
 * ARTEMIS: Just remember, drow, that my goal is to -kill- Drizzt. I do -not- toy with him!
-* BAELOTH: <Baeloth sighs.> 
+* BAELOTH: <Baeloth sighs.>
 * BAELOTH: Yes, yes, efficiency and all that. I also want -my- turn with him!
 * ARTEMIS: Finders killers, drow.
 ## BG2: CAELAR/BAELOTH BANTER
@@ -193,7 +193,7 @@ If Haer'Dalis & Baeloth are in the party
 * BAELOTH: Certainly you can! But have you considered leaving the low-budget life of the stage to gain something greater?
 * HAER'DALIS: I already know what you mean - life as a gladiator where the arena is the stage and all the action is real.
 * BAELOTH: Absolutely, though acknowledging one's individual abilities is also an admirable attribute.
-* HAER'DALIS: The challenge of fighting for survival and for the thrill of the crowd has its appeal, I admit, but I also enjoy engaging with my fans before and after the show. 
+* HAER'DALIS: The challenge of fighting for survival and for the thrill of the crowd has its appeal, I admit, but I also enjoy engaging with my fans before and after the show.
 * BAELOTH: You still can! Nothing a little resurrection and restoration won't remedy if it comes to that. You're rich enough that death is but a diminutive dent in your demeanor.
 * HAER'DALIS: Baeloth, perhaps I shall agree to your terms. I had been seeking inspiration for a similar character I intended to portray in a work I am writing called 'The Reign of Blades.'
 * BAELOTH: Practice makes perfect - and permanent.
@@ -320,7 +320,7 @@ If Keldorn & Baeloth are in the party
 * BAELOTH: I would expect nothing less from my righteous executioner!
 * BAELOTH: Come, my pet Paladin! There's some foul fiend who owes me its gold or its guts, and we're gonna collect - together!
 ### Second Banter
-If Keldorn & Baeloth are in the party 
+If Keldorn & Baeloth are in the party
 * KELDORN: What is it, -Baeloth?- Another affection or something more pressing?
 * BAELOTH: My precious paladin and insightful inquisitor, I have an important inquiry.
 * KELDORN: <Keldorn sighs at Baeloth.>
@@ -338,7 +338,7 @@ If Keldorn & Baeloth are in the party
 * KELDORN: It is easier to make and break rules than it is to help those in need as they should be helped. Bringing about the greater good is my calling, even though I am still bound by certain oaths.
 * BAELOTH: Wise words, my prudent paladin.
 ### Third Banter
-If Keldorn & Baeloth are in the party 
+If Keldorn & Baeloth are in the party
 * BAELOTH: What noble notions noodle through your noggin?
 * KELDORN: There may be hope for your redemption yet, Baeloth.
 * BAELOTH: Redemption? Do you have a winning lottery ticket?
@@ -389,7 +389,7 @@ If Kivan & Baeloth are in the party
 * KIVAN: I shall keep this brief: For now, don't disturb the dead. No animating her. Let me handle this matter.
 * BAELOTH: Absolutely, my associate!
 * KIVAN: And keep quiet toward me. I simply need time to think.
-* BAELOTH: Beckon Baeloth when need be. 
+* BAELOTH: Beckon Baeloth when need be.
 ## BG2: KORGAN/BAELOTH BANTER
 If Korgan & Baeloth are in the party
 * KORGAN: What do -you- know about fightin', Drow? All I've seen you carry around is a prissy little stick!
@@ -426,7 +426,7 @@ If Mazzy & Baeloth are in the party - first dialog
 * MAZZY: Just remember, BAELOTH: I am -not- your puppet!
 * BAELOTH: No, but for now we're partners. Let's go cull the Underdark herd - together. Ready when you are!
 ### Second Banter
-If Mazzy & Baeloth are in the party 
+If Mazzy & Baeloth are in the party
 * MAZZY: Drow, I noticed you meditating in my general direction. What are you pondering? Do I dare ask?
 * BAELOTH: Due to your determined desire to deduce what I was wondering, surely I shall share it!
 * MAZZY: <Nazzy sighs.> At the very least, I invited this.
@@ -504,7 +504,7 @@ If Nalia & Baeloth are in the party
 * NALIA: Then what should I do?
 * BAELOTH: -Embrace- your position! Don't be afraid that others may die. You're a noble: That's your duty and maybe your delight!
 ### Third Banter
-If Nalia & Baeloth are in the party 
+If Nalia & Baeloth are in the party
 * NALIA: Baeloth, if you were to seriously try to help the poor improve, what would you do?
 * BAELOTH: Oh, my curious compatriot, I am -so- satisfied you asked!
 * BAELOTH: Finding the worthiest warriors is easy: Surround yourself with the strongest bodies available then demand they duel to the death in duets!

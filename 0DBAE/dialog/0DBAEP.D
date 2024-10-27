@@ -88,7 +88,7 @@ END
 IF ~AreaCheck("AR2608")
     Global("0DBAETree","GLOBAL",0)~
 THEN BEGIN 0DBAETree
-  SAY @4024 /* Fresh air? Bird song? Wind whistling through the branches? I despise it all! */ 
+  SAY @4024 /* Fresh air? Bird song? Wind whistling through the branches? I despise it all! */
   IF ~~ THEN REPLY @4025 /* You are more at home underground, I presume. */ DO ~SetGlobal("0DBAETree","GLOBAL",1)~ EXIT
 END
 

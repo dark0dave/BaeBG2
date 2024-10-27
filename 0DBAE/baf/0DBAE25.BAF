@@ -1,4 +1,4 @@
-// Expirence
+// Experience
 IF
     Global("0DBAE25JOINXP","GLOBAL",0)
     InParty(Myself)
