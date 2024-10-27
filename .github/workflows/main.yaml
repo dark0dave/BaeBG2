@@ -39,7 +39,9 @@ jobs:
         id: git-cliff
         with:
           config: cliff.toml
-          args: --latest -o CHANGELOG.md
+          args: --verbose --latest
+        env:
+          OUTPUT: CHANGELOG.md
       - name: Print the changelog
         run: cat CHANGELOG.md
       - name: Create Release
@@ -48,3 +50,27 @@ jobs:
         with:
           bodyFile: ./CHANGELOG.md
           skipIfReleaseExists: True
+  packager:
+    needs: [release]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
+    steps:
+      - name: Initial setup
+        run: |
+          git config --global core.ignorecase true
+      - name: Clone repository using 'github.ref' from release
+        uses: actions/checkout@master
+      - name: Create Infinity Engine Mod Packages (.iemod and .zip)
+        uses: ALIENQuake/CreateIEModZipPackage@master
+        id: CreateIEModZipPackage
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload iemod package to latest release
+        uses: svenstaro/upload-release-action@v1-release
+        if: github.ref != 'refs/heads/master'
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.iemod
+          asset_name: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.iemod
+          tag: ${{ github.ref }}
+          overwrite: true

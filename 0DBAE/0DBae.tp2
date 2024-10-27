@@ -1,7 +1,7 @@
 BACKUP ~0DBAE/backup~
 AUTHOR ~dark0dave~
 
-VERSION ~v0.4~
+VERSION ~v0.5~
 AUTO_TRA ~%MOD_FOLDER%/tra/%s~
 
 LANGUAGE ~English~
