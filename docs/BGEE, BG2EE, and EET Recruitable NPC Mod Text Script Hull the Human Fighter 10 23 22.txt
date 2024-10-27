@@ -65,7 +65,7 @@ Alternate 2 (Bed Head): Dream by Wombo
 Alternate 3 (The BG): Dream by Wombo
 Alternate 4 (Not Adolf): Dream by Wombo
 CROSS-MOD CONTENT (HULL)
-Hull has cross-mod (crossmod or cross mod) content with many other mods and should be installed after all of these!  The scope of this content is normally a small number of lines, and unless otherwise stated, the contents of these other mods remain unchanged.  
+Hull has cross-mod (crossmod or cross mod) content with many other mods and should be installed after all of these!  The scope of this content is normally a small number of lines, and unless otherwise stated, the contents of these other mods remain unchanged.
 Areas & Adventures
 -Athkatlan Grounds: Alabaster Sands
 -Black Pits in EET
@@ -213,7 +213,7 @@ Volo is in his default spots in BG1 and ToB.  He isn’t in SoA in vanilla, and 
 DIALOG FORMAT
 Dialog Option for Player
 Response from NPC
-Dialog Submenu for Player: Replaces Previous Layer of Dialog 
+Dialog Submenu for Player: Replaces Previous Layer of Dialog
 Response from NPC
 [If All These Conditions Are Met] Dialog Option for Player
 NPC’s Response
@@ -223,7 +223,7 @@ BG1: HULL’S INITIAL MEETING WITH <CHARNAME> AND VISITING GORION’S AMBUSH SIT
 Initial Meeting Post-Gorion’s Death
 HULL: <Hull looks you in the eyes, clearly uncomfortable.  He sighs as he straightens his posture and speaks.>
 --NEXT DIALOG BOX--
-HULL: Kid... I’m sorry about Gorion.  He was pretty quiet about what he was doing with you and why.  I wanted to say thanks for covering for me earlier with the Gatewarden and being someone I could trust to keep me odda trouble.  Sorry if I seemed hard on ya.  
+HULL: Kid... I’m sorry about Gorion.  He was pretty quiet about what he was doing with you and why.  I wanted to say thanks for covering for me earlier with the Gatewarden and being someone I could trust to keep me odda trouble.  Sorry if I seemed hard on ya.
 Why were you with Imoen?
 HULL: Kid, we had a game in the Candlekeep guard called, “Spot Imoen.”  The Chief made it part of our sobriety test.  If we could find her, and even better if we didn’t get caught, then we didn’t get scolded.
 --NEXT DIALOG BOX--
@@ -578,7 +578,7 @@ I’ve been gone awhile since assassins have been after me.  Have anything to ma
 DREPPIN: <CHARNAME>, the rumors ARE true!  You’re powerful enough for someone to want dead!  I don’t think I’d want that sort of responsibility!
 What was Gorion like when he was alive?
 DREPPIN: <Dreppin looks at you and shrugs.>  I don’t know if we ever talked.  He’s a sage.  I’m a stable hand.  Probably the closest I got to helping him was tanning hides to make leather book bindings.
-[If <CHARNAME> finished the quest Dreppin’s Cow] What happened to your cow? 
+[If <CHARNAME> finished the quest Dreppin’s Cow] What happened to your cow?
 DREPPIN: Nessa?  That antidote you gave her didn’t do much.  Maybe I overfed her with that stuff, but she just puked it up.  She just slept off whatever sickness she had.
 I thought you were good with animals!
 DREPPIN: Well, I am!  I was just so worried about Nessa - she’s been my best cash cow - that I mighta overdid it.
@@ -763,7 +763,7 @@ Did he tell you why?
 PHLYDIA: <She shrugs.>  Oh, no, not really.  He... How do I put it?  I think he just liked that we lived in an -exciting world- and -interesting times- and wanted to be ready to match wits with all the intellectuals around here.
 When you say you finished a book, what do you mean?
 PHLYDIA: Usually, I just read a book once.  If I -really- enjoy it, I’ll read it again and look for all the details and subtext I missed the -first- time!
-[If <CHARNAME> finished the quest Phlydia’s Book] What happened to your book I found for you? 
+[If <CHARNAME> finished the quest Phlydia’s Book] What happened to your book I found for you?
 PHLYDIA: Oh, I finished it.  Now, where did I put it?
 [If <CHARNAME> started but didn’t finish the quest Phlydia’s Book] What happened to that book you wanted me to get?
 PHLYDIA: Dreppin gave it back.  I think.  But I finished it.
@@ -865,7 +865,7 @@ TETHTORIL: Child, most likely they were with someone who paid the entrance fee.
 Spit it out, old man!
 TETHTORIL: <He disregards the rudeness and continues.>
 --NEXT DIALOG BOX--
-<Continue the dialog as if the party had chosen the respectful dialog option below.> 
+<Continue the dialog as if the party had chosen the respectful dialog option below.>
 Tethtoril, what are you thinking?
 TETHTORIL: Candlekeep has catacombs where we bury the dead.  Perhaps they snuck in from there.
 What’s with you and scrolls anyway?
@@ -899,7 +899,7 @@ What connection did Gorion have with Elminster?
 TETHTORIL: Gorion told me once in passing that Elminster was also a Harper and his advisor in the Harpers on certain matters.  He never mentioned what, but I just assumed, <CHARNAME>, that Gorion learned some of his spells directly from Elminster - or at least inherited some of his scrolls, as the case may be.
 Bye for now.
 TETHTORIL: Farewell, child.
-<If the party started the quest Firebeard’s Scroll but didn’t finish it in the prolog, play this part of the dialog only once.> 
+<If the party started the quest Firebeard’s Scroll but didn’t finish it in the prolog, play this part of the dialog only once.>
 TETHTORIL: Oh, child?  Did you return Mr. Elvenhair’s Identify scroll to him?
 [If Firebead’s Scroll quest isn’t complete] [Lie] Yes.
 TETHTORIL: Good.  Gorion raised you well.
@@ -1153,7 +1153,7 @@ VOLO: And thank you, Hull, for reading what I wrote!  It’s good to know my wor
 [If the party has cleared the Nashkel Mines or visited the lowest floor of Durlag’s Tower] Hey, Volo!  Care to join and see the world together?
 VOLO: <Volo pauses a moment, takes a deep breath, and enthusiastically speaks!>
 --NEXT DIALOG BOX--
-VOLO: A hearty “Not yet,” my friend.  I’m in the middle of writing about some interesting geography I’ve found in my travels, and I’m hesitant to trust just -anyone- with my life!  
+VOLO: A hearty “Not yet,” my friend.  I’m in the middle of writing about some interesting geography I’ve found in my travels, and I’m hesitant to trust just -anyone- with my life!
 --NEXT DIALOG BOX--
 VOLO: If you were to accomplish something of note, like handle the situation in the local Nashkel mines or descend to the deepest parts of Durlag’s Tower, I would be more inclined to go with you!
 --NEXT DIALOG BOX--
@@ -1304,7 +1304,7 @@ What part of ‘No’ didn’t you understand?  ‘No’ means ‘No,’ not ‘
 HULL: <Hull just silently glares at you in disgust!>  <END DIALOG WITH HULL.>
 Grovel for me, Hull.  -Maybe- I’ll let you join.
 HULL: <Hull falls to the floor in the sleeping human Fighter animation.>  Please, PLEASE let me join you!
-Alright, Hull.  Wish granted.  
+Alright, Hull.  Wish granted.
 HULL: <Hull starts crying tears of joy as he stands.>
 --NEXT DIALOG BOX--
 HULL: Thank you!  This means more to me than you may ever know!  <Continue with Hull’s dialog tree as if the party had let him join.>
@@ -1369,7 +1369,7 @@ What part of ‘No’ didn’t you understand?  ‘No’ means ‘No,’ not ‘
 HULL: <Hull just silently glares at you in disgust!>  <END DIALOG WITH HULL.>
 Grovel for me, Hull.  -Maybe- I’ll let you join.
 HULL: <Hull falls to the floor in the sleeping human Fighter animation.>  Please, PLEASE let me join you!
-Alright, Hull.  Wish granted.  
+Alright, Hull.  Wish granted.
 HULL: <Hull starts crying tears of joy as he stands.>
 --NEXT DIALOG BOX--
 HULL: Thank you!  This means more to me than you may ever know!  <Continue with Hull’s dialog tree as if the party had let him join.>
@@ -1438,7 +1438,7 @@ What part of ‘No’ didn’t you understand?  ‘No’ means ‘No,’ not ‘
 HULL: <Hull just silently glares at you in disgust!>  <END DIALOG WITH HULL.>
 Grovel for me, Hull.  -Maybe- I’ll let you join.
 HULL: <Hull falls to the floor in the sleeping human Fighter animation.>  Please, PLEASE let me join you!
-Alright, Hull.  Wish granted.  
+Alright, Hull.  Wish granted.
 HULL: <Hull starts crying tears of joy as he stands.>
 --NEXT DIALOG BOX--
 HULL: Thank you!  This means more to me than you may ever know!  <Continue with Hull’s dialog tree as if the party had let him join.>
@@ -1603,7 +1603,7 @@ HULL: We’ll do what we can, kid.  <END DIALOG.>
 SoD: FINALE
 [If Imoen 4 Ever Component Isn’t Installed: I4E in SoD: Imoen Returns to PC in First Coalition Camp (bd1000)] Meeting Imoen
 <If Hull is in the party.>
-HULL: Imoen!  Welcome back!  
+HULL: Imoen!  Welcome back!
 <Continue with Imoen’s dialog.>
 -=PARTY AREA COMMENTS=-
 BG1: VISITING LOCATIONS FOR THE FIRST TIME
@@ -1617,7 +1617,7 @@ VOLO: More than you want to hear, my friend!  Volo’s Guide to the Sword Coast 
 Why do you claim you know more than I want to hear?
 VOLO: Ah, my friend!  We are not here to sample the drinks and beds of every inn in town!  We have more pressing matters!
 What taverns and inns do you recommend?
-VOLO: The Low Lantern is a boat tavern by the docks and offers the most unique experience in or near the city. 
+VOLO: The Low Lantern is a boat tavern by the docks and offers the most unique experience in or near the city.
 --NEXT DIALOG BOX--
 VOLO: The Elfsong Tavern in East Baldur’s Gate is pretty famous and perhaps the most famous tavern in the city!  A ghostly female elven voice is heard every 3 nights or so; hence, its name.
 --NEXT DIALOG BOX--
@@ -1826,7 +1826,7 @@ HULL: <Hull smiles and sighs.>
 --NEXT DIALOG BOX--
 HULL: Thanks, kid.  It’s good to know we’re friends after all we’ve been through!
 I miss my reading time already.
-HULL: Reading time ‘round here can wait, kid.  Let’s handle business first.  
+HULL: Reading time ‘round here can wait, kid.  Let’s handle business first.
 I wish Gorion were here.
 HULL: <Hull sighs.>  Yeah, kid, I know.  I can’t fully replace him, but I’m tryin’.
 Why try so hard to be someone else?
@@ -1936,7 +1936,7 @@ Dragonspear Castle
 HULL: So -this- is the enemy base?  I expected something... pointier.  And more draconic-themed.  <END DIALOG.>
 Korsasz’s Tomb
 HULL: We ain’t odda here yet, kid.  Beware any more of Sarevok’s traps!  <END DIALOG.>
-BG2/SoA: VISITING LOCATIONS FOR THE FIRST TIME 
+BG2/SoA: VISITING LOCATIONS FOR THE FIRST TIME
 Most Noble Order of the Radiant Heart Building - Interior
 <If Volo is in the party.>
 VOLO: Well, my friend, this most welcoming place is certainly -splendid!-  I can feel its warm, welcoming aura already!
@@ -2044,7 +2044,7 @@ HULL: It beats your swampy pit any day, kid!
 HULL: But anyway.  Let’s look around s’more!
 <END DIALOG IF DORN ISN’T IN PARTY.>
 <If Dorn is in the party.>
-DORN: Your sentimentality sickens me, Hull!  
+DORN: Your sentimentality sickens me, Hull!
 --NEXT DIALOG BOX--
 HULL: <Hull quietly rolls his eyes at Dorn.>
 <END DIALOG REGARDLESS.>
@@ -2116,7 +2116,7 @@ BAELOTH: What else do you call people in an interplanar prison?  Patrons?
 How do you know about this place, Baeloth?
 BAELOTH: Some curious customer of the Copper Coronet kept books of certain subjects before he became a contender and I kept them from his corpse.
 Let’s go, Baeloth.  Progress awaits.
-BAELOTH: <Baeloth flashes you a knowing smile.>  <END DIALOG.> 
+BAELOTH: <Baeloth flashes you a knowing smile.>  <END DIALOG.>
 VOLO: Ah, my friend!  Behold!  This is Watcher’s Keep, a place mentioned rarely in the writings of Candlekeep and beyond for its -treasure- and -danger!-
 What sort of treasure and danger are we talking about, here?
 VOLO: The texts did not specify, but I must assume this -magnificent- place has plenty of each!
@@ -2436,7 +2436,7 @@ HULL: Starry, starry night.
 Did you wish upon a star?
 HULL: Sure did, kid!
 What did you wish for?
-HULL: A peaceful, prosperous ending to this Bhaalspawn saga.  
+HULL: A peaceful, prosperous ending to this Bhaalspawn saga.
 --NEXT DIALOG BOX--
 HULL: I’m here to help ya, kid, but I’ve felt like it’s been GO, GO, GO ever since we left Candlekeep that fateful day.
 --NEXT DIALOG BOX--
@@ -2617,7 +2617,7 @@ This sounds like quite a tale!
 TRINDEN: It is, and I have written of it in my book.
 Thanks, but we have a job to do here.  Onward, Trinden!
 TRINDEN: It is time to revolutionize this pocket of reality!  <END DIALOG>
-MOD: VISITING LOCATIONS FOR THE FIRST TIME 
+MOD: VISITING LOCATIONS FOR THE FIRST TIME
 Most Noble Order of the Radiant Heart Building - Interior
 <If Volo is in the party.>
 VOLO: Well, my friend, this most welcoming place is certainly -splendid!-  I can feel its warm, welcoming aura already!
@@ -2707,7 +2707,7 @@ HULL: Good, kid!  You know that song!  Gorion would be proud!  <END DIALOG WITH 
 Yes, Hull.  Now, let’s actually do what you sang.
 HULL: <Hull sighs.>  I’ll explain the joke on the way, kid.  <END DIALOG WITH HULL.>
 Shut up, Hull.
-HULL: Set a courrrrrrrrse for the oooooooooopen seaaaaaa!  
+HULL: Set a courrrrrrrrse for the oooooooooopen seaaaaaa!
 Stop singing.
 HULL: I’ve got tooooooo beeeeeee freeeeeee!
 Those aren’t the official lyrics!
@@ -2817,7 +2817,7 @@ HULL: Uh, kid?  I’m with you if you’re with me.
 <Slayer Form Transformation 2.>
 BODHI: What is this?!  A creature of pure death and darkest shadow!  Child of Bhaal, what have you become?!
 --NEXT DIALOG BOX--
-HULL: Uh... 
+HULL: Uh...
 --NEXT DIALOG BOX--
 BODHI: Away!  Irenicus must know of this!  We will observe from a distance!
 --NEXT DIALOG BOX--
@@ -2906,7 +2906,7 @@ HULL: Kid, I -know- he’s a traitor, but I just don’t want us rushin’ in af
 I still don’t trust Saemon.  My answer of ‘no’ still stands, Saemon!
 HULL: Kid, please?  Gorion got wrecked because he rushed in after Sarevok.  Let’s not do that!
 Hull, explain.
-HULL: Kid, I see history takin’ another lap.  If we rush in to fight this crazy mage with you in this weakened state, I don’t like the results.  
+HULL: Kid, I see history takin’ another lap.  If we rush in to fight this crazy mage with you in this weakened state, I don’t like the results.
 Hull, my answer is still no.  Respect that and let’s move on.
 HULL: I’d say it but I don’t wanna jinx it.  I still don’t like your verdict here, kid.
 Saemon, I’ve reconsidered.  Let’s sail away with you!
@@ -2952,7 +2952,7 @@ HULL: We beat a soul sucking crazy mage on this very island!  You got a death wi
 Saemon’s Stolen Ship Boarded
 <If Hull is in the party.>
 SAEMON: All right, men, prepare yourselves to be boarded.  All weapons ready.  Don’t worry, <CHARNAME>, I’m sure this won’t be any trouble at all.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 HULL: -We- hadda pay to sail here!  No free rides!
 GITHYANKI CAPTAIN: Examples must be set!  None must tempt such a crime again!  Destroy them all!
 --NEXT DIALOG BOX--
@@ -2994,7 +2994,7 @@ HULL: Wait!  You aren’t just trying to kill us?  Uh, OK.
 --NEXT DIALOG BOX--
 HULL: We can talk.  I think.  Yeah.  Let’s try -not- fighting for a change!
 Sahuagin City - Spectator Beholder Talk
-SPECTATOR: Visitors!  It has been some time since I have had 
+SPECTATOR: Visitors!  It has been some time since I have had
 SPECTATOR: Keep in mind that the drow who summoned me was mad.  But hey, who am I to judge, I suppose.  I have been playing tic-tac-toe with a pair of imps for sixty years.
 --NEXT DIALOG BOX--
 HULL: And I thought -I- was bored crazy staring at walls for days at a time!
@@ -3032,7 +3032,7 @@ HULL: Then -after- he won, he’d get yet -another- buncha songs sung about his 
 Any exceptions?
 HULL: Many dwarves like living ‘n’ working underground that -aren’t- evil, kid.  Maybe other stuff does too.
 Any more theories about this place, Hull?
-HULL: Kid, I got a feeling that most stuff that -wants- to live 
+HULL: Kid, I got a feeling that most stuff that -wants- to live
 Any more theories about this place, Hull?
 HULL: Kid, I got a feeling that most stuff that -wants- to live underground or out of sight of civilization is just -evil.-
 OK.  Why?
@@ -3114,7 +3114,7 @@ HULL: Hmm!  -That’s- different!
 HULL: I would make sure we were fully prepared - potions, spells ‘n’ all - then taunt the crazy mage!  We kill him of course!
 Hull, I must say I’m proud of how you’ve grown from an irresponsible drunkard in Candlekeep to my loyal bodyguard hundreds of miles from home.  Thanks!
 HULL: Wow!  I’m not sure what to say!
-Pick One 
+Pick One
 Hull, can we be serious for a moment?
 HULL: Sure, kid.  Let’s be serious.
 --NEXT DIALOG BOX--
@@ -3174,7 +3174,7 @@ HULL: No promises, kid.
 --NEXT DIALOG BOX--
 HULL: Now let’s give him the death penalty for soul theft!  <END DIALOG WITH HULL.  CONTINUE DIALOG WITH OTHERS IN PARTY AS PRUDENT.>
 I’ll do it for you, Hull.
-HULL: -That’s- the spirit!  
+HULL: -That’s- the spirit!
 --NEXT DIALOG BOX--
 HULL: Now let’s give him the death penalty for soul theft!  <END DIALOG WITH HULL.  CONTINUE DIALOG WITH OTHERS IN PARTY AS PRUDENT.>
 Tree of Life - Irenicus Dialog
@@ -3710,7 +3710,7 @@ A god that hath been may be once again.
 --NEXT DIALOG BOX--
 HULL: Alright!  Who’s breathing into this thing?
 Illasera Pre-Fight (Baeloth/Hull/Volo)
-ILLASERA: 
+ILLASERA:
 ILLASERA: Not all of us have been wandering Faerun like witless cattle, like you and pathetic Imoen and so many others of Bhaal's blood.  Some of us have far greater aspirations.
 --NEXT DIALOG BOX--
 BAELOTH: Eh?  What do YOU want? (from here)
@@ -3944,15 +3944,15 @@ HULL: Oh, and when this war is all over, I’d -love- to meet up and talk histor
 VOLO: <Volo again smiles and nods.>
 Tankard Tree - Volo’s Description of Imoen - Hull’s Reaction
 VOLO: From an anonymous childhood in the monastery at Candlekeep Imoen stepped forth, a young woman with the blood of an immortal in her veins, and the power of an archmage at her command.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 IMOEN: Ooh, an archmage!  I like the sound of that!  But you forgot beautiful.  All the sorceresses in Winthrop’s books were beautiful and terrible.  Watch, see?  See how I flip my hair and glare at you... don’t I look evil?
 <Append this dialog.>
 HULL: An archmage?  Since when did you enter construction, girl?  I’ve never seen you make any cathedrals!
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 IMOEN: Hmm.  Come on.  <used voiced lines from here (BG1) and here (BG2)>
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 HULL: I got you to smile, Imoen!  Volo did too!  You’ve been low on that ever since Irenicus took ya!
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 IMOEN: <Imoen smiles and winks at Hull.>
 Tankard Tree - Volo’s Description of Trinden
 VOLO: While I feel I have barely known Trinden Felsad, a -fascinating- being who has assured me he is a fully-blooded orc, he has undergone a ritual to transform him into a green dragon of the bipedal kind!
@@ -4485,7 +4485,7 @@ BAELOTH: Don’t think your lonely lifestyle has prepared you for a proper pound
 DRIZZT: Balthazar, I expected better from you, not act like the many before me who thought they could kill me because of my reputation!
 <END DIALOG.>
 Balthazar: Redeemed (Ascension Mod)
-<If the convince score is at least 4 according to this file at the end of the CHARNAME/Balthazar dialog> 
+<If the convince score is at least 4 according to this file at the end of the CHARNAME/Balthazar dialog>
 <If Trinden is in the party.>
 TRINDEN: -This- is the sort of alliance I -expected- from a man of your caliber!
 --NEXT DIALOG BOX--
@@ -4520,7 +4520,7 @@ BAELOTH: <Baeloth grins.>
 BAELOTH: Let the battle begin! (from AoN: Baeloth sound set)
 <END DIALOG.>
 Balthazar: Suicided (Ascension Mod)
-<If the convince score is at least 1 and at most 3 according to this file at the end of the CHARNAME/Balthazar dialog - Hull is in the party.> 
+<If the convince score is at least 1 and at most 3 according to this file at the end of the CHARNAME/Balthazar dialog - Hull is in the party.>
 HULL: Well, Balthazar, I’m gonna miss ya.  Sorry you felt you hadda kill yourself to stop Bhaal.
 --NEXT DIALOG BOX--
 <If Bathazar suicides with Drizzt in the party, regardless of others’ presence.>
@@ -4604,7 +4604,7 @@ MALLA: You... you are very generous.  I wish there were some other way I could r
 TRINDEN: Know this young one:  The fact that you live came at a -great- cost to another!
 --NEXT DIALOG BOX--
 <If Volo is in the party.>
-VOLO: Calimshan?  Well, thank you for the invitation!  Perhaps that shall be the subject of a future book I write!  
+VOLO: Calimshan?  Well, thank you for the invitation!  Perhaps that shall be the subject of a future book I write!
 --NEXT DIALOG BOX--
 <If Hull is in the party.>
 HULL: I -think- we did the right thing, kid.  It was like we were in a no-win situation.
@@ -4775,7 +4775,7 @@ TRINDEN: One as stupid as you does not deserve =life-, much less -divinity!-
 <If Baeloth is in the party.>
 BAELOTH: What's next?  Ah, this group. (from here)
 --NEXT DIALOG BOX--
-SENDAI: -Male-, do you -dare- address -me- that way? 
+SENDAI: -Male-, do you -dare- address -me- that way?
 --NEXT DIALOG BOX--
 BAELOTH: How could I forget?  Allow me to introduce myself.  I am Baeloth Barrityl, more commonly known as BAELOTH THE ENTERTAINER! Yes, I know.  THAT Baeloth.  Fall to your knees and beg for mercy; I'm sure you know the drill.  (from here)
 --NEXT DIALOG BOX--
@@ -5561,7 +5561,7 @@ HULL: Valygar, this is one time when it’s -very wise- to be suspicious of the 
 --NEXT DIALOG BOX--
 VALYGAR: Aye, Hull, and if I did not trust you as I did, I would be inclined to believe you were using me for your own ends.
 --NEXT DIALOG BOX--
-VALYGAR: <CHARNAME>, our friendship is ended if you are serious about claiming that mantle as an evil deity!  I’ll not consort with such a wicked being, nor allow such wickedness to exist so easily! 
+VALYGAR: <CHARNAME>, our friendship is ended if you are serious about claiming that mantle as an evil deity!  I’ll not consort with such a wicked being, nor allow such wickedness to exist so easily!
 --NEXT DIALOG BOX--
 <If Imoen is in the party>
 HULL: Imoen...
@@ -5602,7 +5602,7 @@ MINSC: <CHARNAME>, Boo apologies that he will have to kill you very brutally now
 <If Dynaheir is on the same map (AR6200).>
 HULL: Dynaheir, what do you say to our friend here trying to become an evil god?
 --NEXT DIALOG BOX--
-DYNAHEIR: I cannot abide by this decision!  'Tis idiocy! (from here) 
+DYNAHEIR: I cannot abide by this decision!  'Tis idiocy! (from here)
 --NEXT DIALOG BOX--
 DYNAHEIR: I shall play no further role in thy machinations.  Fare thee well. (from here)
 --NEXT DIALOG BOX--
@@ -6102,7 +6102,7 @@ After all, nothing was too extravagant, too extreme, nor too violent for Baeloth
 “Let me entertain you!” shouted Baeloth as pitted a new 6-pack of ‘heroes’ against a Tarrasque he cloned, and Baeloth was the happiest he’d ever been!
 ToB: EPILOGS (HULL)
 DRUNKEN SORROWS EPILOG: Triggered by having Dorn and Hull in the party for Dorn’s ToB sidequest to Lunia then siding with Dorn over Hull at Watcher’s Keep so Hull leaves the game world
-As Hull left <CHARNAME>’s presence, he was heartbroken.  Tears eventually fell from his face as he walked and walked and walked.  
+As Hull left <CHARNAME>’s presence, he was heartbroken.  Tears eventually fell from his face as he walked and walked and walked.
 Hull became a wanderer in the land with some notoriety for his time and association with <CHARNAME>, going from this inn to that, telling his tales in exchange for room, board, and drunkenness.
 Hull’s familiarity with many inns and drinking spots gained him more fame as the go-to guy for what to drink and where.  The attention improved his friendship with the famous Volo, author to guides of the realms, where Hull served as Volo’s primary reviewer of taverns, inns, restaurants, and similar venues.
 Hull continued to resent <CHARNAME> and <PRO_HISHER> legacy.  Hull -knew- he was right to withdraw his presence, but being correct didn’t stop him from hating the fact that he was encouraged to attack Lunia then replaced by the notorious Blackguard Dorn.
@@ -6121,7 +6121,7 @@ Hull also took time to fulfill his duties to the Most Noble Order of the Radiant
 Before his death, Hull requested to be buried beside his mentor and father figure, Gorion - a request that was easily granted.  With his heart turned to worshiping Oghma, he was eventually laid to rest in Oghma’s home plane with Gorion.
 HERO LIKE DRIZZT EPILOG: Triggered by having Hull in the party and CHARNAME becoming a mortal or a non-evil deity
 After finishing with the Throne of Bhaal and the Mana Forge, Hull sighed a heavy sigh of relief.  This Bhaalspawn saga was over, and Hull lived knowing he had finished Gorion’s legacy in <CHARNAME> and that Hull was a hero throughout the realms and the planes!
-Hull and <CHARNAME> parted ways on friendly terms, occasionally visiting each other as intimate friends once this Bhaalspawn saga was over.   
+Hull and <CHARNAME> parted ways on friendly terms, occasionally visiting each other as intimate friends once this Bhaalspawn saga was over.
 Hull focused on exploring the realms and the planes, performing mighty exploits, and accompanying Drizzt Do’Urden as one of his faithful companions.  Together, they were a force for good wherever it is they went.
 Amidst their adventures, Hull visited Candlekeep and used his time to write <CHARNAME>’s biography, “The Time When I Told a Child of the God of Murder to Fetch me my Sword - the Official Biography of <CHARNAME> as told by <PRO_HISHER> friend and brother, Hull.”  He also wrote, “In the Shadow of the Dark Elf - the Official Biography of Drizzt Do’Urden as told by his friend and companion, Hull.”
 <If Hull has become knighted from finishing his SoA quest, add this section below.>
@@ -6130,7 +6130,7 @@ Hull also took time to fulfill his duties to the Most Noble Order of the Radiant
 Before his death, Hull requested to be buried beside his mentor and father figure, Gorion - a request that was easily granted.  With his heart turned to worshiping Oghma, he was eventually laid to rest in Oghma’s home plane with Gorion.
 NON-EVIL GOD COMPANION EPILOG: Triggered by having Hull in the party and CHARNAME becoming a non-evil deity
 After finishing with the Throne of Bhaal and the Mana Forge, Hull sighed a heavy sigh of relief.  This Bhaalspawn saga was over, and Hull lived knowing he had finished Gorion’s legacy in <CHARNAME> and that Hull was a hero throughout the realms and the planes!
-Hull was -exceptionally- pleased that <CHARNAME> chose him as one of <PRO_HISHER>’s champions.  Hull agreed that this is what Gorion intended for <CHARNAME> to become - to transform <PRO_HISHER>’s murderous heritage into a force for good.  
+Hull was -exceptionally- pleased that <CHARNAME> chose him as one of <PRO_HISHER>’s champions.  Hull agreed that this is what Gorion intended for <CHARNAME> to become - to transform <PRO_HISHER>’s murderous heritage into a force for good.
 Hull continued for years with <CHARNAME> as <PRO_HISHER> friend and faithful companion.  While they were never romantically involved, they were the best of friends, companions, and, of course, drinking buddies.
 When not combatting the forces of evil, Hull visited Candlekeep and used his time to write <CHARNAME>’s biography, “The Time When I Told a Child of the God of Murder to Fetch me my Sword - the Official Biography of <CHARNAME> as told by <PRO_HISHER> friend and brother, Hull.”
 <If Hull has become knighted from finishing his SoA quest, add this section below.>
@@ -6144,7 +6144,7 @@ Hull’s lifeless form collapsed on the floor of the Mana Forge, his final attem
 Hull’s memory to you of a friendly goofball with a fondness for drinking who came looking for you hundreds of miles from home because he missed you and wanted the best for <CHARNAME> will remain that - a memory.
 EVIL GOD (CHARNAME DEFEATED IN FINAL FIGHT AGAINST HULL & CO) EPILOG: Triggered by having Hull in the party and CHARNAME becoming an evil deity by losing to Hull and maybe others in combat.  THIS ENDING MODIFIES THE DEFAULT GOD/MORTAL ENDING!
 <Note that the normal ending and epilog DO NOT PLAY:  This plays instead!>
-As the life leaves <CHARNAME>’s form, the essence of Bhaal that <CHARNAME> contained is released, and yet Bhaal is not revived.  
+As the life leaves <CHARNAME>’s form, the essence of Bhaal that <CHARNAME> contained is released, and yet Bhaal is not revived.
 Regardless, Hull falls to the floor, dropping whatever was in his hands, with pained tears falling down his pained face.  “Kid, you were like a <PRO_BROTHERSISTER> to me,” Hull utters weakly amidst the sobbing.
 A moment passes and Hull returns to his senses, stands, and requests the Solar send him home to Candlekeep.  Hull fulfilled what he believed Gorion would have wanted - the prevention of the return of the Lord of Murder and the rise of a new evil deity.
 Once in Candlekeep, Hull returned to Winthrop and relayed the tale of how <CHARNAME> and he ventured the world and the planes together, vanquishing evil, until the very last moment when Hull did what he -had- to do to keep the world intact and fulfill Gorion’s legacy.
@@ -6580,7 +6580,7 @@ Image Credit
 -Hull has 3 less Oils of Speed and Potions of Invisibility (minimum 0 each).
 [If Hull didn’t rescue Volo from Saradush but Hull tried his plan anyway] Hull Dialog at Watcher’s Keep
 <The party gets 10,000 quest EXP.  Hull gets an extra 10,000 quest EXP.>
-HULL: We made it out safe ‘n’ sound!  The locals were none too happy about my plan to shove ‘em into an extradimensional bag.  At least I tried!  
+HULL: We made it out safe ‘n’ sound!  The locals were none too happy about my plan to shove ‘em into an extradimensional bag.  At least I tried!
 What about the stuff I let you use?
 HULL: The bag’s fine kid.  I chain chugged potions while running at record speeds.  I downed the stuff so fast I almost forgot about the horrid aftertaste!
 What horrid aftertaste?
@@ -7579,7 +7579,7 @@ RASAAD: Together then, into the realm of shadows.
 --NEXT DIALOG BOX--
 HULL: The shadows?
 --NEXT DIALOG BOX--
-RASAAD: <Rasaad looks confidently at Hull.>  The shadows.  <END DIALOG.> 
+RASAAD: <Rasaad looks confidently at Hull.>  The shadows.  <END DIALOG.>
 Alorgoth Trapped in Shadow Plane - Baeloth/Hull/Trinden/Volo is in the party
 HULL: Rasaad, it’s over now.  Let’s finish this Bhaalspawn saga!
 --NEXT DIALOG BOX-
@@ -7588,7 +7588,7 @@ BAELOTH: Exit stage... left? (from here)
 VOLO: Discretion is the better part of valor, as they say!
 --NEXT DIALOG BOX-
 TRINDEN: Leave -now- or live -briefly- in regret!
-<CONTINUE SCENE.> 
+<CONTINUE SCENE.>
 Dialog with Killis - Baeloth/Hull/Trinden/Volo is in the party
 KILLIS: There are too many of them.  We must flee.
 --NEXT DIALOG BOX--
@@ -8289,7 +8289,7 @@ HULL: <Hull sighs.>
 C’mon, Hull!  Snowman building ain’t so scary!  Let’s do it together!
 HULL: Aww!  Thanks, kid!
 Let’s leave this watery scene before someone gets shipwrecked.
-HULL: <Hull smiles and snickers.> 
+HULL: <Hull smiles and snickers.>
 Kuldahar - IWD in EET
 HULL: Wow, kid!  Look at all this greenery!  I didn’t expect this so far north!
 --NEXT DIALOG BOX--
@@ -8796,7 +8796,7 @@ HULL: I did my best to guide your child as I thought you wanted it done!
 --NEXT DIALOG BOX--
 GORION: Hull?  Well, thank you!
 --NEXT DIALOG BOX--
-GORION: I admit, I was not expecting you to take up my mantle and act as a foster father to <CHARNAME>, my child.  Elminster or another well-trusted Harper was my first choice.  
+GORION: I admit, I was not expecting you to take up my mantle and act as a foster father to <CHARNAME>, my child.  Elminster or another well-trusted Harper was my first choice.
 --NEXT DIALOG BOX--
 GORION: Regardless, Hull, you have my great gratitude for doing what I could not.
 --NEXT DIALOG BOX--
@@ -8831,7 +8831,7 @@ HULL: Enjoy your afterlife, sir!
 <If Trinden is in the Pocket Plane, regardless of others’ presence.>
 TRINDEN: So, -that- is your foster father.  I can partially relate, as I was raised by my uncle in a city while my birth father much preferred a wild, tribal life.
 --NEXT DIALOG BOX--
-TRINDEN: Each of them loved me and aided me as best they believed they could.  
+TRINDEN: Each of them loved me and aided me as best they believed they could.
 <END DIALOG.>
 ToB: OTHER REUNION MOD STUFF
 Captain Arat Dialog
@@ -9752,7 +9752,7 @@ CARLISLE: Yeah.  Got a -problem- with that?
 --NEXT DIALOG BOX--
 BAELOTH: <Baeloth shrugs.>
 --NEXT DIALOG BOX--
-CARLISLE: The God Bot was one of my experiments.  On Eberron, we don’t know much about the Lord of Blades - the machine god of machines - so we experimented with putting souls into constructs.  
+CARLISLE: The God Bot was one of my experiments.  On Eberron, we don’t know much about the Lord of Blades - the machine god of machines - so we experimented with putting souls into constructs.
 --NEXT DIALOG BOX--
 CARLISLE: Turns out that the Lord of Blades is -plenty- real and that he has a cult-like following among constructs with souls.
 --NEXT DIALOG BOX--
@@ -11824,7 +11824,7 @@ Volo - Add this dialog tree
 [If the party has at least 1 chapter of the Tome of Untold Legends BUT not all 8] What can you tell me about this mostly indecipherable text I found?
 VOLO: <Volo examines the text while fiddling with his mustache and wrinkling his nose.  Time seems to quietly stand still.>
 --NEXT DIALOG BOX--
-VOLO: Oh?  What’s this?  An ancient text of questionable content?  
+VOLO: Oh?  What’s this?  An ancient text of questionable content?
 --NEXT DIALOG BOX--
 VOLO: <Volo’s face contorts to a variety of expressions as reads over the text.>
 --NEXT DIALOG BOX--
@@ -11880,7 +11880,7 @@ VOLO: The planes are only so big, you know.  There are only so many places you c
 [If the party has all 8 chapters of the Tome of Untold Legends AND this is the first time talking with Volo about all 8 chapters] I have all 8 chapters to a book I can’t read.  What do you make of it?
 VOLO: <Volo examines the text while fiddling with his mustache and wrinkling his nose.  Time seems to quietly stand still.>
 --NEXT DIALOG BOX--
-VOLO: Oh?  What’s this?  An ancient text of questionable content?  
+VOLO: Oh?  What’s this?  An ancient text of questionable content?
 --NEXT DIALOG BOX--
 VOLO: <Volo’s face contorts to a variety of expressions as reads over the text.>
 --NEXT DIALOG BOX--
@@ -12491,7 +12491,7 @@ HULL: How good it feels to go back to my old life for a while of drinking until 
 --NEXT DIALOG BOX--
 ANOMEN: Does that mean until you’re on the floor, Hull?
 --NEXT DIALOG BOX--
-HULL: Maybe.  There’s just something thrilling in the moment of seeing how far I can go when I try.  
+HULL: Maybe.  There’s just something thrilling in the moment of seeing how far I can go when I try.
 --NEXT DIALOG BOX--
 HULL: And not being concerned about the consequences.
 --NEXT DIALOG BOX--
@@ -12546,7 +12546,7 @@ HULL: Good!  You’re more comfortable living as the noble you are!  Doesn’t m
 --NEXT DIALOG BOX--
 NALIA: That’s what gets me.  I just... don’t like the bad image other nobles give.
 --NEXT DIALOG BOX--
-HULL: I know.  I know.  Some are royal assholes - but only some.  
+HULL: I know.  I know.  Some are royal assholes - but only some.
 --NEXT DIALOG BOX--
 HULL: You gotta be comfy with money, girl, or you’re gonna lose to others that -are!-  Maybe even you’d be overthrown or assassinated!
 --NEXT DIALOG BOX--
@@ -12643,7 +12643,7 @@ HULL: How good it feels to go back to my old life for a while of drinking until 
 --NEXT DIALOG BOX--
 ANOMEN: Does that mean until you’re on the floor, Hull?
 --NEXT DIALOG BOX--
-HULL: Maybe.  There’s just something thrilling in the moment of seeing how far I can go when I try.  
+HULL: Maybe.  There’s just something thrilling in the moment of seeing how far I can go when I try.
 --NEXT DIALOG BOX--
 HULL: And not being concerned about the consequences.
 --NEXT DIALOG BOX--
@@ -12917,7 +12917,7 @@ NASHKEL AREA
 ULGOTH’S BEARD
 -Ulgoth’s Beard’s Inn”
 Phase 2a: Hull drank from the 4 taverns in Beregost (Burning Wizard, Feldepost’s Inn, Jovial Juggler, and Red Sheaf Inn)
-JOURNAL: “Hull sampled drinks from all the taverns in Beregost.  
+JOURNAL: “Hull sampled drinks from all the taverns in Beregost.
 To quote him, ‘Not bad, but nothin’ special.  Winthrop did it better.’”
 Phase 2b: Hull drank from the Friendly Arm Inn
 JOURNAL: “Hull sampled a drink from the Friendly Arm Inn.  He seemed eager to down every last drop!
@@ -13061,7 +13061,7 @@ SOUTH BALDUR’S GATE:
 SOUTHEAST BALDUR’S GATE:
 -Blade and Stars”
 Phase 2a: Hull drank from the Helm and Cloak
-JOURNAL: “Hull sampled a drink from the Helm and Cloak in northwest Baldur’s Gate.  
+JOURNAL: “Hull sampled a drink from the Helm and Cloak in northwest Baldur’s Gate.
 To quote him, ‘It’s a ritzy place with booze that tastes imported.  It gets -my- seal of approval!’”
 Phase 2b: Hull drank from the Three Old Kegs
 JOURNAL: “Hull sampled a drink from the Three Old Kegs in north Baldur’s Gate.  He looked like he would fall to the floor after his first gulp!
@@ -13525,7 +13525,7 @@ PRELATE WESSALEN: Yes, my <PRO_LADYLORD>.  Being knighted in our order is such a
 Since Hull’s been knighted, may we also get a room here?
 PRELATE WESSALEN: <The prelate smiles and chuckles.>  <CHARNAME>, you, Hull, and your guests - if they are welcome in this hall - may stay here freely.  Room and board are provided.  We trust you will act wisely regarding who you bring in here, and if we believe someone to be suspicious or unwelcome, we will handle the situation IF it happens.
 What’s Hull’s salary as a knight?
-PRELATE WESSALEN: Hull, let me be clear with you on this.  Because the vast majority of our knights are nobles, they have not drawn a salary from the order in the traditional sense.  
+PRELATE WESSALEN: Hull, let me be clear with you on this.  Because the vast majority of our knights are nobles, they have not drawn a salary from the order in the traditional sense.
 --NEXT DIALOG BOX--
 HULL: I was really lookin’ forward to that!  Sir!
 --NEXT DIALOG BOX--
@@ -13597,7 +13597,7 @@ BAELOTH: No, no, no, but thank you for thinking of that!
 --NEXT DIALOG BOX--
 NEERA: I guess that if you -were- planning on more trouble in the arena, we might Wild Magic up some Vicross.  Accidentally, of course.  On purpose if we could.
 --NEXT DIALOG BOX--
-BAELOTH: Allow me an absence while I inquire within.  
+BAELOTH: Allow me an absence while I inquire within.
 Start talking sense -now!-
 BAELOTH: Oh, my cunning companion.  Our chaos in this coliseum can wait.  -I- wish to work with the battlemaster of this -beautiful- building.
 <Pick one.>
@@ -14188,7 +14188,7 @@ ELMINSTER: <Elminster nods.>  <RETURN TO MAIN TOPICS FOR THIS DIALOG TREE.>
 What can you tell me about how you operate?
 ELMINSTER: Surely you understand, <CHARNAME>, that while I have free will, I am a man of many attachments and obligations - to my patron deity Mystra as her Chosen, to my organization the Harpers as a high-ranking member and an administrator, and to this world and the planes to ensure a certain order about them remains.
 --NEXT DIALOG BOX--
-ELMINSTER: <CHARNAME>, please do not misunderstand my previous point as being hostile nor ambivalent toward you.  It simply means that I am positioned to work on a scale where most mortals never do.  As the saying goes, “With power comes responsibility.”  
+ELMINSTER: <CHARNAME>, please do not misunderstand my previous point as being hostile nor ambivalent toward you.  It simply means that I am positioned to work on a scale where most mortals never do.  As the saying goes, “With power comes responsibility.”
 --NEXT DIALOG BOX--
 ELMINSTER: It also means that many are mistaken if they truly believe they should merely wait for someone more powerful than they - like me - to suddenly arrive and solve their problems.
 --NEXT DIALOG BOX--
@@ -14580,7 +14580,7 @@ KEEPER: <The Keeper of the Portal shakes his head.>  I do not envy your position
 --NEXT DIALOG BOX--
 HULL: Hmm?
 --NEXT DIALOG BOX--
-KEEPER: Violence breeds violence... but we live in dangerous times.  Living and dying by the sword - yes, even along the Sword 
+KEEPER: Violence breeds violence... but we live in dangerous times.  Living and dying by the sword - yes, even along the Sword
 Coast - is to be expected.
 --NEXT DIALOG BOX--
 HULL: You’re sounding just like Gorion!
@@ -14835,7 +14835,7 @@ TRINDEN: Gracious.
 <If Volo is in the party.>
 VOLO: I shall need to make note of this generosity!
 --NEXT DIALOG BOX--
-WINTHROP: That sounds like Volo!  
+WINTHROP: That sounds like Volo!
 --NEXT DIALOG BOX--
 VOLO: It is!  Winthrop, my old friend, I see you’re still doing about the same as when I wrote my guide to the Sword Coast about you!
 --NEXT DIALOG BOX--
@@ -15019,7 +15019,7 @@ BAELOTH: -you, Aerie, are an Avariel.  We’re not so different, you and I.
 AERIE: Are you saying that because of my wings?
 --NEXT DIALOG BOX--
 BAELOTH: Only minorly, my dear.  I heard you were a slave, stolen from your home at an early age.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 AERIE: Well, yes.  The circus took me in, even if they took me as a slave.  Life in the circus troupe was cruel and I wasn’t given enough space to spread my wings, so they just stopped working little by little.
 --NEXT DIALOG BOX--
 BAELOTH: Aw, what a pitiful past - but I don’t blame you for doing what you did.
@@ -15052,7 +15052,7 @@ AFAAQ: ‘Najim’ is not a name I have commonly heard.  I suspect I have a dist
 BAELOTH: Let’s just say I’ve had some rather... unpleasant dealings with a certain Djinn of that name.
 --NEXT DIALOG BOX--
 AFAAQ: Do you seek revenge for him twisting a wish?
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: Not exactly.  He was bound to my service for a time, but managed to break free.  He... took something of significant value along the way and I wanted to know what you think I should do.
 --NEXT DIALOG BOX--
 AFAAQ: I have heard of similar situations, and this is what I advise.
@@ -15075,7 +15075,7 @@ ANOMEN: I suppose answering your... inquiry will cause you to stand farther away
 BAELOTH: Why did you have such a -burning desire- to join the knightly order?
 --NEXT DIALOG BOX--
 ANOMEN: I simply wished to prove my worth to my family and myself.  I know beyond all doubt that I -can- follow my path.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: And how did you plan to do that by joining that dog kennel of an order?
 --NEXT DIALOG BOX--
 ANOMEN: How -dare- you insult the Most Noble Order?
@@ -15118,7 +15118,7 @@ BAELOTH: <Baeloth shows his left hand with a severed finger.>
 ANOMEN: What is the meaning of this?
 --NEXT DIALOG BOX--
 BAELOTH: Simple words before powerful gods and monsters make you their dog.  Careful about which leash you choose, Cleric.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 ANOMEN: But why that finger?
 --NEXT DIALOG BOX--
 BAELOTH: Oh, I was not -born- this way if that’s what you mean.  I accepted a ring soulbound to my finger, a burden of wealth and power from a Djinn who later betrayed me, but he never removed the ring.  I decided that burden was no longer worthwhile, and so I ended it.
@@ -15137,7 +15137,7 @@ BAELOTH: Witnessing the wonderful resolution of your feud in the Black Pits woul
 ARTEMIS: For you it would.  My ‘rivals’ and I would not stand still long enough for you to finish your opening speech.
 --NEXT DIALOG BOX--
 BAELOTH: Oh, fixes and furnishings would be found, my friend!
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 ARTEMIS: Have you not noticed that Drizzt’s Champions of the Hall and I do not fight for mere entertainment but to -kill?-
 --NEXT DIALOG BOX--
 BAELOTH: Oh, I -perfectly- understand your point.  The pits add a pinch of pageantry upon your pugilism.
@@ -15166,7 +15166,7 @@ BAELOTH: -Insincere?-  Me?  You must mistake me for a jester!
 CAELAR: Your ‘entertaining’ and ‘dramatic’ attitude, Drow, have made me question your motives and what you’re hiding.
 --NEXT DIALOG BOX--
 BAELOTH: Such suspicion!  It is not every day that an angel assails her way free from Avernus with or without outside help!
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 CAELAR: I... see.  I did not expect someone who could easily be my enemy celebrating my success.
 --NEXT DIALOG BOX--
 BAELOTH: Oh, I know well the feeling of loud crowds and splendid celebrations.  Often, the very most voluminous voices were from those who wanted me dead, disemboweled, disgraced, or deposed.
@@ -15187,7 +15187,7 @@ BAELOTH: It’s a circle of violence, Cernd, just like on the surface.
 CERND: You speak of violence and slavery.  How are these things natural?
 --NEXT DIALOG BOX--
 BAELOTH: Where there’s life, there’s war!  -Everyone- and -everything- wants to rule!
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: Look at the trees of the forest!  They’re all in a slow death race to the top to prevent each other from getting the life they need to grow!
 --NEXT DIALOG BOX--
 BAELOTH: Look at the animals and creatures of the wild!  They’ll fight and kill each other out of hunger, yes, but also out of boredom!
@@ -15212,7 +15212,7 @@ BAELOTH: Oh, captain, my captain, dare you underestimate this Drow?
 CORWIN: I suppose so.  What’s kept you busy since the banishment from Baldur’s Gate?
 --NEXT DIALOG BOX--
 BAELOTH: Reviving my business empire.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 CORWIN: You’re still determined to build up from that... calling it a side show would be generous.
 --NEXT DIALOG BOX--
 BAELOTH: Now, now.  You can take Baeloth out the Black Pits over his dead body, but you can’t take the Black Pits for they are burned into my very SOUL!
@@ -15233,7 +15233,7 @@ DORN: Blood, death, and vengeance suit me well, Drow.  -That- much you should kn
 BAELOTH: Surely your style is not to act as a safe whose sole purpose is to elude entry.
 --NEXT DIALOG BOX--
 DORN: Consider this, Drow:  My goal is to make my mark upon the realms and obtain the vengeance I seek.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: Perhaps our priorities align!  I propose preparing your prowess in an arena purveyed and promoted by me.
 --NEXT DIALOG BOX--
 DORN: I have considered your offer, Drow, but know this:  A mere pit ring is too small to contain my ambition.  I am to test my limits against foes on a worldwide scale.
@@ -15256,7 +15256,7 @@ DRIZZT: Then why are you here?
 BAELOTH: I came to tell you that your rebelling against the Drow of the Underdark as you did makes more -sense- to me now!
 --NEXT DIALOG BOX--
 DRIZZT: What do you mean?
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: We’re Drow.  Bloodlust and senseless violence is in our -blood!-  You saw that, left, made a long list of enemies, and realized you should be doing something better elsewhere.
 --NEXT DIALOG BOX--
 DRIZZT: <Drizzt suspiciously snorts at Baeloth.>
@@ -15281,7 +15281,7 @@ BAELOTH: I can heeeeeear you!  (From here.)
 EDWIN: Yes, yes.  You were thinking it, anyway.
 --NEXT DIALOG BOX--
 BAELOTH: As recognized by my research, Thay contains one of Faerun’s finest fighting arenas, and I would -love- an introduction from you to those in charge.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 EDWIN: What makes you think they would give a rat’s ass about what you think, Drow?
 --NEXT DIALOG BOX--
 BAELOTH: I have -quite- the acute arcane ability myself, and -years- of experience yanking slaves into obedience to have them duel to the death!  Truly, we can talk tips!
@@ -15298,7 +15298,7 @@ BAELOTH: Oh, why -someone- surely seems surly this century!  What do you wonder 
 ELARYN: Our leader invited us to join the same group and yet... you’re a -drow!-  Your heart is as black as your skin and you’re just -waiting- to ensorcell us with your spells and your words!  Sweeter than heavenly nectar but black as the foul pits that spawned you!
 --NEXT DIALOG BOX--
 BAELOTH: Ooh!  You think I haven’t heard -that- a hundred times before?  Just listen to yourself!  All your allegations make -you- seem a -lot- like the -aggressor-, here!  At least -I- can be polite long enough to make peace with -plenty- of beings!
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 ELARYN: <Elaryn scowls at Baeloth!>
 --NEXT DIALOG BOX--
 BAELOTH: Does Baeloth the Entertainer also need to be Baeloth the Educator to you?  Fine!
@@ -15319,7 +15319,7 @@ BAELOTH: Not now, my minstrel, but your playing is pleasant.
 GARRICK: Thank you so very much for your most gracious compliment. (from here)
 --NEXT DIALOG BOX--
 BAELOTH: I was pondering putting performers beside my Black Pits to persuade the temperaments of battlers and audiences alike.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 GARRICK: Nothing soothing, then?
 --NEXT DIALOG BOX--
 BAELOTH: No.  Not one bit!
@@ -15348,10 +15348,10 @@ HAER’DALIS: We have been friends for longer than I have known you.  We complim
 BAELOTH: Certainly you can!  But have you considered leaving the low-budget life of the stage to gain something greater?
 --NEXT DIALOG BOX--
 HAER’DALIS: I already know what you mean - life as a gladiator where the arena is the stage and all the action is real.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: Absolutely, though acknowledging one's individual abilities is also an admirable attribute.  (From here.)
 --NEXT DIALOG BOX--
-HAER’DALIS: The challenge of fighting for survival and for the thrill of the crowd has its appeal, I admit, but I also enjoy engaging with my fans before and after the show.  
+HAER’DALIS: The challenge of fighting for survival and for the thrill of the crowd has its appeal, I admit, but I also enjoy engaging with my fans before and after the show.
 --NEXT DIALOG BOX--
 BAELOTH: You still can!  Nothing a little resurrection and restoration won’t remedy if it comes to that.  You’re rich enough that death is but a diminutive dent in your demeanor.
 --NEXT DIALOG BOX--
@@ -15369,7 +15369,7 @@ HEXXAT: Yes, Drow, and I know your proposal:  You want me to fight in your under
 BAELOTH: Correct, my clever and cordial companion!  Partaking as a pit warrior would properly prepare you to be in peak performance in siphoning sanguine substances.
 --NEXT DIALOG BOX--
 HEXXAT: Do you -demand- I be your pet pit vampire?
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: It is an offer, but not an outstanding order.  However, your agreement would be much obliged.
 --NEXT DIALOG BOX--
 HEXXAT: If I am in the mood, Drow, I shall consider it.
@@ -15396,7 +15396,7 @@ BAELOTH: Mushrooms?!  They don’t glow and they look -entirely- too inconspicuo
 HUBELPOT: Oh, c’mon now!  I thought you Underdark denizens -liked- mushrooms!  Besides, what did you eat for all those years you were underground?
 --NEXT DIALOG BOX--
 BAELOTH: I was born into a family who quickly had a Ring of Sustenance custom made for me so I could avoid the intrigue around ingested poisons.  I’m pretty sure I’ve -never- eaten anything in the Underdark!
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 HUBELPOT: What a sad, sad life never tasting the -delicious- and -luscious- taste of vegetables!
 --NEXT DIALOG BOX--
 BAELOTH: Because you can heal me, I’ll humor you -this- time.
@@ -15423,7 +15423,7 @@ BAELOTH: Oh, Hull, I -am- impressed.
 HULL: Good!  So, what’s yer point?
 --NEXT DIALOG BOX--
 BAELOTH: I thought you were -fond- of your freedom.  Those in the order seem very... picky about how everyone in the world should be.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 HULL: Picky?  Yeah.  I can see your point.
 --NEXT DIALOG BOX--
 HULL: But for me, it’s an achievement.  I knew I could do it, and I wanted to prove to everyone I could do it, and I did.
@@ -15448,7 +15448,7 @@ IMOEN: I’ve been... experimented on.  Tortured.  I tried keeping my head up an
 BAELOTH: You have me quite curious:  What wounds did he inflict and where?  What methodology led him?
 --NEXT DIALOG BOX--
 IMOEN: I... I’m not entirely sure I know.  Just thinking about it hurts.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: If I -knew- then I could better try to -undo- it, my dear.
 --NEXT DIALOG BOX--
 IMOEN: Thanks, but why do you care so much about this, anyway?
@@ -15479,7 +15479,7 @@ IRENICUS: Most likely in the same manner that you did, -Drow.-  I have spent an 
 BAELOTH: Do I sense some -resentment- resounding in that voice?
 --NEXT DIALOG BOX--
 IRENICUS: I’ll not be toyed with.  I see through your charismatic nature to a conflicted Drow confident he can take on the world while hiding from his feelings of cowardice from being bettered.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: You were -drawn- to the Drow as allies as we are -the- most competent combatants the Underdark has to offer - unless it was all a ruse.
 --NEXT DIALOG BOX--
 IRENICUS: Hmph.
@@ -15504,7 +15504,7 @@ JAHEIRA: Don’t patronize me, Drow.
 BAELOTH: Patronize?  Preposterous!  I peacefully propose partaking in your purpose in life - unless the ‘natural balance’ is no longer your priority.
 --NEXT DIALOG BOX--
 JAHEIRA: What would you know about -balance?-
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: Well, my well-traveled companion, what say you to the notion that this ‘balance’ is but a subjective opinion on how it operates?  Are not all you Druids keen on avoiding conglomeration?
 --NEXT DIALOG BOX--
 JAHEIRA: I’ll tell you this much, -Drow.-  I’m my own person.  What you consider friendly flattery I call an affront to nature and my training!
@@ -15531,7 +15531,7 @@ BAELOTH: You wouldn't be interested in playing a little GAME, would you? Mmm? (f
 JAN: Game?  I -love- games!
 --NEXT DIALOG BOX--
 JAN: There was this time about thirty years ago when my second cousin on my mother’s side and I played our longest game of Chess yet.  We were at it for over a day, and we kept moving our pieces to prevent being checkmated, but she passed out from exhaustion first, so she forfeited the game.  She violently appealed to my mother after this and claimed that I did something to make her lose when I did not.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: Ahem.
 --NEXT DIALOG BOX--
 JAN: Ahem what?  Oh.  Your game?
@@ -15558,7 +15558,7 @@ KELDORN: <Keldorn narrows his eyes suspiciously at Baeloth.>
 BAELOTH: You’re a Paladin.  I can tell.  Big, strong type.  Fondness for heavy armor and big swords.  I’m a Sorcerer and look like something you were trained to -hate!-
 --NEXT DIALOG BOX--
 KELDORN: What is your point?
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: Oh, Keldorn, despite appearances, we’re not so different - you and I.  In fact, I think we’ll get along -just fine.-
 --NEXT DIALOG BOX--
 KELDORN: What trickery is this?
@@ -15592,9 +15592,9 @@ KELDORN: I am hesitant to let you indulge your tongue my way, but go on.
 BAELOTH: What is the primary purpose of paladinhood - to uplift the unfortunate underdog or to smite the sinner?
 --NEXT DIALOG BOX--
 KELDORN: That is... a remarkably -sensible- question to ask of me, Baeloth.  It is one I asked my teachers many years ago.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 KELDORN: The truest answer is that everyone has a calling, a ministry.  Some are first and foremost teachers or preachers or healers or charity workers.  Some are scholars or investigators.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 KELDORN: Being a paladin also means being a lawman, which means being a soldier.  We are held to a high standard of moral and military character which is meant to inspire others to follow our lifestyles by example.
 --NEXT DIALOG BOX--
 BAELOTH: That’s -precisely- my pickle!
@@ -15689,7 +15689,7 @@ BAELOTH: Oh, Kivan.  Why so wary?  Hmm?  Get up on the wrong side of your bed th
 KIVAN: Shut up!  Your chattering might drive us all insane. (from here)
 --NEXT DIALOG BOX--
 BAELOTH: So severe!  I know it’s because of your dearly departed Deheriana!  I have a plan to return her to this reality.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 KIVAN: <Kivan looks quietly and suspiciously at Baeloth.>
 --NEXT DIALOG BOX--
 KIVAN: Watch what you say. (from here)
@@ -15706,7 +15706,7 @@ BAELOTH: Absolutely, my associate!
 --NEXT DIALOG BOX--
 KIVAN: And keep quiet toward me.  I simply need time to think.
 --NEXT DIALOG BOX--
-BAELOTH: Beckon Baeloth when need be.  
+BAELOTH: Beckon Baeloth when need be.
 BG2: KORGAN/BAELOTH BANTER
 If Korgan & Baeloth are in the party
 KORGAN: What do -you- know about fightin’, Drow?  All I’ve seen you carry around is a prissy little stick!
@@ -15718,7 +15718,7 @@ KORGAN: And I’ve ne’er seen ye cart around no holy symbols nor spellbooks, e
 BAELOTH: Aw!  Is the short one jealous that he can’t kill anything he’d please with a well-placed sneeze?
 --NEXT DIALOG BOX--
 KORGAN: I sneezed all over ye earlier.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: It was downright -disgusting!-  Rightfully -revolting!-
 --NEXT DIALOG BOX--
 KORGAN: Give it time, Drow.  It’ll still kill ye.
@@ -15751,7 +15751,7 @@ MAZZY: I’m a Halfling, not a Gnome.
 BAELOTH: I was just about to say that!
 --NEXT DIALOG BOX--
 MAZZY: Drow, what is your point?  I tolerated the decision of our leader for us to travel together.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: Oh, I was just learning more about you surface folk.  Apparently, we have a lot in common - besides skin color, of course!
 --NEXT DIALOG BOX--
 MAZZY: I think I know where this is going, but tell me anyway.
@@ -15781,7 +15781,7 @@ MAZZY: <Nazzy sighs.>  At the very least, I invited this.
 BAELOTH: I was musing on how wonderfully wanted the short folk - the Svirbneblin - were backstage in the Black Pits among the bigger beings.
 --NEXT DIALOG BOX--
 MAZZY: Why would you wonder this around me?
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: If you could smile and give into levity around me, surely we would be -wonderful- at parties!
 --NEXT DIALOG BOX--
 MAZZY: What evil depravity is this?
@@ -15814,7 +15814,7 @@ MINSC: But how do you explain Boo wanting to dance?
 BAELOTH: Your rodent is right in wanting to revel around me.  Delight is my desire and gladiatorial glee my goal.
 --NEXT DIALOG BOX--
 MINSC: But why is my hamster dancing?
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: My skin secretes a scent sweet to the small creatures like him.  I assumed it as an anomaly.
 --NEXT DIALOG BOX--
 MINSC: Well, so long as it doesn’t prevent us from fighting the evil we need to fight, I think it’s fine.
@@ -15833,7 +15833,7 @@ BAELOTH: Why thank you, m’lady!  Are you after an autograph?
 MINYAE: Not today.  Your alliteration just... annoys me!  I don’t know why, but it it just -does!-
 --NEXT DIALOG BOX--
 BAELOTH: A perplexing point that pains me like pins of a porcupine!
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 MINYAE: You did it again!
 --NEXT DIALOG BOX--
 BAELOTH: To the untrained ear, my dear, these words may be difficult to hear.  Some are foul and have many vowels, but know that my heart is sincere.
@@ -15860,7 +15860,7 @@ BAELOTH: How can you hate having others be legally liable to wait on you and do 
 NALIA: Day after day I see injustices in the world.  The poor walk miles to get food while the rich walk miles to get rid of the food they ate so they don’t get too fat.
 --NEXT DIALOG BOX--
 BAELOTH: So you say.  (From here.)
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 NALIA: But can’t you see the painful inequality here?
 --NEXT DIALOG BOX--
 BAELOTH: My precious, naive Nalia, let me educate your noble noggin in the ways of the world.  You assume asininely that all lives are of equal worth.
@@ -15890,7 +15890,7 @@ BAELOTH: Yes.  You throw them some food, devise them a new dwelling, clean up th
 BAELOTH: They’re like darling dogs to you:  They bark at you when they’re cold or hot or hungry or afraid or danger draws near.
 --NEXT DIALOG BOX--
 BAELOTH: You want all the diminutive dirty peasants to praise you when big mama Noble Nalia draws near and doles out some desirable outcome like a guard dog getting a grilled steak.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: You have -all- the keys to their kennels and do enough to ensure they don’t depose you.  If they do, their lot in life can’t change much:  They’re poor, they’re weak, and they’re -absolutely adamant- about being in charge when they have nothing in their noggins but nonsensical notions!
 --NEXT DIALOG BOX--
 BAELOTH: You can -try- to change them, but -they will never be noble!-  A shiny new settlement or a bigger bed won’t warp them into warriors or wizards - ones you -could- and -should- be courting.
@@ -15920,7 +15920,7 @@ BAELOTH: Finding the worthiest warriors is easy:  Surround yourself with the str
 NALIA: That’s so cruel!
 --NEXT DIALOG BOX--
 BAELOTH: It’s -compassionate- compared to conquerors who care not of what you call ‘kind.’  Survival of the strongest is simple, my dear, and the ‘luckiest’ will live.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 NALIA: I... hate to admit it, Baeloth, but you have a point.  I did rush to the Copper Coronet because de’Arnise Hold was conquered by trolls who didn’t care what happened to the inhabitants.
 --NEXT DIALOG BOX--
 BAELOTH: Casters demand more training and tutelage from an early age, even if their sorcerous skills manifest meteors from temper tantrums.  An open-air arena duel to the death won’t do.
@@ -15943,7 +15943,7 @@ BAELOTH: No, no.  Nothing that trite.  Your affinity for Wild Magic is admirable
 NEERA: Really?  Because much of the time people around me leave me feeling really, really sorry that this tangled strand of the Weave chose me!
 --NEXT DIALOG BOX--
 BAELOTH: That’s -exactly- why sometimes I envy you.  Your magic is inherently -chaotic.-  Every ‘mistake’ in your casting - your positioning, your timing, your choice of spells - has an inherent layer of plausible deniability.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 NEERA: Are you saying Wild Magic is -good- for me?  Because you’d probably be the first!
 --NEXT DIALOG BOX--
 BAELOTH: Whether Wild Magic is good for you is debatable, but the fact that you cannot entirely control your powers means that some ‘accidents’ can be staged and fewer people can blame you directly for them.  It’s like adding an extra roll of the dice to every spell you cast instead of just picking the result you want.
@@ -15962,7 +15962,7 @@ RASAAD: What do you mean?
 BAELOTH: You prance around nearly naked with - at most - a modicum of magical might manifest.  However do you handle yourself and -live?-
 --NEXT DIALOG BOX--
 RASAAD: You are not the first to ask such a question.  While my monastic training was never intended to make me a wizard, I learned martial arts well enough that many of my feats are preternatural or even seemingly supernatural in origin.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: So you say.  (From here.)
 --NEXT DIALOG BOX--
 RASAAD: Why are you surprised?
@@ -15995,7 +15995,7 @@ SARADAS: Baeloth, I have been content creating these spells for myself and those
 BAELOTH: How?
 --NEXT DIALOG BOX--
 SARADAS: I devoted myself to magic as a Priest of Lathander from an early age.  I wanted to help others be free of their afflictions.  Ultimately, when I realized I could do more for my patients and to further my curious studies, I switched to learning wizardry.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: But a man of -your- talents deserves to be doing great deeds, not rotting away in some forsaken fane!
 --NEXT DIALOG BOX--
 SARADAS: Yes, Baeloth.  I agree.  That’s why when I heard the uproar about Amn and the Bhaalspawn situation, I could wait no longer.
@@ -16014,7 +16014,7 @@ SAREVOK: I sought conquer and death on a massive scale to bring about the return
 BAELOTH: -Nations?-  Nah.  I was jolly enough with just surly slaves and gladiators glad to get another round to fight.
 --NEXT DIALOG BOX--
 BAELOTH: But since you mentioned it, the sweet song of conquest to erect an entertainment empire entices me!
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 SAREVOK: You may still get your wish.
 --NEXT DIALOG BOX--
 BAELOTH: Yes, yes.  Nation against nation!  Godling against godling!  All of them battle boldly to determine who brings Daddy Bhaal back.
@@ -16035,7 +16035,7 @@ VALYGAR: What?
 BAELOTH: Look, Valygar, I get you.  You think that magic is like farting:  It’s so, -so- bad when others do it, but if you do it, it’s -totally- justified!
 --NEXT DIALOG BOX--
 VALYGAR: That is not at ALL what I said!
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: I’ve heard your whimperings and murmurings about how magic is vile and relying on magic makes you weak.
 --NEXT DIALOG BOX--
 VALYGAR: ‘Whimperings?’  What am I, your dog?
@@ -16066,7 +16066,7 @@ VICONIA: Your tone sounds mocking.  It’s hard for me to believe you’re since
 BAELOTH: We’ve each been usurped from the Underdark, forced to flee to the surface for sustenance.  We’ve thrived in ways those underground thought we never would!
 --NEXT DIALOG BOX--
 VICONIA: Do you have a point beyond mere conversation?
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: Certainly, my inquisitive one:  The Drow of the Underdark seemed stifled in their lifestyle.  Expansion to the surface is a logical leap of progress.  I suspect it would shrink their desire to be bound in age-old blood feuds.
 --NEXT DIALOG BOX--
 VICONIA: More Drow living well on the surface?  Have you forgotten how much we have been assaulted by others just because of who we are by birth?
@@ -16091,7 +16091,7 @@ VOLO: As a Bard myself, I would -love- to hear your most impressive tales!
 BAELOTH: Oh, I am a showman but I am no Bard!  Don’t depend on your darling Drow here to sing you a ditty nor dazzle you with dancing.
 --NEXT DIALOG BOX--
 VOLO: Then what are your areas of entertainment expertise?
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: My style is only the finest of fancies - organized warfare, and delightful duels to the death!
 --NEXT DIALOG BOX--
 VOLO: Organized warfare?  That sounds... dangerous!
@@ -16112,7 +16112,7 @@ WILSON: <Wilson snorfles.>  (From here.)
 BAELOTH: You’re akin to a Dire Dog with an enormous appetite and fewer oral displays of affection.
 --NEXT DIALOG BOX--
 WILSON: <Wilson snorts then snorts again.>  (From here.)
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: An obvious implementation of your unique ursine ability would be to properly prepare you as a pit fighter.  Surely, you could satisfactorily shoulder such a shift!
 --NEXT DIALOG BOX--
 WILSON: <Wilson whines.>  (From here.)
@@ -16138,7 +16138,7 @@ BAELOTH: Look at all those tricky toy traps you use!  Did you get us some bear? 
 YOSHIMO: I see, Baeloth.
 --NEXT DIALOG BOX--
 BAELOTH: I do, too.
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 YOSHIMO: But, no.  I don’t normally try to catch animals or creatures of the night to eat.
 --NEXT DIALOG BOX--
 BAELOTH: What would you prefer to trigger your traps?
@@ -16175,7 +16175,7 @@ ZAKRION: Drow, what are you doing with my sea charts?
 BAELOTH: I was simply amidst surmising where I was shipwrecked.
 --NEXT DIALOG BOX--
 ZAKRION: You on the open ocean?  I thought your kind was at home in the dark, not on the waves!
---NEXT DIALOG BOX-- 
+--NEXT DIALOG BOX--
 BAELOTH: Oh, trust me, my seafaring star, I was -not- at home on the open ocean.  I was amidst acquiring aquatic adversaries for an arena event.  Aboleths were an especially aggravating adversary to capture quickly.
 --NEXT DIALOG BOX--
 ZAKRION: Aboleths?  You’re braver than I!
@@ -16559,7 +16559,7 @@ AURA: Hull, I’ve been thinking about how to make better explosives.
 --NEXT DIALOG BOX--
 HULL: <Hull raises his eyebrow at Aura.>
 --NEXT DIALOG BOX--
-HULL: Explosives?  
+HULL: Explosives?
 --NEXT DIALOG BOX--
 HULL: Why?  I’m already your bodyguard!
 --NEXT DIALOG BOX--
@@ -16991,7 +16991,7 @@ Hull, he’s a Drow on the surface!  How was I to know?
 <Progress dialog.  Note that if <CHARNAME> admits to being a bandit or expressed to Drizzt a desire to attack/kill him, Hull will immediately leave the party and fight against <CHARNAME>’s party in anger!>
 Haven’t you ever wanted to kill a famous person before?
 <Hull groans as he barely restrains his anger toward you!>
-<Hull leaves the party and drops all quest items at his feet.  Progress dialog.>  
+<Hull leaves the party and drops all quest items at his feet.  Progress dialog.>
 Hull, we sparred, but I won.  I -may- have -accidentally- killed him in the process.
 <Hull pauses a moment and seems painfully conflicted or confused.>
 --NEXT DIALOG BOX--
@@ -17135,7 +17135,7 @@ HULL: Dynaheir, thanks for joining us.  I feel better with another caster around
 DYNAHEIR: Thou art comforted by my presence, Hull?  Thou art wise to believe so!
 --NEXT DIALOG BOX--
 <If Minsc is in the party.>
-MINSC: Minsc and Boo agree!  Dynaheir is a wise and smart witch!  
+MINSC: Minsc and Boo agree!  Dynaheir is a wise and smart witch!
 --NEXT DIALOG BOX--
 MINSC: Minsc and Boo protect Dynaheir like you protect <CHARNAME>, Hull, looking out for dirty, stinky evil at every turn!
 --NEXT DIALOG BOX--
@@ -17372,7 +17372,7 @@ FINCH: <Finch turns to Hull then smiles and winks at him.>
 HULL: <Hull turns to Finch then smiles and winks back.>
 BG1: MEETING FIREBEAD ELVENHAIR IN BEREGOST
 Initially Talking with Firebeard with Hull in the Party
-FIREBEAD: <Firebead Elvenhair looks your way with a hint of surprise.>  
+FIREBEAD: <Firebead Elvenhair looks your way with a hint of surprise.>
 <Continue with Firebeard’s normal dialog introduction.>
 --NEXT DIALOG BOX--
 FIREBEAD: Oh, and Hull I see!  What brings you this far from Candlekeep?  Have you come to escort me back?
@@ -17763,7 +17763,7 @@ HULL: He’s in charge of one of the biggest and most famous libraries around.  
 --NEXT DIALOG BOX--
 HULL: He -wants- more books to make him feel special and to make Candlekeep visitors think it’s the best place -anywhere- to read books so he can keep charging admission.
 --NEXT DIALOG BOX--
-HULL: But people mistake Tethtoril for that ass Ulraunt -all the time.-  Tethtoril gets it.  He’s wise, he cares for Candlekeep, and he’s -nice.-  
+HULL: But people mistake Tethtoril for that ass Ulraunt -all the time.-  Tethtoril gets it.  He’s wise, he cares for Candlekeep, and he’s -nice.-
 --NEXT DIALOG BOX--
 HULL: I got tired of correcting nobles who thought this kindly old man was in charge.  Instead, these picky, pissy nobles found another picky, pissy noble in charge.
 --NEXT DIALOG BOX--
@@ -18153,7 +18153,7 @@ ALL: MEETING MINSC FOR THE FIRST TIME
 Before Initial Meeting with Minsc
 HULL: <Hull leans in toward you and whispers.>
 --NEXT DIALOG BOX--
-HULL: The guy has a purple tattoo, a pet hamster, and what looks like a pretty big sword.  Probably Rashemi based on what I’ve heard.  
+HULL: The guy has a purple tattoo, a pet hamster, and what looks like a pretty big sword.  Probably Rashemi based on what I’ve heard.
 Feeling uncomfortable about him, Hull?
 HULL: Just seems strange for a warrior to have these things.  Not the sword, though.
 I’m already weirded out.  Let’s leave.
@@ -18875,7 +18875,7 @@ HULL: Wow, Saradas!  You -really- looked like a younger version of Gorion to me!
 --NEXT DIALOG BOX--
 SARADAS: <Saradas smiles.>
 --NEXT DIALOG BOX--
-SARADAS: You kept mentioning this ‘Gorion’ fellow.  Who was he to you?  
+SARADAS: You kept mentioning this ‘Gorion’ fellow.  Who was he to you?
 --NEXT DIALOG BOX--
 HULL: He was a father figure to me, but I only realized that -after- he died.
 --NEXT DIALOG BOX--
@@ -20073,7 +20073,7 @@ What part of ‘No’ didn’t you understand?  ‘No’ means ‘No,’ not ‘
 HULL: <Hull just silently glares at you in disgust!>  <END DIALOG WITH HULL.>
 Grovel for me, Hull.  -Maybe- I’ll let you join.
 HULL: <Hull falls to the floor in the sleeping human Fighter animation.>  Please, PLEASE let me join you!
-Alright, Hull.  Wish granted.  
+Alright, Hull.  Wish granted.
 HULL: <Hull starts crying tears of joy as he stands.>
 --NEXT DIALOG BOX--
 HULL: Thank you!  This means more to me than you may ever know!  <Continue with Hull’s dialog tree as if the party had let him join.>
@@ -20155,7 +20155,7 @@ What part of ‘No’ didn’t you understand?  ‘No’ means ‘No,’ not ‘
 HULL: <Hull just silently glares at you in disgust!>  <END DIALOG WITH HULL.>
 Grovel for me, Hull.  -Maybe- I’ll let you join.
 HULL: <Hull falls to the floor in the sleeping human Fighter animation.>  Please, PLEASE let me join you!
-Alright, Hull.  Wish granted.  
+Alright, Hull.  Wish granted.
 HULL: <Hull starts crying tears of joy as he stands.>
 --NEXT DIALOG BOX--
 HULL: Thank you!  This means more to me than you may ever know!  <Continue with Hull’s dialog tree as if the party had let him join.>
@@ -20324,7 +20324,7 @@ What part of ‘No’ didn’t you understand?  ‘No’ means ‘No,’ not ‘
 HULL: <Hull just silently glares at you in disgust!>  <END DIALOG WITH HULL.>
 Grovel for me, Hull.  -Maybe- I’ll let you join.
 HULL: <Hull falls to the floor in the sleeping human Fighter animation.>  Please, PLEASE let me join you!
-Alright, Hull.  Wish granted.  
+Alright, Hull.  Wish granted.
 HULL: <Hull starts crying tears of joy as he stands.>
 --NEXT DIALOG BOX--
 HULL: Thank you!  This means more to me than you may ever know!  <Continue with Hull’s dialog tree as if the party had let him join.>
@@ -20348,7 +20348,7 @@ HULL: I only heard about it -after- it happened!
 HULL: This wasn’t a days-long battle, kid.  Before witnesses knew what was happening, it was done!
 [If Alternatives mod is installed and Imoen hasn’t joined the party since the Imoen/Irenicus fight scene such as being in BG2 Chapter 6 or with Imoen 4 Ever installed] Got any leads on how to get Imoen back?
 HULL: Yeah, kid.  There was a messenger for a paladin named Aster who came by here recently.  He said he was looking for some risk takers of strong reputation.
-[If Alternatives mod is installed and Imoen hasn’t joined the party since the Imoen/Irenicus fight scene such as being in BG2 Chapter 6 or with Imoen 4 Ever installed] Are you saying Aster will help us to get Imoen back? 
+[If Alternatives mod is installed and Imoen hasn’t joined the party since the Imoen/Irenicus fight scene such as being in BG2 Chapter 6 or with Imoen 4 Ever installed] Are you saying Aster will help us to get Imoen back?
 HULL: It’s worth a shot, kid!
 [If Imoen has joined the party since the Imoen/Irenicus fight scene such as being in BG2 Chapter 6 or with Imoen 4 Ever installed] Hull, I already freed Imoen from captivity.  Don’t worry!
 HULL: Well, -that’s- good news!  Let’s go, then!  <END DIALOG WITH HULL.>
@@ -20435,7 +20435,7 @@ What part of ‘No’ didn’t you understand?  ‘No’ means ‘No,’ not ‘
 HULL: <Hull just silently glares at you in disgust!>  <END DIALOG WITH HULL.>
 Grovel for me, Hull.  -Maybe- I’ll let you join.
 HULL: <Hull falls to the floor in the sleeping human Fighter animation.>  Please, PLEASE let me join you!
-Alright, Hull.  Wish granted.  
+Alright, Hull.  Wish granted.
 HULL: <Hull starts crying tears of joy as he stands.>
 --NEXT DIALOG BOX--
 HULL: Thank you!  This means more to me than you may ever know!  <Continue with Hull’s dialog tree as if the party had let him join.>
@@ -20579,7 +20579,7 @@ HULL: <A tear falls down Hull’s face.>
 --NEXT DIALOG BOX--
 HULL: I’m gonna miss ya, kid.
 --NEXT DIALOG BOX--
-HULL: Kid, I know I said this was god business and I’m pretty sure I’m no god like you, but 
+HULL: Kid, I know I said this was god business and I’m pretty sure I’m no god like you, but
 --NEXT DIALOG BOX--
 <If Imoen is in the party.>
 HULL: You too, Imoen.
@@ -21037,7 +21037,7 @@ Volo doesn’t stay for SoD after the party is scheduled to leave the city of Ba
 If removed from the party, Volo can wait where he was dismissed or be sent to the Belching Dragon Tavern in Nashkel.
 Volo isn’t recruitable in SoD.
 Volo also isn’t recruitable in SoA - at least initially.  If plans change, someone (probably me) will make the appropriate changes and notes.
-Volo is in his default position in the Tankard Tree in Saradush.  
+Volo is in his default position in the Tankard Tree in Saradush.
 If removed from the party, Volo can wait where he was dismissed or be sent to the Pocket Plane.
 ALL: HULL AND DRIZZT ARE IN THE PARTY SIMULTANEOUSLY
         Having Drizzt join the party is quite possible with mods.  This is normally done via the mods Drizzt Saga (BG1) and Region of Terror (BG2).  These mods each treat Drizzt as a separate unit/character.
@@ -21249,7 +21249,7 @@ HULL: My father was prolly a thief, but not -that- kinda thief!
 Are you resentful about what your father did?
 HULL: <Hull sighs.>
 --NEXT DIALOG BOX--
-HULL: I don’t -wanna- be.  I also don’t wanna focus on it.  
+HULL: I don’t -wanna- be.  I also don’t wanna focus on it.
 Hull, are you really about to give up on returning your family to life?
 HULL: <Hull sighs.>
 --NEXT DIALOG BOX--
@@ -21552,11 +21552,11 @@ HULL: But if I’m gonna guard you, kid, I got some rules.
 --NEXT DIALOG BOX--
 HULL: First, just assume I’m not interested in you romantically.  That should be an easy one to accept.  Gorion wasn’t trying to be that way and I’m not, either.
 --NEXT DIALOG BOX--
-HULL: Second, -please- don’t get all romantic with Imoen.  I know she’s your -adopted- sister, but that’s just... awkward for me.  
+HULL: Second, -please- don’t get all romantic with Imoen.  I know she’s your -adopted- sister, but that’s just... awkward for me.
 --NEXT DIALOG BOX--
 HULL: If I suddenly leave because you’re gettin’ it on with your sister, don’t be surprised.
 --NEXT DIALOG BOX--
-HULL: Third, if you’re serious about romancing someone, expect that you two will be together for a -long- time, maybe for life!  
+HULL: Third, if you’re serious about romancing someone, expect that you two will be together for a -long- time, maybe for life!
 --NEXT DIALOG BOX--
 HULL: Do you want to travel everywhere with them?  Do you want to raise kids together?  What sort of life do you want for your family?
 --NEXT DIALOG BOX--
@@ -21793,7 +21793,7 @@ But something happened the day that Hull let Gorion out of Candlekeep for the la
 Why ‘Uncle?’  He knows he isn’t my father, but he’s sort of like extended family to me from Candlekeep.  He certainly tries to be the best father figure he can be to me.  Hull wants to be with me to help me and guide me, but not boss me around.  He has standards and he’s no puppet, but he’s trying to be patient and loving as he thought Gorion was with me.
         Hull sometimes calls himself by his real name - Charlie - but prefers the term Hull.  It’s big and strong like a ship instead of something saccharine.  Hull was initially the name he was teased with because his tormentors wanted it to mean ‘hollow skull.’  Hull owned the term and showed them he wasn’t just muscle.
 As for how he became so strong, it’s probably because of being adopted early as a guard.  As he told me, “You try wearing a hundred pounds of metal every day for years and you see what happens.”
-Sometimes I wonder if Hull is trying -too- hard to be Gorion.  He keeps asking things like, “What would Gorion do?”  Yes, Hull respected Gorion deeply, and Gorion was the sort of father figure Hull wished he had growing up, but I can tell Hull is trying to figure out what he wants in life by helping me understand who I am, what I can do, and what I -should- be doing. 
+Sometimes I wonder if Hull is trying -too- hard to be Gorion.  He keeps asking things like, “What would Gorion do?”  Yes, Hull respected Gorion deeply, and Gorion was the sort of father figure Hull wished he had growing up, but I can tell Hull is trying to figure out what he wants in life by helping me understand who I am, what I can do, and what I -should- be doing.
         Hull does care about Candlekeep and Imoen and might die for either of these, but it seems Gorion’s intimate and loving relationship with me matters more to him than Candlekeep or Imoen.  Hull respects them, yes, but he seems -far- more interested in helping me do what I should do than telling Imoen to stop stealing again.
 Hull has said that whatever Gorion had planned for me, it was so important that Elminster himself - the great Sage of Shadowdale and the Chosen of Mystra - wanted me to fulfill it!
         Hull also told me that he respects and admires Drizzt, the Drow hero of the surface people.  Hull might even like Drizzt so much that he would drop me to be Drizzt’s friend or apprentice!
@@ -21928,7 +21928,7 @@ This small figurine of a Clay Golem has a button on its back that, when pushed, 
 - Has an innate Teleport ability which allows this creature to warp next to any party member on the same map at will.  Usable outside of combat only.
 MOD SOURCE: Hull NPC
 Item Value: 1,000G
-Pocket Construct (Iron Golem) 
+Pocket Construct (Iron Golem)
 This small figurine of an Iron Golem has a button on its back that, when pushed, transforms it into a full-sized Clay Golem for 1 day with the stats below.  It’s considered a Gated creature, not a summoned one, even though it counts against the summoned creature limit.
 -= Stats =-
   - STR: 22 (other stats are 9)
@@ -21952,7 +21952,7 @@ This small figurine of an Iron Golem has a button on its back that, when pushed,
 - May cast Gas Cloud on self
 MOD SOURCE: Hull NPC
 Item Value: 3,000G
-Pocket Construct (Stone Golem) 
+Pocket Construct (Stone Golem)
 This small figurine of a Stone Golem has a button on its back that, when pushed, transforms it into a full-sized Clay Golem for 1 day with the stats below.  It’s considered a Gated creature, not a summoned one, even though it counts against the summoned creature limit.
 -= Stats =-
   - STR: 20 (other stats are 9)
@@ -22072,7 +22072,7 @@ The booze is too spicy for my taste.  Again, some people like it.
 Hull’s Work Order Receipt from Cromwell
 <This part of the document was added to the back side of the document, seemingly at a later date.>
 Dear Hull,
-Welcome to the Most Noble Order of the Radiant Heart!  As a knight of our order, and because you are the first knight we have had from Candlekeep, we have furnished part of a new set of gear for you.  Most of these items will require a significant monetary investment from you to have crafted, but we have provided the other components for these items, such as jewels and rare metals.  
+Welcome to the Most Noble Order of the Radiant Heart!  As a knight of our order, and because you are the first knight we have had from Candlekeep, we have furnished part of a new set of gear for you.  Most of these items will require a significant monetary investment from you to have crafted, but we have provided the other components for these items, such as jewels and rare metals.
 All these items are magical and of -exquisite- quality, with each named after a virtue of being a knight in our order.  Each name is intended to remind you of your new life and new station as a knight of our order.
 <This part of the document looks original.>
 This item has already been ordered and fully paid:  Sobriety (Helm).
@@ -22292,7 +22292,7 @@ Each trap, if disarmed by a rogue, is worth 5,000 EXP.
 -Stinking Cloud
 Item Type: Throwing Dagger
 Flavor Text: This knife embodies the essence of a Human Sorcerer who scoured the planes in search of power and knowledge to overcome the greatest threats in the multiverse, despite the gods teasing him and diminishing his magical abilities at every turn.
-He would soar through skies, swim through the vast blackness of dreams, overcome the essence of madness itself, and teleport through time only to succumb to a bear trap placed by a Lich.  What a cruel, cruel fate. 
+He would soar through skies, swim through the vast blackness of dreams, overcome the essence of madness itself, and teleport through time only to succumb to a bear trap placed by a Lich.  What a cruel, cruel fate.
 CONTINUOUS EFFECTS
 +5 Weapon.
 -After being thrown, this weapon immediately returns to its wielder to be used again.
@@ -23057,8 +23057,8 @@ BG2: BAELOTH’S STARTING GEAR
 Baeloth starts with this gear assuming he wasn’t in the party already.
         In an EET game, any items Baeloth had in his inventory or equipped are dropped on the ground beside Baeloth.  This is done for technical reasons, to ensure Baeloth’s bags aren’t bursting and items aren’t lost.
 Gear Methodology
-I chose gear which seemed to fit Baeloth’s theme of being a 
-Drow Sorcerer and schemer while also fitting his canonical image.  
+I chose gear which seemed to fit Baeloth’s theme of being a
+Drow Sorcerer and schemer while also fitting his canonical image.
         While Baeloth may seem to start with a lot, I also remind you Keldorn starts with some of the best gear in the game for him.  Yes, even accounting for ToB.  Keldorn’s +1 Full Plate Armor gives him continual freedom of movement.  Keldorn’s Hallowed Redeemer Sword provides pure magic backlash damage to any creature that hits him in melee, and this effect ignores spell resistance.  It’s no Carsomyr in terms of offense, but, if Keldorn equips his starting sword with a high enough defense and healing factor, even late game bosses can melee themselves to death in this ridiculous manner!
         Sure, Baeloth’s Spinal Staff is a +3 weapon, but are you really about to put him in melee?  The +4 Staff of Rhynn is available for purchase in Ribald’s standard stock as soon as BG2 Chapter 1.
 BG2: Shadows of Amn

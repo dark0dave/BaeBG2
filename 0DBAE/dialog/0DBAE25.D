@@ -36,7 +36,7 @@ IF ~Global("0DBAE25Summoned","GLOBAL",2)~ 0DBAE25_5
     SAY @5012 /* Ah, finally acknowledging the almighty archmage abandoned in this abominable abyss! What took you so long, my pocket-placed patron? */
     IF ~~ THEN REPLY @5013 /* Join me, then. */ GOTO 0DBAE25_3
     IF ~~ THEN REPLY @5014 /* Wait a little longer. */ GOTO 0DBAE25_6
-END 
+END
 
 IF ~~ 0DBAE25_6
     SAY @5015 /* Once more, the audacious adventurer dares to dismiss the divine dramatist, denying the delight of my drowish dynamism. An alliance, alas, devoid of my majestic mastery of the magical multitude. Very well, I shall begrudgingly bide my time in this banal bastion. */

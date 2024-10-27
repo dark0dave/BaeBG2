@@ -63,7 +63,7 @@ Equipped abilities:
 
 The circumstances of his defeat within the pits are unclear; he claims dishonesty on the part of his combatants was a key factor.~
 
-// BG2 Player reponses
+// BG2 Player responses
 @1001 =~Well met, I am <CHARNAME>.~
 @1003 =~Baeloth! Do you remember me?~
 @1004 =~Die, drow!~
@@ -230,7 +230,7 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @3139 = ~You wouldn't be interested in playing a little GAME, would you? Mmm?~
 @3140 = ~Game? I -love- games!~
 @3141 = ~There was this time about thirty years ago when my second cousin on my mother's side and I played our longest game of Chess yet. We were at it for over a day, and we kept moving our pieces to prevent being checkmated, but she passed out from exhaustion first, so she forfeited the game. She violently appealed to my mother after this and claimed that I did something to make her lose when I did not.~
-@3142 = ~Of course, after my mother's ruling she appealed to gaurd and then to the Council of Six. But after the turnip embargo caused a reduction in tax revenue, the Council became unwilling to listen to new appeals. Which I have always viewed as the greatest calmity of our age.~
+@3142 = ~Of course, after my mother's ruling she appealed to guard and then to the Council of Six. But after the turnip embargo caused a reduction in tax revenue, the Council became unwilling to listen to new appeals. Which I have always viewed as the greatest calmity of our age.~
 @3143 = ~Ahem.~
 @3144 = ~Ahem what? Oh. Your game?~
 @3145 = ~<Baeloth blinks.>~
@@ -282,7 +282,7 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @3190 = ~I'm... indisposed! My career and calling in life are completely dependent upon a steady stream of suckers seeking fame and fortune from fighting.~
 @3191 = ~Is that all you are, Baeloth - a promoter of your Black Pits? What happens if you're no longer Baeloth the Entertainer but just Baeloth the man, or the drow as the case may be? It's happened before.~
 @3192 = ~What a hurt to the heart that was, to contemplate the possibility that I could no longer be Baeloth the Entertainer! The realms would be ever so -boring- without me!~
-@3193 = ~But you got me thinking, a decidely dangerous decision on your part! If I were different, then what?~
+@3193 = ~But you got me thinking, a decidedly dangerous decision on your part! If I were different, then what?~
 @3194 = ~That is a good start, Baeloth. We shall talk more later about this.~
 @3195 = ~What you call 'cosmic good' seems radically racist to me!~
 @3196 = ~<Keldorn raises his eyebrow in suspicion at Baeloth.>~
@@ -400,7 +400,7 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @3308 = ~What should be done?~
 @3309 = ~Use your noble noggin! What does your nation need now and later?~
 @3310 = ~Thanks, but how do you know all this?~
-@3311 = ~Being Baeloth the Entertainer meant my domain was a covert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain.~
+@3311 = ~Being Baeloth the Entertainer meant my domain was a convert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain.~
 @3312 = ~Neera, sometimes I envy you.~
 @3313 = ~Me? Why? Is it my pink hair and inability to grow a beard?~
 @3314 = ~No, no. Nothing that trite. Your affinity for Wild Magic is admirable.~

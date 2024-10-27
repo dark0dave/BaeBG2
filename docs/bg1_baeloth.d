@@ -5,7 +5,7 @@ IF ~  Global("BA_BEGIN","GLOBAL",0)
   SAY @0001
 END
 
-Come one, come all! See the cream of the Sword Coast's combatant crop! Witness the brilliant and bizarre battles in the Black Pits of the one and only Baeloth the Entertainer! 
+Come one, come all! See the cream of the Sword Coast's combatant crop! Witness the brilliant and bizarre battles in the Black Pits of the one and only Baeloth the Entertainer!
 Greetings, friendly, ah, surface-dweller. You wouldn't happen to know the direction of the nearest entrance to the Underdark, would you?
 From the Underdark. Was that not clear? Goodness, are you blind? Eugh, I hadn't realized how sickly you surfacer sort are.
 No, I suppose you wouldn't. This is particularly problematic for a popular power player such as myself!

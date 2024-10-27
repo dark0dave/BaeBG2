@@ -1,0 +1,52 @@
+default_install_hook_types: [pre-commit, commit-msg]
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v5.0.0
+  hooks:
+    - id: check-added-large-files
+      exclude: (?x)^(0DBAE/portraits)
+      stages: [pre-commit]
+    - id: check-case-conflict
+      stages: [pre-commit]
+    - id: check-merge-conflict
+      stages: [pre-commit]
+    - id: forbid-new-submodules
+      stages: [pre-commit]
+    - id: check-builtin-literals
+      stages: [pre-commit]
+    - id: check-yaml
+      stages: [pre-commit]
+
+- repo: https://github.com/jumanjihouse/pre-commit-hooks
+  rev: 3.0.0
+  hooks:
+    - id: git-dirty
+      stages: [pre-commit]
+    - id: git-check
+      stages: [pre-commit]
+
+- repo: https://github.com/Lucas-C/pre-commit-hooks
+  rev: v1.5.5
+  hooks:
+    - id: forbid-crlf
+      stages: [pre-commit]
+    - id: remove-crlf
+      stages: [pre-commit]
+    - id: forbid-tabs
+      stages: [pre-commit]
+    - id: remove-tabs
+      stages: [pre-commit]
+
+- repo: https://github.com/commitizen-tools/commitizen
+  rev: v3.30.0
+  hooks:
+    - id: commitizen
+      stages: [commit-msg]
+
+- repo: https://github.com/codespell-project/codespell
+  rev: v2.3.0
+  hooks:
+    - id: codespell
+      stages: [pre-commit]
+      args:
+        - "--config .codespellrc"

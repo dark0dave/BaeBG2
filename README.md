@@ -59,7 +59,7 @@ Install Component [Baeloth BG2]?
 [I]nstall, or [N]ot Install or [Q]uit?
 ```
 
-Enter I, then press enter and thats it!
+Enter I, then press enter and that's it!
 
 ```sh
 SUCCESSFULLY INSTALLED      Baeloth BG2

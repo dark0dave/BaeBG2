@@ -36,7 +36,6 @@
 * CHARNAME: Anyway, Baeloth, we still need to -help- the elven queen for her to live long enough to help us in return!
 * BAELOTH: Yes, I know.
 
-
 ## Watcher's Keep
 * BAELOTH: We can -finally- watch the watchers of Watcher's Keep. From what I've read, this castle's interior is a colossal coliseum kept to contain a copious count of curs.
 * CHARNAME: Curs? What?
@@ -44,7 +43,7 @@
 * CHARNAME: How do you know about this place, Baeloth?
 * BAELOTH: Some curious customer of the Copper Coronet kept books of certain subjects before he became a contender and I kept them from his corpse.
 * CHARNAME: Let's go, Baeloth. Progress awaits.
-* BAELOTH: <Baeloth flashes you a knowing smile.> 
+* BAELOTH: <Baeloth flashes you a knowing smile.>
 
 ## Forest of Tethyr
 * BAELOTH: Such a flock of foliage flourishes around us!
@@ -60,4 +59,3 @@
 
 ## Forest of Tethir After Returning the Rhynn Lanthorn to Elhan
 * BAELOTH: Suldanessellar shall soon see our strength! So long, civilization!
-

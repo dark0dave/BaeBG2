@@ -27,7 +27,7 @@ Notable Assumptions
 DIALOG FORMAT
 Dialog Option for Player
 Response from NPC
-Dialog Submenu for Player: Replaces Previous Layer of Dialog 
+Dialog Submenu for Player: Replaces Previous Layer of Dialog
 Response from NPC
 [If All These Conditions Are Met] Dialog Option for Player
 NPC’s Response
@@ -151,7 +151,7 @@ BAELOTH: Clearly, I have excellent taste in selecting gladiators. (from Baeloth�
 I’ve heard -that- remark before.
 BAELOTH: <Baeloth grins.>
 [CHARNAME has less than 18 CHA] Baeloth, killing that goblin was just a warm up!  Fight me Baeloth, one on one, here and now!  You want revenge?  You want to feel superior?  Here’s your chance!
-BAELOTH: <Baeloth looks at <CHARNAME> then blinks a moment.> 
+BAELOTH: <Baeloth looks at <CHARNAME> then blinks a moment.>
 BAELOTH: Enough! Baeloth the Entertainer goes ELSEWHERE. (from here)
 <Baeloth dimension doors out.  He leaves the game world.>  <END DIALOG.>
 [CHARNAME has at least 18 CHA] Baeloth, killing that goblin was just a warm up!  Fight me Baeloth, one on one, here and now!  You want revenge?  You want to feel superior?  Here’s your chance!

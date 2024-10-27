@@ -79,10 +79,10 @@ DO ~SetGlobal("0DBAEAnomen1","GLOBAL",1)~
 == 0DBAEB @3036 /* It's easier to be your own man when no one is staring at you and expecting you to fail. */
 == BANOMEN @3037 /* Do you jest, Drow? */
 == 0DBAEB @3038 /* Oh, my Clerical companion, I can jest, but now I am being -sternly serious.- */
-== BKELDOR IF ~!StateCheck("KELDORN", CD_STATE_NOTVALID) 
-!StateCheck("0DBAE", CD_STATE_NOTVALID)~ THEN 
+== BKELDOR IF ~!StateCheck("KELDORN", CD_STATE_NOTVALID)
+!StateCheck("0DBAE", CD_STATE_NOTVALID)~ THEN
 @3039 /* Anomen, the Drow is correct in the strictness of our order, but we understand that our reputation and the good we do are worth the price of our freedom. We help many who cannot help themselves. */
-== BANOMEN IF ~!StateCheck("KELDORN", CD_STATE_NOTVALID) 
+== BANOMEN IF ~!StateCheck("KELDORN", CD_STATE_NOTVALID)
 !StateCheck("0DBAE", CD_STATE_NOTVALID)~ THEN @3040 /* Thank you, teacher, for your insight. */
 == BANOMEN @3041 /* <Anomen turns to Baeloth.>  Drow? */
 == 0DBAEB @3042 /* Hmm? */
@@ -311,7 +311,7 @@ DO ~SetGlobal("0DBAEJan1","GLOBAL",1)~
 == 0DBAEB @3139 /* You wouldn't be interested in playing a little GAME, would you? Mmm? */
 == BJAN @3140 /* Game? I -love- games! */
 == BJAN @3141 /* There was this time about thirty years ago when my second cousin on my mother's side and I played our longest game of Chess yet. We were at it for over a day, and we kept moving our pieces to prevent being checkmated, but she passed out from exhaustion first, so she forfeited the game. She violently appealed to my mother after this and claimed that I did something to make her lose when I did not. */
-== BJAN @3142 /* Of course, after my mother's ruling she appealed to gaurd and then to the Council of Six. But after the turnip embargo caused a reduction in tax revenue, the Council became unwilling to listen to new appeals. Which I have always viewed as the greatest calmity of our age. */
+== BJAN @3142 /* Of course, after my mother's ruling she appealed to guard and then to the Council of Six. But after the turnip embargo caused a reduction in tax revenue, the Council became unwilling to listen to new appeals. Which I have always viewed as the greatest calmity of our age. */
 == 0DBAEB @3143 /* Ahem. */
 == BJAN @3144 /* Ahem what? Oh. Your game? */
 == 0DBAEB @3145 /* <Baeloth blinks.> */
@@ -405,7 +405,7 @@ DO ~SetGlobal("0DBAEKeldorn3","GLOBAL",1)~
 == 0DBAEB @3190 /* I'm... indisposed! My career and calling in life are completely dependent upon a steady stream of suckers seeking fame and fortune from fighting. */
 == BKELDOR @3191 /* Is that all you are, Baeloth - a promoter of your Black Pits? What happens if you're no longer Baeloth the Entertainer but just Baeloth the man, or the drow as the case may be? It's happened before. */
 == 0DBAEB @3192 /* What a hurt to the heart that was, to contemplate the possibility that I could no longer be Baeloth the Entertainer! The realms would be ever so -boring- without me! */
-== 0DBAEB @3193 /* But you got me thinking, a decidely dangerous decision on your part! If I were different, then what? */
+== 0DBAEB @3193 /* But you got me thinking, a decidedly dangerous decision on your part! If I were different, then what? */
 == BKELDOR @3194 /* That is a good start, Baeloth. We shall talk more later about this. */
 EXIT
 
