@@ -1,0 +1,21 @@
+BACKUP ~weidu_external/backup/0dbae~
+AUTHOR ~dark0dave~
+README ~%MOD_FOLDER%/readme.md~
+VERSION ~v0.5~
+AUTO_EVAL_STRINGS
+
+AUTO_TRA ~%MOD_FOLDER%/tra/%s~
+
+LANGUAGE ~English~
+         ~english~
+         ~%MOD_FOLDER%/tra/english/setup.tra~
+
+// Main Component
+BEGIN ~Baeloth BG2~ DESIGNATED 0 LABEL ~0dbae~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ ~This mod cannot be installed on this game~
+INCLUDE ~%MOD_FOLDER%/lib/core.tph~
+
+// Crossmod
+BEGIN ~crossmod~ DESIGNATED 1 LABEL ~crossmod~
+REQUIRE_COMPONENT ~0dbae.tp2~ "0" ~Requires main component~
+INCLUDE ~%MOD_FOLDER%/lib/crossmod.tph~
