@@ -286,7 +286,7 @@ DO ~SetGlobal("0DBAEJaheira1","GLOBAL",1)~
 == BJAHEIR @3129 /* What would you know about -balance?- */
 == 0DBAEB @3130 /* Well, my well-traveled companion, what say you to the notion that this 'balance' is but a subjective opinion on how it operates? Are not all you Druids keen on avoiding conglomeration? */
 == BJAHEIR @3131 /* I'll tell you this much, -Drow.- I'm my own person. What you consider friendly flattery I call an affront to nature and my training! */
-== 0DBAEB ~But do I speak deceit when I declare what part of the balance you keep is your discretion?~
+== 0DBAEB @3390 /* But do I speak deceit when I declare what part of the balance you keep is your discretion? */
 == BJAHEIR @3132 /* You are unfortunately correct. */
 == 0DBAEB @3133 /* "Unfortunately?" How unexpected! */
 == BJAHEIR @3134 /* I know enough of your past and you know enough of mine. It's like you prod and pry to get me to agree with something that's technically true but all part of a scheme I simply want to avoid! */
@@ -373,7 +373,7 @@ DO ~SetGlobal("0DBAEKeldorn2","GLOBAL",1)~
 == 0DBAEB @3175 /* That's -precisely- my pickle! */
 == BKELDOR @3176 /* Go on. */
 == 0DBAEB @3177 /* Let's postulate a pair of paladins is praised as saviors because they slay demons. That same day, should they also be hailed as heroes for upholding the laws of the land for punishing a peddler for being too poor to pay his prescribed taxes? */
-== BKELDOR ~To what cause are these hypothetical paladins sworn? What are the laws of the land and who enforces them? What is their calling in life? All these matter more than you know.~
+== BKELDOR @3391 /* To what cause are these hypothetical paladins sworn? What are the laws of the land and who enforces them? What is their calling in life? All these matter more than you know. */
 == BKELDOR @3178 /* You ask if it is better to uphold the letter of the law or to do good by showing mercy when it is appropriate. */
 == 0DBAEB @3179 /* An important inquiry, inquisitor. */
 == BKELDOR @3180 /* It is easier to make and break rules than it is to help those in need as they should be helped. Bringing about the greater good is my calling, even though I am still bound by certain oaths. */
@@ -633,7 +633,7 @@ DO ~SetGlobal("0DBAENalia3","GLOBAL",1)~
 == BNALIA @3308 /* What should be done? */
 == 0DBAEB @3309 /* Use your noble noggin! What does your nation need now and later? */
 == BNALIA @3310 /* Thanks, but how do you know all this? */
-== 0DBAEB @3311 /* Being Baeloth the Entertainer meant my domain was a covert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain. */
+== 0DBAEB @3311 /* Being Baeloth the Entertainer meant my domain was a convert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain. */ /* Being Baeloth the Entertainer meant my domain was a covert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain. */
 EXIT
 
 // Neera Banter
