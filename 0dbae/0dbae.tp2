@@ -1,4 +1,4 @@
-BACKUP ~0DBAE/backup~
+BACKUP ~0dbae_external/backup~
 AUTHOR ~dark0dave~
 
 VERSION ~v0.5~
@@ -34,7 +34,7 @@ UNLESS ~CD_STATE_NOTVALID~
 
 /// Creature files ///
 // SoA
-COPY ~%MOD_FOLDER%/cre/0DBAE.CRE~ ~override/0DBAE.CRE~
+COPY ~%MOD_FOLDER%/cre/0DBAE.CRE~ ~override~
   SAY NAME1 @99
   SAY NAME2 @99
   SAY BIO @100
