@@ -8,7 +8,7 @@
 
 This mod provides continuation for our lovable Baeloth in BG2EE and EET.
 
-![All right... but NOT because you TOLD me to.](0DBAE/portraits/BAELOTHL.BMP)
+<img src="0dbae/portraits/BAELOTHL.BMP" alt="All right... but NOT because you TOLD me to." width="200"/>
 
 > OBVIOUSLY, this was going to happen, but the amount of TIME it took borders on insanity! How do you function on a day-to-day basis?
 
@@ -18,7 +18,7 @@ Baeloth has been captured by the red wizards and is willing to make a deal in ex
 
 ### Collaboration
 
-I must say a big thank you to [Endarire](https://www.gibberlings3.net/profile/5772-endarire/), who has provided dialog and ideas for this mod. Without them, this mod would not be possible. A personal shout out to @morpheus562[G3](https://www.gibberlings3.net/profile/11591-morpheus562/), @CamDawg[G3](https://www.gibberlings3.net/profile/8-camdawg/), @K4thos[G3](https://www.gibberlings3.net/profile/6804-k4thos/) for EET, and the rest of the G3 community.
+I must say a big thank you to [Endarire](https://www.gibberlings3.net/profile/5772-endarire/), who has provided dialog and ideas for this mod. Without them, this mod would not be possible. A personal shout out to @morpheus562[G3](https://www.gibberlings3.net/profile/11591-morpheus562/), @CamDawg[G3](https://www.gibberlings3.net/profile/8-camdawg/), @K4thos[G3](https://www.gibberlings3.net/profile/6804-k4thos/) for EET, and the rest of the G3 community. And to [@bucketfulofsunshine](https://github.com/bucketfulofsunshine) for their M'Khiin mod.
 
 ## Installation
 
