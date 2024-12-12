@@ -8,7 +8,7 @@
 
 This mod provides continuation for our lovable Baeloth in BG2EE and EET.
 
-<img src="0dbae/portraits/BAELOTHL.BMP" alt="All right... but NOT because you TOLD me to." width="200"/>
+<img src="0dbae/portraits/baelothl.bmp" alt="All right... but NOT because you TOLD me to." width="200"/>
 
 > OBVIOUSLY, this was going to happen, but the amount of TIME it took borders on insanity! How do you function on a day-to-day basis?
 
