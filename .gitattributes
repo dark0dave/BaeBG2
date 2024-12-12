@@ -1,18 +1,7 @@
 # Set the default behavior, in case people don't have core.autocrlf set.
-* text eol=lf
-*D text eol=lf
-*BAF text elo=lf
-
-# Denote all files that are truly binary and should not be modified.
-*.bam binary
-*.BAM binary
-*.bmp binary
-*.BMP binary
-*.cre binary
-*.CRE binary
-*.eff binary
-*.EFF binary
-*.itm binary
-*.ITM binary
-*.wav binary
-*.WAV binary
+*baf text eol=lf
+*d text eol=lf
+*md text eol=lf
+*tp2 text eol=lf
+*tph text eol=lf
+*tra text eol=lf

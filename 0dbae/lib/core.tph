@@ -10,9 +10,9 @@ END
     OUTER_SET EVAL ~%name_source%~ = bg2_chapter
 END
 
-COPY ~%MOD_FOLDER%/misc~ ~override~
-COPY ~%MOD_FOLDER%/sound~ ~override~
-COPY ~%MOD_FOLDER%/portraits~ ~override~
+COPY ~0dbae/misc~ ~override~
+COPY ~0dbae/sound~ ~override~
+COPY ~0dbae/portraits~ ~override~
 
 // CD_STATE_NOTVALID
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
@@ -20,7 +20,7 @@ UNLESS ~CD_STATE_NOTVALID~
 
 /// Creature files ///
 // SoA
-COPY ~%MOD_FOLDER%/cre/0dbae.cre~ ~override/0DBAE.CRE~
+COPY ~0dbae/cre/0dbae.cre~ ~override/0DBAE.CRE~
   SAY NAME1 @99
   SAY NAME2 @99
   SAY BIO @100
@@ -79,7 +79,7 @@ COPY_EXISTING ~0DBAE.CRE~ ~override/0DBAE25.CRE~
   WRITE_ASCII DIALOG ~0DBAE25~ #8
 
 /// Items ///
-COPY ~%MOD_FOLDER%/items/0dring.itm~ ~override/0DRING.ITM~
+COPY ~0dbae/items/0dring.itm~ ~override/0DRING.ITM~
   WRITE_ASCII 0x3a ~0dring2~ #8
   WRITE_ASCII 0x44 ~0dring3~ #8
   WRITE_ASCII 0x76 ~0dring2~ #8
@@ -101,11 +101,11 @@ COPY ~%MOD_FOLDER%/items/0dring.itm~ ~override/0DRING.ITM~
 /// Dialog ///
 
 // Compile dialog
-COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialog~
+COMPILE EVALUATE_BUFFER ~0dbae/dialog~
 
 // Scripts
-COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/0dbae.baf~
-COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/0dbae25.baf~
+COMPILE EVALUATE_BUFFER ~0dbae/baf/0dbae.baf~
+COMPILE EVALUATE_BUFFER ~0dbae/baf/0dbae25.baf~
 
 // Appending dialog files
 // See [here](https://www.gibberlings3.net/forums/topic/15833-dialog-files-and-how-they-are-referenced/)
@@ -121,7 +121,7 @@ APPEND ~interdia.2da~
 UNLESS ~0DBAE~
 
 // Spawn Baeloth in Red Wizard Enclave
-EXTEND_TOP ~OH6300.BCS~ ~%MOD_FOLDER%/baf/oh6300.baf~
+EXTEND_TOP ~OH6300.BCS~ ~0dbae/baf/oh6300.baf~
   EVALUATE_BUFFER
 
 // Add Baeloth to ToB
@@ -139,10 +139,10 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN // EET related code & summoning script
       override_ToB = "0DBAE25" // ToB Override script
       dialog_ToB = "0DBAE25" // ToB dialogue file
       cre_ToB = "0DBAE25"
-      traFile = EVAL "%MOD_FOLDER%/translations/%LANGUAGE%/setup.tra"
+      traFile = EVAL "0dbae/translations/%LANGUAGE%/setup.tra"
       string = "@5999" // Bring me Baeloth, the drow sorcerer.
       stringPosDV = "Baeloth" // Baeloth
   END
 END ELSE BEGIN
-  COMPILE ~%MOD_FOLDER%/dialog/fatesp.d~
+  COMPILE ~0dbae/dialog/fatesp.d~
 END
