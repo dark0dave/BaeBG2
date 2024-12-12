@@ -20,7 +20,7 @@ UNLESS ~CD_STATE_NOTVALID~
 
 /// Creature files ///
 // SoA
-COPY ~0dbae/cre/0dbae.cre~ ~override/0DBAE.CRE~
+COPY ~0dbae/cre/0dbae.cre~ ~override~
   SAY NAME1 @99
   SAY NAME2 @99
   SAY BIO @100
@@ -73,13 +73,13 @@ COPY ~0dbae/cre/0dbae.cre~ ~override/0DBAE.CRE~
   ADD_CRE_ITEM ~0DRING~ #0 #0 #0 ~identified&undroppable~ ~rring~ EQUIP
 
 // ToB
-COPY_EXISTING ~0DBAE.CRE~ ~override/0DBAE25.CRE~
+COPY_EXISTING ~0dbae.cre~ ~override/0dbae25.cre~
   WRITE_ASCII SCRIPT_OVERRIDE ~0DBAE25~ #8
   WRITE_ASCII DEATHVAR ~0DBAE25~ #32
   WRITE_ASCII DIALOG ~0DBAE25~ #8
 
 /// Items ///
-COPY ~0dbae/items/0dring.itm~ ~override/0DRING.ITM~
+COPY ~0dbae/items/0dring.itm~ ~override~
   WRITE_ASCII 0x3a ~0dring2~ #8
   WRITE_ASCII 0x44 ~0dring3~ #8
   WRITE_ASCII 0x76 ~0dring2~ #8

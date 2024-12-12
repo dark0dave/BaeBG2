@@ -24,7 +24,7 @@
 @23 =~Ask someone else!~ [0DBAE10]
 @24 =~What is it NOW?~ [0DBAE11]
 @25 =~Mmmm?~ [0DBAE12]
-@26 =~I'm huge in the Underdark.~ [0DBAE13]
+@26 =~I'm here, and I hear.~ [0DBAE13]
 @27 =~Alveus Malcanter? Never heard of him.~ [0DBAE14]
 @28 =~Let me entertain you!~ [0DBAE15]
 @29 =~Another contender collapses!~ [0DBAE16]
@@ -39,6 +39,8 @@
 @38 =~Invisible.~ [0DBAE25]
 @39 =~My magic misfires!~ [0DBAE26]
 @40 =~Trap at your toes. Step softly.~ [0DBAE27]
+@41 =~I go... to my grave...~ [0DBAE28]
+@42 =~Such a flock of foliage flourishes around us!~ [0DBAE29]
 @50 =~Oh, COME ON!~
 
 // Items
