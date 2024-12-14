@@ -1,9 +1,0 @@
-IF
-    Global("0DBAEExists","GLOBAL",0)
-THEN
-RESPONSE #100
-    SetGlobal("0DBAE_BEGIN","GLOBAL",0)
-    SetGlobal("0DBAEExists","GLOBAL",1)
-    CreateCreature("0DBAE",[1400.1650],5)
-    Continue()
-END
