@@ -10,14 +10,34 @@ END
     OUTER_SET EVAL ~%name_source%~ = bg2_chapter
 END
 
-COPY ~0dbae/misc~ ~override~
+COPY ~0dbae/eff/geniedam.eff~ ~override/GENIEDAM.EFF~ UNLESS ~override/GENIEDAM.EFF~
+COPY ~0dbae/eff/geniehit.eff~ ~override/GENIEHIT.EFF~ UNLESS ~override/GENIEHIT.EFF~
+COPY ~0dbae/misc/gring01.bam~ ~override/GRING01.BAM~ UNLESS ~override/GRING01.BAM~
+COPY ~0dbae/misc/ibaring.bam~ ~override/IBARING.BAM~ UNLESS ~override/IBARING.BAM~
 COPY ~0dbae/sound~ ~override~
 COPY ~0dbae/portraits~ ~override~
-COPY ~0dbae/epilogue~ ~override~
 
 // CD_STATE_NOTVALID
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
 UNLESS ~CD_STATE_NOTVALID~
+
+/// Items ///
+COPY ~0dbae/items/baring.itm~ ~override/BARING.ITM~
+  SAY NAME1 @91 /* Small Ring */
+  SAY NAME2 @92 /* Barrityl's Burden */
+  SAY UNIDENTIFIED_DESC @93 /* This ring promises power at a great cost. */
+  SAY DESC @94 /* Created by a djinni as a "gift" to the drow sorcerer Baeloth Barrityl, this obsidian ring with blood-red ruby almost hypnotically draws the eye to it. Acting as additional storage space for magical knowledge, once placed upon a spellcaster's finger it imbues [him] with the ability to learn additional spells beyond what [his] skill normally allows.[2] It also gives the wearer the chance to spontaneously create wealth once a day in the form of some gemstone, but that is a double-edged sword; should the gem fail to materialize, the wearer endures a period of searing pain.
+
+  The djinni that created the ring, not entirely trusting the person to whom it was gifted, wove a curse into the black stone band. In battle with a djinni, the ring's wearer will find [him]self at an extreme disadvantage. Once donned, it cannot be removed from its wearer's finger, no matter how much [he] might wish it so.
+
+  Charge abilities:
+  - Create a random gem or damage the wearer, once per rest
+
+  Equipped abilities:
+  - Can cast three extra spells of each level
+  - THAC0: -5 penalty vs Genies
+  - Damage: -5 penalty vs Genies */
+UNLESS ~override/BARING.ITM~
 
 /// Creature files ///
 // SoA
@@ -71,9 +91,10 @@ COPY ~0dbae/cre/0dbae.cre~ ~override~
   REMOVE_CRE_ITEMS
   ADD_CRE_ITEM ~CLCK17~ #0 #0 #0 ~identified&stolen~ ~armor~ EQUIP
   ADD_CRE_ITEM ~STAF18~ #0 #0 #0 ~identified&stolen~ ~weapon1~ EQUIP
+  ADD_CRE_ITEM ~BARING~ #0 #0 #0 ~identified&undroppable~ ~rring~ EQUIP
 
 // ToB
-COPY ~0dbae/cre/0dbae.cre~ ~override~
+COPY ~0dbae/cre/0dbae.cre~ ~override/0dbae25.cre~
   SAY NAME1 @99
   SAY NAME2 @99
   SAY BIO @100
@@ -123,26 +144,7 @@ COPY ~0dbae/cre/0dbae.cre~ ~override~
   REMOVE_CRE_ITEMS
   ADD_CRE_ITEM ~CLCK17~ #0 #0 #0 ~identified&stolen~ ~armor~ EQUIP
   ADD_CRE_ITEM ~STAF18~ #0 #0 #0 ~identified&stolen~ ~weapon1~ EQUIP
-
-/// Items ///
-COPY ~0dbae/items/0dring.itm~ ~override~
-  WRITE_ASCII 0x3a ~0dring2~ #8
-  WRITE_ASCII 0x44 ~0dring3~ #8
-  WRITE_ASCII 0x76 ~0dring2~ #8
-  SAY NAME1 @91 /* Small Ring */
-  SAY NAME2 @92 /* Barrityl's Burden */
-  SAY UNIDENTIFIED_DESC @93 /* This ring promises power at a great cost. */
-  SAY DESC @94 /* Created by a djinni as a "gift" to the drow sorcerer Baeloth Barrityl, this obsidian ring with blood-red ruby almost hypnotically draws the eye to it. Acting as additional storage space for magical knowledge, once placed upon a spellcaster's finger it imbues [him] with the ability to learn additional spells beyond what [his] skill normally allows.[2] It also gives the wearer the chance to spontaneously create wealth once a day in the form of some gemstone, but that is a double-edged sword; should the gem fail to materialize, the wearer endures a period of searing pain.
-
-  The djinni that created the ring, not entirely trusting the person to whom it was gifted, wove a curse into the black stone band. In battle with a djinni, the ring's wearer will find [him]self at an extreme disadvantage. Once donned, it cannot be removed from its wearer's finger, no matter how much [he] might wish it so.
-
-  Charge abilities:
-  - Create a random gem or damage the wearer, once per rest
-
-  Equipped abilities:
-  - Can cast three extra spells of each level
-  - THAC0: -5 penalty vs Genies
-  - Damage: -5 penalty vs Genies */
+  ADD_CRE_ITEM ~0DRING~ #0 #0 #0 ~identified&undroppable~ ~rring~ EQUIP
 
 /// Dialog ///
 
