@@ -187,7 +187,7 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN // EET related code & summoning script
       override_ToB = "0DBAE25" // ToB Override script
       dialog_ToB = "0DBAE25" // ToB dialogue file
       cre_ToB = "0DBAE25"
-      traFile = EVAL "0dbae/translations/%LANGUAGE%/setup.tra"
+      traFile = EVAL "0dbae/tra/%LANGUAGE%/setup.tra"
       string = "@5999" // Bring me Baeloth, the drow sorcerer.
       stringPosDV = "Baeloth" // Baeloth
   END
