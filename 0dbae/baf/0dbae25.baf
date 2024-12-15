@@ -1,3 +1,35 @@
+IF
+    InParty(Myself)
+    !Global("0DBAE_LEFT","GLOBAL",1)
+    !Global("0DBAE_HOSTILE","GLOBAL",1)
+    !Global("0DBAE_JOINED","GLOBAL",1)
+THEN
+RESPONSE #101
+    SetGlobal("0DBAE_HOSTILE","GLOBAL",1)
+    Attack("0DBAE")
+END
+
+IF
+    InParty(Myself)
+    !Global("0DBAE_LEFT","GLOBAL",1)
+    !Global("0DBAE_REMOVED","GLOBAL",1)
+    !Global("0DBAE_JOINED","GLOBAL",1)
+THEN
+RESPONSE #102
+    SetGlobal("0DBAE_REMOVED","GLOBAL",1)
+END
+
+IF
+    !InParty(Myself)
+    Global("0DBAE_LEFT","GLOBAL",1)
+    !Global("0DBAE_JOINED","GLOBAL",1)
+THEN
+RESPONSE #103
+    SetGlobal("0DBAE_LEFT","GLOBAL",0)
+    SetGlobal("0DBAE_REMOVED","GLOBAL",0)
+    JoinParty()
+END
+
 // Experience
 IF
     Global("0DBAE25JOINXP","GLOBAL",0)

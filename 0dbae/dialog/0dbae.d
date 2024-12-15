@@ -1,17 +1,28 @@
 BEGIN 0DBAE
 
 // Joining dialogue
+IF ~Global("0DBAE_BEGIN","GLOBAL",0)~ THEN BEGIN 0DBAEI
+  SAY @2000 /* This? Is this what passes for perverse entertainment, up on this plane? Pitiable! Poorly played! Pathetic! What a paltry pit fight. */
+  IF ~~ THEN GOTO 0DBAE0
+END
+
 IF ~Global("0DBAE_BEGIN","GLOBAL",0)~ THEN BEGIN 0DBAE0
   SAY @2001 /* Well, well, well, what whimsical wonder do we witness here? Another face amidst the multitude of mundane mediocrity. You, my unwitting savior, stand before the ineffable Baeloth the Entertainer. */
   IF ~~ THEN REPLY @1001 /* ~Well met, I am <CHARNAME>.~ */ DO ~SetGlobal("0DBAE_BEGIN","GLOBAL",1)~ GOTO 0DBAE2
   IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY @1003 /* ~Baeloth! Do you remember me?~ */ DO ~SetGlobal("0DBAE_BEGIN","GLOBAL",1)~ GOTO 0DBAE3
+  IF ~~ THEN REPLY @1011 /* ~I haven't the time for this!~ */ GOTO 0DBAEE
   IF ~~ THEN REPLY @1004 /* ~Die, drow!~ */ GOTO 0DBAE100
+END
+
+IF ~~ THEN BEGIN 0DBAEE
+  SAY @2012 /* Oh, oh, OH! I see, can't stand the sight of me? */
+  IF ~~ THEN EXIT
 END
 
 // Remember
 IF ~~ THEN BEGIN 0DBAE3
   SAY @2003 /* Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, revelling in the glory that is, well, me. */
-  // BP in BG1 @1010 /* ~You should, Baeloth!  Don’t you recognize your former champion?~ */
+  IF ~Global("BPINBG","GLOBAL",1)~ THEN REPLY @1010 /* ~You should, Baeloth!  Don’t you recognize your former champion?~ */ GOTO 0DBAE4
   IF ~~ THEN REPLY @1005 /* ~You don't remember me at all do you.~ */ GOTO 0DBAE4
   IF ~Global("BA_BEGIN","GLOBAL",1) Global("BA_ATTACKED","LOCALS",1)~ THEN REPLY @1009 /* ~Travelling with me ended badly for you last time.~ */ GOTO 0DBAE4
 END

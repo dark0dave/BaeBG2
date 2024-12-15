@@ -1,4 +1,4 @@
-# Baeloth's Deal
+# Baeloth's in BG2
 
 [![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://github.com/dark0dave/BaeBG2/releases/latest)
 [![](https://img.shields.io/badge/Windows-0078D6?&style=for-the-badge&logoColor=white&logo=git-for-windows)](https://github.com/dark0dave/BaeBG2/releases/latest)
@@ -14,7 +14,7 @@ This mod provides continuation for our lovable Baeloth in BG2EE and EET.
 
 ## Introduction
 
-Baeloth has been captured by the red wizards and is willing to make a deal in exchange for his freedom.
+Baeloth is bored in the copper cornet, and longs for a real adventure.
 
 ### Collaboration
 

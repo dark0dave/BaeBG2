@@ -72,21 +72,24 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @1004 =~Die, drow!~
 @1005 =~You don't remember me at all do you.~
 @1006 =~I accept this loose premise; let's hope your bark is as big as your bite.~
-@1007 =~My trust in you is thin, Baeloth, but if releasing you means paving the way for the demise of the Red Wizards, then I'll agree for now.~
-@1008 =~I won't release you. Stay in that cell and rot, for all I care.~
+@1007 =~My trust in you is thin, Baeloth, but if having you means paving the way for the destruction of this arena, then I'll agree for now.~
+@1008 =~I won't help you. Stay in there and rot, for all I care.~
 @1009 =~Travelling with me ended badly for you last time.~
 @1010 =~You should, Baeloth! Don't you recognize your former champion?~
+@1011 =~I haven't the time for this!~
 @1999 =~~
 
 // BG2 Join Lines
+@2000 =~Is this it? Is this what passes for perverse entertainment, upon this plane? Pitiable! Poorly played! Pathetic! What a paltry pit fight.~
 @2001 =~Well, well, well, what whimsical wonder do we witness here? Another face amidst the multitude of mundane mediocrity. You, my unwitting savior, stand before the ineffable Baeloth the Entertainer.~
-@2002 =~Do you perceive these restricting walls, my unsuspecting companion? A brief setback, I assure you. I, Baeloth, am not one to be entangled for an extended duration. However, perchance, just perchance, you could hasten my exit through a petite, mutually advantageous arrangement?~
+@2002 =~Do you perceive this arena, my unsuspecting companion? A brief blow to my bearings, I assure you. I, Baeloth, am not one to be entangled for an extended duration. However, perchance, just perchance, you could hasten my exit through a mutually advantageous arrangement?~
 @2003 =~Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, revelling in the glory that is, well, me.~
 @2004 =~My mirthful mate, let's not meander in minor matters. I am a dashing drow of discernment and delicious taste, indeed!~
-@2005 =~Imagine this, my enterprising ally: You release me, and in return, I shall be an avant-garde avenger against the Red Wizards. Their downfall will be a magnum opus, a masterpiece magnificently managed by none other than me, Baeloth the Magnificent. Your role, petite yet pivotal, will be to partake and play a part in the uproarious opera of disorder and retribution.~
-@2009 =~Is this your parting present, then? Leaving me languishing thusly in this loathsome cell like a lowly miscreant? You'll rue the day you dared deliver such a dire destiny.~
+@2005 =~Imagine this, my enterprising ally: You and me, as an avant-garde avenger against these shortsighted slavers! Their downfall will be a magnum opus, a masterpiece magnificently managed by none other than me, Baeloth the Magnificent. Your role, petite yet pivotal, will be to partake and play a part in the uproarious opera of disorder and retribution.~
+@2009 =~Is this your parting present, then? Leaving me languishing thusly in this loathsome stand like some lowly miscreant? You'll rue the day you dared deliver such a dire destiny.~
 @2010 =~I discern a glimmer of intelligence in those eyes. Yes, yes, I perceive that you comprehend the worth of aligning yourself with magnificence.~
-@2011 =~Step spryly, my serendipitous sidekick! We've a spectacular show to splendidly stage, and the Red Wizards unwittingly waltz within our whimsical web. Oh, the poetic panorama of it all! They sought to stifle my spectacular self, but now they shall witness the wondrous weight of my wizardry!~
+@2011 =~Step spryly, my serendipitous sidekick! We've a spectacular show to splendidly stage, and the unintelligent will unwittingly waltz within our whimsical web. Oh, the poetic panorama of it all! They sought to stifle my spectacular self, but now they shall witness the wondrous weight of my wizardry!~
+@2012 = ~Oh, oh, OH! I see! Can't stand the sight of me?~
 @2999 =~~
 
 // BG2 NPC Lines
