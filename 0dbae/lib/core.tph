@@ -192,5 +192,5 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN // EET related code & summoning script
       stringPosDV = "Baeloth" // Baeloth
   END
 END ELSE BEGIN
-  COMPILE ~0dbae/dialog/fatesp.d~
+  COMPILE ~0dbae/fate/fatesp.d~
 END
