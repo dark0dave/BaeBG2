@@ -85,7 +85,7 @@ COPY ~0dbae/cre/0dbae.cre~ ~override~
   SAY HIDDEN_IN_SHADOWS @38
   SAY SPELL_DISRUPTED @39
   SAY SET_A_TRAP @40
-  WRITE_ASCII SCRIPT_OVERRIDE ~0DBAE~ #8
+  WRITE_ASCII SCRIPT_OVERRIDE ~0DBAES~ #8
   WRITE_ASCII DEATHVAR ~0DBAE~ #32
   WRITE_ASCII DIALOG ~0DBAE~ #8
   REMOVE_CRE_ITEMS
@@ -95,9 +95,9 @@ COPY ~0dbae/cre/0dbae.cre~ ~override~
 
 // ToB
 COPY_EXISTING ~override/0dbae.cre~ ~override/0DBAE25.CRE~
-  WRITE_ASCII SCRIPT_OVERRIDE ~0DBAE25~ #8
+  WRITE_ASCII SCRIPT_OVERRIDE ~0DBAE25S~ #8
+  WRITE_ASCII DEATHVAR ~0DBAE25~ #32
   WRITE_ASCII DIALOG ~0DBAE25~ #8
-  WRITE_ASCII DEATHVAR ~0DBAE25~ #8
 
 /// Dialog ///
 
@@ -105,14 +105,16 @@ COPY_EXISTING ~override/0dbae.cre~ ~override/0DBAE25.CRE~
 COMPILE EVALUATE_BUFFER ~0dbae/dialog~
 
 // Scripts
-COMPILE EVALUATE_BUFFER ~0dbae/baf/0dbae.baf~
-COMPILE EVALUATE_BUFFER ~0dbae/baf/0dbae25.baf~
+COMPILE EVALUATE_BUFFER ~0dbae/baf/0dbaes.baf~
+COMPILE EVALUATE_BUFFER ~0dbae/baf/0dbae25s.baf~
+COMPILE EVALUATE_BUFFER ~0dbae/baf/0dbaed.baf~
+COMPILE EVALUATE_BUFFER ~0dbae/baf/0dbae25d.baf~
 
 // Appending dialog files
 // See [here](https://www.gibberlings3.net/forums/topic/15833-dialog-files-and-how-they-are-referenced/)
 // cre post_dialog_file join_dialog_file dream_script_file 25post_dialog_file 25join_dialog_file 25dream_script_file 25override_script_file
 APPEND ~pdialog.2da~
-  ~0DBAE 0DBAEP 0DBAEJ 0DBAED 0DBAE25P 0DBAE25J 0DBAE25D 0DBAE25S~
+  ~0DBAE 0DBAEP 0DBAEJ 0DBAED 0DBAE25P 0DBAE25J 0DBAE25D 0DBAE25~
 UNLESS ~0DBAE~
 
 // Banter
@@ -147,3 +149,8 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN // EET related code & summoning script
 END ELSE BEGIN
   COMPILE ~0dbae/fate/fatesp.d~
 END
+
+// Epilogue
+COPY ~0dbae/epilogue/0dbae.2da~ ~override/0dbae01.2da~
+REPLACE ~99999~ @60
+REPLACE ~99998~ ~Baeloth~
