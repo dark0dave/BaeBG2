@@ -2,12 +2,10 @@ BEGIN 0DBAE25B
 
 // Sarevok Banter
 CHAIN
-IF ~InParty("0DBAE25")
-    See("0DBAE25")
-    CombatCounter(0)
-    !See([ENEMY])
+IF ~InParty("0DBAE")
+    See("0DBAE")
     !StateCheck("Sarevok", CD_STATE_NOTVALID)
-    !StateCheck("0DBAE25", CD_STATE_NOTVALID)
+    !StateCheck("0DBAE", CD_STATE_NOTVALID)
     Global("0DBAE25BSARV1","GLOBAL",0)~
 THEN BSAREV25 0DBAE25BSARV1
 @6000 /* Drow, the more I know you the more I wish I had found you sooner. */

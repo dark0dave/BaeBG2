@@ -490,7 +490,7 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @3391 = ~To what cause are these hypothetical paladins sworn? What are the laws of the land and who enforces them? What is their calling in life? All these matter more than you know.~
 @3999 = ~~
 
-// Baeloth places
+// Baeloth BG2 places
 @4000 = ~An arcane asylum awaits? Expect no easy egress from there after entry!~
 @4001 = ~Feeling nervous, Baeloth?~
 @4002 = ~I smell the spell components from here. It's like home in the worst of ways!~
@@ -536,6 +536,13 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @5013 = ~Join me, then.~
 @5014 = ~Wait a little longer.~
 @5015 = ~Once more, the audacious adventurer dares to dismiss the divine dramatist, denying the delight of my drowish dynamism. An alliance, alas, devoid of my majestic mastery of the magical multitude. Very well, I shall begrudgingly bide my time in this banal bastion.~
+@5016 =~I hope you're satisfied. Look at my clothing! Caked-on mud everywhere! Do you have any idea how many hairy, four-legged BEASTS I had to avoid while making my way here? Woofs, were they? Wharves? I don't know.~
+@5017 =~Hello to you too, Baeloth. I have need of you. Will you join me?~
+@5018 =~Well, keep it up. You're doing a good job so far.~
+@5019 =~YES! At last, some protection! Protection for YOU, that is. I will join you. So that you can feel safe.~
+@5020 =~No! NO! NO, NO, NO! Don't LEAVE me here, you moronic miscreant! Don't let me die at the hands of pale-skinned barbarians!~
+@5021 =~Wait here.~
+@5022 =~On second thought, sure. Your whining convinced me.~
 // Fates
 @5999 = ~Bring me Baeloth, the drow sorcerer.~
 
