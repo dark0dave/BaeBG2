@@ -96,7 +96,6 @@ COPY ~0dbae/cre/0dbae.cre~ ~override~
 // ToB
 COPY_EXISTING ~override/0dbae.cre~ ~override/0DBAE25.CRE~
   WRITE_ASCII SCRIPT_OVERRIDE ~0DBAE25S~ #8
-  WRITE_ASCII DEATHVAR ~0DBAE25~ #32
   WRITE_ASCII DIALOG ~0DBAE25~ #8
 
 /// Dialog ///
