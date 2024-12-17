@@ -85,19 +85,66 @@ COPY ~0dbae/cre/0dbae.cre~ ~override~
   SAY HIDDEN_IN_SHADOWS @38
   SAY SPELL_DISRUPTED @39
   SAY SET_A_TRAP @40
-  WRITE_ASCII SCRIPT_OVERRIDE ~0DBAES~ #8
-  WRITE_ASCII DEATHVAR ~0DBAE~ #32
-  WRITE_ASCII DIALOG ~0DBAE~ #8
+  WRITE_ASCII SCRIPT_OVERRIDE ~0dbaes~ #8
+  WRITE_ASCII DEATHVAR ~0dbae~ #32
+  WRITE_ASCII DIALOG ~0dbae~ #8
   REMOVE_CRE_ITEMS
   ADD_CRE_ITEM ~CLCK17~ #0 #0 #0 ~identified&stolen~ ~armor~ EQUIP
   ADD_CRE_ITEM ~STAF18~ #0 #0 #0 ~identified&stolen~ ~weapon1~ EQUIP
   ADD_CRE_ITEM ~BARING~ #0 #0 #0 ~identified&undroppable~ ~rring~ EQUIP
 
 // ToB
-COPY_EXISTING ~override/0dbae.cre~ ~override/0DBAE25.CRE~
-  WRITE_ASCII SCRIPT_OVERRIDE ~0DBAE25S~ #8
-  WRITE_ASCII DEATHVAR ~0DBAE25~ #32
-  WRITE_ASCII DIALOG ~0DBAE25~ #8
+COPY_EXISTING ~0dbae/cre/0dbae.cre~ ~override/0DBAE25.CRE~
+  SAY NAME1 @99
+  SAY NAME2 @99
+  SAY BIO @100
+  SAY BATTLE_CRY1 @1
+  SAY BATTLE_CRY2 @14
+  SAY BATTLE_CRY3 @15
+  SAY BATTLE_CRY4 @16
+  SAY BATTLE_CRY5 @17
+  SAY LEADER @2
+  SAY TIRED @3
+  SAY BORED @4
+  SAY HURT @5
+  SAY DAMAGE @12
+  SAY DYING @13
+  SAY MORALE @18
+  SAY HAPPY @19
+  SAY UNHAPPY_ANNOYED @20
+  SAY UNHAPPY_SERIOUS @21
+  SAY UNHAPPY_BREAKING @22
+  SAY SELECT_COMMON1 @6
+  SAY SELECT_COMMON2 @7
+  SAY SELECT_COMMON3 @8
+  SAY SELECT_COMMON4 @23
+  SAY SELECT_COMMON5 @24
+  SAY SELECT_COMMON6 @25
+  SAY SELECT_ACTION1 @9
+  SAY SELECT_ACTION2 @10
+  SAY SELECT_ACTION3 @11
+  SAY SELECT_ACTION4 @26
+  SAY SELECT_ACTION5 @27
+  SAY SELECT_ACTION6 @28
+  SAY REACT_TO_DIE_GENERAL @29
+  SAY REACT_TO_DIE_SPECIFIC @30
+  SAY SELECT_RARE1 @31
+  SAY SELECT_RARE2 @32
+  SAY CRITICAL_HIT @33
+  SAY CRITICAL_MISS @34
+  SAY TARGET_IMMUNE @35
+  SAY INVENTORY_FULL @36
+  SAY PICKED_POCKET @37
+  SAY HIDDEN_IN_SHADOWS @38
+  SAY SPELL_DISRUPTED @39
+  SAY SET_A_TRAP @40
+  WRITE_ASCII SCRIPT_OVERRIDE ~0dbae25s~ #8
+  WRITE_ASCII DEATHVAR ~0dbae~ #32
+  WRITE_ASCII DIALOG ~0dbae25~ #8
+  REMOVE_CRE_ITEMS
+  ADD_CRE_ITEM ~CLCK17~ #0 #0 #0 ~identified&stolen~ ~armor~ EQUIP
+  ADD_CRE_ITEM ~STAF18~ #0 #0 #0 ~identified&stolen~ ~weapon1~ EQUIP
+  ADD_CRE_ITEM ~BARING~ #0 #0 #0 ~identified&undroppable~ ~rring~ EQUIP
 
 /// Dialog ///
 
@@ -114,13 +161,13 @@ COMPILE EVALUATE_BUFFER ~0dbae/baf/0dbae25d.baf~
 // See [here](https://www.gibberlings3.net/forums/topic/15833-dialog-files-and-how-they-are-referenced/)
 // cre post_dialog_file join_dialog_file dream_script_file 25post_dialog_file 25join_dialog_file 25dream_script_file 25override_script_file
 APPEND ~pdialog.2da~
-  ~0DBAE 0DBAEP 0DBAEJ 0DBAED 0DBAE25P 0DBAE25J 0DBAE25D 0DBAE25~
+  ~0dbae 0dbaep 0dbaej 0dbaed 0dbae25p 0dbae25j 0dbae25d 0dbae25~
 UNLESS ~0DBAE~
 
 // Banter
 // cre FILE 25FILE
 APPEND ~interdia.2da~
-  ~0DBAE 0DBAEB 0DBAE25B~
+  ~0dbae 0dbaeb 0dbae25b~
 UNLESS ~0DBAE~
 
 // Spawn Baeloth in the Copper Cornet
@@ -153,4 +200,3 @@ END
 // Epilogue
 COPY ~0dbae/epilogue/0dbae.2da~ ~override/0dbae01.2da~
 REPLACE ~99999~ @60
-REPLACE ~99998~ ~Baeloth~

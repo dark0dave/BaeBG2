@@ -19,7 +19,7 @@ END
 
 IF ~~ 0DBAE25_3
     SAY @5008 /* Ah, acknowledging the allure of my arcane artistry, are you? Very well, I shall shower your shabby squad with the splendor that is Baeloth the Bewitching. */
-    IF ~~ DO ~JoinParty()~ EXIT
+    IF ~~ DO ~SetGlobal("0DBAE25Summoned","GLOBAL",3) JoinParty()~ EXIT
 END
 
 IF ~~ 0DBAE25_3_1
