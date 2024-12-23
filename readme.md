@@ -86,3 +86,11 @@ DON'T FORGET 24bit depth for portraits
 ```sh
 convert "${1}" -type truecolor "${1}"
 ```
+
+### Dialogue
+
+Add dialogue strings with the following:
+
+```sh
+weidu --nogame --traify-comment --traify-old-tra 0dbae/tra/english/setup.tra  --traify 0dbae/dialog/<target d file>
+```
