@@ -106,3 +106,17 @@ RESPONSE #100
     SetGlobal("0DBAEJOINXP","GLOBAL",1)
     SetInterrupt(TRUE)
 END
+
+// Finish Slavers
+IF
+    InParty("0DBAE")
+    See("0DBAE")
+    !StateCheck("0DBAE", CD_STATE_NOTVALID)
+    DEAD("LEHTIN")
+THEN
+RESPONSE #100
+    SetInterrupt(FALSE)
+    Wait(5)
+    SetGlobal("0DBAESLAVERS","GLOBAL",1)
+    SetInterrupt(TRUE)
+END
