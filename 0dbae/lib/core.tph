@@ -10,19 +10,19 @@ END
     OUTER_SET EVAL ~%name_source%~ = bg2_chapter
 END
 
-COPY ~0dbae/eff/geniedam.eff~ ~override/GENIEDAM.EFF~ UNLESS ~override/GENIEDAM.EFF~
-COPY ~0dbae/eff/geniehit.eff~ ~override/GENIEHIT.EFF~ UNLESS ~override/GENIEHIT.EFF~
-COPY ~0dbae/misc/gring01.bam~ ~override/GRING01.BAM~ UNLESS ~override/GRING01.BAM~
-COPY ~0dbae/misc/ibaring.bam~ ~override/IBARING.BAM~ UNLESS ~override/IBARING.BAM~
-COPY ~0dbae/sound~ ~override~
-COPY ~0dbae/portraits~ ~override~
+COPY ~%MOD_FOLDER%/eff/geniedam.eff~ ~override/GENIEDAM.EFF~ UNLESS ~override/GENIEDAM.EFF~
+COPY ~%MOD_FOLDER%/eff/geniehit.eff~ ~override/GENIEHIT.EFF~ UNLESS ~override/GENIEHIT.EFF~
+COPY ~%MOD_FOLDER%/misc/gring01.bam~ ~override/GRING01.BAM~ UNLESS ~override/GRING01.BAM~
+COPY ~%MOD_FOLDER%/misc/ibaring.bam~ ~override/IBARING.BAM~ UNLESS ~override/IBARING.BAM~
+COPY ~%MOD_FOLDER%/sound~ ~override~
+COPY ~%MOD_FOLDER%/portraits~ ~override~
 
 // CD_STATE_NOTVALID
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
 UNLESS ~CD_STATE_NOTVALID~
 
 /// Items ///
-COPY ~0dbae/items/baring.itm~ ~override/BARING.ITM~
+COPY ~%MOD_FOLDER%/items/baring.itm~ ~override/BARING.ITM~
   SAY NAME1 @91 /* Small Ring */
   SAY NAME2 @92 /* Barrityl's Burden */
   SAY UNIDENTIFIED_DESC @93 /* This ring promises power at a great cost. */
@@ -41,7 +41,7 @@ UNLESS ~override/BARING.ITM~
 
 /// Creature files ///
 // SoA
-COPY ~0dbae/cre/0dbae.cre~ ~override~
+COPY ~%MOD_FOLDER%/cre/0dbae.cre~ ~override~
   SAY NAME1 @99
   SAY NAME2 @99
   SAY BIO @100
@@ -94,7 +94,7 @@ COPY ~0dbae/cre/0dbae.cre~ ~override~
   ADD_CRE_ITEM ~BARING~ #0 #0 #0 ~identified&undroppable~ ~rring~ EQUIP
 
 // ToB
-COPY_EXISTING ~0dbae/cre/0dbae.cre~ ~override/0DBAE25.CRE~
+COPY_EXISTING ~%MOD_FOLDER%/cre/0dbae.cre~ ~override/0DBAE25.CRE~
   SAY NAME1 @99
   SAY NAME2 @99
   SAY BIO @100
@@ -149,13 +149,21 @@ COPY_EXISTING ~0dbae/cre/0dbae.cre~ ~override/0DBAE25.CRE~
 /// Dialog ///
 
 // Compile dialog
-COMPILE EVALUATE_BUFFER ~0dbae/dialog~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialog~
+
+// Append tob banter with sod banter
+COPY ~%MOD_FOLDER%/dialog/0dbaeb.d~ ~weidu_external/%MOD_FOLDER%/compile/0dbaeb.d~
+  REPLACE_TEXTUALLY ~BEGIN 0DBAEB~ ~~
+  REPLACE_TEXTUALLY ~== 0DBAEB~ ~== 0DBAE25B~
+COPY ~%MOD_FOLDER%/dialog/0dbae25b.d~ ~weidu_external/%MOD_FOLDER%/compile/0dbae25b.d~
+  APPEND_FILE ~weidu_external/%MOD_FOLDER%/compile/0dbaeb.d~
+COMPILE EVALUATE_BUFFER ~weidu_external/%MOD_FOLDER%/compile/0dbae25b.d~
 
 // Scripts
-COMPILE EVALUATE_BUFFER ~0dbae/baf/0dbaes.baf~
-COMPILE EVALUATE_BUFFER ~0dbae/baf/0dbae25s.baf~
-COMPILE EVALUATE_BUFFER ~0dbae/baf/0dbaed.baf~
-COMPILE EVALUATE_BUFFER ~0dbae/baf/0dbae25d.baf~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/0dbaes.baf~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/0dbae25s.baf~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/0dbaed.baf~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/0dbae25d.baf~
 
 // Appending dialog files
 // See [here](https://www.gibberlings3.net/forums/topic/15833-dialog-files-and-how-they-are-referenced/)
@@ -170,8 +178,12 @@ APPEND ~interdia.2da~
   ~0dbae 0dbaeb 0dbae25b~
 UNLESS ~0DBAE~
 
+// Epilogue
+COPY ~%MOD_FOLDER%/epilogue/0dbae.2da~ ~override/0dbae01.2da~
+REPLACE ~99999~ @60
+
 // Spawn Baeloth in the Copper Cornet
-EXTEND_TOP ~AR0406.BCS~ ~0dbae/baf/ar0406.baf~
+EXTEND_TOP ~AR0406.BCS~ ~%MOD_FOLDER%/baf/ar0406.baf~
   EVALUATE_BUFFER
 
 // Add Baeloth to ToB
@@ -189,14 +201,10 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN // EET related code & summoning script
       override_ToB = "0DBAE25" // ToB Override script
       dialog_ToB = "0DBAE25" // ToB dialogue file
       cre_ToB = "0DBAE25"
-      traFile = EVAL "0dbae/tra/%LANGUAGE%/setup.tra"
+      traFile = EVAL "%MOD_FOLDER%/tra/%LANGUAGE%/setup.tra"
       string = "@5999" // Bring me Baeloth, the drow sorcerer.
       stringPosDV = "Baeloth" // Baeloth
   END
 END ELSE BEGIN
-  COMPILE ~0dbae/fate/fatesp.d~
+  COMPILE ~%MOD_FOLDER%/fate/fatesp.d~
 END
-
-// Epilogue
-COPY ~0dbae/epilogue/0dbae.2da~ ~override/0dbae01.2da~
-REPLACE ~99999~ @60

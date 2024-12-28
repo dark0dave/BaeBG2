@@ -2,7 +2,7 @@
 ACTION_IF FILE_EXISTS_IN_GAME ~xacorwin.cre~ AND FILE_EXISTS_IN_GAME ~xacaelar.cre~
 THEN BEGIN
   PRINT ~Adding compatibility for LCA~
-  COMPILE ~0dbae/dialogue/crossmod/0DLCA.D~
+  COMPILE ~%MOD_FOLDER%/dialogue/crossmod/0dlca.d~
 END
 
-// M'Khiin compat
+// M'Khiin compatibility
