@@ -8,7 +8,7 @@
 
 This mod provides continuation for our lovable Baeloth in BG2EE and EET.
 
-<img src="0dbae/portraits/0dbael.bmp" alt="All right... but NOT because you TOLD me to." width="200"/>
+<img src="zdbae/portraits/zdbael.bmp" alt="All right... but NOT because you TOLD me to." width="200"/>
 
 > OBVIOUSLY, this was going to happen, but the amount of TIME it took borders on insanity! How do you function on a day-to-day basis?
 
@@ -26,12 +26,12 @@ We don't include an exe, you'll need use weidu to install:
 
 ### Move files
 
-Copy 0DBAE subfolder to your game directory:
+Copy zdbae subfolder to your game directory:
 
 #### Linux/Macos:
 
 ```sh
-cp -r BaeBG2/0DBAE <GAME DIRECTORY>
+cp -r BaeBG2/zdbae <GAME DIRECTORY>
 ```
 
 #### Windows:
@@ -42,12 +42,12 @@ Then run weidu against the .tp2 file, in the game directory
 
 #### Linux/Macos:
 ```sh
-weidu 0DBAE/BaeBG2.tp2
+weidu zdbae/BaeBG2.tp2
 ```
 
 #### Windows:
 ```sh
-weidu.exe 0DBAE\BaeBG2.tp2
+weidu.exe zdbae\BaeBG2.tp2
 ```
 
 Should get something like this:
@@ -92,5 +92,5 @@ convert "${1}" -type truecolor "${1}"
 Add dialogue strings with the following:
 
 ```sh
-weidu --nogame --traify-comment --traify-old-tra 0dbae/tra/english/setup.tra  --traify 0dbae/dialog/<target d file>
+weidu --nogame --traify-comment --traify-old-tra zdbae/tra/english/setup.tra  --traify zdbae/dialog/<target d file>
 ```

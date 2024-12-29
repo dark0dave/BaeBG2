@@ -1,0 +1,122 @@
+IF
+    InParty(Myself)
+    !Global("ZDBAE_LEFT","GLOBAL",1)
+    !Global("ZDBAE_HOSTILE","GLOBAL",1)
+    !Global("ZDBAE_JOINED","GLOBAL",1)
+THEN
+RESPONSE #101
+    SetGlobal("ZDBAE_HOSTILE","GLOBAL",1)
+    Attack("ZDBAE")
+END
+
+IF
+    InParty(Myself)
+    !Global("ZDBAE_LEFT","GLOBAL",1)
+    !Global("ZDBAE_REMOVED","GLOBAL",1)
+    !Global("ZDBAE_JOINED","GLOBAL",1)
+THEN
+RESPONSE #102
+    SetGlobal("ZDBAE_REMOVED","GLOBAL",1)
+END
+
+IF
+    !InParty(Myself)
+    Global("ZDBAE_LEFT","GLOBAL",1)
+    !Global("ZDBAE_JOINED","GLOBAL",1)
+THEN
+RESPONSE #103
+    SetGlobal("ZDBAE_LEFT","GLOBAL",0)
+    SetGlobal("ZDBAE_REMOVED","GLOBAL",0)
+    JoinParty()
+END
+
+// Experience
+IF
+    Global("ZDBAEJOINXP","GLOBAL",0)
+    InParty(Myself)
+    XPGT(Player1,1249999)
+    XPLT(Myself,1250000)
+THEN
+RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("ZDBAEJOINXP","GLOBAL",1)
+    ChangeStat(Myself,XP,1250000,SET)
+    SetInterrupt(TRUE)
+END
+
+IF
+    Global("ZDBAEJOINXP","GLOBAL",0)
+    InParty(Myself)
+    XPGT(Player1,999999)
+    XPLT(Myself,1000000)
+THEN
+RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("ZDBAEJOINXP","GLOBAL",1)
+    ChangeStat(Myself,XP,1000000,SET)
+    SetInterrupt(TRUE)
+END
+
+IF
+    Global("ZDBAEJOINXP","GLOBAL",0)
+    InParty(Myself)
+    XPGT(Player1,499999)
+    XPLT(Myself,500000)
+THEN
+RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("ZDBAEJOINXP","GLOBAL",1)
+    ChangeStat(Myself,XP,500000,SET)
+    SetInterrupt(TRUE)
+END
+
+IF
+    Global("ZDBAEJOINXP","GLOBAL",0)
+    InParty(Myself)
+    XPGT(Player1,249999)
+    XPLT(Myself,250000)
+THEN
+RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("ZDBAEJOINXP","GLOBAL",1)
+    ChangeStat(Myself,XP,250000,SET)
+    SetInterrupt(TRUE)
+END
+
+IF
+    Global("ZDBAEJOINXP","GLOBAL",0)
+    InParty(Myself)
+    XPGT(Player1,124999)
+    XPLT(Myself,125000)
+THEN
+RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("ZDBAEJOINXP","GLOBAL",1)
+    ChangeStat(Myself,XP,125000,SET)
+    SetInterrupt(TRUE)
+END
+
+IF
+    Global("ZDBAEJOINXP","GLOBAL",0)
+    InParty(Myself)
+    XPLT(Player1,89001)
+THEN
+RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("ZDBAEJOINXP","GLOBAL",1)
+    SetInterrupt(TRUE)
+END
+
+// Finish Slavers
+IF
+    InParty("ZDBAE")
+    See("ZDBAE")
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    DEAD("LEHTIN")
+THEN
+RESPONSE #100
+    SetInterrupt(FALSE)
+    Wait(5)
+    SetGlobal("ZDBAESLAVERS","GLOBAL",1)
+    SetInterrupt(TRUE)
+END
