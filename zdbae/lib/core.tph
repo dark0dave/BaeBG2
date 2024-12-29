@@ -50,9 +50,9 @@ COPY ~%MOD_FOLDER%/items/zdbo01.itm~ ~override~
 
   Equipped abilities:
   - Charisma: +1
-  – Saving Throws: +1
-  – Wearer is immune to Charm
-  – Protects against critical hits */
+  - Saving Throws: +1
+  - Wearer is immune to Charm
+  - Protects against critical hits */
 
 // Barrityl's Fabulous Leather Boots
 COPY ~%MOD_FOLDER%/items/zdbo02.itm~ ~override~
@@ -65,8 +65,20 @@ COPY ~%MOD_FOLDER%/items/zdbo02.itm~ ~override~
 
   Equipped abilities:
   - Immunity to Stun, Hold Person and Paralyse
-  – Doubles movement rate
-  – Protects against critical hits */
+  - Doubles movement rate
+  - Protects against critical hits */
+
+// Barrityl's Simple Boots
+COPY ~%MOD_FOLDER%/items/zdbo03.itm~ ~override~
+  SAY NAME1 @80 /* Leather Boots */
+  SAY NAME2 @83 /* Barrityl's Simple Boots */
+  SAY UNIDENTIFIED_DESC @78 /* A closer inspection of these boots leaves you more confused then when you started. */
+  SAY DESC @84 /* These boot elicit a sigh from Baeloth, as these boots are simple yet effective. A slightly upgraded version of boots of speed, but much to Baeloth's chagrin they are not unique or rare enough for him to feel noticed.
+
+  Equipped abilities:
+  - Charisma: -1
+  - Doubles movement rate
+  - Protects against critical hits */
 
 /// Creature files ///
 // SoA
