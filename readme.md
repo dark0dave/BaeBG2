@@ -94,3 +94,10 @@ Add dialogue strings with the following:
 ```sh
 weidu --nogame --traify-comment --traify-old-tra zdbae/tra/english/setup.tra  --traify zdbae/dialog/<target d file>
 ```
+
+## Mirrors
+
+- sourcehut https://git.sr.ht/~dark0dave/BaeBG2
+- codeberg  https://codeberg.org/dark0dave/baebg2.git
+- github    https://github.com/dark0dave/BaeBG2
+- gitlab    https://gitlab.com/dark0dave/baebg2.git
