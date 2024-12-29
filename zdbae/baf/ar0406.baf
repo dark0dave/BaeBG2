@@ -1,0 +1,9 @@
+IF
+  Global("ZDBAEExists","GLOBAL",0)
+THEN
+RESPONSE #100
+  SetGlobal("ZDBAE_BEGIN","GLOBAL",0)
+  SetGlobal("ZDBAEExists","GLOBAL",1)
+  CreateCreature("ZDBAE",[2340.1650],5)
+  Continue()
+END
