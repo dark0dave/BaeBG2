@@ -47,10 +47,11 @@
 @60 =~Baeloth opens a new arena~
 
 // Items
-@91 =~Small Ring~
-@92 =~Barrityl's Burden~
-@93 =~This ring promises power at a great cost.~
-@94 =~Created by a djinni as a "gift" to the drow sorcerer Baeloth Barrityl, this obsidian ring with blood-red ruby almost hypnotically draws the eye to it. Acting as additional storage space for magical knowledge, once placed upon a spellcaster's finger it imbues [him] with the ability to learn additional spells beyond what [his] skill normally allows.[2] It also gives the wearer the chance to spontaneously create wealth once a day in the form of some gemstone, but that is a double-edged sword; should the gem fail to materialize, the wearer endures a period of searing pain.
+@70 = ~~
+@71 =~Small Ring~
+@72 =~Barrityl's Burden~
+@73 =~This ring promises power at a great cost.~
+@74 =~Created by a djinni as a "gift" to the drow sorcerer Baeloth Barrityl, this obsidian ring with blood-red ruby almost hypnotically draws the eye to it. Acting as additional storage space for magical knowledge, once placed upon a spellcaster's finger it imbues [him] with the ability to learn additional spells beyond what [his] skill normally allows.[2] It also gives the wearer the chance to spontaneously create wealth once a day in the form of some gemstone, but that is a double-edged sword; should the gem fail to materialize, the wearer endures a period of searing pain.
 
 The djinni that created the ring, not entirely trusting the person to whom it was gifted, wove a curse into the black stone band. In battle with a djinni, the ring's wearer will find [him]self at an extreme disadvantage. Once donned, it cannot be removed from its wearer's finger, no matter how much [he] might wish it so.
 
@@ -58,11 +59,32 @@ Charge abilities:
 - Create a random gem or damage the wearer, once per rest
 
 Equipped abilities:
-- Can cast three extra spells of each level
+- Can cast two extra spells of each level
 - THAC0: -5 penalty vs Genies
 - Damage: -5 penalty vs Genies~
-@95 = ~Baeloth curtly informs you that "regrettably, the ring's removal is not a resource I retain." Try as he might, the sorcerer is unable to take it from his finger—attempts to do so are accompanied by a litany of curses aimed at the djinni Najim, who gave him the item.~
+@75 = ~Baeloth curtly informs you that "regrettably, the ring's removal is not a resource I retain." Try as he might, the sorcerer is unable to take it from his finger—attempts to do so are accompanied by a litany of curses aimed at the djinni Najim, who gave him the item.~
+@76 =~Fur Boots~
+@77 =~Barrityl's Fur Boots~
+@78 =~A closer inspection of these boots leaves you more confused then when you started.~
+@79 =~As expected from Baeloth, these leather fur boots are outrageously extravagant, expensive, and unique. The leather is deep, almost black, with an unusual texture that shifts in the light—somehow both smooth and rough at the same time. The dark fur lining is soft to the touch, yet surprisingly warm, providing an eerie contrast to the cold, smooth exterior. The fur appears to be woven into the leather, almost like it’s part of the material itself, giving the boots an added layer of mystery. Intricate stitching along the seams is done in a fine silver thread, adding an elegant, almost regal touch to the otherwise imposing design.
 
+Baeloth often loudly remarks that these boots are a fusion of function and form, as they are magically enhanced, somehow conferring him with even more confidence and speechcraft, while protecting him from others' attempts to persuade or charm him.
+
+Equipped abilities:
+- Charisma: +1
+- Saving Throws: +1
+- Wearer is immune to Charm
+- Protects against critical hits~
+@80 =~Leather Boots~
+@81 =~Barrityl's Fabulous Boots~
+@82 =~As expected from Baeloth, these leather boots are outrageously extravagant, expensive, and unique. Crafted from leather that seems to shift in color, they range from a deep, earthy brown to subtle hues of amber, changing with every step and angle, as though alive with some hidden magic. The texture is unlike any normal leather—smooth in some areas, rugged in others, giving the boots an almost sentient quality. The surface catches the light in curious ways, creating an illusion that the boots are constantly in motion, even when standing still.
+
+Baeloth loudly remarks how gracefully grounded he feels. The boots grant an unnatural speed, enhancing agility and reflexes, while also imbuing him with immunity to movement-restricting spells.
+
+Equipped abilities:
+  - Immunity to Stun, Hold Person and Paralyse
+  - Doubles movement rate
+  - Protects against critical hits~
 // Journal/Bio Entries
 @99 =~Baeloth~
 @100 =~When asked about his past, Baeloth Barrityl, or "Baeloth the Entertainer" as he prefers to be called, claims to be a drow sorcerer of some repute. While he keeps some of his earlier exploits vague, he brags excessively about his most recent endeavor, the Black Pits. While it all ended in failure, he maintains that it was "the best show in all the realms."
