@@ -18,7 +18,7 @@ Baeloth is bored in the copper cornet, and longs for a real adventure.
 
 ### Collaboration
 
-I must say a big thank you to [Endarire](https://www.gibberlings3.net/profile/5772-endarire/), who has provided dialog and ideas for this mod. Without them, this mod would not be possible. A personal shout out to @morpheus562[G3](https://www.gibberlings3.net/profile/11591-morpheus562/), @CamDawg[G3](https://www.gibberlings3.net/profile/8-camdawg/), @K4thos[G3](https://www.gibberlings3.net/profile/6804-k4thos/) for EET, and the rest of the G3 community. And to [@bucketfulofsunshine](https://github.com/bucketfulofsunshine) for their M'Khiin mod.
+I must say a big thank you to [@Endarire](https://github.com/Endarire):[G3](https://www.gibberlings3.net/profile/5772-endarire/), who has provided dialogue and ideas for this mod. Without them, this mod would not be possible. A personal shout out to [@morpheus562](https://github.com/morpheus562):[G3](https://www.gibberlings3.net/profile/11591-morpheus562/), [@CamDawg](https://github.com/CamDawg):[G3](https://www.gibberlings3.net/profile/8-camdawg/), [@K4thos](https://github.com/K4thos):[G3](https://www.gibberlings3.net/profile/6804-k4thos/) for EET, and the rest of the G3 community. And to [@bucketfulofsunshine](https://github.com/bucketfulofsunshine) for their M'Khiin mod. And to [@zenblack](https://github.com/zenblack) for bams! And to the [BEAR](https://github.com/szaumoor).
 
 ## Installation
 
