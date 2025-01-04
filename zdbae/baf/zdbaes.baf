@@ -126,7 +126,37 @@ IF
   HasItem("zbbtlizd",Myself)
   Global("zdbaeleapers","GLOBAL",0)
 THEN
-  RESPONSE #100
+RESPONSE #100
     SetGlobal("zdbaeleapers","GLOBAL",1)
+    StartDialogNoSet([PC])
+END
+
+/* baeloth has the sturdy leather boots */
+IF
+  HasItem("zdbo02",Myself)
+  Global("zdbaesturdy","GLOBAL",0)
+THEN
+RESPONSE #100
+    SetGlobal("zdbaesturdy","GLOBAL",1)
+    StartDialogNoSet([PC])
+END
+
+/* baeloth has the simple boots - how DARE you! */
+IF
+  HasItem("zdbo03",Myself)
+  Global("zdbaesimple","GLOBAL",0)
+THEN
+RESPONSE #100
+    SetGlobal("zdbaesimple","GLOBAL",1)
+    StartDialogNoSet([PC])
+END
+
+/* baeloth has da boots with ta fur */
+IF
+  HasItem("zdbo01",Myself)
+  Global("zdbaefurries","GLOBAL",0)
+THEN
+RESPONSE #100
+    SetGlobal("zdbaefurries","GLOBAL",1)
     StartDialogNoSet([PC])
 END
