@@ -131,8 +131,20 @@ IF ~AreaCheck("AR0604")
     Global("ZDBAECIRCUS1","GLOBAL",0)~
 THEN BEGIN ZDBAECIRCUS1
   SAY @4042 /* An expert illusion indicated by incandescent chains, easily seen by my superior sight. <CHARNAME> this ogre speaks true. A pleasurable mystery if she is hideous, hirsute, or heavenly once we dispel the dastardlly spell. */
-  IF ~~ THEN REPLY @4023 /* Are you sure Baeloth? she's an ogre, we've been killing those since level 3! */ DO ~SetGlobal("ZDBAECIRCUS1","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY @4043 /* Are you sure Baeloth? she's an ogre, we've been killing those since level 3! */ DO ~SetGlobal("ZDBAECIRCUS1","GLOBAL",1)~ EXIT
 END
+
+// Copper Cornet (AR0406)
+CHAIN
+IF ~AreaCheck("AR0406")
+    See("MADAM")
+    Global("MadamUpset","GLOBAL",0)
+    Global("ZDBAEVICES1","GLOBAL",0)~
+THEN ZDBAEP ZDBAEVICES1
+@4044 /* Another one of these primitive lust chambers. My goodness the quality of your stock is quite low Madame. Perchance you have a lovely hidden away for someone of debauched distinction? */
+DO ~SetGlobal("ZDBAEVICES1","GLOBAL",1)~
+== MADAM @4045 /* You vile blackskinned pimps never give us credit! */
+EXIT
 
 // Resurrection Gorge (OH5100)
 CHAIN
@@ -142,13 +154,13 @@ IF ~AreaCheck("OH5100")
     See("Dorn")
     !StateCheck("Dorn", CD_STATE_NOTVALID)
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)~
-THEN ZDBAE ZDBAEGorge
+THEN ZDBAEP ZDBAEGorge
 @4035 /* This place is portrayed as an in-person picturesque pastel painting parted by departing plant life. Pretty! */
 DO ~SetGlobal("ZDBAEGorge","GLOBAL",1)~
 == DORNJ @4036 /* I expected more from you, -drow-, not what could pass as simple-minded poetry! */
-== ZDBAE @4037 /* My dear half and part, I do hope you do not take my hymn to heart. */
+== ZDBAEP @4037 /* My dear half and part, I do hope you do not take my hymn to heart. */
 == DORNJ @4038 /* I simply wish you would understanding the meaning of this place. */
-== ZDBAE @4039 /* Meaning, what meaning? Oh, the demon... demeaning! */
+== ZDBAEP @4039 /* Meaning, what meaning? Oh, the demon... demeaning! */
 == DORNJ @4040 /* ... */
-== ZDBAE @4041 /* Our violent venture with words... will have to wait. For now, your reprieve has come—at last! */
+== ZDBAEP @4041 /* Our violent venture with words... will have to wait. For now, your reprieve has come—at last! */
 EXIT
