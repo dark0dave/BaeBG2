@@ -100,7 +100,7 @@ END
 // Athkatla - Government District (AR1000)
 IF ~AreaCheck("AR1000")
     Global("ZDBAEGOVCITY1","GLOBAL",0)~
-BEGIN ZDBAEGOVCITY1
+THEN BEGIN ZDBAEGOVCITY1
   SAY @4027 /* Bah! These Cowled Wizards and their licenses for magic. How quintessentially quaint. I, Baeloth Barrityl, am beyond such base bounds. My magnificent magic defies categorization, after all. */
   IF ~~ THEN REPLY @4028 /* Is magic not dangerous? Should we not control its users? */ DO ~SetGlobal("ZDBAEGOVCITY1","GLOBAL",1)~ GOTO ZDBAEGOVCITY2
   IF ~~ THEN REPLY @4029 /* Oh, I agree. No one should put any limits on your displays of power. */ DO ~SetGlobal("ZDBAEGOVCITY1","GLOBAL",1)~  GOTO ZDBAEGOVCITY3
@@ -120,9 +120,18 @@ END
 // Athkatla - City Gates (AR0020)
 IF ~AreaCheck("AR1000")
     Global("ZDBAEGATES1","GLOBAL",0)~
-BEGIN ZDBAEGATES1
+THEN BEGIN ZDBAEGATES1
   SAY @4033 /* Athkatla, my stage, and the streets my audience. Let the drama unfold, for Baeloth has arrived. */
   IF ~~ THEN REPLY @4034 /* The whole world's a stadge eh? */ DO ~SetGlobal("ZDBAEGATES1","GLOBAL",1)~ EXIT
+END
+
+// Circus Tent (AR0604)
+IF ~AreaCheck("AR0604")
+    Global("AerieSword","GLOBAL",1)
+    Global("ZDBAECIRCUS1","GLOBAL",0)~
+THEN BEGIN ZDBAECIRCUS1
+  SAY @4042 /* An expert illusion indicated by incandescent chains, easily seen by my superior sight. <CHARNAME> this ogre speaks true. A pleasurable mystery if she is hideous, hirsute, or heavenly once we dispel the dastardlly spell. */
+  IF ~~ THEN REPLY @4023 /* Are you sure Baeloth? she's an ogre, we've been killing those since level 3! */ DO ~SetGlobal("ZDBAECIRCUS1","GLOBAL",1)~ EXIT
 END
 
 // Resurrection Gorge (OH5100)
