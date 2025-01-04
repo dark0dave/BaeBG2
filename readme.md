@@ -1,5 +1,6 @@
 # Baeloth's in BG2
 
+[![](https://img.shields.io/github/v/release/dark0dave/BaeBg2?style=for-the-badge&&color=%2392403a)](https://github.com/dark0dave/BaeBG2/releases/latest)
 [![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://github.com/dark0dave/BaeBG2/releases/latest)
 [![](https://img.shields.io/badge/Windows-0078D6?&style=for-the-badge&logoColor=white&logo=git-for-windows)](https://github.com/dark0dave/BaeBG2/releases/latest)
 [![](https://img.shields.io/badge/mac%20os-grey?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/dark0dave/BaeBG2/releases/latest)
@@ -14,7 +15,7 @@ This mod provides continuation for our lovable Baeloth in BG2EE and EET.
 
 ## Introduction
 
-Baeloth is bored in the copper cornet, and longs for a real adventure.
+Find Baeloth in the Copper Cornet!
 
 ### Collaboration
 
