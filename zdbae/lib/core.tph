@@ -242,8 +242,8 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN // EET related code & summoning script
       dv = "BAELOTH" // Death Variable (script name)
       override_BG1 = "BAELOTH" // name of the override NPC script in BG1
       override_SoD = "BAELOTH" // name of the override NPC script in SoD (use BG1 one if doesn't exist)
-      override_SoA = "ZDBAE" // SoA Override script
-      override_ToB = "ZDBAE25" // ToB Override script
+      override_SoA = "ZDBAEs" // SoA Override script
+      override_ToB = "ZDBAE25s" // ToB Override script
       dialog_ToB = "ZDBAE25" // ToB dialogue file
       cre_ToB = "ZDBAE25"
       traFile = EVAL "%MOD_FOLDER%/tra/%LANGUAGE%/setup.tra"
