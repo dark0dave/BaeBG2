@@ -566,6 +566,10 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @4043 = ~Are you sure Baeloth? She's an ogre, we've been killing those since level 3!~
 @4044 = ~Another one of these primitive lust chambers. My goodness the quality of your stock is quite low Madame. Perchance you have a lovely hidden away for someone of debauched distinction?~
 @4045 = ~You vile blackskinned pimps never give us credit!~
+@4046 = ~What is this? It appears to be some kind of heated Inhalant? Aaah I know what this is! I'll be a moment <CHARNAME>, just uh, give me a moment.~
+@4047 = ~....~
+@4048 = ~This is tremendous! The thrum of the surface has reduced to tiny thin thud!~
+@4049 = ~You! Yes, you! Purchase this whole stock immediately.~
 @4999 = ~~
 
 // ToB Join Lines
@@ -623,7 +627,7 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @10006 = ~Oh, I know well the feeling of loud crowds and splendid celebrations. Often, the very most voluminous voices were from those who wanted me dead, disemboweled, disgraced, or deposed.~
 @10007 = ~You have lived strangely, Drow. Still, why?~
 @10008 = ~Because I -survived- their assaults and my very vitality outrages their asinine assassination attempts!~
-@10009 = ~Success is the greatest revenge. I see your point.~
+@10009 = ~Success is the greatest revenge. I think I understand you more than I released.~
 @10010 = ~Baeloth, you survived the siege of Dragonspear, the assault on Avernus, and came here? I'm not sure if I should be surprised.~
 @10011 = ~Oh, captain, my captain, dare you underestimate the capacity of this capable Drow?~
 @10012 = ~I suppose so. What's kept you busy since the banishment from Baldur's Gate?~

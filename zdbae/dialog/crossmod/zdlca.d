@@ -18,7 +18,7 @@ DO ~SetGlobal("ZDBAEXACAELAB1","GLOBAL",1)~
 == ZDBAEB @10006 /* Oh, I know well the feeling of loud crowds and splendid celebrations. Often, the very most voluminous voices were from those who wanted me dead, disemboweled, disgraced, or deposed. */
 == XACAELAB @10007 /* You have lived strangely, Drow. Still, why? */
 == ZDBAEB @10008 /* Because I -survived- their assaults and my very vitality outrages their asinine assassination attempts! */
-== XACAELAB @10009 /* Success is the greatest revenge. I see your point. */
+== XACAELAB @10009 /* Success is the greatest revenge. I think I understand you more than I released. */
 EXIT
 
 // Corwin Banter
