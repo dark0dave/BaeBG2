@@ -146,6 +146,20 @@ DO ~SetGlobal("ZDBAEVICES1","GLOBAL",1)~
 == MADAM @4045 /* You vile blackskinned pimps never give us credit! */
 EXIT
 
+// Copper Cornet (AR0406)
+CHAIN
+IF ~AreaCheck("AR0406")
+    See("COPCUST1")
+    See("COPCUST2")
+    Global("ZDBAEVICES2","GLOBAL",0)~
+THEN ZDBAEP ZDBAEVICES1
+@4046 /* What is this? It appears to be some kind of heated Inhalant? Aaah I know what this is! I'll be a moment <CHARNAME>, just uh, give me a moment. */
+DO ~SetGlobal("ZDBAEVICES2","GLOBAL",1)~
+== ZDBAEP @4047 /* .... */
+== ZDBAEP @4048 /* This is tremendous! The thrum of the surface has reduced to tiny thin thud! */
+== ZDBAEP @4049 /* You! Yes, you! Purchase this whole stock immediately. */
+EXIT
+
 // Resurrection Gorge (OH5100)
 CHAIN
 IF ~AreaCheck("OH5100")
