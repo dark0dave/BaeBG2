@@ -1,4 +1,3 @@
-# Set the default behavior, in case people don't have core.autocrlf set.
 *2da text eol=lf
 *baf text eol=lf
 *d text eol=lf
@@ -6,3 +5,4 @@
 *tp2 text eol=lf
 *tph text eol=lf
 *tra text eol=lf
+*txt text eol=lf

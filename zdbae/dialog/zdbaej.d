@@ -32,7 +32,7 @@ END
 // Response: Listen to me, my brothers and sisters... heed my words. We have been chosen as the recipient of a most holy miracle, one that should neither be dismissed nor ignored!
 INTERJECT CSGAAL 0 ZDBAEGAAL0
   == ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE", CD_STATE_NOTVALID)~ THEN
-  @4050 /* Ohhh oh! This should be good! */
+  @4050 /* Oohoohoohoo! This should be good! */
 END CSGAAL 1
 // Response: I say that the churches lie to you! They claim their gods are present when they do nothing other than require your coin to fill their pockets!
 INTERJECT_COPY_TRANS CSGAAL 3 ZDBAEGAAL1

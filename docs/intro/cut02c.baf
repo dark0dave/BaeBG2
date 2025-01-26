@@ -1,0 +1,17 @@
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId("Gladiator")  // Gladiator
+        MoveToPoint([2466.1339])
+        Face(E)
+END
+
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId("GladiatorBear")  // Troll
+        MoveToPoint([2565.1300])
+        StartCutScene("Cut02d")
+END

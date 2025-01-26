@@ -1,138 +1,109 @@
 BEGIN ZDBAE
 
 // Joining dialogue
-IF ~Global("ZDBAE_BEGIN","GLOBAL",0)~ THEN BEGIN ZDBAEI
-  SAY @2000 /* This? Is this what passes for perverse entertainment, up on this plane? Pitiable! Poorly played! Pathetic! What a paltry pit fight. */
-  IF ~~ THEN GOTO ZDBAE0
-END
-
-IF ~Global("ZDBAE_BEGIN","GLOBAL",0)~ THEN BEGIN ZDBAE0
-  SAY @2001 /* Well, well, well, what whimsical wonder do we witness here? Another face amidst the multitude of mundane mediocrity. You, my unwitting savior, stand before the ineffable Baeloth the Entertainer. */
+IF ~Global("ZDBAE_BEGIN","GLOBAL",0)~ THEN BEGIN ZDBAE1
+  SAY @2002 /* ~Well, well, well, what whimsical wonder do we witness here? Another face amidst the multitude of mundane mediocrity. You, stand before the ineffable Baeloth the Entertainer.~ */
   IF ~~ THEN REPLY @1001 /* ~Well met, I am <CHARNAME>.~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE2
   IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY @1003 /* ~Baeloth! Do you remember me?~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE3
-  IF ~~ THEN REPLY @1011 /* ~I haven't the time for this!~ */ GOTO ZDBAEE
-  IF ~~ THEN REPLY @1004 /* ~Die, drow!~ */ GOTO ZDBAE100
+  IF ~~ THEN REPLY @1004 /* ~Die, drow!~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1) SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
+  IF ~~ THEN REPLY @1011 /* ~Whatever mischief you're initiating, I want no part in it.~ */ EXIT
 END
 
-IF ~~ THEN BEGIN ZDBAEE
-  SAY @2012 /* Oh, oh, OH! I see, can't stand the sight of me? */
-  IF ~~ THEN EXIT
+// Hello
+IF ~~ THEN BEGIN ZDBAE2
+  SAY @2014 /* ~Well <CHARNAME>, is this what passes for perverse entertainment, upon this plane? Pitiable! Poorly played! Pathetic! What a paltry pit fight.~ */
+  IF ~~ THEN REPLY @1008 /* ~If you want real entertainment, Baeloth, perhaps you should join my party instead?~ */ GOTO ZDBAE5
+  IF ~~ THEN REPLY @1011 /* ~Whatever mischief you're initiating, I want no part in it.~ */ EXIT
 END
 
 // Remember
 IF ~~ THEN BEGIN ZDBAE3
-  SAY @2003 /* Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, revelling in the glory that is, well, me. */
+  SAY @2003 /* ~Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, revelling in the glory that is, well, me.~ */
   IF ~Global("BPINBG","GLOBAL",1)~ THEN REPLY @1010 /* ~You should, Baeloth!  Don’t you recognize your former champion?~ */ GOTO ZDBAE4
   IF ~~ THEN REPLY @1005 /* ~You don't remember me at all do you.~ */ GOTO ZDBAE4
-  IF ~Global("BA_BEGIN","GLOBAL",1) Global("BA_ATTACKED","LOCALS",1)~ THEN REPLY @1009 /* ~Travelling with me ended badly for you last time.~ */ GOTO ZDBAE4
 END
 
 IF ~~ THEN BEGIN ZDBAE4
-  SAY @2004 /* My mirthful mate, let's not meander in minor matters. I am a dashing drow of discernment and delicious taste, indeed! */
-  IF ~~ THEN GOTO ZDBAE2
-END
-
-IF ~~ THEN BEGIN ZDBAE2
-  SAY @2002 /* Do you perceive these restricting walls, my unsuspecting companion? A brief setback, I assure you. I, Baeloth, am not one to be entangled for an extended duration. However, perchance, just perchance, you could hasten my exit through a petite, mutually advantageous arrangement? */
-  IF ~~ THEN GOTO ZDBAE5
-END
-
-// Deal
-IF ~~ THEN BEGIN ZDBAE5
-  SAY @2005 /* Imagine this, my enterprising ally: You release me, and in return, I shall be an avant-garde avenger against the Red Wizards. Their downfall will be a magnum opus, a masterpiece magnificently managed by none other than me, Baeloth the Magnificent. Your role, petite yet pivotal, will be to partake and play a part in the uproarious opera of disorder and retribution. */
-  IF ~~ THEN REPLY @1006 /* ~I accept this loose premise; let's hope your bark is as big as your bite.~ */ GOTO ZDBAE10
-  IF ~~ THEN REPLY @1007 /* ~My trust in you is thin, Baeloth, but if releasing you means paving the way for the demise of the Red Wizards, then I'll agree for now.~ */ GOTO ZDBAE10
-  IF ~~ THEN REPLY @1008 /* ~I won't release you. Stay in that cell and rot, for all I care.~ */ GOTO ZDBAE09
+  SAY @2004 /* ~My mirthful mate, let's not meander in minor matters. I am a dashing drow of discernment and delicious taste, indeed!~ */
+  IF ~~ THEN REPLY @1008 /* ~If you want real entertainment, Baeloth, perhaps you should join my party instead?~ */ GOTO ZDBAE5
 END
 
 // Reject
-IF ~~ THEN BEGIN ZDBAE09
-  SAY @2009 /* Is this your parting present, then? Leaving me languishing thusly in this loathsome cell like a lowly miscreant? You'll rue the day you dared deliver such a dire destiny.*/
-  IF ~~ DO ~SetGlobal("ZDBAE_LEFTINCELL","GLOBAL",1)~ EXIT
+IF ~~ THEN BEGIN ZDBAE5
+  SAY @2005 /* ~No, no, no. I wish for splendour and spectacle. Not parading around about in the public housing districts, with... What did you say your name was again? No, you shall bear witness to my new atmospheric surface arena.~ */
+  IF ~~ THEN GOTO ZDBAE6
+END
+
+IF ~~ THEN BEGIN ZDBAE6
+  SAY @2006 /* ~**The figure raises his hands and throws back his hood addressing the crowd**~ */
+  IF ~~ THEN GOTO ZDBAE7
+END
+
+// Reveal
+IF ~~ THEN BEGIN ZDBAE7
+  SAY @2007 /* ~Behold! Your ENTERTAINER!~ */
+  IF ~~ THEN DO ~SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ EXIT
+END
+
+// Rescue
+IF ~Global("ZDBAE_REVEAL","GLOBAL",2)~ THEN BEGIN ZDBAE8
+  SAY @2009 /* ~Upon further reflection, I reconsider. I shall join your party of plenty after all. These misguided masses seem rather misinformed, don't you think? Let us be off, before Baeloth the Brilliant becomes Baeloth the Blood-soaked.~ */
+  IF ~~ THEN REPLY @1006 /* ~I accept this loose premise; let's hope your bark is as big as your bite.~ */ GOTO ZDBAE09
+  IF ~~ THEN REPLY @1012 /* ~I think I'd be more "entertained" by watching what these good people do to you!~ */ GOTO ZDBAE12
+  IF ~Global("BPINBG","GLOBAL",1)~ THEN REPLY @1007 /* ~My trust in you is thin, Baeloth, but if having you means another spellcaster at my side, then I'll agree for now.~ */ GOTO ZDBAE09
+  IF ~Global("BA_ATTACKED","LOCALS",1)~ THEN REPLY @1009 /* ~Travelling with me ended badly for you last time.~ */ GOTO ZDBAE10
+END
+
+// Uncertain
+IF ~~ THEN BEGIN ZDBAE10
+  SAY @2013 /* Lets, move on from that, shall we? Surely you don't hold a grudge for *THAT*! */
+  IF ~~ THEN REPLY @1007 /* ~My trust in you is thin, Baeloth, but if having you means another spellcaster at my side, then I'll agree for now.~ */ GOTO ZDBAE09
+  IF ~~ THEN REPLY @1014 /* ~Oh but I do hold a grudge for *THAT*! Lets see what these "good people" do to you now!~ */ GOTO ZDBAE12
+  IF ~Global("BPINBG","GLOBAL",1)~ THEN REPLY @1013 /* ~There is no forgetting what you did to me I am afraid! Lets see some "entertainment".~ */ GOTO ZDBAE12
 END
 
 // Accept
-IF ~~ THEN BEGIN ZDBAE10
+IF ~~ THEN BEGIN ZDBAE09
   SAY @2010 /* I discern a glimmer of intelligence in those eyes. Yes, yes, I perceive that you comprehend the worth of aligning yourself with magnificence. */
   IF ~~ THEN GOTO ZDBAE11
 END
 
 // Joins
+// TODO: Set NOBLE1 NOBLE2, ANNO1 and COPGREET to hostile
 IF ~~ THEN BEGIN ZDBAE11
-  SAY @2011 /* Step spryly, my serendipitous sidekick! We've a spectacular show to splendidly stage, and the Red Wizards unwittingly waltz within our whimsical web. Oh, the poetic panorama of it all! They sought to stifle my spectacular self, but now they shall witness the wondrous weight of my wizardry! */
-  IF ~~ DO ~SetGlobal("ZDBAE_JOINED","GLOBAL",1)~ EXIT
-  IF ~~ DO ~SetGlobal("ZDBAEJOINXP","GLOBAL",1)~ EXIT
-  IF ~~ DO ~JoinParty()~ EXIT
+  SAY @2011 /* Step spryly, my serendipitous sidekick! We've a spectacular show to splendidly stage, and the unintelligent will unwittingly waltz within our whimsical web. Oh, the poetic panorama of it all! They sought to stifle my spectacular self, but now they shall witness the wondrous weight of my wizardry! */
+  IF ~~ THEN DO ~SetGlobal("ZDBAE_JOINED","GLOBAL",1)~ EXIT
 END
 
-// BEGIN @5001
-// // Line 1 - Player Frees Baeloth
-//   ~Ah, the sweet scent of freedom! You've done the unthinkable, surface-dweller. I, Baeloth Barrityl, am in your debt.~
-//   /* Add appropriate trigger conditions here */
-//   DO ~SetGlobal("Baeloth_Freed_Line_1","GLOBAL",1)~
-// END
+// Exit
+IF ~~ THEN BEGIN ZDBAE12
+  SAY @2013 /* Is this your parting present, then? Leaving me languishing thusly in this loathsome stand like some lowly miscreant? You'll rue the day you dared deliver such a dire destiny. */
+  IF ~~ THEN GOTO ZDBAE100
+END
 
-// BEGIN @5002
-// // Line 2 - Player Suggests a Deal
-//   ~A deal, you say? I'm not one to bend to the whims of others, but I find myself intrigued. Speak your terms, and let's see if your offer aligns with my greatness.~
-//   /* Add appropriate trigger conditions here */
-//   DO ~SetGlobal("Baeloth_Freed_Line_2","GLOBAL",1)~
-// END
-
-// BEGIN @5003
-// // Line 3 - Player Explains the Deal
-//   ~You wish for my services? Interesting. Very well, surface-dweller, but know this: my loyalty is fickle. Cross me, and you'll regret the day you released Baeloth Barrityl.~
-//   /* Add appropriate trigger conditions here */
-//   DO ~SetGlobal("Baeloth_Freed_Line_3","GLOBAL",1)~
-// END
-
-// BEGIN @5004
-// // Line 4 - Player Accepts the Terms
-//   ~Wise decision. I shall lend my talents to your cause, for now. But do not mistake my compliance for servitude. I serve Baeloth, and Baeloth alone.~
-//   /* Add appropriate trigger conditions here */
-//   DO ~SetGlobal("Baeloth_Freed_Line_4","GLOBAL",1)~
-// END
-
-// BEGIN @5005
-// // Line 5 - Player Rejects the Deal
-//   ~Your loss, surface-dweller. Freedom is sweet, but the chance to bask in the brilliance of Baeloth Barrityl is a rare opportunity indeed.~
-//   /* Add appropriate trigger conditions here */
-//   DO ~SetGlobal("Baeloth_Freed_Line_5","GLOBAL",1)~
-// END
-
-// BEGIN @5006
-// // Line 6 - Player Attempts to Bargain Further
-//   ~Ah, trying to wring more from me? Bold, I'll give you that. My freedom comes at a price, and that price is paid. Push your luck, and you may find it running thin.~
-//   /* Add appropriate trigger conditions here */
-//   DO ~SetGlobal("Baeloth_Freed_Line_6","GLOBAL",1)~
-// END
-
-// BEGIN @5007
-// // Line 7 - Player Asks About Baeloth's Intentions
-//   ~Intentions? Surface-dweller, I'm a man of mystery. Perhaps I'm here to aid you, or perhaps I'm here to weave my own destiny. Only time will reveal my true purpose.~
-//   /* Add appropriate trigger conditions here */
-//   DO ~SetGlobal("Baeloth_Freed_Line_7","GLOBAL",1)~
-// END
-
-// BEGIN @5008
-// // Line 8 - Player Thanks Baeloth
-//   ~Thanks? Save your gratitude for someone less magnificent than myself. Now, let us venture forth. The world awaits, and Baeloth's presence shall not go unnoticed.~
-//   /* Add appropriate trigger conditions here */
-//   DO ~SetGlobal("Baeloth_Freed_Line_8","GLOBAL",1)~
-// END
-
-// BEGIN @3003
-// // Line 8
-//   ~It seems you've decided to part ways with the inimitable Baeloth Barrityl. A decision you'll come to regret, mark my words.~
-//   /* Add appropriate trigger conditions here */
-//   DO ~SetGlobal("Baeloth_Left_Line_8","GLOBAL",1)~
-// END
-
+// TODO: Set NOBLE1 NOBLE2, ANNO1 and COPGREET to attack baeloth
 IF ~~ THEN BEGIN ZDBAE100
-  SAY @50
+  SAY @50 /* ~Oh, COME ON!~ */
   IF ~~ THEN DO ~
     SetGlobal("ZDBAE_HOSTILE","GLOBAL",1)
-    ChangeAIScript("OHMADD01",CLASS)
-    Enemy()
-  ~ EXIT
+    ActionOverride("ZDBAE",ChangeAIScript("mage18c",CLASS))
+    Enemy()~ EXIT
+END
+
+// Copper Coronet (AR0406)
+// Response: If I may have your attention once again, gentlefolk of Athkatla! Lehtinan is proud to provide for your amusement once again! Bring your attention to the pit as we see two combatants fighting for their very lives!
+INTERJECT ANNO1 0 ZDBAEINTRO0
+  == ZDBAE IF ~~ THEN
+  @4050 /* Oohoohoohoo! This should be good! */
+END ANNO1 1
+
+// TODO: Fire this after the pit fight
+//     ActionOverride("ZDBAE",StartDialogueNoSet([PC]))
+INTERJECT_COPY_TRANS ANNO1 2 ZDBAEINTRO1
+  == ZDBAE IF ~~ THEN
+  @2000 /* ~What a wretched waste! How boring and banal this brawl is! Were I to grace these grounds with my talents, tragedy would instead transform into triumph. I would bring power, prestige and panache to this pitiful pit. Someone should displace - dare I say depose - of the dullard who dared to direct such a dreary display. Perhaps... me?~ */
+  == NOBLE1 @1501 /* ~You have the right of it.~ */
+  == NOBLE2 @1502 /* ~I have not been entertained!~ */
+  == NOBLE1 @1503 /* ~If you've got a plan, I'm in. Can't be much harder starting a fight than watching one.~ */
+  == ZDBAE @2001 /* ~Then huddle close my hapless horde. The time of tedium is about to be terminated.~ */
 END

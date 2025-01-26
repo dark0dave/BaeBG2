@@ -86,7 +86,7 @@ Press ENTER to exit.
 
 Baeloth files come from BGEE and SOD files:
 
-- B.CRE
+- B.CRE (black pits)
 - BAELOTH.CRE (bg1ee)
 - BAELOT7.CRE (sod)
 

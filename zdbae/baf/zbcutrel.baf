@@ -1,0 +1,40 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneID(Player1)
+    ClearAllActions()
+    SetCutSceneBreakable(TRUE)
+    // NOBLE 1
+    DisplayStringPoint([2453.1575],@1504) /* ~A drow? Here?~ */
+    Wait(1)
+    DisplayStringHead("Announcer",@1505) /* ~WHAT?! Throw him in the arena!~ */
+    Wait(1)
+    CreateCreature("copamb02",[1850.1507],SSE)
+    ActionOverride("copamb02", Enemy())
+    ActionOverride("copamb02",MoveToPoint([2080.1520]))
+    SmallWait(5)
+    CreateCreature("copamb02",[1878.1500],SSE)
+    ActionOverride("copamb02", Enemy())
+    ActionOverride("copamb02",MoveToPoint([2108.1510]))
+    SmallWait(5)
+    CreateCreature("copamb02",[1890.1578],SSE)
+    ActionOverride("copamb02", Enemy())
+    ActionOverride("copamb02",MoveToPoint([2147.1484]))
+    SmallWait(5)
+    SmallWait(5)
+    ActionOverride("Frankie",MoveToPoint([2070.1480]))
+    Wait(2)
+    // NOBLE 2
+    DisplayStringPoint([2385.1533],@1506) /* ~Burn the drow!~ */
+    Wait(2)
+    // TODO: Move Frankie to arena
+    SmallWait(1)
+    DisplayStringHead("Frankie",@1507) /* ~Kill the drow!~ */
+    Wait(2)
+    DisplayStringHead("ZDBAE",@2008) /* ~Good people I uh... Lets be reasonable about this!~ */
+    Wait(2)
+    EndCutSceneMode()
+    AddJournalEntry(@101,INFO)
+    ActionOverride("ZDBAE",StartDialogueNoSet([PC]))
+END
