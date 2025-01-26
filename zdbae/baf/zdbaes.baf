@@ -1,32 +1,24 @@
 IF
     InParty(Myself)
     !Global("ZDBAE_LEFT","GLOBAL",1)
-    !Global("ZDBAE_HOSTILE","GLOBAL",1)
-    !Global("ZDBAE_JOINED","GLOBAL",1)
+    Global("ZDBAE_HOSTILE","GLOBAL",1)
+    Global("ZDBAE_JOINED","GLOBAL",2)
 THEN
-RESPONSE #101
+RESPONSE #100
     SetGlobal("ZDBAE_HOSTILE","GLOBAL",1)
-    Attack("ZDBAE")
+    Enemy()
+    Continue()
 END
 
-IF
-    InParty(Myself)
-    !Global("ZDBAE_LEFT","GLOBAL",1)
-    !Global("ZDBAE_REMOVED","GLOBAL",1)
-    !Global("ZDBAE_JOINED","GLOBAL",1)
-THEN
-RESPONSE #102
-    SetGlobal("ZDBAE_REMOVED","GLOBAL",1)
-END
-
+// First Time Join
 IF
     !InParty(Myself)
-    Global("ZDBAE_LEFT","GLOBAL",1)
-    !Global("ZDBAE_JOINED","GLOBAL",1)
+    Global("ZDBAE_JOINED","GLOBAL",1)
+    Global("ZDBAE_JOINED_FIRST_TIME","GLOBAL",0)
 THEN
-RESPONSE #103
-    SetGlobal("ZDBAE_LEFT","GLOBAL",0)
-    SetGlobal("ZDBAE_REMOVED","GLOBAL",0)
+RESPONSE #100
+    SetGlobal("ZDBAE_JOINED_FIRST_TIME","GLOBAL",1)
+    SetGlobal("ZDBAEJOINXP","GLOBAL",1)
     JoinParty()
 END
 
@@ -107,19 +99,7 @@ RESPONSE #100
     SetInterrupt(TRUE)
 END
 
-// Finish Slavers
-IF
-    InParty("ZDBAE")
-    See("ZDBAE")
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    DEAD("LEHTIN")
-THEN
-RESPONSE #100
-    SetInterrupt(FALSE)
-    Wait(5)
-    SetGlobal("ZDBAESLAVERS","GLOBAL",1)
-    SetInterrupt(TRUE)
-END
+// Boots
 
 /* baeloth has the luxurious lizardskin leapers */
 IF

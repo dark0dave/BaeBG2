@@ -1,57 +1,57 @@
 // Baeloth Sounds
-@1 =~Oohoohoohoo, I'm gonna work out some anger on you.~ [ZDBAEA]
-@2 =~OBVIOUSLY, this was going to happen, but the amount of TIME it took borders on insanity! How do you function on a day-to-day basis?~ [ZDBAE0]
-@3 =~*yawn* I have little taste for sleeping in a dog pile with you rivvil. Find me an inn!~ [ZDBAEC]
-@4 =~You wouldn't be interested in playing a little GAME, would you? Mmm?~ [ZDBAED]
-@5 =~Agh! Exit stage... left?~ [ZDBAEE]
-@6 =~Eh? What do YOU want?~ [ZDBAEF]
-@7 =~Is there REALLY no one else you can bother?~ [ZDBAEG]
-@8 =~Touch someone else, you filthy swine!~ [ZDBAEH]
-@9 =~With my usual panache, I assume.~ [ZDBAEI]
-@10 =~You must be loving this.~ [ZDBAEJ]
-@11 =~All right... but NOT because you TOLD me to.~ [ZDBAEK]
-@12 =~Argh!~ [ZDBAEL]
-@13 =~Augh... NOT AGAIN!! *gurgle*~ [ZDBAEM]
-@14 =~Fistfuls of flaming finality!~ [ZDBAE1]
-@15 =~Death delivered!~ [ZDBAE2]
-@16 =~Fight or flee, either way you fall!~ [ZDBAE3]
-@17 =~You stand no chance.~ [ZDBAE4]
-@18 =~Run! Rapidly! Right now!~ [ZDBAE5]
-@19 =~We do wonderful work! I'm impressed.~ [ZDBAE6]
-@20 =~What noble notions noodle through your noggin?~ [ZDBAE7]
-@21 =~This won't work. My path might pare off from yours presently.~ [ZDBAE8]
-@22 =~Enough! Baeloth the Entertainer goes ELSEWHERE.~ [ZDBAE9]
-@23 =~Ask someone else!~ [ZDBAE10]
-@24 =~What is it NOW?~ [ZDBAE11]
-@25 =~Mmmm?~ [ZDBAE12]
-@26 =~I'm here, and I hear.~ [ZDBAE13]
-@27 =~Alveus Malcanter? Never heard of him.~ [ZDBAE14]
-@28 =~Let me entertain you!~ [ZDBAE15]
-@29 =~Another contender collapses!~ [ZDBAE16]
-@30 =~Sleep well, dalninil.~ [ZDBAE17]
-@31 =~I'm huge in the Underdark.~ [ZDBAE18]
-@32 =~Let me entertain you!~ [ZDBAE19]
-@33 =~And take that, vile villain!~ [ZDBAE20]
-@34 =~A fail. A flub!~ [ZDBAE21]
-@35 =~My attacks atrophy. This isn't working.~ [ZDBAE22]
-@36 =~My bags are bursting! Had to drop it.~ [ZDBAE23]
-@37 =~I've nabbed a knicknack!~ [ZDBAE24]
-@38 =~Invisible.~ [ZDBAE25]
-@39 =~My magic misfires!~ [ZDBAE26]
-@40 =~Trap at your toes. Step softly.~ [ZDBAE27]
-@41 =~I go... to my grave...~ [ZDBAE28]
-@42 =~Such a flock of foliage flourishes around us!~ [ZDBAE29]
-@50 =~Oh, COME ON!~
+@1 = ~Oohoohoohoo, I'm gonna work out some anger on you.~ [ZDBAEA]
+@2 = ~OBVIOUSLY, this was going to happen, but the amount of TIME it took borders on insanity! How do you function on a day-to-day basis?~ [ZDBAE0]
+@3 = ~*yawn* I have little taste for sleeping in a dog pile with you rivvil. Find me an inn!~ [ZDBAEC]
+@4 = ~You wouldn't be interested in playing a little GAME, would you? Mmm?~ [ZDBAED]
+@5 = ~Agh! Exit stage... left?~ [ZDBAEE]
+@6 = ~Eh? What do YOU want?~ [ZDBAEF]
+@7 = ~Is there REALLY no one else you can bother?~ [ZDBAEG]
+@8 = ~Touch someone else, you filthy swine!~ [ZDBAEH]
+@9 = ~With my usual panache, I assume.~ [ZDBAEI]
+@10 = ~You must be loving this.~ [ZDBAEJ]
+@11 = ~All right... but NOT because you TOLD me to.~ [ZDBAEK]
+@12 = ~Argh!~ [ZDBAEL]
+@13 = ~Augh... NOT AGAIN!! *gurgle*~ [ZDBAEM]
+@14 = ~Fistfuls of flaming finality!~ [ZDBAE1]
+@15 = ~Death delivered!~ [ZDBAE2]
+@16 = ~Fight or flee, either way you fall!~ [ZDBAE3]
+@17 = ~You stand no chance.~ [ZDBAE4]
+@18 = ~Run! Rapidly! Right now!~ [ZDBAE5]
+@19 = ~We do wonderful work! I'm impressed.~ [ZDBAE6]
+@20 = ~What noble notions noodle through your noggin?~ [ZDBAE7]
+@21 = ~This won't work. My path might pare off from yours presently.~ [ZDBAE8]
+@22 = ~Enough! Baeloth the Entertainer goes ELSEWHERE.~ [ZDBAE9]
+@23 = ~Ask someone else!~ [ZDBAE10]
+@24 = ~What is it NOW?~ [ZDBAE11]
+@25 = ~Mmmm?~ [ZDBAE12]
+@26 = ~I'm here, and I hear.~ [ZDBAE13]
+@27 = ~Alveus Malcanter? Never heard of him.~ [ZDBAE14]
+@28 = ~Let me entertain you!~ [ZDBAE15]
+@29 = ~Another contender collapses!~ [ZDBAE16]
+@30 = ~Sleep well, dalninil.~ [ZDBAE17]
+@31 = ~I'm huge in the Underdark.~ [ZDBAE18]
+@32 = ~Let me entertain you!~ [ZDBAE19]
+@33 = ~And take that, vile villain!~ [ZDBAE20]
+@34 = ~A fail. A flub!~ [ZDBAE21]
+@35 = ~My attacks atrophy. This isn't working.~ [ZDBAE22]
+@36 = ~My bags are bursting! Had to drop it.~ [ZDBAE23]
+@37 = ~I've nabbed a knicknack!~ [ZDBAE24]
+@38 = ~Invisible.~ [ZDBAE25]
+@39 = ~My magic misfires!~ [ZDBAE26]
+@40 = ~Trap at your toes. Step softly.~ [ZDBAE27]
+@41 = ~I go... to my grave...~ [ZDBAE28]
+@42 = ~Such a flock of foliage flourishes around us!~ [ZDBAE29]
+@50 = ~Oh, COME ON!~ [ZDBAE54]
 
 // Epilogues
-@60 =~Baeloth opens a new arena~
+@60 = ~Baeloth burns down the Copper Cornet and builds a new arena. In its ashes!~
 
 // Items
 @70 = ~~
-@71 =~Small Ring~
-@72 =~Barrityl's Burden~
-@73 =~This ring promises power at a great cost.~
-@74 =~Created by a djinni as a "gift" to the drow sorcerer Baeloth Barrityl, this obsidian ring with blood-red ruby almost hypnotically draws the eye to it. Acting as additional storage space for magical knowledge, once placed upon a spellcaster's finger it imbues [him] with the ability to learn additional spells beyond what [his] skill normally allows.[2] It also gives the wearer the chance to spontaneously create wealth once a day in the form of some gemstone, but that is a double-edged sword; should the gem fail to materialize, the wearer endures a period of searing pain.
+@71 = ~Small Ring~
+@72 = ~Barrityl's Burden~
+@73 = ~This ring promises power at a great cost.~
+@74 = ~Created by a djinni as a "gift" to the drow sorcerer Baeloth Barrityl, this obsidian ring with blood-red ruby almost hypnotically draws the eye to it. Acting as additional storage space for magical knowledge, once placed upon a spellcaster's finger it imbues [him] with the ability to learn additional spells beyond what [his] skill normally allows.[2] It also gives the wearer the chance to spontaneously create wealth once a day in the form of some gemstone, but that is a double-edged sword; should the gem fail to materialize, the wearer endures a period of searing pain.
 
 The djinni that created the ring, not entirely trusting the person to whom it was gifted, wove a curse into the black stone band. In battle with a djinni, the ring's wearer will find [him]self at an extreme disadvantage. Once donned, it cannot be removed from its wearer's finger, no matter how much [he] might wish it so.
 
@@ -63,10 +63,10 @@ Equipped abilities:
 - THAC0: -5 penalty vs Genies
 - Damage: -5 penalty vs Genies~
 @75 = ~Baeloth curtly informs you that "regrettably, the ring's removal is not a resource I retain." Try as he might, the sorcerer is unable to take it from his finger—attempts to do so are accompanied by a litany of curses aimed at the djinni Najim, who gave him the item.~
-@76 =~Fur Boots~
-@77 =~Barrityl's Fur Boots~
-@78 =~A closer inspection of these boots leaves you more confused then when you started.~
-@79 =~As expected from Baeloth, these leather fur boots are outrageously extravagant, expensive, and unique. The leather is deep, almost black, with an unusual texture that shifts in the light—somehow both smooth and rough at the same time. The dark fur lining is soft to the touch, yet surprisingly warm, providing an eerie contrast to the cold, smooth exterior. The fur appears to be woven into the leather, almost like it’s part of the material itself, giving the boots an added layer of mystery. Intricate stitching along the seams is done in a fine silver thread, adding an elegant, almost regal touch to the otherwise imposing design.
+@76 = ~Fur Boots~
+@77 = ~Barrityl's Fur Boots~
+@78 = ~A closer inspection of these boots leaves you more confused then when you started.~
+@79 = ~As expected from Baeloth, these leather fur boots are outrageously extravagant, expensive, and unique. The leather is deep, almost black, with an unusual texture that shifts in the light—somehow both smooth and rough at the same time. The dark fur lining is soft to the touch, yet surprisingly warm, providing an eerie contrast to the cold, smooth exterior. The fur appears to be woven into the leather, almost like it's part of the material itself, giving the boots an added layer of mystery. Intricate stitching along the seams is done in a fine silver thread, adding an elegant, almost regal touch to the otherwise imposing design.
 
 Baeloth often loudly remarks that these boots are a fusion of function and form, as they are magically enhanced, somehow conferring him with even more confidence and speechcraft, while protecting him from others' attempts to persuade or charm him.
 
@@ -75,9 +75,9 @@ Equipped abilities:
 - Saving Throws: +1
 - Wearer is immune to Charm
 - Protects against critical hits~
-@80 =~Leather Boots~
-@81 =~Barrityl's Fabulous Boots~
-@82 =~As expected from Baeloth, these leather boots are outrageously extravagant, expensive, and unique. Crafted from leather that seems to shift in color, they range from a deep, earthy brown to subtle hues of amber, changing with every step and angle, as though alive with some hidden magic. The texture is unlike any normal leather—smooth in some areas, rugged in others, giving the boots an almost sentient quality. The surface catches the light in curious ways, creating an illusion that the boots are constantly in motion, even when standing still.
+@80 = ~Leather Boots~
+@81 = ~Barrityl's Fabulous Boots~
+@82 = ~As expected from Baeloth, these leather boots are outrageously extravagant, expensive, and unique. Crafted from leather that seems to shift in color, they range from a deep, earthy brown to subtle hues of amber, changing with every step and angle, as though alive with some hidden magic. The texture is unlike any normal leather—smooth in some areas, rugged in others, giving the boots an almost sentient quality. The surface catches the light in curious ways, creating an illusion that the boots are constantly in motion, even when standing still.
 
 Baeloth loudly remarks how gracefully grounded he feels. The boots grant an unnatural speed, enhancing agility and reflexes, while also imbuing him with immunity to movement-restricting spells.
 
@@ -85,44 +85,68 @@ Equipped abilities:
   - Immunity to Stun, Hold Person and Paralyse
   - Doubles movement rate
   - Protects against critical hits~
-@83 =~Barrityl's Simple Boots~
-@84 =~These boot elicit a sigh from Baeloth, as these boots are simple yet effective. A slightly upgraded version of boots of speed, but much to Baeloth's chagrin they are not unique or rare enough for him to feel noticed.
+@83 = ~Barrityl's Simple Boots~
+@84 = ~These boot elicit a sigh from Baeloth, as these boots are simple yet effective. A slightly upgraded version of boots of speed, but much to Baeloth's chagrin they are not unique or rare enough for him to feel noticed.
 
 Equipped abilities:
   - Charisma: -1
   - Doubles movement rate
   - Protects against critical hits~
+
 // Journal/Bio Entries
-@99 =~Baeloth~
-@100 =~When asked about his past, Baeloth Barrityl, or "Baeloth the Entertainer" as he prefers to be called, claims to be a drow sorcerer of some repute. While he keeps some of his earlier exploits vague, he brags excessively about his most recent endeavor, the Black Pits. While it all ended in failure, he maintains that it was "the best show in all the realms."
+@99 = ~Baeloth~
+@100 = ~When asked about his past, Baeloth Barrityl, or "Baeloth the Entertainer" as he prefers to be called, claims to be a drow sorcerer of some repute. While he keeps some of his earlier exploits vague, he brags excessively about his most recent endeavor, the Black Pits. While it all ended in failure, he maintains that it was "the best show in all the realms."
 
 The circumstances of his defeat within the pits are unclear; he claims dishonesty on the part of his combatants was a key factor.~
+@101 = ~...And so it came that Baeloth's game was quickly turned to naught, again.~
 
 // BG2 Player responses
-@1001 =~Well met, I am <CHARNAME>.~
-@1003 =~Baeloth! Do you remember me?~
-@1004 =~Die, drow!~
-@1005 =~You don't remember me at all do you.~
-@1006 =~I accept this loose premise; let's hope your bark is as big as your bite.~
-@1007 =~My trust in you is thin, Baeloth, but if having you means paving the way for the destruction of this arena, then I'll agree for now.~
-@1008 =~I won't help you. Stay in there and rot, for all I care.~
-@1009 =~Travelling with me ended badly for you last time.~
-@1010 =~You should, Baeloth! Don't you recognize your former champion?~
-@1011 =~I haven't the time for this!~
-@1999 =~~
+@1001 = ~Well met, I am <CHARNAME>.~
+@1003 = ~Baeloth! Do you remember me?~
+@1004 = ~Die, drow!~
+@1005 = ~You don't remember me at all do you.~
+@1006 = ~I accept this loose premise; let's hope your bark is as big as your bite.~
+@1007 = ~My trust in you is thin, Baeloth, but if having you means another spellcaster at my side, then I'll agree for now.~
+@1008 = ~If it's real entertainment you're seeking, perhaps you'll join my party instead?~
+@1009 = ~Travelling with me ended badly for you last time.~
+@1010 = ~You should, Baeloth! Don't you recognize your former champion?~
+@1011 = ~Whatever mischief you're initiating, I want no part in it.~
+@1012 = ~I think I'd be more "entertained" by watching what these good people do to you!~
+@1013 = ~There is no forgetting what you did to me I am afraid! Lets see some "entertainment".~
+@1014 = ~Oh but I do hold a grudge for *THAT*! Lets see what these "good people" do to you now!~
+@1498 = ~I don't know what I was thinking. My senses took flight! They vanished and were vagrant!~
+@1499 = ~~
+
+// BG2 Intro Quotes
+@1501 = ~You have the right of it.~
+@1502 = ~I have not been entertained!~
+@1503 = ~If you've got a plan, I'm in. Can't be much harder starting a fight than watching one.~
+@1504 = ~A drow? Here?~
+@1505 = ~WHAT?! Security, get in here!~
+@1506 = ~Burn the drow!~
+@1507 = ~Kill the drow!~
+@1999 = ~~
 
 // BG2 Join Lines
-@2000 =~Is this it? Is this what passes for perverse entertainment, upon this plane? Pitiable! Poorly played! Pathetic! What a paltry pit fight.~
-@2001 =~Well, well, well, what whimsical wonder do we witness here? Another face amidst the multitude of mundane mediocrity. You, my unwitting savior, stand before the ineffable Baeloth the Entertainer.~
-@2002 =~Do you perceive this arena, my unsuspecting companion? A brief blow to my bearings, I assure you. I, Baeloth, am not one to be entangled for an extended duration. However, perchance, just perchance, you could hasten my exit through a mutually advantageous arrangement?~
-@2003 =~Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, revelling in the glory that is, well, me.~
-@2004 =~My mirthful mate, let's not meander in minor matters. I am a dashing drow of discernment and delicious taste, indeed!~
-@2005 =~Imagine this, my enterprising ally: You and me, as an avant-garde avenger against these shortsighted slavers! Their downfall will be a magnum opus, a masterpiece magnificently managed by none other than me, Baeloth the Magnificent. Your role, petite yet pivotal, will be to partake and play a part in the uproarious opera of disorder and retribution.~
-@2009 =~Is this your parting present, then? Leaving me languishing thusly in this loathsome stand like some lowly miscreant? You'll rue the day you dared deliver such a dire destiny.~
-@2010 =~I discern a glimmer of intelligence in those eyes. Yes, yes, I perceive that you comprehend the worth of aligning yourself with magnificence.~
-@2011 =~Step spryly, my serendipitous sidekick! We've a spectacular show to splendidly stage, and the unintelligent will unwittingly waltz within our whimsical web. Oh, the poetic panorama of it all! They sought to stifle my spectacular self, but now they shall witness the wondrous weight of my wizardry!~
-@2012 = ~Oh, oh, OH! I see! Can't stand the sight of me?~
-@2999 =~~
+@2000 = ~What a wretched waste! How boring and banal this brawl is! Were I to grace these grounds with my talents, tragedy would instead transform into triumph. I would bring power, prestige and panache to this pitiful pit. Someone should displace - dare I say depose - of the dullard who dared to direct such a dreary display. Perhaps... me?~
+@2001 = ~Then huddle close my hapless horde. The time of tedium is about to be terminated.~
+@2002 = ~Well, well, well, what whimsical wonder do we witness here? Another face amidst the multitude of mundane mediocrity. You, stand before the ineffable Baeloth the Entertainer.~
+@2003 = ~Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, revelling in the glory that is, well, me.~
+@2004 = ~My mirthful mate, let's not meander in minor matters. I am a dashing drow of discernment and delicious taste, indeed!~
+@2005 = ~No, no, no. I wish for splendour and spectacle. Not parading around about in the public housing districts, with... What did you say your name was again? No, you shall bear witness to my new atmospheric surface arena.~
+@2006 = ~**The figure raises his hands and throws back his hood addressing the crowd**~
+@2007 = ~Behold! Your ENTERTAINER!~
+@2008 = ~Good people I uh... Lets be reasonable about this!~
+@2009 = ~Upon further reflection, I reconsider. I shall join your party of plenty after all. These misguided masses seem rather misinformed, don't you think? Let us be off, before Baeloth the Brilliant becomes Baeloth the Blood-soaked.~
+@2010 = ~I discern a glimmer of intelligence in those eyes. Yes, yes, I perceive that you comprehend the worth of aligning yourself with magnificence.~
+@2011 = ~Step spryly, my serendipitous sidekick! We've a spectacular show to splendidly stage, and the unintelligent will unwittingly waltz within our whimsical web. Oh, the poetic panorama of it all! They sought to stifle my spectacular self, but now they shall witness the wondrous weight of my wizardry!~
+@2012 = ~Is this your parting present, then? Leaving me languishing thusly in this loathsome stand like some lowly miscreant? You'll rue the day you dared deliver such a dire destiny.~
+@2013 = ~Lets, move on from that, shall we? Surely you don't hold a grudge for *THAT*!~
+@2014 = ~Well <CHARNAME>, is this what passes for perverse entertainment, upon this plane? Pitiable! Poorly played! Pathetic! What a paltry pit fight.~
+@2499 = ~~
+
+// BG2 Rejoin Lines
+@2500 =  ~Are you really removing me? Me? Baeloth the ... Don't leave me here.~
 
 // BG2 NPC Lines
 @3000 = ~Baeloth, your spells pack a punch, but have you ever considered the havoc they might wreak?~
@@ -570,7 +594,7 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @4047 = ~....~
 @4048 = ~This is tremendous! The thrum of the surface has reduced to tiny thin thud!~
 @4049 = ~You! Yes, you! Purchase this whole stock immediately.~
-@4050 = ~Ohhh oh! This should be good!~
+@4050 = ~Oohoohoohoo! This should be good!~
 @4051 = ~And I, I say listen to me Baeloth the Bright! Baeloth the Bedazzling!  Baeloth the ... Well in any event, don't listen to this blind bat, however brilliant his bids at bewilderment are.~
 @4052 = ~Follow him to mediocrity or follow me to magnificence. Your choice, of course.~
 @4999 = ~~
@@ -599,6 +623,7 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @5020 =~No! NO! NO, NO, NO! Don't LEAVE me here, you moronic miscreant! Don't let me die at the hands of pale-skinned barbarians!~ [ZDBAE52]
 @5021 =~Wait here.~
 @5022 =~On second thought, sure. Your whining convinced me.~
+@5023 = ~Fine! I'll just make my way there myself. I don't need your help. Begone!~ [ZDBAE53]
 // Fates
 @5999 = ~Bring me Baeloth, the drow sorcerer.~
 

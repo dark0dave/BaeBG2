@@ -2,8 +2,41 @@ IF
   Global("ZDBAEExists","GLOBAL",0)
 THEN
 RESPONSE #100
-  SetGlobal("ZDBAE_BEGIN","GLOBAL",0)
   SetGlobal("ZDBAEExists","GLOBAL",1)
   CreateCreature("ZDBAE",[2340.1650],5)
   Continue()
+END
+
+IF
+  Global("ZDBAE_REVEAL","GLOBAL",1)
+THEN
+RESPONSE #100
+  SetGlobal("ZDBAE_REVEAL","GLOBAL",2)
+  ActionOverride("Frankie", DestroySelf())
+  SmallWait(25)
+  CreateCreature("zdfranki",[1808.1566],SSE)
+  ActionOverride("Frankie", Enemy())
+  ClearAllActions()
+  StartCutSceneMode()
+  StartCutScene("zbcutrel")
+END
+
+IF
+  Global("ZDBAE_JOINED","GLOBAL",1)
+  Global("ZDBAE_CROWD_HOSTILE","GLOBAL",0)
+THEN
+RESPONSE #100
+  SetGlobal("ZDBAE_CROWD_HOSTILE","GLOBAL",1)
+  ActionOverride("Nobleman",DestroySelf())
+  ActionOverride("Nobleman", DestroySelf())
+  ActionOverride("Announcer", DestroySelf())
+END
+
+// Destroy Baeloth if Hendak Released
+IF
+  Global("ZDBAEExists","GLOBAL",1)
+  Global("SpawnFreedGladiators","AR0406",1)
+THEN
+RESPONSE #100
+  ActionOverride("ZBAE",DestroySelf())
 END

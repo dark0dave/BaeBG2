@@ -137,7 +137,7 @@ COPY ~%MOD_FOLDER%/cre/zdbae.cre~ ~override~
   ADD_CRE_ITEM ~ZDRING~ #0 #0 #0 ~identified&undroppable~ ~rring~ EQUIP
 
 // ToB
-COPY_EXISTING ~%MOD_FOLDER%/cre/zdbae.cre~ ~override/ZDBAE25.CRE~
+COPY ~%MOD_FOLDER%/cre/zdbae.cre~ ~override/ZDBAE25.CRE~
   SAY NAME1 @99
   SAY NAME2 @99
   SAY BIO @100
@@ -209,6 +209,18 @@ COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/zdbaes.baf~
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/zdbae25s.baf~
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/zdbaed.baf~
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/zdbae25d.baf~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/zbcutrel.baf~
+
+ACTION_IF FILE_EXISTS_IN_GAME ~baldur.bcs~ THEN BEGIN
+EXTEND_TOP ~baldur.bcs~ ~%MOD_FOLDER%/baf/rep.baf~
+END
+ACTION_IF FILE_EXISTS_IN_GAME ~baldur25.bcs~ THEN BEGIN
+EXTEND_TOP ~baldur25.bcs~ ~%MOD_FOLDER%/baf/rep.baf~
+END
+
+// COPY Frankie
+COPY_EXISTING ~COPGREET.CRE~ ~override/zdfranki.cre~
+  WRITE_ASCII DEATHVAR "Frankie" #8
 
 // Appending dialog files
 // See [here](https://www.gibberlings3.net/forums/topic/15833-dialog-files-and-how-they-are-referenced/)
