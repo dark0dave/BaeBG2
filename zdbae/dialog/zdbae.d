@@ -13,16 +13,21 @@ IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_BEGIN","GLOBAL",0) Global(
   SAY @6 /* ~Eh? What do YOU want?~ [ZDBAEF] */
   IF ~~ THEN REPLY @1001 /* ~Well met, I am <CHARNAME>.~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE2
   IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY @1003 /* ~Baeloth! Do you remember me?~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE3
-  IF ~~ THEN REPLY @1004 /* ~Die, drow!~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1) SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
-  IF ~~ THEN REPLY @1011 /* ~Whatever mischief you're initiating, I want no part in it.~ */ EXIT
+  IF ~~ THEN REPLY @1017 /* ~I want you to die, drow!~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1) SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
+  IF ~~ THEN REPLY @1015 /* ~I am not interested in your dog and pony show, drow.~ */ GOTO ZDBAEC
+END
+
+// Confused
+IF ~~ BEGIN ZDBAEC
+  SAY @2015 /* ~But, but, my equine and lupus burlesque pageant is something to desired. I had drow from the... nevermind. In any event, should you reconsider your ridiculous refrain, I'll remain here.~ */
+  IF ~~ THEN EXIT
 END
 
 // Hello
 IF ~~ THEN BEGIN ZDBAE2
   SAY @2014 /* ~Well <CHARNAME>, is this what passes for perverse entertainment, upon this plane? Pitiable! Poorly played! Pathetic! What a paltry pit fight.~ */
   IF ~~ THEN REPLY @1008 /* ~If you want real entertainment, Baeloth, perhaps you should join my party instead?~ */ GOTO ZDBAE5
-  // TODO: BETTER LINE HERE
-  IF ~~ THEN REPLY @1011 /* ~Whatever mischief you're initiating, I want no part in it.~ */ DO ~SetGlobal("ZDBAE_SHUTUP","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY @1016 /* ~Shut up! I am not interested in entertaining you.~ */ DO ~SetGlobal("ZDBAE_SHUTUP","GLOBAL",1)~ EXIT
 END
 
 // Remember
@@ -44,7 +49,7 @@ IF ~~ THEN BEGIN ZDBAE5
 END
 
 IF ~~ THEN BEGIN ZDBAE6
-  SAY @2006 /* ~**The figure raises his hands and throws back his hood addressing the crowd**~ */
+  SAY @2006 /* ~**Baeloth raises his hands and throws back his hood before addressing the crowd**~ */
   IF ~~ THEN GOTO ZDBAE7
 END
 

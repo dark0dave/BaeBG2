@@ -114,6 +114,9 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @1012 = ~I think I'd be more "entertained" by watching what these good people do to you!~
 @1013 = ~There is no forgetting what you did to me I am afraid! Lets see some "entertainment".~
 @1014 = ~Oh but I do hold a grudge for *THAT*! Lets see what these "good people" do to you now!~
+@1015 = ~I am not interested in your dog and pony show, drow.~
+@1016 = ~Shut up! I am not interested in 'entertaining' you.~
+@1017 = ~I want you to die, drow!~
 @1498 = ~I don't know what I was thinking. My senses took flight! They vanished and were vagrant!~
 @1499 = ~~
 
@@ -134,7 +137,7 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @2003 = ~Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, revelling in the glory that is, well, me.~
 @2004 = ~My mirthful mate, let's not meander in minor matters. I am a dashing drow of discernment and delicious taste, indeed!~
 @2005 = ~No, no, no. I wish for splendour and spectacle. Not parading around about in the public housing districts, with... What did you say your name was again? No, you shall bear witness to my new atmospheric surface arena.~
-@2006 = ~**The figure raises his hands and throws back his hood addressing the crowd**~
+@2006 = ~**Baeloth raises his hands and throws back his hood before addressing the crowd**~
 @2007 = ~Behold! Your ENTERTAINER!~
 @2008 = ~Good people I uh... Lets be reasonable about this!~
 @2009 = ~Upon further reflection, I reconsider. I shall join your party of plenty after all. These misguided masses seem rather misinformed, don't you think? Let us be off, before Baeloth the Brilliant becomes Baeloth the Blood-soaked.~
@@ -143,6 +146,7 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @2012 = ~Is this your parting present, then? Leaving me languishing thusly in this loathsome stand like some lowly miscreant? You'll rue the day you dared deliver such a dire destiny.~
 @2013 = ~Lets, move on from that, shall we? Surely you don't hold a grudge for *THAT*!~
 @2014 = ~Well <CHARNAME>, is this what passes for perverse entertainment, upon this plane? Pitiable! Poorly played! Pathetic! What a paltry pit fight.~
+@2015 = ~But, but, my equine and lupus burlesque pageant is something to desired. I had drow from the... nevermind. In any event, should you reconsider your ridiculous refrain, I'll remain here.~
 @2499 = ~~
 
 // BG2 Rejoin Lines
