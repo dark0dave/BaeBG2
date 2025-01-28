@@ -218,10 +218,6 @@ ACTION_IF FILE_EXISTS_IN_GAME ~baldur25.bcs~ THEN BEGIN
 EXTEND_TOP ~baldur25.bcs~ ~%MOD_FOLDER%/baf/rep.baf~
 END
 
-// COPY Frankie
-COPY_EXISTING ~COPGREET.CRE~ ~override/zdfranki.cre~
-  WRITE_ASCII DEATHVAR "Frankie" #8
-
 // Appending dialog files
 // See [here](https://www.gibberlings3.net/forums/topic/15833-dialog-files-and-how-they-are-referenced/)
 // cre post_dialog_file join_dialog_file dream_script_file 25post_dialog_file 25join_dialog_file 25dream_script_file 25override_script_file

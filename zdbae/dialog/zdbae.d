@@ -1,8 +1,16 @@
 BEGIN ZDBAE
 
 // Joining dialogue
-IF ~Global("ZDBAE_BEGIN","GLOBAL",0)~ THEN BEGIN ZDBAE1
+IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_BEGIN","GLOBAL",0) Global("ZDBAE_SHUTUP","GLOBAL",0)~ THEN BEGIN ZDBAE1
   SAY @2002 /* ~Well, well, well, what whimsical wonder do we witness here? Another face amidst the multitude of mundane mediocrity. You, stand before the ineffable Baeloth the Entertainer.~ */
+  IF ~~ THEN REPLY @1001 /* ~Well met, I am <CHARNAME>.~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE2
+  IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY @1003 /* ~Baeloth! Do you remember me?~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE3
+  IF ~~ THEN REPLY @1004 /* ~Die, drow!~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1) SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
+  IF ~~ THEN REPLY @1011 /* ~Whatever mischief you're initiating, I want no part in it.~ */ DO ~SetGlobal("ZDBAE_SHUTUP","GLOBAL",1)~ EXIT
+END
+
+IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_BEGIN","GLOBAL",0) Global("ZDBAE_SHUTUP","GLOBAL",1)~ THEN BEGIN ZDBAES
+  SAY @6 /* ~Eh? What do YOU want?~ [ZDBAEF] */
   IF ~~ THEN REPLY @1001 /* ~Well met, I am <CHARNAME>.~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE2
   IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY @1003 /* ~Baeloth! Do you remember me?~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE3
   IF ~~ THEN REPLY @1004 /* ~Die, drow!~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1) SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
@@ -13,7 +21,8 @@ END
 IF ~~ THEN BEGIN ZDBAE2
   SAY @2014 /* ~Well <CHARNAME>, is this what passes for perverse entertainment, upon this plane? Pitiable! Poorly played! Pathetic! What a paltry pit fight.~ */
   IF ~~ THEN REPLY @1008 /* ~If you want real entertainment, Baeloth, perhaps you should join my party instead?~ */ GOTO ZDBAE5
-  IF ~~ THEN REPLY @1011 /* ~Whatever mischief you're initiating, I want no part in it.~ */ EXIT
+  // TODO: BETTER LINE HERE
+  IF ~~ THEN REPLY @1011 /* ~Whatever mischief you're initiating, I want no part in it.~ */ DO ~SetGlobal("ZDBAE_SHUTUP","GLOBAL",1)~ EXIT
 END
 
 // Remember
@@ -46,12 +55,18 @@ IF ~~ THEN BEGIN ZDBAE7
 END
 
 // Rescue
-IF ~Global("ZDBAE_REVEAL","GLOBAL",2)~ THEN BEGIN ZDBAE8
+IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_REVEAL","GLOBAL",2)~ THEN BEGIN ZDBAE8
   SAY @2009 /* ~Upon further reflection, I reconsider. I shall join your party of plenty after all. These misguided masses seem rather misinformed, don't you think? Let us be off, before Baeloth the Brilliant becomes Baeloth the Blood-soaked.~ */
   IF ~~ THEN REPLY @1006 /* ~I accept this loose premise; let's hope your bark is as big as your bite.~ */ GOTO ZDBAE09
   IF ~~ THEN REPLY @1012 /* ~I think I'd be more "entertained" by watching what these good people do to you!~ */ GOTO ZDBAE12
   IF ~Global("BPINBG","GLOBAL",1)~ THEN REPLY @1007 /* ~My trust in you is thin, Baeloth, but if having you means another spellcaster at my side, then I'll agree for now.~ */ GOTO ZDBAE09
   IF ~Global("BA_ATTACKED","LOCALS",1)~ THEN REPLY @1009 /* ~Travelling with me ended badly for you last time.~ */ GOTO ZDBAE10
+END
+
+// Accept
+IF ~~ THEN BEGIN ZDBAE09
+  SAY @2010 /* I discern a glimmer of intelligence in those eyes. Yes, yes, I perceive that you comprehend the worth of aligning yourself with magnificence. */
+  IF ~~ THEN GOTO ZDBAE11
 END
 
 // Uncertain
@@ -62,14 +77,7 @@ IF ~~ THEN BEGIN ZDBAE10
   IF ~Global("BPINBG","GLOBAL",1)~ THEN REPLY @1013 /* ~There is no forgetting what you did to me I am afraid! Lets see some "entertainment".~ */ GOTO ZDBAE12
 END
 
-// Accept
-IF ~~ THEN BEGIN ZDBAE09
-  SAY @2010 /* I discern a glimmer of intelligence in those eyes. Yes, yes, I perceive that you comprehend the worth of aligning yourself with magnificence. */
-  IF ~~ THEN GOTO ZDBAE11
-END
-
 // Joins
-// TODO: Set NOBLE1 NOBLE2, ANNO1 and COPGREET to hostile
 IF ~~ THEN BEGIN ZDBAE11
   SAY @2011 /* Step spryly, my serendipitous sidekick! We've a spectacular show to splendidly stage, and the unintelligent will unwittingly waltz within our whimsical web. Oh, the poetic panorama of it all! They sought to stifle my spectacular self, but now they shall witness the wondrous weight of my wizardry! */
   IF ~~ THEN DO ~SetGlobal("ZDBAE_JOINED","GLOBAL",1)~ EXIT
@@ -81,7 +89,6 @@ IF ~~ THEN BEGIN ZDBAE12
   IF ~~ THEN GOTO ZDBAE100
 END
 
-// TODO: Set NOBLE1 NOBLE2, ANNO1 and COPGREET to attack baeloth
 IF ~~ THEN BEGIN ZDBAE100
   SAY @50 /* ~Oh, COME ON!~ */
   IF ~~ THEN DO ~
