@@ -1,0 +1,22 @@
+// Join
+IF
+  InParty("ZDBAE")
+  Global("ZDBAE_JOIN_REP","GLOBAL",0)
+  Global("ZDBAE_JOINED","GLOBAL",1)
+THEN
+RESPONSE #100
+  SetGlobal("ZDBAE_JOIN_REP","GLOBAL",1)
+  ReputationInc(-2)
+END
+
+// Leave
+IF
+  !InParty("ZDBAE")
+  !Dead("ZDBAE")
+  Global("ZDBAE_JOINED","GLOBAL",1)
+  Global("ZDBAE_JOIN_REP","GLOBAL",1)
+THEN
+RESPONSE #100
+  SetGlobal("ZDBAE_JOIN_REP","GLOBAL",0)
+  ReputationInc(2)
+END
