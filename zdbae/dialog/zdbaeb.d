@@ -331,9 +331,9 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEJan2","GLOBAL",0)~
 THEN ZDBAEB ZDBAEJan2
-~This one time, a human, friend of the family you see, a turnip artist by trade crafted a Jansen family crest. As you might have guessed Aunt Petunia chased him out of the house with her rake and smashed the it to pieces even though it depicted a lovely turnip pair in a loving embrace and when you pulled the string ... Oh, Baeloth is looking at me again, maybe later.~
+@3392 /* This one time, a human, friend of the family you see, a turnip artist by trade crafted a Jansen family crest. As you might have guessed Aunt Petunia chased him out of the house with her rake and smashed the it to pieces even though it depicted a lovely turnip pair in a loving embrace and when you pulled the string ... Oh, Baeloth is looking at me again, maybe later.~ */
 DO ~SetGlobal("ZDBAEJan2","GLOBAL",1)~
-== ZDBAEB ~I've got my eye on you my light-skinned Svirfneblin.~
+== ZDBAEB @3393 /* I've got my eye on you my light-skinned Svirfneblin. */
 EXIT
 
 // Keldorn Banter
