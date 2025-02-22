@@ -523,7 +523,7 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @3367 = ~<Wilson snorts then snorts again.>~
 @3368 = ~An obvious implementation of your unique ursine ability would be to properly prepare you as a pit fighter. Surely, you could satisfactorily shoulder such a shift!~
 @3369 = ~<Wilson whines.>~
-@3370 = ~Worry not, my warrior. We can call you, "The Ursine Usurper!" Eating opponents' innards is optional, obviously, however ostentatious.~
+@3370 = ~Worry not, my warrior. We can call you, 'The Ursine Usurper!' Eating opponents' innards is optional, obviously, however ostentatious.~
 @3371 = ~Ooh! What wondrous delights did you bring us for dinner?~
 @3372 = ~What do you mean, Baeloth?~
 @3373 = ~Look at all those tricky toy traps you use! Did you get us some bear? Behir? Beholder?~
@@ -545,6 +545,8 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @3389 = ~Let's deal, my friend.~
 @3390 = ~But do I speak deceit when I declare what part of the balance you keep is your discretion?~
 @3391 = ~To what cause are these hypothetical paladins sworn? What are the laws of the land and who enforces them? What is their calling in life? All these matter more than you know.~
+@3392 = ~This one time, a human, friend of the family you see, a turnip artist by trade crafted a Jansen family crest. As you might have guessed Aunt Petunia chased him out of the house with her rake and smashed the it to pieces even though it depicted a lovely turnip pair in a loving embrace and when you pulled the string ... Oh, Baeloth is looking at me again, maybe later.~
+@3393 = ~I've got my eye on you my light-skinned Svirfneblin.~
 @3999 = ~~
 
 // Baeloth BG2 places
@@ -620,13 +622,13 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @5013 = ~Join me, then.~
 @5014 = ~Wait a little longer.~
 @5015 = ~Once more, the audacious adventurer dares to dismiss the divine dramatist, denying the delight of my drowish dynamism. An alliance, alas, devoid of my majestic mastery of the magical multitude. Very well, I shall begrudgingly bide my time in this banal bastion.~
-@5016 =~I hope you're satisfied. Look at my clothing! Caked-on mud everywhere! Do you have any idea how many hairy, four-legged BEASTS I had to avoid while making my way here? Woofs, were they? Wharves? I don't know.~ [ZDBAE50]
-@5017 =~Hello to you too, Baeloth. I have need of you. Will you join me?~
-@5018 =~Well, keep it up. You're doing a good job so far.~
-@5019 =~YES! At last, some protection! Protection for YOU, that is. I will join you. So that you can feel safe.~ [ZDBAE51]
-@5020 =~No! NO! NO, NO, NO! Don't LEAVE me here, you moronic miscreant! Don't let me die at the hands of pale-skinned barbarians!~ [ZDBAE52]
-@5021 =~Wait here.~
-@5022 =~On second thought, sure. Your whining convinced me.~
+@5016 = ~I hope you're satisfied. Look at my clothing! Caked-on mud everywhere! Do you have any idea how many hairy, four-legged BEASTS I had to avoid while making my way here? Woofs, were they? Wharves? I don't know.~ [ZDBAE50]
+@5017 = ~Hello to you too, Baeloth. I have need of you. Will you join me?~
+@5018 = ~Well, keep it up. You're doing a good job so far.~
+@5019 = ~YES! At last, some protection! Protection for YOU, that is. I will join you. So that you can feel safe.~ [ZDBAE51]
+@5020 = ~No! NO! NO, NO, NO! Don't LEAVE me here, you moronic miscreant! Don't let me die at the hands of pale-skinned barbarians!~ [ZDBAE52]
+@5021 = ~Wait here.~
+@5022 = ~On second thought, sure. Your whining convinced me.~
 @5023 = ~Fine! I'll just make my way there myself. I don't need your help. Begone!~ [ZDBAE53]
 // Fates
 @5999 = ~Bring me Baeloth, the drow sorcerer.~
@@ -642,6 +644,25 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @6007 = ~Drow, you assume that -all- Bhaalspawn want this.~
 @6008 = ~Is that not your nature? The nature of a dog is to love steaks, but it'll settle for bones so long as they keep its mouth busy. You Bhaalspawn want to -murder- each other, but may settle for something else - diplomacy, dancing, or drunkenness.~
 @6009 = ~Drow, you have a point.~
+@6010 = ~Don't think I've not noticed, Jan, your needles, your tall tales are all tediously, trite. Where's the frill, furbelow, the flourish?~
+@6011 = ~That is because all my stories are true. Every last one of them! I once took the ferry to Waterdeep standing next to a faerie. She had noticed the turnip I wore on my belt, the fashion at the time you see, and she gave me...~
+@6012 = ~Oohoohoohoo, I've heard this one before! Although it was a dour dull dwarf instead of a fickle faerie. You have become boringly predictable. I put it to you, that I am prescient and precise in predicting where your prose shall prod to next! Prepare yourself, next, for prudently prophecies.~
+@6013 = ~Predicting the future? Then, I should introduce you to my third—no, was it fourth?—let's say distant cousin once removed on my mother's side, an elven bard named Lotahe. See, she travelled far and wide to places elves never ventured before. On her travels, she met a Treant, by name of Olabthe, whose garden was full of radishes. It was love at first sight. As a gesture of their love, they would enter the most radiant radish into the yearly ruddy radish festival.~
+@6014 = ~Radiant ruddy radishes? Loathe, Olabthe? Am I to believe their brothers were Tholae, Alboeth, and perhaps even Bolaeth? I have pierced your provocative pastishe of my name and deduced the 'truth' of your story my good gnome.~
+@6015 = ~Hrmph. I knew you were a spoiled sport.~
+@6016 = ~I believe I am now in the lead, of our little game. Step spryly now, my light-skinned Svirfneblin.~
+@6017 = ~My dove, my love, my above! I have a little something here for you...~
+@6018 = ~Is that a horn? I always suspected we were kindred spirits! Although my passion lay in the harp, and it echoed deep within my heart.~
+@6019 = ~It is a bugle my perfectly pirouetted performer.~
+@6020 = ~Doot! Dooot DOOOOT!~
+@6021 = ~I am entranced, who could have predicted such artistry from a Drow no less!~
+@6022 = ~**bows** I had a good teacher.~
+@6023 = ~You give me too much credit, I merely helped direct your genius!~
+@6024 = ~I didn't mean you. You, thick thoughtless thespian!~
+@6025 = ~Baeloth, Baeloth, you wound me so! I've seen you watching my performances! But I'll give you credit, you've got fire in your forked tongue, and that's  something to be feared. Come then, let us match wits with our words!~
+@6026 = ~A war of words is it? Whilst thou do me the honor of wilting away from my withering wild wrangling? Or perhaps my casual castigation will cause your chattering to cease? Iluminating Icarus requires only a little light.~
+@6027 = ~Truly, I am in the presence of the master.~
+@6028 = ~That's more like it!~
 
 // The real house wives of Baldur's Gate 2
 @7000 = ~Ah, the Luxurious Lizardskin Leapers! A splendid symphony of supple skin and sublime style. With these I shall sashay forward and even the stars shall seem subdued in comparison!~
