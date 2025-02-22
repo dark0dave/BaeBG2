@@ -321,6 +321,21 @@ DO ~SetGlobal("ZDBAEJan1","GLOBAL",1)~
 == ZDBAEB @3150 /* Nevermind. */
 EXIT
 
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("JAN")
+    See("JAN")
+    !StateCheck("JAN", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAEJan2","GLOBAL",0)~
+THEN ZDBAEB ZDBAEJan2
+@3392 /* This one time, a human, friend of the family you see, a turnip artist by trade crafted a Jansen family crest. As you might have guessed Aunt Petunia chased him out of the house with her rake and smashed the it to pieces even though it depicted a lovely turnip pair in a loving embrace and when you pulled the string ... Oh, Baeloth is looking at me again, maybe later.~ */
+DO ~SetGlobal("ZDBAEJan2","GLOBAL",1)~
+== ZDBAEB @3393 /* I've got my eye on you my light-skinned Svirfneblin. */
+EXIT
+
 // Keldorn Banter
 CHAIN
 IF ~InParty("ZDBAE")
