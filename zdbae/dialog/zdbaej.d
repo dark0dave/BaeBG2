@@ -1,5 +1,27 @@
 BEGIN ZDBAEJ
 
+/// Boots ///
+IF ~GLOBAL("ZDTriggerBoots","GLOBAL",1)~
+THEN zbbootbegin
+  SAY ~I've step in gahh, why do you surfacers keep track me through flies filth and feaces! I demand we stop and search for a new pair of boots!~
+  IF ~~
+    IF EDWIN
+      EDWIN: ~(Such simple simians. Can't watch were they are going. Still this might be an opportunity to purchase magical items and increase my power over this lot further.)~
+    IF EDWINA
+      EDWINA ~(Such simple simeons. Can't watch were they are going. But I can't deny, the simple pleasure of shopping. I feel strange, no matter.)~
+    BAELOTH ~You there Edwin is it? Do you happen to have any such divination into where such a dashing dapper Drow as myself could such acquire acute luxury galoshes?~
+    EDWIN ~(Must I indulge this menagerie at every step! The lack knowledge of the finer things in this world is insulting!) Why yes, of course I know of a place. But one such as yourself can not enter.~
+    BAELOTH ~Ahh, I ascertain your allusion. An appropriate allurement is appropriate.~
+    EDWIN ~(Gods save me from this Drow!) Whatever do you mean?!~
+    BAELOTH ~Well my suitably simple "simian", see through these thoughts, and think. What gift of gratuity, is granted to those who give the gift of glamour? All that glitters is gold?~
+    EDWIN ~(He uses my words against me?! I ought to blast him back down to his home!) ... I see what you mean. But for one such as yourself it will be expensive. You are not easy on the eyes.~
+    IF EDWINA
+      BAELOTH ~<WINKS> I see what you mean. However if I am with you I am sure it will be of little consequence!~
+      EDWINA ~(I I, ~
+    IF EDWIN
+      BAELOTH ~I see... ~
+END
+
 /* luxurious lizardskin leapers are equipped */
 IF ~Global("zdbaeleapers","GLOBAL",1)~
 THEN zdbaeleapers
@@ -28,7 +50,9 @@ THEN zdbaefurries
   IF ~~ THEN DO ~SetGlobal("zdbaefurries","GLOBAL",2)~ EXIT
 END
 
+// ------------------------
 // Temple District (AR0900)
+// ------------------------
 // Response: Listen to me, my brothers and sisters... heed my words. We have been chosen as the recipient of a most holy miracle, one that should neither be dismissed nor ignored!
 INTERJECT CSGAAL 0 ZDBAEGAAL0
   == ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE", CD_STATE_NOTVALID)~ THEN

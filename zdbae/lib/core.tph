@@ -196,20 +196,15 @@ COPY ~%MOD_FOLDER%/cre/zdbae.cre~ ~override/ZDBAE25.CRE~
 // Compile dialog
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialog~
 
-// Append tob banter with sod banter
-COPY ~%MOD_FOLDER%/dialog/zdbaeb.d~ ~weidu_external/%MOD_FOLDER%/compile/zdbaeb.d~
-  REPLACE_TEXTUALLY ~BEGIN ZDBAEB~ ~~
-  REPLACE_TEXTUALLY ~== ZDBAEB~ ~== ZDBAE25B~
-COPY ~%MOD_FOLDER%/dialog/zdbae25b.d~ ~weidu_external/%MOD_FOLDER%/compile/zdbae25b.d~
-  APPEND_FILE ~weidu_external/%MOD_FOLDER%/compile/zdbaeb.d~
-COMPILE EVALUATE_BUFFER ~weidu_external/%MOD_FOLDER%/compile/zdbae25b.d~
+// Compile cutscene
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/cutscene/zbcutrel.baf~
 
 // Scripts
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/zdbaes.baf~
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/zdbae25s.baf~
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/zdbaed.baf~
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/zdbae25d.baf~
-COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/baf/zbcutrel.baf~
+
 
 ACTION_IF FILE_EXISTS_IN_GAME ~baldur.bcs~ THEN BEGIN
 EXTEND_TOP ~baldur.bcs~ ~%MOD_FOLDER%/baf/rep.baf~
@@ -234,6 +229,7 @@ UNLESS ~zdbae~
 // Epilogue
 COPY ~%MOD_FOLDER%/epilogue/zdbae.2da~ ~override/zdbae01.2da~
 REPLACE ~99999~ @60
+
 
 // Spawn Baeloth in the Copper Cornet
 EXTEND_TOP ~AR0406.BCS~ ~%MOD_FOLDER%/baf/ar0406.baf~
