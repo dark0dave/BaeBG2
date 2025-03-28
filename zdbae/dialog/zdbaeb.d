@@ -185,8 +185,8 @@ DO ~SetGlobal("ZDBAEEdwin1","GLOBAL",1)~
 == BEDWIN @3084 /* Yes, yes. You were thinking it, anyway. */
 == ZDBAEB @3085 /* As recognized by my research, Thay contains one of Faerun's finest fighting arenas, and I would -love- an introduction from you to those in charge. */
 == BEDWIN @3086 /* What makes you think they would give a rat's ass about what you think, Drow? */
-== ZDBAEB @3087 /*  I have -quite- the acute arcane ability myself, and -years- of experience yanking slaves into obedience to have them duel to the death! Truly, we can talk tips! */
-== BEDWIN@3088 /*  Hmm. Perhaps, Drow, perhaps. Make it worth my while and I can send someone a message. */
+== ZDBAEB @3087 /* I have -quite- the acute arcane ability myself, and -years- of experience yanking slaves into obedience to have them duel to the death! Truly, we can talk tips! */
+== BEDWIN @3088 /* Hmm. Perhaps, Drow, perhaps. Make it worth my while and I can send someone a message. */
 EXIT
 
 // Haer'dalis Banter
