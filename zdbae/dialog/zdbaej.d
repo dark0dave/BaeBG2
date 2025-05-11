@@ -49,8 +49,8 @@ END
 // ~<CHARNAME>! You do not need to...
 INTERJECT_COPY_TRANS JAHEIRAJ 247 ZDBAEJAHINTER0
   == ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE", CD_STATE_NOTVALID)~ THEN
-  @4053 /* Ooh, nay, <CHARNAME>, thou needst not do so. **Baeloth winks at you** Mayhap thy bounteous booty might be spent in more delightfully devious pursuits? Hmm? Perhaps upon this daring and dashing Drow, whose charm is as captivating as the celestial canvas itself? */
+  @4053 /* Nay <CHARNAME>, NAY! You needst NOT do so. Thy bounteous booty might be better spent in more delightfully devious and devilish pursuits? Hmm? Perhaps upon this daring and dashing Drow, whose charm is as captivating as the celestial canvas itself? */
   == JAHABOAM @4054 /* Errr, I don't think I have anything more for the gentlemen. */
   == ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE", CD_STATE_NOTVALID)~ THEN
-   @4055 /* Really? Is this the way I am to be treated upon the surface?! What bilious buffoonery! Blast! Boo! A blight on you sir. */
+   @4053 /* Bah! Am I to be belittled by balding bloated broker? What bilious buffoonery! Blast! BOO! A blight upon you sir! */
 END
