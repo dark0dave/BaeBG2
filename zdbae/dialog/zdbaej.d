@@ -44,3 +44,13 @@ INTERJECT_COPY_TRANS CSGAAL 10 ZDBAEGAAL10
   == ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE", CD_STATE_NOTVALID)~ THEN
   @4052 /* Follow him to mediocrity or follow me to magnificence. Your choice, of course. */
 END
+
+// Buy Jaheria a gift (dshop02.d)
+// ~<CHARNAME>! You do not need to...
+INTERJECT_COPY_TRANS JAHEIRAJ 247 ZDBAEJAHINTER0
+  == ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE", CD_STATE_NOTVALID)~ THEN
+  @4053 /* Ooh, nay, <CHARNAME>, thou needst not do so. **Baeloth winks at you** Mayhap thy bounteous booty might be spent in more delightfully devious pursuits? Hmm? Perhaps upon this daring and dashing Drow, whose charm is as captivating as the celestial canvas itself? */
+  == JAHABOAM @4054 /* Errr, I don't think I have anything more for the gentlemen. */
+  == ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE", CD_STATE_NOTVALID)~ THEN
+   @4055 /* Really? Is this the way I am to be treated upon the surface?! What bilious buffoonery! Blast! Boo! A blight on you sir. */
+END
