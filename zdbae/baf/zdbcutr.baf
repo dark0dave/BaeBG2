@@ -9,7 +9,7 @@ THEN
     // NOBLE 1
     DisplayStringPoint([2453.1575],@1504) /* ~A drow? Here?~ */
     Wait(1)
-    DisplayStringHead("Announcer",@1505) /* ~WHAT?! Security, get in here!~ */
+    DisplayStringHead("Announcer",@1505) /* ~WHAT?! Security, Security!~ */
     Wait(1)
     SetCutSceneBreakable(FALSE)
     IncrementGlobal("ZDBAE1_CUTSCENE_BREAKABLE","GLOBAL",1)

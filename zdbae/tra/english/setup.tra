@@ -113,9 +113,9 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @1011 = ~Whatever mischief you're initiating, I want no part in it.~
 @1012 = ~I think I'd be more "entertained" by watching what these good people do to you!~
 @1013 = ~There is no forgetting what you did to me I am afraid! Lets see some "entertainment".~
-@1014 = ~Oh but I do hold a grudge for *THAT*! Lets see what these "good people" do to you now!~
+@1014 = ~'Oh Baeloth, bygones are not bygone.' Lets see what the misguided masses do to you now!~
 @1015 = ~I am not interested in your dog and pony show, drow.~
-@1016 = ~Shut up! I am not interested in 'entertaining' you.~
+@1016 = ~I am not interested your entertainment.~
 @1017 = ~I want you to die, drow!~
 @1498 = ~I don't know what I was thinking. My senses took flight! They vanished and were vagrant!~
 @1499 = ~~
@@ -125,7 +125,7 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @1502 = ~I have not been entertained!~
 @1503 = ~If you've got a plan, I'm in. Can't be much harder starting a fight than watching one.~
 @1504 = ~A drow? Here?~
-@1505 = ~WHAT?! Security, get in here!~
+@1505 = ~WHAT?! Security, Security!~
 @1506 = ~Burn the drow!~
 @1507 = ~Kill the drow!~
 @1999 = ~~
@@ -134,19 +134,19 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @2000 = ~What a wretched waste! How boring and banal this brawl is! Were I to grace these grounds with my talents, tragedy would instead transform into triumph. I would bring power, prestige and panache to this pitiful pit. Someone should displace - dare I say depose - of the dullard who dared to direct such a dreary display. Perhaps... me?~
 @2001 = ~Then huddle close my hapless horde. The time of tedium is about to be terminated.~
 @2002 = ~Well, well, well, what whimsical wonder do we witness here? Another face amidst the multitude of mundane mediocrity. You, stand before the ineffable Baeloth the Entertainer.~
-@2003 = ~Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, revelling in the glory that is, well, me.~
+@2003 = ~Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, revelling in the glory that is, well... me.~
 @2004 = ~My mirthful mate, let's not meander in minor matters. I am a dashing drow of discernment and delicious taste, indeed!~
-@2005 = ~No, no, no. I wish for splendour and spectacle. Not parading around about in the public housing districts, with... What did you say your name was again? No, you shall bear witness to my new atmospheric surface arena.~
-@2006 = ~**Baeloth raises his hands and throws back his hood before addressing the crowd**~
+@2005 = ~No, no, no. I wish for splendour and spectacle. Not parading around about in the public housing districts, with... What did you say your name was again? No, you shall bear witness to my new atmospheric arena.~
+@2006 = ~~
 @2007 = ~Behold! Your ENTERTAINER!~
 @2008 = ~Good people I uh... Lets be reasonable about this!~
-@2009 = ~Upon further reflection, I reconsider. I shall join your party of plenty after all. These misguided masses seem rather misinformed, don't you think? Let us be off, before Baeloth the Brilliant becomes Baeloth the Blood-soaked.~
-@2010 = ~I discern a glimmer of intelligence in those eyes. Yes, yes, I perceive that you comprehend the worth of aligning yourself with magnificence.~
+@2009 = ~Upon further reflection, I reconsider. I shall join your party of plenty after all. These misguided masses seem rather misinformed, don't you think? Let us be off, before Baeloth the Brilliant becomes Baeloth the Bludgeoned.~
+@2010 = ~I sense the discerning glimmer of intelligence in those eyes. Yes, I can perceive your comprehension at my pernicious predicament. I would most heartily agree to aligning myself with your magnificence.~
 @2011 = ~Step spryly, my serendipitous sidekick! We've a spectacular show to splendidly stage, and the unintelligent will unwittingly waltz within our whimsical web. Oh, the poetic panorama of it all! They sought to stifle my spectacular self, but now they shall witness the wondrous weight of my wizardry!~
 @2012 = ~Is this your parting present, then? Leaving me languishing thusly in this loathsome stand like some lowly miscreant? You'll rue the day you dared deliver such a dire destiny.~
-@2013 = ~Lets, move on from that, shall we? Surely you don't hold a grudge for *THAT*!~
-@2014 = ~Well <CHARNAME>, is this what passes for perverse entertainment, upon this plane? Pitiable! Poorly played! Pathetic! What a paltry pit fight.~
-@2015 = ~But, but, my equine and lupus burlesque pageant is something to desired. I had drow from the... nevermind. In any event, should you reconsider your ridiculous refrain, I'll remain here.~
+@2013 = ~It would be beneath you to so fervently fopp over a grudge for my erstwhile employment. Let bygones be bygones, as they say, Hmm? ~
+@2014 = ~Is this what passes for perverse entertainment? Pitiable! Poorly played! Pathetic! What a paltry pit fight.~
+@2015 = ~But, but, my equine and lupus burlesque pageant draws distinguished Drow from all over ... nevermind. In any event, should you reconsider your ridiculous refrain, I'll remain here.~
 @2499 = ~~
 
 // BG2 Rejoin Lines
@@ -603,9 +603,9 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @4050 = ~Oohoohoohoo! This should be good!~
 @4051 = ~And I, I say listen to me Baeloth the Bright! Baeloth the Bedazzling!  Baeloth the ... Well in any event, don't listen to this blind bat, however brilliant his bids at bewilderment are.~
 @4052 = ~Follow him to mediocrity or follow me to magnificence. Your choice, of course.~
-@4053 = ~Ooh, nay, <CHARNAME>, thou needst not do so. **Baeloth winks at you** Mayhap thy bounteous booty might be spent elsewhere? Hmm? Say, perhaps, upon this dashing drow?~
+@4053 = ~Nay <CHARNAME>, NAY! You needst NOT do so. Thy bounteous booty might be better spent in more delightfully devious and devilish pursuits? Hmm? Perhaps upon this daring and dashing Drow, whose charm is as captivating as the celestial canvas itself?~
 @4054 = ~Errr, I don't think I have anything more for the gentlemen.~
-@4055 = ~Really? Is this the way I am to be treated upon the surface?! What bilious buffoonery! Blast! Boo! A blight on you sir.~
+@4055 = ~Bah! Am I to be belittled by balding bloated broker? What bilious buffoonery! Blast! BOO! A blight upon you sir!~
 @4999 = ~~
 
 // ToB Join Lines

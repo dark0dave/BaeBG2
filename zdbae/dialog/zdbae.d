@@ -19,21 +19,21 @@ END
 
 // Confused
 IF ~~ BEGIN ZDBAEC
-  SAY @2015 /* ~But, but, my equine and lupus burlesque pageant is something to desired. I had drow from the... nevermind. In any event, should you reconsider your ridiculous refrain, I'll remain here.~ */
+  SAY @2015 /* ~But, but, my equine and lupus burlesque pageant draws distinguished Drow from all over ... nevermind. In any event, should you reconsider your ridiculous refrain, I'll remain here.~ */
   IF ~~ THEN EXIT
 END
 
 // Hello
 IF ~~ THEN BEGIN ZDBAE2
-  SAY @2014 /* ~Well <CHARNAME>, is this what passes for perverse entertainment, upon this plane? Pitiable! Poorly played! Pathetic! What a paltry pit fight.~ */
-  IF ~~ THEN REPLY @1008 /* ~If you want real entertainment, Baeloth, perhaps you should join my party instead?~ */ GOTO ZDBAE5
-  IF ~~ THEN REPLY @1016 /* ~Shut up! I am not interested in entertaining you.~ */ DO ~SetGlobal("ZDBAE_SHUTUP","GLOBAL",1)~ EXIT
+  SAY @2014 /* ~Is this what passes for perverse entertainment? Pitiable! Poorly played! Pathetic! What a paltry pit fight.~ */
+  IF ~~ THEN REPLY @1008 /* ~If it's real entertainment you're seeking, perhaps you'll join my party instead?~ */ GOTO ZDBAE5
+  IF ~~ THEN REPLY @1016 /* ~I am not interested your entertainment.~ */ DO ~SetGlobal("ZDBAE_SHUTUP","GLOBAL",1)~ EXIT
 END
 
 // Remember
 IF ~~ THEN BEGIN ZDBAE3
-  SAY @2003 /* ~Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, revelling in the glory that is, well, me.~ */
-  IF ~Global("BPINBG","GLOBAL",1)~ THEN REPLY @1010 /* ~You should, Baeloth!  Don’t you recognize your former champion?~ */ GOTO ZDBAE4
+  SAY @2003 /* ~Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, revelling in the glory that is, well... me.~ */
+  IF ~Global("BPINBG","GLOBAL",1)~ THEN REPLY @1010 /* ~You should, Baeloth! Don’t you recognize your former champion?~ */ GOTO ZDBAE4
   IF ~~ THEN REPLY @1005 /* ~You don't remember me at all do you.~ */ GOTO ZDBAE4
 END
 
@@ -44,12 +44,7 @@ END
 
 // Reject
 IF ~~ THEN BEGIN ZDBAE5
-  SAY @2005 /* ~No, no, no. I wish for splendour and spectacle. Not parading around about in the public housing districts, with... What did you say your name was again? No, you shall bear witness to my new atmospheric surface arena.~ */
-  IF ~~ THEN GOTO ZDBAE6
-END
-
-IF ~~ THEN BEGIN ZDBAE6
-  SAY @2006 /* ~**Baeloth raises his hands and throws back his hood before addressing the crowd**~ */
+  SAY @2005 /* ~No, no, no. I wish for splendour and spectacle. Not parading around about in the public housing districts, with... What did you say your name was again? No, you shall bear witness to my new atmospheric arena.~ */
   IF ~~ THEN GOTO ZDBAE7
 END
 
@@ -61,7 +56,7 @@ END
 
 // Rescue
 IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_REVEAL","GLOBAL",2)~ THEN BEGIN ZDBAE8
-  SAY @2009 /* ~Upon further reflection, I reconsider. I shall join your party of plenty after all. These misguided masses seem rather misinformed, don't you think? Let us be off, before Baeloth the Brilliant becomes Baeloth the Blood-soaked.~ */
+  SAY @2009 /* ~Upon further reflection, I reconsider. I shall join your party of plenty after all. These misguided masses seem rather misinformed, don't you think? Let us be off, before Baeloth the Brilliant becomes Baeloth the Bludgeoned.~ */
   IF ~~ THEN REPLY @1006 /* ~I accept this loose premise; let's hope your bark is as big as your bite.~ */ GOTO ZDBAE09
   IF ~~ THEN REPLY @1012 /* ~I think I'd be more "entertained" by watching what these good people do to you!~ */ GOTO ZDBAE12
   IF ~Global("BPINBG","GLOBAL",1)~ THEN REPLY @1007 /* ~My trust in you is thin, Baeloth, but if having you means another spellcaster at my side, then I'll agree for now.~ */ GOTO ZDBAE09
@@ -70,15 +65,15 @@ END
 
 // Accept
 IF ~~ THEN BEGIN ZDBAE09
-  SAY @2010 /* I discern a glimmer of intelligence in those eyes. Yes, yes, I perceive that you comprehend the worth of aligning yourself with magnificence. */
+  SAY @2010 /* I sense the discerning glimmer of intelligence in those eyes. Yes, I can perceive your comprehension at my pernicious predicament. I would most heartily agree to aligning myself with your magnificence. */
   IF ~~ THEN GOTO ZDBAE11
 END
 
 // Uncertain
 IF ~~ THEN BEGIN ZDBAE10
-  SAY @2013 /* Lets, move on from that, shall we? Surely you don't hold a grudge for *THAT*! */
+  SAY @2013 /* It would be beneath you to so fervently fopp over a grudge for my erstwhile employment. Let bygones be bygones, as they say, Hmm? */
   IF ~~ THEN REPLY @1007 /* ~My trust in you is thin, Baeloth, but if having you means another spellcaster at my side, then I'll agree for now.~ */ GOTO ZDBAE09
-  IF ~~ THEN REPLY @1014 /* ~Oh but I do hold a grudge for *THAT*! Lets see what these "good people" do to you now!~ */ GOTO ZDBAE12
+  IF ~~ THEN REPLY @1014 /* ~'Oh Baeloth, bygones are not bygone.' Lets see what the misguided masses do to you now!~ */ GOTO ZDBAE12
   IF ~Global("BPINBG","GLOBAL",1)~ THEN REPLY @1013 /* ~There is no forgetting what you did to me I am afraid! Lets see some "entertainment".~ */ GOTO ZDBAE12
 END
 
