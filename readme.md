@@ -19,13 +19,15 @@ Find Baeloth in the Copper Cornet!
 
 ### Collaboration
 
-I must say a big thank you to [@Endarire](https://github.com/Endarire):[G3](https://www.gibberlings3.net/profile/5772-endarire/), who has provided dialogue and ideas for this mod.
+A huge thank to you to [@bucketfulofsunshine](https://github.com/bucketfulofsunshine) for her Baeloth and friends dialogue, ideas and her M'Khiin mod.
 
-A huge thank to you to [@bucketfulofsunshine](https://github.com/bucketfulofsunshine) for dialogue, ideas and her M'Khiin mod.
+I must say a big thank you to [@Endarire](https://github.com/Endarire):[G3](https://www.gibberlings3.net/profile/5772-endarire/), who has provided dialogue and ideas for this mod.
 
 And to [@zenblack](https://github.com/zenblack) for too many things to count!
 
-And to the [BEAR](https://github.com/szaumoor).
+And to the [Royal Protector](https://github.com/szaumoor).
+
+And to the wonderful [Llewren](https://github.com/Llewren), for their continued advice.
 
 A personal shout out to [@morpheus562](https://github.com/morpheus562):[G3](https://www.gibberlings3.net/profile/11591-morpheus562/), [@CamDawg](https://github.com/CamDawg):[G3](https://www.gibberlings3.net/profile/8-camdawg/), [@K4thos](https://github.com/K4thos):[G3](https://www.gibberlings3.net/profile/6804-k4thos/) for EET, and the rest of the G3 community.
 

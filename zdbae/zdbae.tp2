@@ -1,7 +1,7 @@
 BACKUP ~weidu_external/backup/zdbae~
 AUTHOR ~dark0dave~
 README ~zdbae/readme.md~
-VERSION ~v0.11~
+VERSION ~v0.12~
 AUTO_EVAL_STRINGS
 
 AUTO_TRA ~zdbae/tra/%s~

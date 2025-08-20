@@ -10,12 +10,12 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAEAerie1","GLOBAL",0)~
 THEN BAERIE ZDBAEAerie1
-~Baeloth, your spells are...very powerful, have you ever worried about the havoc they might cause?~
+@10018 /* Baeloth, your spells are...very powerful, have you ever worried about the havoc they might cause? */
 DO ~SetGlobal("ZDBAEAerie1","GLOBAL",1)~
-== ZDBAEB ~Havoc? Hah! Why should I concern myself with those who can't appreciate the hypnotic hurricane of my magical histrionics?~
-== BAERIE ~I...I just think we should be careful. Magic is not something to be taken lightly. Someone can easily get hurt from a stray fireball.~
-== BAERIE ~We should use our powers for good. To protect, heal or aid others.~
-== ZDBAEB ~Limit yourself if you must, but know I have no such intention. My power flows like a raging river, not a quaint rivulet.~
+== ZDBAEB @10019 /* Havoc? Hah! Why should I concern myself with those who can't appreciate the hypnotic hurricane of my magical histrionics? */
+== BAERIE @10020 /* I...I just think we should be careful. Magic is not something to be taken lightly. Someone can easily get hurt from a stray fireball. */
+== BAERIE @10021 /* We should use our powers for good. To protect, heal or aid others. */
+== ZDBAEB @10022 /* Limit yourself if you must, but know I have no such intention. My power flows like a raging river, not a quaint rivulet. */
 EXIT
 
 // Anomen 1, Lawful Neutral, hasn't been knighted
@@ -30,18 +30,18 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEAnomen1","GLOBAL",0)~
 THEN BANOMEN ZDBAEAnomen1
-~What is it now, Baeloth? A petty jest at my expense?~
+@10023 /* What is it now, Baeloth? A petty jest at my expense? */
 DO ~SetGlobal("ZDBAEAnomen1","GLOBAL",1)~
-== ZDBAEB ~Jest? No, my sanctimonious squire. Inquiry!~
-== BANOMEN ~Hmph. Ask and be done with it.~
-== ZDBAEB ~What phantom pain of youth prods you towards this pompous order of knights?~
-== BANOMEN ~Nothing as vile as you imply! I seek only to prove my worth. To stand as my own man, unbroken by circumstance.~
-== ZDBAEB ~Yet yours is a cult of leash and law. You seek independence, yet every new commandment curtails it.~
-== ZDBAEB ~Stumble once and they will strip you bare of rank, respect, even your patronage.~
-== BANOMEN ~Enough! I will hear no more of your vile speech! Sprout your blasphemy elsewhere!~
-== BKELDOR IF ~!StateCheck("KELDORN", CD_STATE_NOTVALID) InParty("KELDORN")~ THEN ~Peace, Anomen. The drow speaks harshly, yet there is truth in what he says. Our order is strict, aye, but the harshest burdens are borne for the good of all. Discipline grants us the strength to protect the helpless.~
-== BANOMEN IF ~!StateCheck("KELDORN", CD_STATE_NOTVALID) InParty("KELDORN")~ THEN ~Of course, Sir Keldorn. I thank you for your guidance.~
-== ZDBAEB ~Ah, so noble, so narrow-minded.~
+== ZDBAEB @10024 /* Jest? No, my sanctimonious squire. Inquiry! */
+== BANOMEN @10025 /* Hmph. Ask and be done with it. */
+== ZDBAEB @10026 /* What phantom pain of puberty prods you towards down this pompous path of paladins? */
+== BANOMEN @10027 /* Nothing as vile as you imply! I seek only to prove my worth. To stand as my own man, unbroken by circumstance. */
+== ZDBAEB @10028 /* Yet yours is a cult of leash and law. You seek independence, yet every new commandment curtails it. */
+== ZDBAEB @10029 /* Stumble yet once and they will strip you bare of rank, regalia, respect, and even your patronage. */
+== BANOMEN @10030 /* Enough! I will hear no more of your vile speech! Sprout your blasphemy elsewhere! */
+== BKELDOR IF ~!StateCheck("KELDORN", CD_STATE_NOTVALID) InParty("KELDORN")~ THEN @10031 /* Peace, Anomen. The drow speaks harshly, yet there is truth in what he says. Our order is strict, aye, but the harshest burdens are borne for the good of all. Discipline grants us the strength to protect the helpless. */
+== BANOMEN IF ~!StateCheck("KELDORN", CD_STATE_NOTVALID) InParty("KELDORN")~ THEN @10032 /* Of course, Sir Keldorn. I thank you for your guidance. */
+== ZDBAEB @10033 /* Ah so noble, but only nob on mind. so yet so nob I mean so narrow-minded. */
 EXIT
 
 // Anomen 1, Lawful Good, knighted
@@ -55,11 +55,11 @@ IF ~InParty("ZDBAE")
     Alignment("Anomen",LAWFUL_GOOD)
     Global("ZDBAEAnomen1","GLOBAL",0)~
 THEN BANOMEN ZDBAEAnomen1
-~What is it now, Baeloth? A petty jest at my expense?~
+@10023 /* What is it now, Baeloth? A petty jest at my expense? */
 DO ~SetGlobal("ZDBAEAnomen1","GLOBAL",1)~
-== ZDBAEB ~Jest? No, my lawful lapdog. Inquiry!~
-== BANOMEN ~I can sense your ill-intent. Save your breath, drow. I am a knight of Helm, sworn to duty and honor.~
-== ZDBAEB ~So touchy, so terribly tedious. Very well, I shall seek amusement elsewhere.~
+== ZDBAEB @10034 /* Jest? No, my lawful lapdog. Inquiry! */
+== BANOMEN @10035 /* I can sense your ill-intent. Save your breath, drow. I am a knight of Helm, sworn to duty and honor. */
+== ZDBAEB @10036 /* So touchy, so terribly tedious. Very well, I shall tithe my titillation elsewhere. */
 EXIT
 
 // Anomen 1, Chaotic Neutral, failed test
@@ -73,13 +73,13 @@ IF ~InParty("ZDBAE")
     Alignment("Anomen",CHAOTIC_NEUTRAL)
     Global("ZDBAEAnomen1","GLOBAL",0)~
 THEN BANOMEN ZDBAEAnomen1
-~What is it now, Baeloth? A petty jest at my expense?~
+@10023 /* What is it now, Baeloth? A petty jest at my expense? */
 DO ~SetGlobal("ZDBAEAnomen1","GLOBAL",1)~
-== ZDBAEB ~Jest? No, my brooding brother-in-bitterness. Merely curiosity! Tell me, what phantom pain of youth prodded you to serve that pompous order of knights?~
-== BANOMEN ~You think I still honor them? I spit on their vows! They may call absolute obedience discipline, but it is nothing but a leash.~
-== ZDBAEB ~...A kennel, a cult, a cage for the craven.~
-== BANOMEN ~Aye. Let them choke on their pride, and may their precious code strangle them all.~
-== ZDBAEB ~The shackled squire sheds his chains at last!~
+== ZDBAEB @10037 /* Jest? No, my brooding brother-in-bitterness. Merely curiosity! Tell me, what phantom pain of youth prodded you to serve that pompous order of knights? */
+== BANOMEN @10038 /* You think I still honor them? I spit on their vows! They may call absolute obedience discipline, but it is nothing but a leash. */
+== ZDBAEB @10039 /* ...A kennel, a cult, a cage for the craven. */
+== BANOMEN @10040 /* Aye. Let them choke on their pride, and may their precious code strangle them all. */
+== ZDBAEB @10041 /* The shackled squire sheds his chains at last! */
 EXIT
 
 // Cernd 1
@@ -121,14 +121,14 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEDorn1","GLOBAL",0)~
 THEN DORNJ ZDBAEDorn1
-~Drow, why do insist on bothering me?~
+@10042 /* Drow, why do insist on bothering me? */
 DO ~SetGlobal("ZDBAEDorn1","GLOBAL",1)~
-== ZDBAEB ~Why, I aim to ascertain your ambitions. What is it that you want, Dorn Il-Khan?~
-== DORNJ ~Blood. Power. Vengeance.~
-== ZDBAEB ~A triumvirate most tantalizing! Perhaps our priorities align? I propose bolstering your prowess in the arena. Perhaps one purveyed and promoted by me, the great Baeloth the Entertainer!~
-== DORNJ ~A pit of vermin and half-trained fighters? Bah! I crave foes worthy of slaughter.~
-== ZDBAEB ~And I shall find them, my armored associate, once my - ah - enterprise is restored to its former magnificence!~
-== DORNJ ~Then speak to me when you offer more than words. I grow tired of killing for promises.~
+== ZDBAEB @10043 /* Why, I aim to ascertain your ambitions. What is it that you want, Dorn Il-Khan? */
+== DORNJ @10044 /* Blood. Power. Vengeance. */
+== ZDBAEB @10045 /* A triumvirate most tantalizing! Perhaps our priorities align? I propose bolstering your prowess in the arena. Perhaps one purveyed and promoted by me, the great Baeloth the Entertainer! */
+== DORNJ @10046 /* A pit of vermin and half-trained fighters? Bah! I crave foes worthy of slaughter. */
+== ZDBAEB @10047 /* And I shall find them, my armored associate, once my - ah - enterprise is restored to its former magnificence! */
+== DORNJ @10048 /* Then speak to me when you offer more than words. I grow tired of killing for promises. */
 EXIT
 
 // Edwin 1, setting up the beginning of their rivalry, Baeloth needs to *know* Edwin can't help him so he can tease the HECK out of him instead
@@ -141,17 +141,17 @@ IF ~InParty("ZDBAEB")
     !AreaType(DUNGEON)
     Global("ZDBAEEdwin1","GLOBAL",0)~
 THEN ZDBAEB ZDBAEEdwin1
-~Behold! The most radiant Red Wizard of remarkable renown!~
+@10049 /* Behold! The most radiant Red Wizard of remarkable renown! */
 DO ~SetGlobal("ZDBAEEdwin1","GLOBAL",1)~
-== BEDWIN ~Yes, yes, Baeloth. Recognizing my genius is the least I expect from this group. (What could he possibly be scheming now?)~
-== ZDBAEB ~I can heeeeeear you!~
-== BEDWIN ~No, you can't!~
-== ZDBAEB ~Regardless, as I recognized during my research, Thay contains one of Faerun's finest fighting arenas. I would delight in an introduction. Surely someone of your stature can oblige?~
-== BEDWIN ~And why should I concern myself with your petty request?~
-== ZDBAEB ~I have quite the arcane ability myself, and years of experience yanking slaves into obedience. Having them duel to the death even! Truly, I can share tips!~
-== BEDWIN ~Hmph. Perhaps. The idea has...potential. Make it worth my while and I might consider it. (Curse my fall from favor! Such an opportunity doesn't come by often...)~
-== ZDBAEB ~Ah, a fall from favor, was it?~
-== BEDWIN ~Quiet, drow, I have no further interest in indulging you!~
+== BEDWIN @10050 /* Yes, yes, Baeloth. Recognizing my genius is the least I expect from this group. (What could he possibly be scheming now?) */
+== ZDBAEB @3083 /* I can heeeeeear you! */
+== BEDWIN @10051 /* No, you can't! */
+== ZDBAEB @10052 /* Regardless, as I recognized during my research, Thay contains one of Faerun's finest fighting arenas. I would delight in an introduction. Surely someone of your stature can oblige? */
+== BEDWIN @10053 /* And why should I concern myself with your petty request? */
+== ZDBAEB @10054 /* I have quite the arcane ability myself, and years of experience yanking slaves into obedience. Having them duel to the death even! Truly, I can share tips! */
+== BEDWIN @10055 /* Hmph. Perhaps. The idea has...potential. Make it worth my while and I might consider it. (Curse my fall from favor! Such an opportunity doesn't come by often...) */
+== ZDBAEB @10056 /* Ah, a fall from favor, was it? */
+== BEDWIN @10057 /* Quiet, drow, I have no further interest in indulging you! */
 EXIT
 
 // Haer'dalis 1
@@ -220,18 +220,18 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEImoen21","GLOBAL",0)~
 THEN ZDBAEB ZDBAEImoen21
-~Imoen, why the wailing? Your normally cheerful countenance even managed to coax a smile out of me!~
+@10058 /* Imoen, why the wailing? Your normally cheerful countenance even managed to coax a smile out of me! */
 DO ~SetGlobal("ZDBAEImoen21","GLOBAL",1)~
-== BIMOEN2 ~Want to take a guess? I've been experimented on. Tortured. Had my soul stolen...~
-== BIMOEN2 ~I try to keep my head up, but it hasn't been easy lately.~
-== ZDBAEB ~You have me quite curious: what wounds did Irenicus inflict? And where?~
-== BIMOEN2 ~Rub salt into the cuts, why don’t you? Why do you even care?~
-== ZDBAEB ~If I know what he did, I can better try to undo it, my dear.~
-== ZDBAEB ~Besides, subjugating slaves is practically my specialty. I dare say your captor overdid it.~
-== BIMOEN2 ~Thanks...I think. I didn't enjoy his torment either!~
-== ZDBAEB ~There is a threshold where torment becomes trivial, no longer useful for training obedience. A true master of cruelty knows this line.~
-== BIMOEN2 ~That's oddly insightful. But talking with you has cheered me up a little. Could we walk together a bit longer?~
-== ZDBAEB ~Of course. Let me entertain you!~
+== BIMOEN2 @10059 /* Want to take a guess? I've been experimented on. Tortured. Had my soul stolen... */
+== BIMOEN2 @10060 /* I try to keep my head up, but it hasn't been easy lately. */
+== ZDBAEB @10061 /* You have me quite curious: what wounds did Irenicus inflict? And where? */
+== BIMOEN2 @10062 /* Rub salt into the cuts, why don’t you? Why do you even care? */
+== ZDBAEB @10063 /* If I know what he did, I can better try to undo it, my dear. */
+== ZDBAEB @10064 /* Besides, subjugating slaves is practically my specialty. I dare say your captor overdid it. */
+== BIMOEN2 @10065 /* Thanks...I think. I didn't enjoy his torment either! */
+== ZDBAEB @10066 /* There is a threshold where torment becomes trivial, no longer useful for training obedience. A true master of cruelty knows this line. */
+== BIMOEN2 @10067 /* That's oddly insightful. But talking with you has cheered me up a little. Could we walk together a bit longer? */
+== ZDBAEB @10068 /* Of course. Let me entertain you! */
 EXIT
 
 /* continue edits from here on forwards*/
@@ -272,10 +272,10 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEJan1","GLOBAL",0)~
 THEN ZDBAEB ZDBAEJan1
-~Oh, Jan!~
+@3137 /* Oh, Jan! */
 DO ~SetGlobal("ZDBAEJan1","GLOBAL",1)~
-== BJAN ~~
-== ZDBAEB ~You wouldn't be interested in playing a little game, would you? Mmm?~
+== BJAN @4040 /* ... */
+== ZDBAEB @10070 /* You wouldn't be interested in playing a little game, would you? Mmm? */
 == BJAN @3140 /* Game? I -love- games! */
 == BJAN @3141 /* There was this time about thirty years ago when my second cousin on my mother's side and I played our longest game of Chess yet. We were at it for over a day, and we kept moving our pieces to prevent being checkmated, but she passed out from exhaustion first, so she forfeited the game. She violently appealed to my mother after this and claimed that I did something to make her lose when I did not. */
 == BJAN @3142 /* Of course, after my mother's ruling she appealed to guard and then to the Council of Six. But after the turnip embargo caused a reduction in tax revenue, the Council became unwilling to listen to new appeals. Which I have always viewed as the greatest calmity of our age. */
@@ -556,7 +556,7 @@ DO ~SetGlobal("ZDBAEWILSON1","GLOBAL",1)~
 == WILSON @3367 /* <Wilson snorts then snorts again.> */
 == ZDBAEB @3368 /* An obvious implementation of your unique ursine ability would be to properly prepare you as a pit fighter. Surely, you could satisfactorily shoulder such a shift! */
 == WILSON @3369 /* <Wilson whines.> */
-== ZDBAEB @3370 /* Worry not, my warrior. We can call you, "The Ursine Usurper!" Eating opponents' innards is optional, obviously, however ostentatious. */
+== ZDBAEB @3370 /* Worry not, my warrior. We can call you, 'The Ursine Usurper!' Eating opponents' innards is optional, obviously, however ostentatious. */ /* Worry not, my warrior. We can call you, "The Ursine Usurper!" Eating opponents' innards is optional, obviously, however ostentatious. */
 EXIT
 
 // Yoshimo 1
@@ -661,12 +661,12 @@ IF ~InParty("ZDBAEB")
     Global("ZDBAEEdwin1","GLOBAL",1)
     Global("ZDBAEEdwin2","GLOBAL",0)~
 THEN ZDBAEB ZDBAEEdwin2
-~How fare your fumbling forays into the arcane arts?~
+@10071 /* How fare your fumbling forays into the arcane arts? */
 DO ~SetGlobal("ZDBAEEdwin2","GLOBAL",1)~
-== BEDWIN ~Unlike you, drow, my ability knows no bounds. Magical mastery demands intellect. A quality you patently lack.~
-== ZDBAEB ~I need no brittle books nor banal memorization to bend the weave. *My* magic is instinct itself!~
-== BEDWIN ~What you call instinct is mere theatrics. Impressive to fools alone.~
-== ZDBAEB ~Such splendid spluttering from bargain-bin Baeloth himself.~
+== BEDWIN @10072 /* Unlike you, drow, my ability knows no bounds. Magical mastery demands intellect. A quality you patently lack. */
+== ZDBAEB @10073 /* I need no brittle books nor banal memorization to bend the weave. *My* magic is instinct itself! */
+== BEDWIN @10074 /* What you call instinct is mere theatrics. Impressive to fools alone. */
+== ZDBAEB @10075 /* Such splendid spluttering from bargain-bin Baeloth himself. */
 EXIT
 
 // Jan 2
@@ -680,7 +680,7 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEJan2","GLOBAL",0)~
 THEN ZDBAEB ZDBAEJan2
-@3392 /* This one time, a human, friend of the family you see, a turnip artist by trade crafted a Jansen family crest. As you might have guessed Aunt Petunia chased him out of the house with her rake and smashed the it to pieces even though it depicted a lovely turnip pair in a loving embrace and when you pulled the string ... Oh, Baeloth is looking at me again, maybe later.~ */
+@3392 /* This one time, a human, friend of the family you see, a turnip artist by trade crafted a Jansen family crest. As you might have guessed Aunt Petunia chased him out of the house with her rake and smashed the it to pieces even though it depicted a lovely turnip pair in a loving embrace and when you pulled the string ... Oh, Baeloth is looking at me again, maybe later. */ /* This one time, a human, friend of the family you see, a turnip artist by trade crafted a Jansen family crest. As you might have guessed Aunt Petunia chased him out of the house with her rake and smashed the it to pieces even though it depicted a lovely turnip pair in a loving embrace and when you pulled the string ... Oh, Baeloth is looking at me again, maybe later.~ */
 DO ~SetGlobal("ZDBAEJan2","GLOBAL",1)~
 == ZDBAEB @3393 /* I've got my eye on you my light-skinned Svirfneblin. */
 EXIT
@@ -790,15 +790,15 @@ IF ~InParty("ZDBAE")
     Global("ZDBAEAerie2","GLOBAL",1)
     Global("ZDBAEAerie3","GLOBAL",0)~
 THEN ZDBAEB ZDBAEAerie3
-~Oooh... we have such stories amongst my people. Being underground is just not for the avariel…~ [AERIE18]
+@10076 /* Oooh... we have such stories amongst my people. Being underground is just not for the avariel… */
 DO ~SetGlobal("ZDBAEAerie3","GLOBAL",1)~
-== BAERIE ~The Underdark especially… I… I can't imagine living there.~
-== ZDBAEB ~Fear fetters the mind, my feeble-hearted friend. My home holds countless opportunities for the courageous and cunning.~
-== ZDBAEB ~Perhaps you would participate in my perilous - I mean perfectly pleasant - arena? It lies in shambles at present, but once rebuilt, all of the planes shall proclaim the genius of Baeloth the Entertainer.~
-== BAERIE ~N-No, thank you.~
-== ZDBAEB ~Then perhaps a petty payment would suffice? Even a prodigy like myself requires coin to construct and create.~
-== BAERIE ~I…I think this conversation is quite done.~
-== ZDBAEB ~A pity.~
+== BAERIE @10077 /* The Underdark especially… I… I can't imagine living there. */
+== ZDBAEB @10078 /* Fear fetters the mind, my feeble-hearted friend. My home holds countless opportunities for the courageous and cunning. */
+== ZDBAEB @10079 /* Perhaps you would participate in my perilous - I mean perfectly pleasant - arena? It lies in shambles at present, but once rebuilt, all of the planes shall proclaim the genius of Baeloth the Entertainer. */
+== BAERIE @10080 /* N-No, thank you. */
+== ZDBAEB @10081 /* Then perhaps a petty payment would suffice? Even a prodigy like myself requires coin to construct and create. */
+== BAERIE @10082 /* I…I think this conversation is quite done. */
+== ZDBAEB @10083 /* A pity. */
 EXIT
 
 /* Edwin 3 - Enter Edwina, Stage Right */
@@ -810,12 +810,12 @@ IF ~InParty("ZDBAEB")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAEEdwin3","GLOBAL",0)~
 THEN ZDBAEB ZDBAEEdwin3
- ~My! What a marvelous metamorphosis!~
+ @10084 /* My! What a marvelous metamorphosis! */
 DO ~SetGlobal("ZDBAEEdwin3","GLOBAL",1)~
-== BEDWIN ~Silence! This indignity is temporary. Entirely temporary.~
-== ZDBAEB ~Temporary, tantalizing, and terribly amusing! Does the weave respond differently when woven with your womanly wiles?~
-== BEDWIN ~I shall end you, Baeloth! Slowly, meticulously, savoring every moment of your suffering.~
-== ZDBAEB ~Even your threats sound more mellifluous now.~
+== BEDWIN @10085 /* Silence! This indignity is temporary. Entirely temporary. */
+== ZDBAEB @10086 /* Temporary, tantalizing, and terribly amusing! Does the weave respond differently when woven with your womanly wiles? */
+== BEDWIN @10087 /* I shall end you, Baeloth! Slowly, meticulously, savoring every moment of your suffering. */
+== ZDBAEB @10088 /* Even your threats sound more mellifluous now. */
 EXIT
 
 // Keldorn 3
