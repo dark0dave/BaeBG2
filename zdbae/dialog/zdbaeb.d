@@ -1,6 +1,6 @@
 BEGIN ZDBAEB
 
-// Aerie Banter
+// Aerie 1
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -24,36 +24,7 @@ DO ~SetGlobal("ZDBAEAerie1","GLOBAL",1)~
 == ZDBAEB @3009 /* Ah, the adorable aspirations of an angelic acolyte. But brace yourself, bewitching bird, for power will pirouette into the palms of those who paint with its pulsating palette. */
 EXIT
 
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("AERIE")
-    See("AERIE")
-    !StateCheck("AERIE", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAEAerie1","GLOBAL",1)
-    Global("ZDBAEAerie2","GLOBAL",0)~
-THEN ZDBAEB ZDBAEAerie2
-@3010 /* Ah, my sweet adjutant Aerie. You seemed shocked we would supplement one another! */
-DO ~SetGlobal("ZDBAEAerie2","GLOBAL",1)~
-== BAERIE @3011 /* Well, yes. You're a Drow and- */
-== ZDBAEB @3012 /* -and you, my angelic aspirant, are an Avariel. We are, not so different, you and I. */
-== BAERIE @3013 /* Are you saying that because of my wings? */
-== ZDBAEB @3014 /* Only minorly, my dear. I heard you were a slave, stolen from your home at a still early seniority. */
-== BAERIE @3015 /* Well, yes. The circus took me in, even if they took me as a slave. Life in the circus troupe was cruel and I wasn't given enough space to spread my wings, so they just stopped working little by little. */
-== ZDBAEB @3016 /* Aw, what a plainly pitiful past - but I don't blame you for the blight that befell you. */
-== BAERIE @3017 /* Thanks... I think. */
-== BAERIE  @3018 /* What about you? */
-== ZDBAEB @3019 /* I sort of ran a circus, acted as its combat coordinator and commentator, and I was contemptuously canned when I bet it all on black. */
-== BAERIE @3020 /* You were a gladiator? */
-== ZDBAEB @3021 /* By necessity and -not- by need, my endeared darling. I was part of a game that was rigged to always win. Surely you see the pain of losing a 'foolproof' game. The circus is similar, or so I hear. */
-== BAERIE @3022 /* Maybe my circus was kinder than others. People did sometimes win the games. */
-== BAERIE @3023 /* Winning the ring toss was the hardest. I'm not sure if people were -meant- to win that. */
-== ZDBAEB @3024 /* My dear, imagine if every time someone won the ring toss, one of your circus workers died. What a wonderful spectacle of shame that would be! */
-EXIT
-
-// Anomen Banter
+// Anomen 1
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -90,7 +61,7 @@ DO ~SetGlobal("ZDBAEAnomen1","GLOBAL",1)~
 == ZDBAEB @3044 /* That is -all- I ask. */
 EXIT
 
-// Cernd Banter
+// Cernd 1
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -117,33 +88,7 @@ DO ~SetGlobal("ZDBAECernd1","GLOBAL",1)~
 == ZDBAEB @3057 /* Think of it like natural predators and prey, except in the Underdark, they're all magically talented, sometimes predators and prey switch places, and they have more eyes or tentacles than you have fingers. */
 EXIT
 
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("CERND")
-    See("CERND")
-    !StateCheck("CERND", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAECernd1","GLOBAL", 1)
-    Global("ZDBAECernd2","GLOBAL",0)~
-THEN CERNDJ ZDBAECernd1
-@3058 /* Baeloth, I have been meditating on what you said about nature in the Underdark.  How do you perceive nature on the surface? */
-DO ~SetGlobal("ZDBAECernd2","GLOBAL",1)~
-== ZDBAEB @3059 /* Nature is naughty, my darling Druid! 'Balance' is but a brittle breath amidst a bloody battle! Each canyon is a coliseum and every forest a fight! */
-== ZDBAEB @3060 /* Fauna's fights are fairly forward: Predators and prey proliferate in each other's absence. */
-== ZDBAEB @3061 /* Flora is fond of struggling in a slow death race to the top! */
-== CERNDJ @3062 /* What about the serenity of nature? */
-== ZDBAEB @3063 /* This 'serenity' is simply a short stop in the suffering. "Out of sight means out of mind!" */
-== ZDBAEB @3064 /* To call nature 'balanced' and 'orderly' is to call pit fighting 'fair.' These systems are rarely fair and mostly rigged for the enjoyment of the masses! */
-== ZDBAEB @3065 /* Besides, didn't you rip and tear as a bear or fume fire on your foe? Where was the serenity then?  Hmm? */
-== CERNDJ @3066 /* I did what I did to survive and preserve what I believe to be right. */
-== ZDBAEB @3067 /* Exactly! Nature is naught but a veneer for romanticized ransacking! At least my Black Pits are honest about their intent - violent delights made for the paying masses! */
-== CERNDJ @3068 /* What you described is simply called 'survival of the fittest,' but it is wisdom nonetheless. */
-== ZDBAEB @3069 /* Of course, my darling Druid! */
-EXIT
-
-// Dorn Banter
+// Dorn 1
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -168,7 +113,7 @@ DO ~SetGlobal("ZDBAEDorn1","GLOBAL",1)~
 == DORNJ @3080 /* In your bloody pit battles? It sounds like a challenge. I'm in. */
 EXIT
 
-// Edwin Banter
+// Edwin 1
 CHAIN
 IF ~InParty("ZDBAEB")
     See("ZDBAEB")
@@ -189,7 +134,7 @@ DO ~SetGlobal("ZDBAEEdwin1","GLOBAL",1)~
 == BEDWIN @3088 /* Hmm. Perhaps, Drow, perhaps. Make it worth my while and I can send someone a message. */
 EXIT
 
-// Haer'dalis Banter
+// Haer'dalis 1
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -213,7 +158,7 @@ DO ~SetGlobal("ZDBAEHaerDalis1","GLOBAL",1)~
 == ZDBAEB @3098 /* Practice makes perfect - and permanent. */
 EXIT
 
-// Hexxat Banter
+// Hexxat 1
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -240,7 +185,7 @@ DO ~SetGlobal("ZDBAEHexxat1","GLOBAL",1)~
 == BHEXXA25 @3111 /* Not my first choice, Drow, but I may go agree to it. */
 EXIT
 
-// Imoen Banter
+// Imoen 1
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -268,7 +213,7 @@ DO ~SetGlobal("ZDBAEImoen21","GLOBAL",1)~
 == ZDBAEB @3125 /* Let me entertain you! */
 EXIT
 
-// Jaheria Banter
+// Jaheria 1
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -294,7 +239,7 @@ DO ~SetGlobal("ZDBAEJaheira1","GLOBAL",1)~
 == BJAHEIR @3136 /* To me right now you are. If you're here to butcher animals for meat or to make them fight for your amusement, don't look to me for my blessing, Baeloth. */
 EXIT
 
-// Jan Banter
+// Jan 1
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -321,22 +266,7 @@ DO ~SetGlobal("ZDBAEJan1","GLOBAL",1)~
 == ZDBAEB @3150 /* Nevermind. */
 EXIT
 
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("JAN")
-    See("JAN")
-    !StateCheck("JAN", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAEJan2","GLOBAL",0)~
-THEN ZDBAEB ZDBAEJan2
-@3392 /* This one time, a human, friend of the family you see, a turnip artist by trade crafted a Jansen family crest. As you might have guessed Aunt Petunia chased him out of the house with her rake and smashed the it to pieces even though it depicted a lovely turnip pair in a loving embrace and when you pulled the string ... Oh, Baeloth is looking at me again, maybe later.~ */
-DO ~SetGlobal("ZDBAEJan2","GLOBAL",1)~
-== ZDBAEB @3393 /* I've got my eye on you my light-skinned Svirfneblin. */
-EXIT
-
-// Keldorn Banter
+// Keldorn 1
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -366,6 +296,374 @@ DO ~SetGlobal("ZDBAEKeldorn1","GLOBAL",1)~
 == ZDBAEB @3166 /*  Come, my pet Paladin! There's some foul fiend who owes me its gold or its guts, and we're gonna collect - together! */
 EXIT
 
+// Korgan 1
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("KORGAN")
+    See("KORGAN")
+    !StateCheck("KORGAN", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAEKorgan1","GLOBAL",0)~
+THEN BKORGAN ZDBAEKorgan1
+@3214 /* What do -you- know about fightin', Drow? All I've seen you carry around is a prissy little stick! */
+DO ~SetGlobal("ZDBAEKorgan1","GLOBAL",1)~
+== ZDBAEB @3215 /* Aw. Did someone wake up on the wrong side of the keg? Hmm? */
+== BKORGAN @3216 /* And I've ne'er seen ye cart around no holy symbols nor spellbooks, either. It's like you dance and prance around all prissy-like magic sparks come odda yer hands! */
+== ZDBAEB @3217 /* Aw! Is the short one jealous that he can't kill anything he'd please with a well-placed sneeze? */
+== BKORGAN @3218 /* I sneezed all over ye earlier. */
+== ZDBAEB @3219 /* It was downright -disgusting!- Rightfully -revolting!- */
+== BKORGAN @3220 /* Give it time, Drow. It'll still kill ye. */
+== ZDBAEB @3221 /* It's like you -want- me to hate you. Noticing more melancholy from your mediocre stature is amusing, at least! */
+== BKORGAN @3222 /* Alright, ye damned Drow. Ye pass. */
+== ZDBAEB @3223 /* With my usual panache, I assume. */
+== BKORGAN @3224 /* Ye've been sneezed at, pissed on, insulted, and survived my beer 'n' sausage farts. Ye got my respect, spell-slinger. */
+== ZDBAEB @3225 /* What a woeful pain it was at first, being subjected to your -primitive- palette of -pain.- */
+== BKORGAN @3226 /* Whaddaya mean? */
+== ZDBAEB @3227 /* Let's see. I've been disfigured, dismembered, disemboweled, dead, dishonored, depressed, diseased, and detritus. Your little disgusting ditty was... dainty. */
+== BKORGAN @3228 /* Whatever, Drow. Just do your prissy dancin' toward our enemies. Maybe they'll run away in fear or fall down laughin'. */
+== ZDBAEB @3229 /* Come, my dear Dwarf. I have -plans.- */
+EXIT
+
+// Mazzy 1
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("MAZZY")
+    See("MAZZY")
+    !StateCheck("MAZZY", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAEMazzy1","GLOBAL",0)~
+THEN ZDBAEB ZDBAEMazzy1
+@3230 /* What have we here? A light-skinned Svirfneblin? */
+DO ~SetGlobal("ZDBAEMazzy1","GLOBAL",1)~
+== ZDBAEB @3231 /* No, the skull's slightly too small. */
+== BMAZZY @3232 /* I'm a Halfling, not a Gnome. */
+== ZDBAEB @3233 /* I was just about to say that! */
+== BMAZZY @3234 /* Drow, what is your point? I tolerated the decision of our leader for us to travel together. */
+== ZDBAEB @3235 /* Oh, I was just learning more about you surface folk. Apparently, we have a lot in common - besides skin color, of course! */
+== BMAZZY @3236 /* I think I know where this is going, but tell me anyway. */
+== ZDBAEB @3237 /* I am -so very glad- you asked! */
+== ZDBAEB @3238 /* We have plenty of -common enemies!- Being around the surface for so long has taught me that it seems -everyone- hates -everything- in the Underdark! */
+== BMAZZY @3239 /* -Hate- is a -strong- term, and maybe not the right one, but I see your point. We on the surface have had -strong suspicions- toward your malignant kind! */
+== ZDBAEB @3240 /* Any guesses as to why? */
+== BMAZZY @3241 /* Have you seen Beholders? Illithids? Demons? Devils? Liches? Many of them are rich, powerful, ugly-looking things that seem to be fighting amongst themselves for the chance to take over the surface as tyrants and puppet masters! */
+== ZDBAEB @3242 /* When you put it that way my dear Mazzy, I think we'll get along -just fine.- */
+== BMAZZY @3243 /* Just remember, BAELOTH: I am -not- your puppet! */
+== ZDBAEB @3244 /* No, but for now we're partners. Let's go cull the Underdark herd - together. Ready when you are! */
+EXIT
+
+// Minsc 1
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("MINSC")
+    See("MINSC")
+    !StateCheck("MINSC", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAEMinsc1","GLOBAL",0)~
+THEN BMINSC ZDBAEMinsc1
+@3261 /* Boo sniffs the -evil- in the air around you, Drow, but he doesn't want to attack! I am confused! Explain this bewitchment! */
+DO ~SetGlobal("ZDBAEMinsc1","GLOBAL",1)~
+== ZDBAEB @3262 /* I assure you your hamster is downright -delighted- to be entertained by the best in the business! */
+== BMINSC @3263 /* But how do you explain Boo wanting to dance? */
+== ZDBAEB @3264 /* Your rodent is right in wanting to revel around me. Delight is my desire and gladiatorial glee my goal. */
+== BMINSC @3265 /* But why is my hamster dancing? */
+== ZDBAEB @3266 /* My skin secretes a scent sweet to the small creatures like him. I assumed it as an anomaly. */
+== BMINSC @3267 /* Well, so long as it doesn't prevent us from fighting the evil we need to fight, I think it's fine. */
+== BMINSC @3268 /* Come here, Boo! I need to teach you words to sing with your dance! Ha ha! */
+== ZDBAEB @3269 /* This seems like a very personal priority and I would prefer a -private- performance with the pair of you. */
+== BMINSC @3270 /* Ha ha! Minsc and Boo shall slay evil and sing and dance happily together! */
+EXIT
+
+// Nalia 1
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("NALIA")
+    See("NALIA")
+    !StateCheck("NALIA", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAENalia1","GLOBAL",0)~
+THEN ZDBAEB ZDBAENalia1
+@3271 /* Nalia, what's nagged me about you is that you don't seem to know how to -rule!- I thought you were a noble! */
+DO ~SetGlobal("ZDBAENalia1","GLOBAL",1)~
+== BNALIA @3272 /* Well, I am. I'm just not sure I -enjoy- being one. */
+== ZDBAEB @3273 /* How can you hate having others be legally liable to wait on you and do all the menial deeds you'd prefer to defer? */
+== BNALIA @3274 /* Day after day I see injustices in the world. The poor walk miles to get food while the rich walk miles to get rid of the food they ate so they don't get too fat. */
+== ZDBAEB @3275 /* So you say. */
+== BNALIA @3276 /* But can't you see the painful inequality here? */
+== ZDBAEB @3277 /* My precious, naive Nalia, let me educate your noble noggin in the ways of the world. You assume asininely that all lives are of equal worth. */
+== BNALIA @3278 /* But aren't we all born under the sun? Can we truly trade one life for another so easily? */
+== ZDBAEB @3279 /* Don't understand me, my dear: Even the most vulnerable vessel has value if used properly. -Someone- is providing the bread for all the circus goers! */
+== BNALIA @3280 /* All life has value? I never thought I'd hear -that- from a Drow! */
+== ZDBAEB @3281 /* Oh, -trust- me my dear. Surely, a god has more merit than a gauth or a gibberling, and a man is mightier than an ant but meeker than a dragon - a typical man, that is. */
+== BNALIA @3282 /* So you're saying all life has value and everyone is just playing their parts? */
+== ZDBAEB @3283 /* Aye? */
+== ZDBAEB @3284 /* But there's one triumphant truth in -all- life: Greater power -always- wins. That's why it is -so satisfying- to see a superior species struggle when it is undone by an underdog. */
+EXIT
+
+// Neera 1
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("NEERA")
+    See("NEERA")
+    !StateCheck("NEERA", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAENeera1","GLOBAL",0)~
+THEN ZDBAEB ZDBAENeera1
+@3312 /* Neera, sometimes I envy you. */
+DO ~SetGlobal("ZDBAENeera1","GLOBAL",1)~
+== BNEERA @3313 /* Me? Why? Is it my pink hair and inability to grow a beard? */
+== ZDBAEB @3314 /* No, no. Nothing that trite. Your affinity for Wild Magic is admirable. */
+== BNEERA @3315 /* Really? Because much of the time people around me leave me feeling really, really sorry that this tangled strand of the Weave chose me! */
+== ZDBAEB @3316 /* That's -exactly- why sometimes I envy you. Your magic is inherently -chaotic.- Every 'mistake' in your casting - your positioning, your timing, your choice of spells - has an inherent layer of plausible deniability. */
+== BNEERA @3317 /* Are you saying Wild Magic is -good- for me? Because you'd probably be the first! */
+== ZDBAEB @3318 /* Whether Wild Magic is good for you is debatable, but the fact that you cannot entirely control your powers means that some 'accidents' can be staged and fewer people can blame you directly for them. It's like adding an extra roll of the dice to every spell you cast instead of just picking the result you want. */
+== BNEERA @3319 /* You mean bluffing with my spellcasting? That's... Huh. I don't know how I should say this. */
+== ZDBAEB @3320 /* Then don't. You know enough already. */
+EXIT
+
+// Rasaad 1
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("RASAAD")
+    See("RASAAD")
+    !StateCheck("RASAAD", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAERasaad1","GLOBAL",0)~
+THEN BRASAAD ZDBAERasaad1
+@3321 /* Why do you look at me so curiously, Baeloth? */
+DO ~SetGlobal("ZDBAERasaad1","GLOBAL",1)~
+== ZDBAEB @3322 /* I. Don't. Get. You. */
+== BRASAAD @3323 /* What do you mean? */
+== ZDBAEB @3324 /* You prance around nearly naked with - at most - a modicum of magical might manifest. However do you handle yourself and -live?- */
+== BRASAAD @3325 /* You are not the first to ask such a question. While my monastic training was never intended to make me a wizard, I learned martial arts well enough that many of my feats are preternatural or even seemingly supernatural in origin. */
+== ZDBAEB @3275 /* So you say. */
+== BRASAAD @3326 /* Why are you surprised? */
+== ZDBAEB @3327 /* My research revealed - and rightly so - that living so scantily clad is, to use an aphorism from the Underdark - roughly translated - "asking for a smacking." By my counts, you should be dismembered, dead, disintegrated, disillusioned, depressed, or at the very least, discouraged! Yet, here you are, determined! */
+== BRASAAD@3328 /*  What does your research about the Underdark reveal about the attitude of, "Try harder?" */
+== ZDBAEB @3329 /* Eloquence and efficiency are the antithesis of effort in execution. Trying is for training. */
+== BRASAAD @3330 /* Are you saying that I am disadvantaged because I have trained more diligently and put forth a more maximal effort than you to master your innate magical powers? */
+== ZDBAEB @3331 /* An interesting insight, but not inherently. No, you straddle the gap between the mundane and the magical, but lack the sorcerous skills of a caster and the warrior's well-armed and well-armored ways. */
+== BRASAAD @3332 /* Ah, now I understand you. I confuse you because my monastic training makes me seem like a paradox. */
+== ZDBAEB @3333 /* Precisely my point! */
+== BRASAAD @3334 /* Well, I shall consider ways to make my superior feats of athleticism and acrobatics acceptable to us - and any audience we aim to impress. */
+== ZDBAEB @3335 /* Your accentuation excites me. Perhaps I shall accept you as my apprentice - at least in all things auditory. */
+== BRASAAD @3336 /* I thank you for your offer, Baeloth, but I shall follow my own path for now. */
+EXIT
+
+// Valygar 1
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("VALYGAR")
+    See("VALYGAR")
+    !StateCheck("VALYGAR", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAEValygar1","GLOBAL",0)~
+THEN BVALYGA ZDBAEValygar1
+@3337 /* Drow, your very presence in this group offends me! You are birthed into evil, and I sense magical talent in your blood! */
+DO ~SetGlobal("ZDBAEValygar1","GLOBAL",1)~
+== ZDBAEB @3338 /* Ooh! Tell me something I haven't heard! */
+== BVALYGA @3339 /* What? */
+== ZDBAEB @3340 /* Look, Valygar, I get you. You think that magic is like farting: It's so, -so- bad when others do it, but if you do it, it's -totally- justified! */
+== BVALYGA @3341 /* That is not at ALL what I said! */
+== ZDBAEB @3342 /* I've heard your whimperings and murmurings about how magic is vile and relying on magic makes you weak. */
+== BVALYGA @3343 /* 'Whimperings?' What am I, your dog? */
+== ZDBAEB @3344 /* Let me offer you the -majority- opinion in this case: This -world- is made by and from magic. Your very -life- has been touched by the supernatural, and your mind -twisted- it into evil! */
+== BVALYGA @3345 /* What spells have I cast- */
+== ZDBAEB @3346 /* Spells? Did I -claim- you were a caster, Valygar? No? Good! */
+== ZDBAEB @3347 /* You want to fight casters? You need better -magical- defenses to survive, lest you become a chicken, a mind slave, or a pile of ash! You need better -magical- weaponry to hurt them -and- their minions! And I don't think you want to wait -weeks- to recover from a fight when you could have some caster use a healing spell on you! */
+== ZDBAEB @3348 /* Life is a magical arms race, Valygar. The only way to avoid it is to stay out of it and hope your side wins. */
+== BVALYGA @3349 /* <Valygar's face contorts into one of hesitant resignation.> */
+== BVALYGA @3350 /* I... see. Do not think my stance will change so drastically nor as soon as you hope, Drow! */
+== ZDBAEB @3351 /* Life is -quite- the expedient teacher! */
+EXIT
+
+// Viconia 1
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("VICONIA")
+    See("VICONIA")
+    !StateCheck("VICONIA", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAEViconia1","GLOBAL",0)~
+THEN BVICONI ZDBAEViconia1
+@3352 /* What are you scheming now, -male?- */
+DO ~SetGlobal("ZDBAEViconia1","GLOBAL",1)~
+== ZDBAEB @3353 /* The sutures from your staking haven't fully healed. I'm -so sorry- for that set of unfortunate circumstances. */
+== BVICONI @3354 /* Your tone sounds mocking. It's hard for me to believe you're sincere. */
+== ZDBAEB @3355 /* We've each been usurped from the Underdark, forced to flee to the surface for sustenance. We've thrived in ways those underground thought we never would! */
+== BVICONI @3356 /* Do you have a point beyond mere conversation? */
+== ZDBAEB @3357 /* Certainly, my inquisitive one: The Drow of the Underdark seemed stifled in their lifestyle. Expansion to the surface is a logical leap of progress. I suspect it would shrink their desire to be bound in age-old blood feuds. */
+== BVICONI @3358 /* More Drow living well on the surface? Have you forgotten how much we have been assaulted by others just because of who we are by birth? */
+== ZDBAEB @3359 /* Not one bit. I've been beaten, burned, shipwrecked, stoned, buried, and endured excrutiations far -beyond- what anyone should -ever- aim to endure! */
+== BVICONI @3360 /* What's your point? */
+== ZDBAEB @3361 /* If those in the Underdark could quit bickering long enough to leave their low-light dwellings, they could step outside and find a -new- world to dominate! We are well-versed in age-old feuds: We'd merely be -finishing- what our progenitors' prejudices began ages ago! */
+== BVICONI @3362 /* I'm not here to make even -more- enemies for me to amuse you, even if it helps our race somehow in a later generation! */
+== ZDBAEB @3363 /* Suit yourself. */
+EXIT
+
+// Wilson Banter (BWILSON?) 1
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("WILSON")
+    See("WILSON")
+    !StateCheck("WILSON", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAEWILSON1","GLOBAL",0)~
+THEN ZDBAEB ZDBAEWILSON1
+@3364 /* I've let slip the dogs of war and heard of bear baiting, but a friendly bear? What shall I do with you? */
+DO ~SetGlobal("ZDBAEWILSON1","GLOBAL",1)~
+== WILSON @3365 /* <Wilson snorfles.> */
+== ZDBAEB @3366 /* You're akin to a Dire Dog with an enormous appetite and fewer oral displays of affection. */
+== WILSON @3367 /* <Wilson snorts then snorts again.> */
+== ZDBAEB @3368 /* An obvious implementation of your unique ursine ability would be to properly prepare you as a pit fighter. Surely, you could satisfactorily shoulder such a shift! */
+== WILSON @3369 /* <Wilson whines.> */
+== ZDBAEB @3370 /* Worry not, my warrior. We can call you, "The Ursine Usurper!" Eating opponents' innards is optional, obviously, however ostentatious. */
+EXIT
+
+// Yoshimo 1
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("YOSHIMO")
+    See("YOSHIMO")
+    !StateCheck("YOSHIMO", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAEYoshimo1","GLOBAL",0)~
+THEN ZDBAEB ZDBAEYoshimo1
+@3371 /* Ooh! What wondrous delights did you bring us for dinner? */
+DO ~SetGlobal("ZDBAEYoshimo1","GLOBAL",1)~
+== BYOSHIM @3372 /* What do you mean, Baeloth? */
+== ZDBAEB @3373 /* Look at all those tricky toy traps you use! Did you get us some bear? Behir? Beholder? */
+== BYOSHIM @3374 /* I see, Baeloth. */
+== ZDBAEB @3375 /* I do, too. */
+== BYOSHIM @3376 /* But, no. I don't normally try to catch animals or creatures of the night to eat. */
+== ZDBAEB @3377 /* What would you prefer to trigger your traps? */
+== BYOSHIM @3378 /* I'm a bounty hunter. I catch men. */
+== ZDBAEB @3379 /* A hopeless romantic? */
+== BYOSHIM @3380 /* <Yoshimo shakes his head.> */
+== ZDBAEB @3381 /* Ah, so you're one of -those- mancatchers! */
+== BYOSHIM @3360 /* What's your point? */
+== ZDBAEB @3382 /* Well, as a purveyor of violent entertainment throughout the Underdark, Sword Coast, and beyond in the form of THE BLACK PITS, I need a notable number of neutralized nobodies to fatten the ranks of our gladiators. You seem like my man for the mission. */
+== BYOSHIM @3383 /* Duels to the death, I assume? */
+== ZDBAEB @3384 /* Oh, yes! -Evisceration- makes for the most -electrifying- entertainment! */
+== BYOSHIM @3385 /* Then I charge extra because of the complications. Bringing criminals to justice is one thing, but trapping men knowing they'll likely die fighting each other? Well, I have a reputation to uphold! */
+== ZDBAEB @3386 /* You play the part of a professional. How delightful. */
+== BYOSHIM @3387 /* What are your terms? */
+== ZDBAEB @3388 /* <Baeloth grins at Yoshimo.> */
+== ZDBAEB @3389 /* Let's deal, my friend. */
+EXIT
+
+// Aerie 2
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("AERIE")
+    See("AERIE")
+    !StateCheck("AERIE", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAEAerie1","GLOBAL",1)
+    Global("ZDBAEAerie2","GLOBAL",0)~
+THEN ZDBAEB ZDBAEAerie2
+@3010 /* Ah, my sweet adjutant Aerie. You seemed shocked we would supplement one another! */
+DO ~SetGlobal("ZDBAEAerie2","GLOBAL",1)~
+== BAERIE @3011 /* Well, yes. You're a Drow and- */
+== ZDBAEB @3012 /* -and you, my angelic aspirant, are an Avariel. We are, not so different, you and I. */
+== BAERIE @3013 /* Are you saying that because of my wings? */
+== ZDBAEB @3014 /* Only minorly, my dear. I heard you were a slave, stolen from your home at a still early seniority. */
+== BAERIE @3015 /* Well, yes. The circus took me in, even if they took me as a slave. Life in the circus troupe was cruel and I wasn't given enough space to spread my wings, so they just stopped working little by little. */
+== ZDBAEB @3016 /* Aw, what a plainly pitiful past - but I don't blame you for the blight that befell you. */
+== BAERIE @3017 /* Thanks... I think. */
+== BAERIE  @3018 /* What about you? */
+== ZDBAEB @3019 /* I sort of ran a circus, acted as its combat coordinator and commentator, and I was contemptuously canned when I bet it all on black. */
+== BAERIE @3020 /* You were a gladiator? */
+== ZDBAEB @3021 /* By necessity and -not- by need, my endeared darling. I was part of a game that was rigged to always win. Surely you see the pain of losing a 'foolproof' game. The circus is similar, or so I hear. */
+== BAERIE @3022 /* Maybe my circus was kinder than others. People did sometimes win the games. */
+== BAERIE @3023 /* Winning the ring toss was the hardest. I'm not sure if people were -meant- to win that. */
+== ZDBAEB @3024 /* My dear, imagine if every time someone won the ring toss, one of your circus workers died. What a wonderful spectacle of shame that would be! */
+EXIT
+
+// Cernd 2
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("CERND")
+    See("CERND")
+    !StateCheck("CERND", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAECernd1","GLOBAL", 1)
+    Global("ZDBAECernd2","GLOBAL",0)~
+THEN CERNDJ ZDBAECernd1
+@3058 /* Baeloth, I have been meditating on what you said about nature in the Underdark.  How do you perceive nature on the surface? */
+DO ~SetGlobal("ZDBAECernd2","GLOBAL",1)~
+== ZDBAEB @3059 /* Nature is naughty, my darling Druid! 'Balance' is but a brittle breath amidst a bloody battle! Each canyon is a coliseum and every forest a fight! */
+== ZDBAEB @3060 /* Fauna's fights are fairly forward: Predators and prey proliferate in each other's absence. */
+== ZDBAEB @3061 /* Flora is fond of struggling in a slow death race to the top! */
+== CERNDJ @3062 /* What about the serenity of nature? */
+== ZDBAEB @3063 /* This 'serenity' is simply a short stop in the suffering. "Out of sight means out of mind!" */
+== ZDBAEB @3064 /* To call nature 'balanced' and 'orderly' is to call pit fighting 'fair.' These systems are rarely fair and mostly rigged for the enjoyment of the masses! */
+== ZDBAEB @3065 /* Besides, didn't you rip and tear as a bear or fume fire on your foe? Where was the serenity then?  Hmm? */
+== CERNDJ @3066 /* I did what I did to survive and preserve what I believe to be right. */
+== ZDBAEB @3067 /* Exactly! Nature is naught but a veneer for romanticized ransacking! At least my Black Pits are honest about their intent - violent delights made for the paying masses! */
+== CERNDJ @3068 /* What you described is simply called 'survival of the fittest,' but it is wisdom nonetheless. */
+== ZDBAEB @3069 /* Of course, my darling Druid! */
+EXIT
+
+/* Edwin 2 - The Age-Old Sorcerer vs Mage rivalry */
+CHAIN
+IF ~InParty("ZDBAEB")
+    See("ZDBAEB")
+    Gender("Edwin",MALE)
+    !StateCheck("EDWIN", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAEEdwin1","GLOBAL",1)
+    Global("ZDBAEEdwin2","GLOBAL",0)~
+THEN ZDBAEB ZDBAEEdwin2
+~How fare your fumbling forays into the arcane arts?~
+DO ~SetGlobal("ZDBAEEdwin2","GLOBAL",1)~
+== BEDWIN ~Unlike you, drow, my ability knows no bounds. Magical mastery demands intellect. A quality you patently lack.~
+== ZDBAEB ~I need no brittle books nor banal memorization to bend the weave. *My* magic is instinct itself!~
+== BEDWIN ~What you call instinct is mere theatrics. Impressive to fools alone.~
+== ZDBAEB ~Such splendid spluttering from bargain-bin Baeloth himself.~
+EXIT
+
+// Jan 2
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("JAN")
+    See("JAN")
+    !StateCheck("JAN", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAEJan2","GLOBAL",0)~
+THEN ZDBAEB ZDBAEJan2
+@3392 /* This one time, a human, friend of the family you see, a turnip artist by trade crafted a Jansen family crest. As you might have guessed Aunt Petunia chased him out of the house with her rake and smashed the it to pieces even though it depicted a lovely turnip pair in a loving embrace and when you pulled the string ... Oh, Baeloth is looking at me again, maybe later.~ */
+DO ~SetGlobal("ZDBAEJan2","GLOBAL",1)~
+== ZDBAEB @3393 /* I've got my eye on you my light-skinned Svirfneblin. */
+EXIT
+
+// Keldorn 2
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -395,6 +693,110 @@ DO ~SetGlobal("ZDBAEKeldorn2","GLOBAL",1)~
 == ZDBAEB @3181 /* Wise words, my prudent paladin. */
 EXIT
 
+// Mazzy 2
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("MAZZY")
+    See("MAZZY")
+    !StateCheck("MAZZY", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAEMazzy1","GLOBAL",1)
+    Global("ZDBAEMazzy2","GLOBAL",0)~
+THEN BMAZZY ZDBAEMazzy2
+@3245 /* Drow, I noticed you meditating in my general direction. What are you pondering? Do I dare ask? */
+DO ~SetGlobal("ZDBAEMazzy2","GLOBAL",1)~
+== ZDBAEB @3246 /* Due to your determined desire to deduce what I was wondering, surely I shall share it! */
+== BMAZZY @3247 /* At the very least, I invited this. */
+== ZDBAEB @3248 /* I was musing on how wonderfully wanted the short folk - the Svirbneblin - were backstage in the Black Pits among the bigger beings. */
+== BMAZZY @3249 /* Why would you wonder this around me? */
+== ZDBAEB @3250 /* If you could smile and give into levity around me, surely we would be -wonderful- at parties! */
+== BMAZZY @3251 /* What evil depravity is this? */
+== ZDBAEB @3252 /* Nothing sensual, I assure you. The Svirfneblin were similarly celibate. */
+== BMAZZY @3253 /* Well, Drow, I am hesitant to say I am honored you think of me as something more than a mere marionette or sexual prey to be conquered. At least you possess -that- basic dignity. */
+== ZDBAEB @3254 /* That was only a -third- of the thought. */
+== BMAZZY @3255 /* And now I shall walk away, lest I hear the rest. */
+== ZDBAEB @3256 /* If you are to be the epicenter of any entertaining party endeavors, you simply -need- to know. */
+== BMAZZY @3257 /* <Mazzy rolls her eyes.> */
+== ZDBAEB @3258 /* The short ones were such a smash since they had bound bowls of beautiful food to their heads as they meandered and mingled. Guests never had to stoop to scoop! */
+== BMAZZY @3259 /* You just proved my point, -Drow.- */
+== ZDBAEB @3260 /* So, are you partial to casks of red wine? Caviar? Crackers? Whatever you deliver shall -surely- be a -delight!- */
+EXIT
+
+// Nalia 2
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("NALIA")
+    See("NALIA")
+    !StateCheck("NALIA", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAENalia1","GLOBAL",1)
+    Global("ZDBAENalia2","GLOBAL",0)~
+THEN BNALIA ZDBAENalia2
+@3285 /* Baeloth, I still don't know your stance about how I feel about the poor. So many people are against it. Even my own family has doubted me. */
+DO ~SetGlobal("ZDBAENalia2","GLOBAL",1)~
+== ZDBAEB @3286 /* Let me lay it out for you this way, my dear: You have your pets and I have mine. */
+== BNALIA @3287 /* The poor are just -pets- to you? */
+== ZDBAEB @3288 /* Yes. You throw them some food, devise them a new dwelling, clean up their waste, and feel fine for the charity that came about at your hand. */
+== ZDBAEB @3289 /* They're like darling dogs to you: They bark at you when they're cold or hot or hungry or afraid or danger draws near. */
+== ZDBAEB @3290 /* You want all the diminutive dirty peasants to praise you when big mama Noble Nalia draws near and doles out some desirable outcome like a guard dog getting a grilled steak. */
+== ZDBAEB @3291 /* You have -all- the keys to their kennels and do enough to ensure they don't depose you. If they do, their lot in life can't change much: They're poor, they're weak, and they're -absolutely adamant- about being in charge when they have nothing in their noggins but nonsensical notions! */
+== ZDBAEB @3292 /* You can -try- to change them, but -they will never be noble!- A shiny new settlement or a bigger bed won't warp them into warriors or wizards - ones you -could- and -should- be courting. */
+== BNALIA @3293 /* Wait! What? */
+== ZDBAEB @3294 /* No invading army is amply agitated by ascetic agrarians. Warriors? Wizards? They keep your home -yours.- Not some fleabag farmer. */
+== BNALIA @3295 /* But... shouldn't we try to elevate the status of the poor so they -become- the wizards and warriors you mentioned? */
+== ZDBAEB @3296 /* Perhaps, my girl. Perhaps. But at what cost? */
+== BNALIA @3297 /* It all comes down to money and priorities then, doesn't it? We can save our lands from outside invaders by just staying with the old system, or risk losing it all to pay to bring more people up from poverty and train them to be more useful to society. */
+== ZDBAEB @3298 /* Totally true, my perceptive princess! */
+== BNALIA @3299 /* Then what should I do? */
+== ZDBAEB @3300 /* -Embrace- your position! Don't be afraid that others may die. You're a noble: That's your duty and maybe your delight! */
+EXIT
+
+// Aerie 3 - Baeloth, the Underdark & the Black Pits
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("AERIE")
+    See("AERIE")
+    !StateCheck("AERIE", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAEAerie1","GLOBAL",1)
+    Global("ZDBAEAerie2","GLOBAL",1)
+    Global("ZDBAEAerie3","GLOBAL",0)~
+THEN ZDBAEB ZDBAEAerie3
+~Oooh... we have such stories amongst my people. Being underground is just not for the avariel…~ [AERIE18]
+DO ~SetGlobal("ZDBAEAerie3","GLOBAL",1)~
+== BAERIE ~The Underdark especially… I… I can't imagine living there.~
+== ZDBAEB ~Fear fetters the mind, my feeble-hearted friend. My home holds countless opportunities for the courageous and cunning.~
+== ZDBAEB ~Perhaps you would participate in my perilous - I mean perfectly pleasant - arena? It lies in shambles at present, but once rebuilt, all of the planes shall proclaim the genius of Baeloth the Entertainer.~
+== BAERIE ~N-No, thank you.~
+== ZDBAEB ~Then perhaps a petty payment would suffice? Even a prodigy like myself requires coin to construct and create.~
+== BAERIE ~I…I think this conversation is quite done.~
+== ZDBAEB ~A pity.~
+EXIT
+
+/* Edwin 3 - Enter Edwina, Stage Right */
+CHAIN
+IF ~InParty("ZDBAEB")
+    See("ZDBAEB")
+    Gender("Edwin",FEMALE)
+    !StateCheck("EDWIN", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    Global("ZDBAEEdwin3","GLOBAL",0)~
+THEN ZDBAEB ZDBAEEdwin3
+ ~My! What a marvelous metamorphosis!~
+DO ~SetGlobal("ZDBAEEdwin3","GLOBAL",1)~
+== BEDWIN ~Silence! This indignity is temporary. Entirely temporary.~
+== ZDBAEB ~Temporary, tantalizing, and terribly amusing! Does the weave respond differently when woven with your womanly wiles?~
+== BEDWIN ~I shall end you, Baeloth! Slowly, meticulously, savoring every moment of your suffering.~
+== ZDBAEB ~Even your threats sound more mellifluous now.~
+EXIT
+
+// Keldorn 3
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -422,6 +824,7 @@ DO ~SetGlobal("ZDBAEKeldorn3","GLOBAL",1)~
 == BKELDOR @3194 /* That is a good start, Baeloth. We shall talk more later about this. */
 EXIT
 
+// Keldorn 4
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -455,177 +858,7 @@ DO ~SetGlobal("ZDBAEKeldorn4","GLOBAL",1)~
 == ZDBAEB @3213 /* I could say I'm a -master- of the craft, but I prefer the title of 'Baeloth the Entertainer' and I'm not trying to argue a case like one of your attorneys or magistrates. */
 EXIT
 
-// Korgan Banter
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("KORGAN")
-    See("KORGAN")
-    !StateCheck("KORGAN", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAEKorgan1","GLOBAL",0)~
-THEN BKORGAN ZDBAEKorgan1
-@3214 /* What do -you- know about fightin', Drow? All I've seen you carry around is a prissy little stick! */
-DO ~SetGlobal("ZDBAEKorgan1","GLOBAL",1)~
-== ZDBAEB @3215 /* Aw. Did someone wake up on the wrong side of the keg? Hmm? */
-== BKORGAN @3216 /* And I've ne'er seen ye cart around no holy symbols nor spellbooks, either. It's like you dance and prance around all prissy-like magic sparks come odda yer hands! */
-== ZDBAEB @3217 /* Aw! Is the short one jealous that he can't kill anything he'd please with a well-placed sneeze? */
-== BKORGAN @3218 /* I sneezed all over ye earlier. */
-== ZDBAEB @3219 /* It was downright -disgusting!- Rightfully -revolting!- */
-== BKORGAN @3220 /* Give it time, Drow. It'll still kill ye. */
-== ZDBAEB @3221 /* It's like you -want- me to hate you. Noticing more melancholy from your mediocre stature is amusing, at least! */
-== BKORGAN @3222 /* Alright, ye damned Drow. Ye pass. */
-== ZDBAEB @3223 /* With my usual panache, I assume. */
-== BKORGAN @3224 /* Ye've been sneezed at, pissed on, insulted, and survived my beer 'n' sausage farts. Ye got my respect, spell-slinger. */
-== ZDBAEB @3225 /* What a woeful pain it was at first, being subjected to your -primitive- palette of -pain.- */
-== BKORGAN @3226 /* Whaddaya mean? */
-== ZDBAEB @3227 /* Let's see. I've been disfigured, dismembered, disemboweled, dead, dishonored, depressed, diseased, and detritus. Your little disgusting ditty was... dainty. */
-== BKORGAN @3228 /* Whatever, Drow. Just do your prissy dancin' toward our enemies. Maybe they'll run away in fear or fall down laughin'. */
-== ZDBAEB @3229 /* Come, my dear Dwarf. I have -plans.- */
-EXIT
-
-// Mazzy Banter
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("MAZZY")
-    See("MAZZY")
-    !StateCheck("MAZZY", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAEMazzy1","GLOBAL",0)~
-THEN ZDBAEB ZDBAEMazzy1
-@3230 /* What have we here? A light-skinned Svirfneblin? */
-DO ~SetGlobal("ZDBAEMazzy1","GLOBAL",1)~
-== ZDBAEB @3231 /* No, the skull's slightly too small. */
-== BMAZZY @3232 /* I'm a Halfling, not a Gnome. */
-== ZDBAEB @3233 /* I was just about to say that! */
-== BMAZZY @3234 /* Drow, what is your point? I tolerated the decision of our leader for us to travel together. */
-== ZDBAEB @3235 /* Oh, I was just learning more about you surface folk. Apparently, we have a lot in common - besides skin color, of course! */
-== BMAZZY @3236 /* I think I know where this is going, but tell me anyway. */
-== ZDBAEB @3237 /* I am -so very glad- you asked! */
-== ZDBAEB @3238 /* We have plenty of -common enemies!- Being around the surface for so long has taught me that it seems -everyone- hates -everything- in the Underdark! */
-== BMAZZY @3239 /* -Hate- is a -strong- term, and maybe not the right one, but I see your point. We on the surface have had -strong suspicions- toward your malignant kind! */
-== ZDBAEB @3240 /* Any guesses as to why? */
-== BMAZZY @3241 /* Have you seen Beholders? Illithids? Demons? Devils? Liches? Many of them are rich, powerful, ugly-looking things that seem to be fighting amongst themselves for the chance to take over the surface as tyrants and puppet masters! */
-== ZDBAEB @3242 /* When you put it that way my dear Mazzy, I think we'll get along -just fine.- */
-== BMAZZY @3243 /* Just remember, BAELOTH: I am -not- your puppet! */
-== ZDBAEB @3244 /* No, but for now we're partners. Let's go cull the Underdark herd - together. Ready when you are! */
-EXIT
-
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("MAZZY")
-    See("MAZZY")
-    !StateCheck("MAZZY", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAEMazzy1","GLOBAL",1)
-    Global("ZDBAEMazzy2","GLOBAL",0)~
-THEN BMAZZY ZDBAEMazzy2
-@3245 /* Drow, I noticed you meditating in my general direction. What are you pondering? Do I dare ask? */
-DO ~SetGlobal("ZDBAEMazzy2","GLOBAL",1)~
-== ZDBAEB @3246 /* Due to your determined desire to deduce what I was wondering, surely I shall share it! */
-== BMAZZY @3247 /* At the very least, I invited this. */
-== ZDBAEB @3248 /* I was musing on how wonderfully wanted the short folk - the Svirbneblin - were backstage in the Black Pits among the bigger beings. */
-== BMAZZY @3249 /* Why would you wonder this around me? */
-== ZDBAEB @3250 /* If you could smile and give into levity around me, surely we would be -wonderful- at parties! */
-== BMAZZY @3251 /* What evil depravity is this? */
-== ZDBAEB @3252 /* Nothing sensual, I assure you. The Svirfneblin were similarly celibate. */
-== BMAZZY @3253 /* Well, Drow, I am hesitant to say I am honored you think of me as something more than a mere marionette or sexual prey to be conquered. At least you possess -that- basic dignity. */
-== ZDBAEB @3254 /* That was only a -third- of the thought. */
-== BMAZZY @3255 /* And now I shall walk away, lest I hear the rest. */
-== ZDBAEB @3256 /* If you are to be the epicenter of any entertaining party endeavors, you simply -need- to know. */
-== BMAZZY @3257 /* <Mazzy rolls her eyes.> */
-== ZDBAEB @3258 /* The short ones were such a smash since they had bound bowls of beautiful food to their heads as they meandered and mingled. Guests never had to stoop to scoop! */
-== BMAZZY @3259 /* You just proved my point, -Drow.- */
-== ZDBAEB @3260 /* So, are you partial to casks of red wine? Caviar? Crackers? Whatever you deliver shall -surely- be a -delight!- */
-EXIT
-
-// Minsc Banter
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("MINSC")
-    See("MINSC")
-    !StateCheck("MINSC", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAEMinsc1","GLOBAL",0)~
-THEN BMINSC ZDBAEMinsc1
-@3261 /* Boo sniffs the -evil- in the air around you, Drow, but he doesn't want to attack! I am confused! Explain this bewitchment! */
-DO ~SetGlobal("ZDBAEMinsc1","GLOBAL",1)~
-== ZDBAEB @3262 /* I assure you your hamster is downright -delighted- to be entertained by the best in the business! */
-== BMINSC @3263 /* But how do you explain Boo wanting to dance? */
-== ZDBAEB @3264 /* Your rodent is right in wanting to revel around me. Delight is my desire and gladiatorial glee my goal. */
-== BMINSC @3265 /* But why is my hamster dancing? */
-== ZDBAEB @3266 /* My skin secretes a scent sweet to the small creatures like him. I assumed it as an anomaly. */
-== BMINSC @3267 /* Well, so long as it doesn't prevent us from fighting the evil we need to fight, I think it's fine. */
-== BMINSC @3268 /* Come here, Boo! I need to teach you words to sing with your dance! Ha ha! */
-== ZDBAEB @3269 /* This seems like a very personal priority and I would prefer a -private- performance with the pair of you. */
-== BMINSC @3270 /* Ha ha! Minsc and Boo shall slay evil and sing and dance happily together! */
-EXIT
-
-// Nalia Banter
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("NALIA")
-    See("NALIA")
-    !StateCheck("NALIA", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAENalia1","GLOBAL",0)~
-THEN ZDBAEB ZDBAENalia1
-@3271 /* Nalia, what's nagged me about you is that you don't seem to know how to -rule!- I thought you were a noble! */
-DO ~SetGlobal("ZDBAENalia1","GLOBAL",1)~
-== BNALIA @3272 /* Well, I am. I'm just not sure I -enjoy- being one. */
-== ZDBAEB @3273 /* How can you hate having others be legally liable to wait on you and do all the menial deeds you'd prefer to defer? */
-== BNALIA @3274 /* Day after day I see injustices in the world. The poor walk miles to get food while the rich walk miles to get rid of the food they ate so they don't get too fat. */
-== ZDBAEB @3275 /* So you say. */
-== BNALIA @3276 /* But can't you see the painful inequality here? */
-== ZDBAEB @3277 /* My precious, naive Nalia, let me educate your noble noggin in the ways of the world. You assume asininely that all lives are of equal worth. */
-== BNALIA @3278 /* But aren't we all born under the sun? Can we truly trade one life for another so easily? */
-== ZDBAEB @3279 /* Don't understand me, my dear: Even the most vulnerable vessel has value if used properly. -Someone- is providing the bread for all the circus goers! */
-== BNALIA @3280 /* All life has value? I never thought I'd hear -that- from a Drow! */
-== ZDBAEB @3281 /* Oh, -trust- me my dear. Surely, a god has more merit than a gauth or a gibberling, and a man is mightier than an ant but meeker than a dragon - a typical man, that is. */
-== BNALIA @3282 /* So you're saying all life has value and everyone is just playing their parts? */
-== ZDBAEB @3283 /* Aye? */
-== ZDBAEB @3284 /* But there's one triumphant truth in -all- life: Greater power -always- wins. That's why it is -so satisfying- to see a superior species struggle when it is undone by an underdog. */
-EXIT
-
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("NALIA")
-    See("NALIA")
-    !StateCheck("NALIA", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAENalia1","GLOBAL",1)
-    Global("ZDBAENalia2","GLOBAL",0)~
-THEN BNALIA ZDBAENalia2
-@3285 /* Baeloth, I still don't know your stance about how I feel about the poor. So many people are against it. Even my own family has doubted me. */
-DO ~SetGlobal("ZDBAENalia2","GLOBAL",1)~
-== ZDBAEB @3286 /* Let me lay it out for you this way, my dear: You have your pets and I have mine. */
-== BNALIA @3287 /* The poor are just -pets- to you? */
-== ZDBAEB @3288 /* Yes. You throw them some food, devise them a new dwelling, clean up their waste, and feel fine for the charity that came about at your hand. */
-== ZDBAEB @3289 /* They're like darling dogs to you: They bark at you when they're cold or hot or hungry or afraid or danger draws near. */
-== ZDBAEB @3290 /* You want all the diminutive dirty peasants to praise you when big mama Noble Nalia draws near and doles out some desirable outcome like a guard dog getting a grilled steak. */
-== ZDBAEB @3291 /* You have -all- the keys to their kennels and do enough to ensure they don't depose you. If they do, their lot in life can't change much: They're poor, they're weak, and they're -absolutely adamant- about being in charge when they have nothing in their noggins but nonsensical notions! */
-== ZDBAEB @3292 /* You can -try- to change them, but -they will never be noble!- A shiny new settlement or a bigger bed won't warp them into warriors or wizards - ones you -could- and -should- be courting. */
-== BNALIA @3293 /* Wait! What? */
-== ZDBAEB @3294 /* No invading army is amply agitated by ascetic agrarians. Warriors? Wizards? They keep your home -yours.- Not some fleabag farmer. */
-== BNALIA @3295 /* But... shouldn't we try to elevate the status of the poor so they -become- the wizards and warriors you mentioned? */
-== ZDBAEB @3296 /* Perhaps, my girl. Perhaps. But at what cost? */
-== BNALIA @3297 /* It all comes down to money and priorities then, doesn't it? We can save our lands from outside invaders by just staying with the old system, or risk losing it all to pay to bring more people up from poverty and train them to be more useful to society. */
-== ZDBAEB @3298 /* Totally true, my perceptive princess! */
-== BNALIA @3299 /* Then what should I do? */
-== ZDBAEB @3300 /* -Embrace- your position! Don't be afraid that others may die. You're a noble: That's your duty and maybe your delight! */
-EXIT
-
+// Nalia 3
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -649,168 +882,4 @@ DO ~SetGlobal("ZDBAENalia3","GLOBAL",1)~
 == ZDBAEB @3309 /* Use your noble noggin! What does your nation need now and later? */
 == BNALIA @3310 /* Thanks, but how do you know all this? */
 == ZDBAEB @3311 /* Being Baeloth the Entertainer meant my domain was a convert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain. */ /* Being Baeloth the Entertainer meant my domain was a covert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain. */
-EXIT
-
-// Neera Banter
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("NEERA")
-    See("NEERA")
-    !StateCheck("NEERA", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAENeera1","GLOBAL",0)~
-THEN ZDBAEB ZDBAENeera1
-@3312 /* Neera, sometimes I envy you. */
-DO ~SetGlobal("ZDBAENeera1","GLOBAL",1)~
-== BNEERA @3313 /* Me? Why? Is it my pink hair and inability to grow a beard? */
-== ZDBAEB @3314 /* No, no. Nothing that trite. Your affinity for Wild Magic is admirable. */
-== BNEERA @3315 /* Really? Because much of the time people around me leave me feeling really, really sorry that this tangled strand of the Weave chose me! */
-== ZDBAEB @3316 /* That's -exactly- why sometimes I envy you. Your magic is inherently -chaotic.- Every 'mistake' in your casting - your positioning, your timing, your choice of spells - has an inherent layer of plausible deniability. */
-== BNEERA @3317 /* Are you saying Wild Magic is -good- for me? Because you'd probably be the first! */
-== ZDBAEB @3318 /* Whether Wild Magic is good for you is debatable, but the fact that you cannot entirely control your powers means that some 'accidents' can be staged and fewer people can blame you directly for them. It's like adding an extra roll of the dice to every spell you cast instead of just picking the result you want. */
-== BNEERA @3319 /* You mean bluffing with my spellcasting? That's... Huh. I don't know how I should say this. */
-== ZDBAEB @3320 /* Then don't. You know enough already. */
-EXIT
-
-// Rasaad Banter
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("RASAAD")
-    See("RASAAD")
-    !StateCheck("RASAAD", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAERasaad1","GLOBAL",0)~
-THEN BRASAAD ZDBAERasaad1
-@3321 /* Why do you look at me so curiously, Baeloth? */
-DO ~SetGlobal("ZDBAERasaad1","GLOBAL",1)~
-== ZDBAEB @3322 /* I. Don't. Get. You. */
-== BRASAAD @3323 /* What do you mean? */
-== ZDBAEB @3324 /* You prance around nearly naked with - at most - a modicum of magical might manifest. However do you handle yourself and -live?- */
-== BRASAAD @3325 /* You are not the first to ask such a question. While my monastic training was never intended to make me a wizard, I learned martial arts well enough that many of my feats are preternatural or even seemingly supernatural in origin. */
-== ZDBAEB @3275 /* So you say. */
-== BRASAAD @3326 /* Why are you surprised? */
-== ZDBAEB @3327 /* My research revealed - and rightly so - that living so scantily clad is, to use an aphorism from the Underdark - roughly translated - "asking for a smacking." By my counts, you should be dismembered, dead, disintegrated, disillusioned, depressed, or at the very least, discouraged! Yet, here you are, determined! */
-== BRASAAD@3328 /*  What does your research about the Underdark reveal about the attitude of, "Try harder?" */
-== ZDBAEB @3329 /* Eloquence and efficiency are the antithesis of effort in execution. Trying is for training. */
-== BRASAAD @3330 /* Are you saying that I am disadvantaged because I have trained more diligently and put forth a more maximal effort than you to master your innate magical powers? */
-== ZDBAEB @3331 /* An interesting insight, but not inherently. No, you straddle the gap between the mundane and the magical, but lack the sorcerous skills of a caster and the warrior's well-armed and well-armored ways. */
-== BRASAAD @3332 /* Ah, now I understand you. I confuse you because my monastic training makes me seem like a paradox. */
-== ZDBAEB @3333 /* Precisely my point! */
-== BRASAAD @3334 /* Well, I shall consider ways to make my superior feats of athleticism and acrobatics acceptable to us - and any audience we aim to impress. */
-== ZDBAEB @3335 /* Your accentuation excites me. Perhaps I shall accept you as my apprentice - at least in all things auditory. */
-== BRASAAD @3336 /* I thank you for your offer, Baeloth, but I shall follow my own path for now. */
-EXIT
-
-// Valygar Banter
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("VALYGAR")
-    See("VALYGAR")
-    !StateCheck("VALYGAR", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAEValygar1","GLOBAL",0)~
-THEN BVALYGA ZDBAEValygar1
-@3337 /* Drow, your very presence in this group offends me! You are birthed into evil, and I sense magical talent in your blood! */
-DO ~SetGlobal("ZDBAEValygar1","GLOBAL",1)~
-== ZDBAEB @3338 /* Ooh! Tell me something I haven't heard! */
-== BVALYGA @3339 /* What? */
-== ZDBAEB @3340 /* Look, Valygar, I get you. You think that magic is like farting: It's so, -so- bad when others do it, but if you do it, it's -totally- justified! */
-== BVALYGA @3341 /* That is not at ALL what I said! */
-== ZDBAEB @3342 /* I've heard your whimperings and murmurings about how magic is vile and relying on magic makes you weak. */
-== BVALYGA @3343 /* 'Whimperings?' What am I, your dog? */
-== ZDBAEB @3344 /* Let me offer you the -majority- opinion in this case: This -world- is made by and from magic. Your very -life- has been touched by the supernatural, and your mind -twisted- it into evil! */
-== BVALYGA @3345 /* What spells have I cast- */
-== ZDBAEB @3346 /* Spells? Did I -claim- you were a caster, Valygar? No? Good! */
-== ZDBAEB @3347 /* You want to fight casters? You need better -magical- defenses to survive, lest you become a chicken, a mind slave, or a pile of ash! You need better -magical- weaponry to hurt them -and- their minions! And I don't think you want to wait -weeks- to recover from a fight when you could have some caster use a healing spell on you! */
-== ZDBAEB @3348 /* Life is a magical arms race, Valygar. The only way to avoid it is to stay out of it and hope your side wins. */
-== BVALYGA @3349 /* <Valygar's face contorts into one of hesitant resignation.> */
-== BVALYGA @3350 /* I... see. Do not think my stance will change so drastically nor as soon as you hope, Drow! */
-== ZDBAEB @3351 /* Life is -quite- the expedient teacher! */
-EXIT
-
-// Viconia Banter
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("VICONIA")
-    See("VICONIA")
-    !StateCheck("VICONIA", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAEViconia1","GLOBAL",0)~
-THEN BVICONI ZDBAEViconia1
-@3352 /* What are you scheming now, -male?- */
-DO ~SetGlobal("ZDBAEViconia1","GLOBAL",1)~
-== ZDBAEB @3353 /* The sutures from your staking haven't fully healed. I'm -so sorry- for that set of unfortunate circumstances. */
-== BVICONI @3354 /* Your tone sounds mocking. It's hard for me to believe you're sincere. */
-== ZDBAEB @3355 /* We've each been usurped from the Underdark, forced to flee to the surface for sustenance. We've thrived in ways those underground thought we never would! */
-== BVICONI @3356 /* Do you have a point beyond mere conversation? */
-== ZDBAEB @3357 /* Certainly, my inquisitive one: The Drow of the Underdark seemed stifled in their lifestyle. Expansion to the surface is a logical leap of progress. I suspect it would shrink their desire to be bound in age-old blood feuds. */
-== BVICONI @3358 /* More Drow living well on the surface? Have you forgotten how much we have been assaulted by others just because of who we are by birth? */
-== ZDBAEB @3359 /* Not one bit. I've been beaten, burned, shipwrecked, stoned, buried, and endured excrutiations far -beyond- what anyone should -ever- aim to endure! */
-== BVICONI @3360 /* What's your point? */
-== ZDBAEB @3361 /* If those in the Underdark could quit bickering long enough to leave their low-light dwellings, they could step outside and find a -new- world to dominate! We are well-versed in age-old feuds: We'd merely be -finishing- what our progenitors' prejudices began ages ago! */
-== BVICONI @3362 /* I'm not here to make even -more- enemies for me to amuse you, even if it helps our race somehow in a later generation! */
-== ZDBAEB @3363 /* Suit yourself. */
-EXIT
-
-// Wilson Banter (BWILSON?)
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("WILSON")
-    See("WILSON")
-    !StateCheck("WILSON", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAEWILSON1","GLOBAL",0)~
-THEN ZDBAEB ZDBAEWILSON1
-@3364 /* I've let slip the dogs of war and heard of bear baiting, but a friendly bear? What shall I do with you? */
-DO ~SetGlobal("ZDBAEWILSON1","GLOBAL",1)~
-== WILSON @3365 /* <Wilson snorfles.> */
-== ZDBAEB @3366 /* You're akin to a Dire Dog with an enormous appetite and fewer oral displays of affection. */
-== WILSON @3367 /* <Wilson snorts then snorts again.> */
-== ZDBAEB @3368 /* An obvious implementation of your unique ursine ability would be to properly prepare you as a pit fighter. Surely, you could satisfactorily shoulder such a shift! */
-== WILSON @3369 /* <Wilson whines.> */
-== ZDBAEB @3370 /* Worry not, my warrior. We can call you, "The Ursine Usurper!" Eating opponents' innards is optional, obviously, however ostentatious. */
-EXIT
-
-// Yoshimo Banter
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("YOSHIMO")
-    See("YOSHIMO")
-    !StateCheck("YOSHIMO", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAEYoshimo1","GLOBAL",0)~
-THEN ZDBAEB ZDBAEYoshimo1
-@3371 /* Ooh! What wondrous delights did you bring us for dinner? */
-DO ~SetGlobal("ZDBAEYoshimo1","GLOBAL",1)~
-== BYOSHIM @3372 /* What do you mean, Baeloth? */
-== ZDBAEB @3373 /* Look at all those tricky toy traps you use! Did you get us some bear? Behir? Beholder? */
-== BYOSHIM @3374 /* I see, Baeloth. */
-== ZDBAEB @3375 /* I do, too. */
-== BYOSHIM @3376 /* But, no. I don't normally try to catch animals or creatures of the night to eat. */
-== ZDBAEB @3377 /* What would you prefer to trigger your traps? */
-== BYOSHIM @3378 /* I'm a bounty hunter. I catch men. */
-== ZDBAEB @3379 /* A hopeless romantic? */
-== BYOSHIM @3380 /* <Yoshimo shakes his head.> */
-== ZDBAEB @3381 /* Ah, so you're one of -those- mancatchers! */
-== BYOSHIM @3360 /* What's your point? */
-== ZDBAEB @3382 /* Well, as a purveyor of violent entertainment throughout the Underdark, Sword Coast, and beyond in the form of THE BLACK PITS, I need a notable number of neutralized nobodies to fatten the ranks of our gladiators. You seem like my man for the mission. */
-== BYOSHIM @3383 /* Duels to the death, I assume? */
-== ZDBAEB @3384 /* Oh, yes! -Evisceration- makes for the most -electrifying- entertainment! */
-== BYOSHIM @3385 /* Then I charge extra because of the complications. Bringing criminals to justice is one thing, but trapping men knowing they'll likely die fighting each other? Well, I have a reputation to uphold! */
-== ZDBAEB @3386 /* You play the part of a professional. How delightful. */
-== BYOSHIM @3387 /* What are your terms? */
-== ZDBAEB @3388 /* <Baeloth grins at Yoshimo.> */
-== ZDBAEB @3389 /* Let's deal, my friend. */
 EXIT
