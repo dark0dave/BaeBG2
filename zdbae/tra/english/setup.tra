@@ -42,7 +42,6 @@
 @42   = ~Such a flock of foliage flourishes around us!~ [ZDBAE29]
 @50   = ~Oh, COME ON!~ [ZDBAE54]
 @60   = ~Baeloth burns down the Copper Cornet and builds a new arena. In its ashes!~
-
 @71   = ~Small Ring~
 @72   = ~Barrityl's Burden~
 @73   = ~This ring promises power at a great cost.~
@@ -109,7 +108,6 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @1016 = ~I am not interested your entertainment.~
 @1017 = ~I want you to die, drow!~
 @1498 = ~I don't know what I was thinking. My senses took flight! They vanished and were vagrant!~
-
 @1501 = ~You have the right of it.~
 @1502 = ~I have not been entertained!~
 @1503 = ~If you've got a plan, I'm in. Can't be much harder starting a fight than watching one.~
@@ -117,14 +115,12 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @1505 = ~WHAT?! Security, Security!~
 @1506 = ~Burn the drow!~
 @1507 = ~Kill the drow!~
-
 @2000 = ~What a wretched waste! How boring and banal this brawl is! Were I to grace these grounds with my talents, tragedy would instead transform into triumph. I would bring power, prestige and panache to this pitiful pit. Someone should displace - dare I say depose - of the dullard who dared to direct such a dreary display. Perhaps... me?~
 @2001 = ~Then huddle close my hapless horde. The time of tedium is about to be terminated.~
 @2002 = ~Well, well, well, what whimsical wonder do we witness here? Another face amidst the multitude of mundane mediocrity. You, stand before the ineffable Baeloth the Entertainer.~
 @2003 = ~Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, revelling in the glory that is, well... me.~
 @2004 = ~My mirthful mate, let's not meander in minor matters. I am a dashing drow of discernment and delicious taste, indeed!~
 @2005 = ~No, no, no. I wish for splendour and spectacle. Not parading around about in the public housing districts, with... What did you say your name was again? No, you shall bear witness to my new atmospheric arena.~
-
 @2007 = ~Behold! Your ENTERTAINER!~
 @2008 = ~Good people I uh... Lets be reasonable about this!~
 @2009 = ~Upon further reflection, I reconsider. I shall join your party of plenty after all. These misguided masses seem rather misinformed, don't you think? Let us be off, before Baeloth the Brilliant becomes Baeloth the Bludgeoned.~
@@ -134,7 +130,6 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @2013 = ~It would be beneath you to so fervently fopp over a grudge for my erstwhile employment. Let bygones be bygones, as they say, Hmm? ~
 @2014 = ~Is this what passes for perverse entertainment? Pitiable! Poorly played! Pathetic! What a paltry pit fight.~
 @2015 = ~But, but, my equine and lupus burlesque pageant draws distinguished Drow from all over ... nevermind. In any event, should you reconsider your ridiculous refrain, I'll remain here.~
-
 @2500 = ~Are you really removing me? Me? Baeloth the ... Don't leave me here.~
 @3000 = ~Baeloth, your spells pack a punch, but have you ever considered the havoc they might wreak?~
 @3001 = ~Havoc, honeyed harpy? Bah! The only havoc I worry about is the insipid howls of the meek who can't appreciate the hypnotic hurricane of my magical histrionics. Havoc is for the humorless and the hapless.~
@@ -530,7 +525,6 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @3391 = ~To what cause are these hypothetical paladins sworn? What are the laws of the land and who enforces them? What is their calling in life? All these matter more than you know.~
 @3392 = ~This one time, a human, friend of the family you see, a turnip artist by trade crafted a Jansen family crest. As you might have guessed Aunt Petunia chased him out of the house with her rake and smashed the it to pieces even though it depicted a lovely turnip pair in a loving embrace and when you pulled the string ... Oh, Baeloth is looking at me again, maybe later.~
 @3393 = ~I've got my eye on you my light-skinned Svirfneblin.~
-
 @4000 = ~An arcane asylum awaits? Expect no easy egress from there after entry!~
 @4001 = ~Feeling nervous, Baeloth?~
 @4002 = ~I smell the spell components from here. It's like home in the worst of ways!~
@@ -587,7 +581,6 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @4053 = ~Nay <CHARNAME>, NAY! You needst NOT do so. Thy bounteous booty might be better spent in more delightfully devious and devilish pursuits? Hmm? Perhaps upon this daring and dashing Drow, whose charm is as captivating as the celestial canvas itself?~
 @4054 = ~Errr, I don't think I have anything more for the gentlemen.~
 @4055 = ~Bah! Am I to be belittled by balding bloated broker? What bilious buffoonery! Blast! BOO! A blight upon you sir!~
-
 @5000 = ~Well, blast it all! The bumbling boob who beckoned me has boorishly banjaxed a business deal beyond belief! What bothersome buffoonery is this?~
 @5001 = ~I didn't mean to interrupt anything.~
 @5002 = ~Oh, what an unwitting interruption! I was on the cusp of crafting a cosmic covenant, a deal dripping with dreams of dynasties and dazzling displays of diabolical dominance. But no, you whimsically wrenched me away from the negotiating table. How inconvenient!~
@@ -715,7 +708,6 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @10066 = ~There is a threshold where torment becomes trivial, no longer useful for training obedience. A true master of cruelty knows this line.~
 @10067 = ~That's oddly insightful. But talking with you has cheered me up a little. Could we walk together a bit longer?~
 @10068 = ~Of course. Let me entertain you!~
-
 @10070 = ~You wouldn't be interested in playing a little game, would you? Mmm?~
 @10071 = ~How fare your fumbling forays into the arcane arts?~
 @10072 = ~Unlike you, drow, my ability knows no bounds. Magical mastery demands intellect. A quality you patently lack.~
@@ -735,3 +727,24 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @10086 = ~Temporary, tantalizing, and terribly amusing! Does the weave respond differently when woven with your womanly wiles?~
 @10087 = ~I shall end you, Baeloth! Slowly, meticulously, savoring every moment of your suffering.~
 @10088 = ~Even your threats sound more mellifluous now.~
+@10089 = ~Do you rehearse your speeches, Baeloth, or is your brilliance conjured spontaneously?~
+@10090 = ~Rehearse? Ha! My majestic monologues manifest in the moment! I've no need for petty preparation.~
+@10091 = ~Then it seems we are kindred spirits, you and I. Each seeking the crowd's admiration, each delighting in its capture.~
+@10092 = ~Indeed! Partners in pomp, pride, and performance!~
+@10093 = ~Ah, Jan! I have a proposition that might pique your interest.~
+@10094 = ~A proposition, you say? I am always willing to hear out a prospective business partner.~
+@10095 = ~Why, I am quite renowned for my listening skills, as my second cousin twice removed once remarked. Did I ever tell you he owned a turnip farm near Beregost? Poor fellow, he always seemed to choose the poorest of ventures.~
+@10096 = ~People were only interested in mushrooms, you see, the dried variety found deep in the Underdark. I'm sure, as a drow, you are quite familiar with them. But yes, as I said, he complimented me on my impeccable listening skills while he was...~
+@10097 = ~Why the sudden silence? Surely my words merit a response! Oh, your proposal! Very well, I'm all ears.~
+@10098 = ~There! I've rendered you momentarily mute in turn. A marvelous match, wouldn't you agree?~
+@10099 = ~The Black Pits he ran with great flair,
+A sorcerer beyond compare.
+But hear him ramble on,
+From dusk well past dawn,
+And you'll wish he'd run out of air.~
+@10100 = ~Oho! Two can play this game!~
+@10101 = ~Confident in his gab,
+A gnome tries to deliver a jab.
+But one jest too far,
+And I'll make you the star,
+Of *my* show. Now run or I'll stab...~

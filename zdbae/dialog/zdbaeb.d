@@ -165,11 +165,11 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEHaerDalis1","GLOBAL",0)~
 THEN ZDBAEB ZDBAEHaerDalis1
-~Do you rehearse your speeches, Baeloth, or is your brilliance conjured spontaneously?~
+@10089 /* Do you rehearse your speeches, Baeloth, or is your brilliance conjured spontaneously? */
 DO ~SetGlobal("ZDBAEHaerDalis1","GLOBAL",1)~
-== ZDBAEB ~Rehearse? Ha! My majestic monologues manifest in the moment! I've no need for petty preparation.~
-== BHAERDA ~Then it seems we are kindred spirits, you and I. Each seeking the crowd's admiration, each delighting in its capture.~
-== ZDBAEB ~Indeed! Partners in pomp, pride, and performance!~
+== ZDBAEB @10090 /* Rehearse? Ha! My majestic monologues manifest in the moment! I've no need for petty preparation. */
+== BHAERDA @10091 /* Then it seems we are kindred spirits, you and I. Each seeking the crowd's admiration, each delighting in its capture. */
+== ZDBAEB @10092 /* Indeed! Partners in pomp, pride, and performance! */
 EXIT
 
 // Hexxat 1
@@ -265,16 +265,16 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEJan1","GLOBAL",0)~
 THEN ZDBAEB ZDBAEJan1
-~Ah, Jan! I have a proposition that might pique your interest.~
+@10093 /* Ah, Jan! I have a proposition that might pique your interest. */
 DO ~SetGlobal("ZDBAEJan1","GLOBAL",1)~
-== BJAN ~A proposition, you say? I am always willing to hear out a prospective business partner.~
-== BJAN ~Why, I am quite renowned for my listening skills, as my second cousin twice removed once remarked. Did I ever tell you he owned a turnip farm near Beregost? Poor fellow, he always seemed to choose the poorest of ventures.~
-== BJAN ~People were only interested in mushrooms, you see, the dried variety found deep in the Underdark. I'm sure, as a drow, you are quite familiar with them. But yes, as I said, he complimented me on my impeccable listening skills while he was...~
-== ZDBAEB ~...~
-== BJAN ~Why the sudden silence? Surely my words merit a response! Oh, your proposal! Very well, I'm all ears.~
-== ZDBAEB ~Yes, my light-skinned Svirfneblin.~
-== BJAN ~...~
-== ZDBAEB ~There! I've rendered you momentarily mute in turn. A marvelous match, wouldn't you agree?~
+== BJAN @10094 /* A proposition, you say? I am always willing to hear out a prospective business partner. */
+== BJAN @10095 /* Why, I am quite renowned for my listening skills, as my second cousin twice removed once remarked. Did I ever tell you he owned a turnip farm near Beregost? Poor fellow, he always seemed to choose the poorest of ventures. */
+== BJAN @10096 /* People were only interested in mushrooms, you see, the dried variety found deep in the Underdark. I'm sure, as a drow, you are quite familiar with them. But yes, as I said, he complimented me on my impeccable listening skills while he was... */
+== ZDBAEB @4040 /* ... */
+== BJAN @10097 /* Why the sudden silence? Surely my words merit a response! Oh, your proposal! Very well, I'm all ears. */
+== ZDBAEB @3146 /* Yes, my light-skinned Svirfneblin. */
+== BJAN @4040 /* ... */
+== ZDBAEB @10098 /* There! I've rendered you momentarily mute in turn. A marvelous match, wouldn't you agree? */
 EXIT
 
 // Keldorn 1
