@@ -34,7 +34,7 @@ THEN BANOMEN ZDBAEAnomen1
 DO ~SetGlobal("ZDBAEAnomen1","GLOBAL",1)~
 == ZDBAEB @10024 /* Jest? No, my sanctimonious squire. Inquiry! */
 == BANOMEN @10025 /* Hmph. Ask and be done with it. */
-== ZDBAEB @10026 /* What phantom pain of puberty prods you towards down this pompous path of paladins? */
+== ZDBAEB @10026 /* What phantom pain of puberty prods you towards this pompous path of paladins? */
 == BANOMEN @10027 /* Nothing as vile as you imply! I seek only to prove my worth. To stand as my own man, unbroken by circumstance. */
 == ZDBAEB @10028 /* Yet yours is a cult of leash and law. You seek independence, yet every new commandment curtails it. */
 == ZDBAEB @10029 /* Stumble yet once and they will strip you bare of rank, regalia, respect, and even your patronage. */
@@ -75,7 +75,7 @@ IF ~InParty("ZDBAE")
 THEN BANOMEN ZDBAEAnomen1
 @10023 /* What is it now, Baeloth? A petty jest at my expense? */
 DO ~SetGlobal("ZDBAEAnomen1","GLOBAL",1)~
-== ZDBAEB @10037 /* Jest? No, my brooding brother-in-bitterness. Merely curiosity! Tell me, what phantom pain of youth prodded you to serve that pompous order of knights? */
+== ZDBAEB @10037 /* Jest? No, my brooding brother-in-bitterness. Merely curiosity! Tell me, what phantom pain of puberty prodded you to serve that pompous order of paladins? */
 == BANOMEN @10038 /* You think I still honor them? I spit on their vows! They may call absolute obedience discipline, but it is nothing but a leash. */
 == ZDBAEB @10039 /* ...A kennel, a cult, a cage for the craven. */
 == BANOMEN @10040 /* Aye. Let them choke on their pride, and may their precious code strangle them all. */
@@ -155,7 +155,6 @@ DO ~SetGlobal("ZDBAEEdwin1","GLOBAL",1)~
 EXIT
 
 // Haer'dalis 1
-/* idek, i'm personally not feeling this one yet? but it's just my read on the characters. both are known for SHOWMANSHIP & i'd like a banter based off them adjusting their own skills based off said conversation */
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -166,17 +165,11 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEHaerDalis1","GLOBAL",0)~
 THEN ZDBAEB ZDBAEHaerDalis1
-@3089 /* Why have you repeatedly questioned my choice of profession? I am satisfied with where I am, thank you. */
+@10089 /* Do you rehearse your speeches, Baeloth, or is your brilliance conjured spontaneously? */
 DO ~SetGlobal("ZDBAEHaerDalis1","GLOBAL",1)~
-== ZDBAEB @3090 /* Why traipse about with that troupe of yours when you are such a competent combatant? */
-== BHAERDA @3091 /* We have been friends for longer than I have known you. We compliment each other. */
-== ZDBAEB @3092 /* Certainly you can! But have you considered leaving the low-budget life of the stage to gain something greater? */
-== BHAERDA @3093 /* I already know what you mean - life as a gladiator where the arena is the stage and all the action is real. */
-== ZDBAEB @3094 /* Absolutely, though acknowledging one's individual abilities is also an admirable attribute. (From here.) */
-== BHAERDA @3095 /* The challenge of fighting for survival and for the thrill of the crowd has its appeal, I admit, but I also enjoy engaging with my fans before and after the show. */
-== ZDBAEB @3096 /* You still can! Nothing a little resurrection and restoration won't remedy if it comes to that. You're rich enough that death is but a diminutive dent in your demeanor. */
-== BHAERDA @3097 /* Baeloth, perhaps I shall agree to your terms. I had been seeking inspiration for a similar character I intended to portray in a work I am writing called “The Reign of Blades.” */
-== ZDBAEB @3098 /* Practice makes perfect - and permanent. */
+== ZDBAEB @10090 /* Rehearse? Ha! My majestic monologues manifest in the moment! I've no need for petty preparation. */
+== BHAERDA @10091 /* Then it seems we are kindred spirits, you and I. Each seeking the crowd's admiration, each delighting in its capture. */
+== ZDBAEB @10092 /* Indeed! Partners in pomp, pride, and performance! */
 EXIT
 
 // Hexxat 1
@@ -272,20 +265,16 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEJan1","GLOBAL",0)~
 THEN ZDBAEB ZDBAEJan1
-@3137 /* Oh, Jan! */
+@10093 /* Ah, Jan! I have a proposition that might pique your interest. */
 DO ~SetGlobal("ZDBAEJan1","GLOBAL",1)~
-== BJAN @4040 /* ... */
-== ZDBAEB @10070 /* You wouldn't be interested in playing a little game, would you? Mmm? */
-== BJAN @3140 /* Game? I -love- games! */
-== BJAN @3141 /* There was this time about thirty years ago when my second cousin on my mother's side and I played our longest game of Chess yet. We were at it for over a day, and we kept moving our pieces to prevent being checkmated, but she passed out from exhaustion first, so she forfeited the game. She violently appealed to my mother after this and claimed that I did something to make her lose when I did not. */
-== BJAN @3142 /* Of course, after my mother's ruling she appealed to guard and then to the Council of Six. But after the turnip embargo caused a reduction in tax revenue, the Council became unwilling to listen to new appeals. Which I have always viewed as the greatest calmity of our age. */
-== ZDBAEB @3143 /* Ahem. */
-== BJAN @3144 /* Ahem what? Oh. Your game? */
-== ZDBAEB @3145 /* <Baeloth blinks.> */
+== BJAN @10094 /* A proposition, you say? I am always willing to hear out a prospective business partner. */
+== BJAN @10095 /* Why, I am quite renowned for my listening skills, as my second cousin twice removed once remarked. Did I ever tell you he owned a turnip farm near Beregost? Poor fellow, he always seemed to choose the poorest of ventures. */
+== BJAN @10096 /* People were only interested in mushrooms, you see, the dried variety found deep in the Underdark. I'm sure, as a drow, you are quite familiar with them. But yes, as I said, he complimented me on my impeccable listening skills while he was... */
+== ZDBAEB @4040 /* ... */
+== BJAN @10097 /* Why the sudden silence? Surely my words merit a response! Oh, your proposal! Very well, I'm all ears. */
 == ZDBAEB @3146 /* Yes, my light-skinned Svirfneblin. */
-== BJAN @3147 /* <Jan also blinks.> */
-== BJAN @3148 /* There! We're tied! */
-== ZDBAEB @3150 /* Nevermind. */
+== BJAN @4040 /* ... */
+== ZDBAEB @10098 /* There! I've rendered you momentarily mute in turn. A marvelous match, wouldn't you agree? */
 EXIT
 
 // Keldorn 1
@@ -846,6 +835,32 @@ DO ~SetGlobal("ZDBAEKeldorn3","GLOBAL",1)~
 == BKELDOR @3194 /* That is a good start, Baeloth. We shall talk more later about this. */
 EXIT
 
+// Nalia 3
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("NALIA")
+    See("NALIA")
+    !StateCheck("NALIA", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAENalia2","GLOBAL",1)
+    Global("ZDBAENalia3","GLOBAL",0)~
+THEN BNALIA ZDBAENalia3
+@3301 /* Baeloth, if you were to seriously try to help the poor improve, what would you do? */
+DO ~SetGlobal("ZDBAENalia3","GLOBAL",1)~
+== ZDBAEB @3302 /* Oh, my curious compatriot, I am -so- satisfied you asked! */
+== ZDBAEB @3303 /* Finding the worthiest warriors is easy: Surround yourself with the strongest bodies available then demand they duel to the death in duets! */
+== BNALIA @3304 /* That's so cruel! */
+== ZDBAEB @3305 /* It's -compassionate- compared to conquerors who care not of what you call 'kind.' Survival of the strongest is simple, my dear, and the 'luckiest' will live. */
+== BNALIA @3306 /* I... hate to admit it, Baeloth, but you have a point. I did rush to the Copper Coronet because de'Arnise Hold was conquered by trolls who didn't care what happened to the inhabitants. */
+== ZDBAEB @3307 /* Casters demand more training and tutelage from an early age, even if their sorcerous skills manifest meteors from temper tantrums. An open-air arena duel to the death won't do. */
+== BNALIA @3308 /* What should be done? */
+== ZDBAEB @3309 /* Use your noble noggin! What does your nation need now and later? */
+== BNALIA @3310 /* Thanks, but how do you know all this? */
+== ZDBAEB @3311 /* Being Baeloth the Entertainer meant my domain was a convert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain. */ /* Being Baeloth the Entertainer meant my domain was a covert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain. */
+EXIT
+
 // Keldorn 4
 CHAIN
 IF ~InParty("ZDBAE")
@@ -878,30 +893,4 @@ DO ~SetGlobal("ZDBAEKeldorn4","GLOBAL",1)~
 == ZDBAEB @3211 /* You want to do charity because it makes people want to like and follow you while cosmic morality's causes are cuddled. I can, ahem, -tolerate- charity because it makes people want to like and follow me. */
 == BKELDOR @3212 /* Hmm. You are a skilled debater. I grant you that, drow. */
 == ZDBAEB @3213 /* I could say I'm a -master- of the craft, but I prefer the title of 'Baeloth the Entertainer' and I'm not trying to argue a case like one of your attorneys or magistrates. */
-EXIT
-
-// Nalia 3
-CHAIN
-IF ~InParty("ZDBAE")
-    See("ZDBAE")
-    InParty("NALIA")
-    See("NALIA")
-    !StateCheck("NALIA", CD_STATE_NOTVALID)
-    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
-    !AreaType(DUNGEON)
-    Global("ZDBAENalia2","GLOBAL",1)
-    Global("ZDBAENalia3","GLOBAL",0)~
-THEN BNALIA ZDBAENalia3
-@3301 /* Baeloth, if you were to seriously try to help the poor improve, what would you do? */
-DO ~SetGlobal("ZDBAENalia3","GLOBAL",1)~
-== ZDBAEB @3302 /* Oh, my curious compatriot, I am -so- satisfied you asked! */
-== ZDBAEB @3303 /* Finding the worthiest warriors is easy: Surround yourself with the strongest bodies available then demand they duel to the death in duets! */
-== BNALIA @3304 /* That's so cruel! */
-== ZDBAEB @3305 /* It's -compassionate- compared to conquerors who care not of what you call 'kind.' Survival of the strongest is simple, my dear, and the 'luckiest' will live. */
-== BNALIA @3306 /* I... hate to admit it, Baeloth, but you have a point. I did rush to the Copper Coronet because de'Arnise Hold was conquered by trolls who didn't care what happened to the inhabitants. */
-== ZDBAEB @3307 /* Casters demand more training and tutelage from an early age, even if their sorcerous skills manifest meteors from temper tantrums. An open-air arena duel to the death won't do. */
-== BNALIA @3308 /* What should be done? */
-== ZDBAEB @3309 /* Use your noble noggin! What does your nation need now and later? */
-== BNALIA @3310 /* Thanks, but how do you know all this? */
-== ZDBAEB @3311 /* Being Baeloth the Entertainer meant my domain was a convert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain. */ /* Being Baeloth the Entertainer meant my domain was a covert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain. */
 EXIT
