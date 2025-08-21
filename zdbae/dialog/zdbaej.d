@@ -1,5 +1,26 @@
 BEGIN ZDBAEJ
 
+/* Obligatory Celvan Limerick */ 
+CHAIN IF WEIGHT #-1 
+~InParty("ZDBAE")
+See("ZDBAE")
+!StateCheck("ZDBAE",CD_STATE_NOTVALID)
+Global("ZDBAECelvan","AR0300",0)~ THEN CELVAN ZDBAECELV
+~The Black Pits he ran with great flair,
+A sorcerer beyond compare.
+But hear him ramble on,
+From dusk well past dawn,
+And you'll wish he'd run out of air.~
+DO ~SetGlobal("ZDBAECelvan","AR0300",1)~
+== ZDBAEJ ~Oho! Two can play this game!~
+== ZDBAEJ ~Confident in his gab,
+A gnome tries to deliver a jab.
+But one jest too far,
+And I'll make you the star,
+Of *my* show. Now run or I'll stab...~
+END CELVAN 1
+
+/* item-based talks */
 /* luxurious lizardskin leapers are equipped */
 IF ~Global("zdbaeleapers","GLOBAL",1)~
 THEN zdbaeleapers
@@ -28,6 +49,7 @@ THEN zdbaefurries
   IF ~~ THEN DO ~SetGlobal("zdbaefurries","GLOBAL",2)~ EXIT
 END
 
+/* interjections */ 
 // Temple District (AR0900)
 // Response: Listen to me, my brothers and sisters... heed my words. We have been chosen as the recipient of a most holy miracle, one that should neither be dismissed nor ignored!
 INTERJECT CSGAAL 0 ZDBAEGAAL0
