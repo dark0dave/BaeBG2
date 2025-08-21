@@ -85,7 +85,8 @@ Equipped abilities:
 Equipped abilities:
   - Charisma: -1
   - Doubles movement rate
-  - Protects against critical hits~
+  - Protects against critical hits
+  - Chance of Fabulousness!~
 @99   = ~Baeloth~
 @100  = ~When asked about his past, Baeloth Barrityl, or "Baeloth the Entertainer" as he prefers to be called, claims to be a drow sorcerer of some repute. While he keeps some of his earlier exploits vague, he brags excessively about his most recent endeavor, the Black Pits. While it all ended in failure, he maintains that it was "the best show in all the realms."
 
@@ -578,7 +579,7 @@ The circumstances of his defeat within the pits are unclear; he claims dishonest
 @4050 = ~Oohoohoohoo! This should be good!~
 @4051 = ~And I, I say listen to me Baeloth the Bright! Baeloth the Bedazzling!  Baeloth the ... Well in any event, don't listen to this blind bat, however brilliant his bids at bewilderment are.~
 @4052 = ~Follow him to mediocrity or follow me to magnificence. Your choice, of course.~
-@4053 = ~Nay <CHARNAME>, NAY! You needst NOT do so. Thy bounteous booty might be better spent in more delightfully devious and devilish pursuits? Hmm? Perhaps upon this daring and dashing Drow, whose charm is as captivating as the celestial canvas itself?~
+@4053 = ~Nay <CHARNAME>, NAY! You needst NOT do so. Mayhap thy bounteous booty might be better spent in more delightfully devious and devilish pursuits? Hmm? Perhaps upon this daring and dashing Drow, whose charm is as captivating as the celestial canvas itself?~
 @4054 = ~Errr, I don't think I have anything more for the gentlemen.~
 @4055 = ~Bah! Am I to be belittled by balding bloated broker? What bilious buffoonery! Blast! BOO! A blight upon you sir!~
 @5000 = ~Well, blast it all! The bumbling boob who beckoned me has boorishly banjaxed a business deal beyond belief! What bothersome buffoonery is this?~

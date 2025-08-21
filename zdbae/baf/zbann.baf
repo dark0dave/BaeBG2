@@ -1,9 +1,9 @@
 IF
-	Detect([PC])
-	Range(LastSeenBy(Myself),20)
-	NumberOfTimesTalkedTo(0)
-	Allegiance(Myself,NEUTRAL)
+  Detect([PC])
+  Range(LastSeenBy(Myself),20)
+  NumberOfTimesTalkedTo(0)
+  Allegiance(Myself,NEUTRAL)
 THEN
-	RESPONSE #100
-		StartDialogueNoSet(LastSeenBy(Myself))
+  RESPONSE #100
+    StartDialogueNoSet(LastSeenBy(Myself))
 END
