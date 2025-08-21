@@ -78,7 +78,8 @@ COPY ~%MOD_FOLDER%/items/zdbo03.itm~ ~override~
   Equipped abilities:
   - Charisma: -1
   - Doubles movement rate
-  - Protects against critical hits */
+  - Protects against critical hits
+  - Chance of Fabulousness!*/
 
 /// Creature files ///
 // SoA
