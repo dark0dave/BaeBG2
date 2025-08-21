@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://github.com/dark0dave/BaeBG2/releases/latest)
 [![](https://img.shields.io/badge/Windows-0078D6?&style=for-the-badge&logoColor=white&logo=git-for-windows)](https://github.com/dark0dave/BaeBG2/releases/latest)
 [![](https://img.shields.io/badge/mac%20os-grey?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/dark0dave/BaeBG2/releases/latest)
-[![](https://img.shields.io/github/actions/workflow/status/dark0dave/BaeBG2/main.yaml?style=for-the-badge)](https://github.com/dark0dave/BaeBG2/actions/workflows/main.yaml)
+[![](https://img.shields.io/github/actions/workflow/status/dark0dave/BaeBG2/checks.yaml?style=for-the-badge)](https://github.com/dark0dave/BaeBG2/actions/workflows/main.yaml)
 [![](https://img.shields.io/github/license/dark0dave/BaeBG2?style=for-the-badge)](./LICENSE)
 
 This mod provides continuation for our lovable Baeloth in BG2EE and EET.
