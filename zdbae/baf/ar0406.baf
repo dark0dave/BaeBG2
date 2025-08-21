@@ -15,7 +15,7 @@ RESPONSE #100
   SmallWait(25)
   ClearAllActions()
   StartCutSceneMode()
-  StartCutScene("zbcutrel")
+  StartCutScene("zdbcutr")
 END
 
 // Cutscene breakable 1

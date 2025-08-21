@@ -6,14 +6,14 @@ IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_BEGIN","GLOBAL",0) Global(
   IF ~~ THEN REPLY @1001 /* ~Well met, I am <CHARNAME>.~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE2
   IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY @1003 /* ~Baeloth! Do you remember me?~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE3
   IF ~~ THEN REPLY @1004 /* ~Die, drow!~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1) SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
-  IF ~~ THEN REPLY @1011 /* ~Whatever mischief you're initiating, I want no part in it.~ */ DO ~SetGlobal("ZDBAE_SHUTUP","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY @1011 /* ~Whatever mischief you're initiating, I want no part in it.~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1) SetGlobal("ZDBAE_SHUTUP","GLOBAL",1)~ GOTO ZDBAEFU
 END
 
-IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_BEGIN","GLOBAL",0) Global("ZDBAE_SHUTUP","GLOBAL",1)~ THEN BEGIN ZDBAES
+IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_BEGIN","GLOBAL",1) Global("ZDBAE_SHUTUP","GLOBAL",1)~ THEN BEGIN ZDBAES
   SAY @6 /* ~Eh? What do YOU want?~ [ZDBAEF] */
-  IF ~~ THEN REPLY @1001 /* ~Well met, I am <CHARNAME>.~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE2
-  IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY @1003 /* ~Baeloth! Do you remember me?~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE3
-  IF ~~ THEN REPLY @1017 /* ~I want you to die, drow!~ */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1) SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
+  IF ~~ THEN REPLY @1001 /* ~Well met, I am <CHARNAME>.~ */ GOTO ZDBAE2
+  IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY @1003 /* ~Baeloth! Do you remember me?~ */ GOTO ZDBAE3
+  IF ~~ THEN REPLY @1017 /* ~I want you to die, drow!~ */ DO ~SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
   IF ~~ THEN REPLY @1015 /* ~I am not interested in your dog and pony show, drow.~ */ GOTO ZDBAEC
 END
 
@@ -27,7 +27,12 @@ END
 IF ~~ THEN BEGIN ZDBAE2
   SAY @2014 /* ~Is this what passes for perverse entertainment? Pitiable! Poorly played! Pathetic! What a paltry pit fight.~ */
   IF ~~ THEN REPLY @1008 /* ~If it's real entertainment you're seeking, perhaps you'll join my party instead?~ */ GOTO ZDBAE5
-  IF ~~ THEN REPLY @1016 /* ~I am not interested your entertainment.~ */ DO ~SetGlobal("ZDBAE_SHUTUP","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY @1016 /* ~I am not interested your entertainment.~ */ DO ~SetGlobal("ZDBAE_SHUTUP","GLOBAL",1)~ GOTO ZDBAEFU
+END
+
+IF ~~ THEN BEGIN ZDBAEFU
+  SAY ~Your loss, I assure you!~
+  IF ~~ THEN EXIT
 END
 
 // Remember
@@ -51,7 +56,7 @@ END
 // Reveal
 IF ~~ THEN BEGIN ZDBAE7
   SAY @2007 /* ~Behold! Your ENTERTAINER!~ */
-  IF ~~ THEN DO ~SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",2) SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ EXIT
 END
 
 // Rescue
