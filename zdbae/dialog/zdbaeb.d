@@ -83,7 +83,6 @@ DO ~SetGlobal("ZDBAEAnomen1","GLOBAL",1)~
 EXIT
 
 // Cernd 1
-/* still unedited, do later */
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -93,21 +92,14 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     !AreaType(DUNGEON)
     Global("ZDBAECernd1","GLOBAL",0)~
-THEN CERNDJ ZDBAECernd1
-@3045 /* Tell me, Baeloth, What is 'nature' to you in the Underdark? */
+THEN BCERND ZDBAECernd1
+@10103 /* I wonder, Baeloth, how does nature manifest within the depths of the Underdark? */
 DO ~SetGlobal("ZDBAECernd1","GLOBAL",1)~
-== ZDBAEB @3046 /* Dim and dreary darkness as far as the eye can see, illuminated by giant fluorescent mushrooms. Pocket portals picket the place. These openings to the Elemental Planes to give us air to breath, water to drink, earth to mask our scent, and fire with which to brand our slaves. */
-== ZDBAEB @3047 /* It's a circle of violence, Cernd, just like on the surface. */
-== CERNDJ @3048 /* You speak of violence and slavery. How are these things natural? */
-== ZDBAEB @3049 /* Where there's life, there's war! -Everyone- and -everything- wants to rule! */
-== ZDBAEB @3050 /* Look at the trees of the forest! They're all in a slow death race to the top to prevent each other from getting the life they need to grow! */
-== ZDBAEB @3051 /* Look at the animals and creatures of the wild! They'll fight and kill each other out of hunger, yes, but also out of boredom! */
-== ZDBAEB @3052 /* Look at the so-called 'civilized' places and races! All it takes is the right crisis for civilization to crumble and show its -true- nature: Hungry, desperate men turn into animals and savages to survive or if it suits them! */
-== ZDBAEB @3053 /* So, the Underdark just happens to be an -exemplary- ecosystem to demonstrate just how -destructive- all life can be! */
-== CERNDJ @3054 /* Do you think that being underground changes things? */
-== ZDBAEB @3055 /* Why, of course! We have ready access to so many spell components from corpses and mining that -of course- we'll use these on the nearest thing we don't like! */
-== CERNDJ @3056 /* So, in short, ready access to magic materials underground inspires blood feuds? */
-== ZDBAEB @3057 /* Think of it like natural predators and prey, except in the Underdark, they're all magically talented, sometimes predators and prey switch places, and they have more eyes or tentacles than you have fingers. */
+== ZDBAEB @10104 /* As fungi forests that glow in the dark, or stone caverns that swallow the witless whole. */
+== ZDBAEB @10105 /* Every creature within its bounds craves conquest. Survival within the Underdark is synonymous with slaughter! */
+== BCERND @10106 /* You speak of violence and strife. Do you truly believe such things to be natural? */
+== ZDBAEB @10107 /* Trees on the surface strangle each other for sunlight. Beasts brawl for blood or boredom. And civilization? Pfeh! A flimsy façade, stripped away at the first hint of famine. */
+== ZDBAEB @10108 /* What is nature if not conflict, hmm? */
 EXIT
 
 // Dorn 1
