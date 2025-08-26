@@ -108,14 +108,3 @@ INTERJECT ANNO1 0 ZDBAEINTRO0
   == ZDBAE IF ~~ THEN
   @4050 /* Oohoohoohoo! This should be good! */
 END ANNO1 1
-
-// TODO: Fire this after the pit fight
-//     ActionOverride("ZDBAE",StartDialogueNoSet([PC]))
-INTERJECT_COPY_TRANS ANNO1 2 ZDBAEINTRO1
-  == ZDBAE IF ~~ THEN
-  @2000 /* What a wretched waste! How boring and banal this brawl is! Were I to grace these grounds with my talents, tragedy would instead transform into triumph. I would bring power, prestige and panache to this pitiful pit. Someone should displace - dare I say depose - of the dullard who dared to direct such a dreary display. Perhaps... me? */
-  == NOBLE1 @1501 /* You have the right of it. */
-  == NOBLE2 @1502 /* I have not been entertained! */
-  == NOBLE1 @1503 /* If you've got a plan, I'm in. Can't be much harder starting a fight than watching one. */
-  == ZDBAE @2001 /* Then huddle close my hapless horde. The time of tedium is about to be terminated. */
-END
