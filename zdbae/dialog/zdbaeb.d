@@ -165,8 +165,6 @@ DO ~SetGlobal("ZDBAEHaerDalis1","GLOBAL",1)~
 EXIT
 
 // Hexxat 1
-/* someday i will learn how to write for hexatt...
-but today is not that day. ...well night. */
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -176,21 +174,13 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     !AreaType(DUNGEON)
     Global("ZDBAEHexxat1","GLOBAL",0)~
-THEN BHEXXA25 ZDBAEHexxat1
-@3099 /* Drow, why do you follow me around as if I were a child? Are you afraid I'll suck your blood? */
+THEN BHEXXAT ZDBAEHexxat1
+@10109 /* Why do your eyes linger on me, drow? Are you afraid I will drink you dry? */
 DO ~SetGlobal("ZDBAEHexxat1","GLOBAL",1)~
-== ZDBAEB @3100 /* Verily, but you are vivacious for a vampire, even in full view of the light. */
-== BHEXXA25 @3101 /* Yes, Drow, and I know your proposal: You want me to fight in your underground arena and earn my meals through being a predator of whatever prey you throw at me. */
-== ZDBAEB @3102 /* Correct, my clever and cordial companion! Partaking as a pit warrior would properly prepare you to be in peak performance in siphoning sanguine substances. */
-== BHEXXA25 @3103 /* Do you -demand- I be your pet pit vampire? */
-== ZDBAEB @3104 /* It is an offer, but not an outstanding order. However, your agreement would be much obliged. */
-== BHEXXA25 @3105 /* If I am in the mood, Drow, I shall consider it. */
-== ZDBAEB @3106 /* Your vampiric vivacity could make for a very violent delight! My main demand is you refrain from siphoning the showgoers' lives as a matter of professional courtesy. */
-== BHEXXA25 @3107 /* So long as they bet for me and not against me. */
-== ZDBAEB @3108 /* I can already imagine your arena alias! */
-== BHEXXA25 @3109 /* It had better not be anything embarrassing, Drow. */
-== ZDBAEB @3110 /* "Death delivered." */
-== BHEXXA25 @3111 /* Not my first choice, Drow, but I may go agree to it. */
+== ZDBAEB @10110 /* Fear? Perish the thought! I was merely musing on how marvelously you'd perform in my arena. */
+== ZDBAEB @10111 /* Crowds would cheer, my coffers would swell, and you could sate your thirst through blessed bloodshed. */
+== BHEXXAT @10112 /* Imagine, instead, what happens when I don't play along. */
+== ZDBAEB @10113 /* ...Consider my offer reluctantly rescinded. */
 EXIT
 
 /* Imoen 1, this is both deeply unsettling & also wholesome
