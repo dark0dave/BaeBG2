@@ -209,7 +209,6 @@ DO ~SetGlobal("ZDBAEImoen21","GLOBAL",1)~
 == ZDBAEB @10068 /* Of course. Let me entertain you! */
 EXIT
 
-/* continue edits from here on forwards*/
 // Jaheria 1
 CHAIN
 IF ~InParty("ZDBAE")
@@ -221,19 +220,9 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEJaheira1","GLOBAL",0)~
 THEN ZDBAEB ZDBAEJaheira1
-@3126 /* Ah, Jaheira. Round up any runts to remove to better the balance? You were quite fond of quoting, “Nature take the life she gave!” */
+@10114 /* Ah, Jaheira! Ever ready with a rebuke. Your tongue is sharper than the weapon at your side. */
 DO ~SetGlobal("ZDBAEJaheira1","GLOBAL",1)~
-== BJAHEIR @3127 /* Don't patronize me, Drow. */
-== ZDBAEB @3128 /* Patronize? Preposterous! I peacefully propose partaking in your purpose in life - unless the 'natural balance' is no longer your priority. */
-== BJAHEIR @3129 /* What would you know about -balance?- */
-== ZDBAEB @3130 /* Well, my well-traveled companion, what say you to the notion that this 'balance' is but a subjective opinion on how it operates? Are not all you Druids keen on avoiding conglomeration? */
-== BJAHEIR @3131 /* I'll tell you this much, -Drow.- I'm my own person. What you consider friendly flattery I call an affront to nature and my training! */
-== ZDBAEB @3390 /* But do I speak deceit when I declare what part of the balance you keep is your discretion? */
-== BJAHEIR @3132 /* You are unfortunately correct. */
-== ZDBAEB @3133 /* "Unfortunately?" How unexpected! */
-== BJAHEIR @3134 /* I know enough of your past and you know enough of mine. It's like you prod and pry to get me to agree with something that's technically true but all part of a scheme I simply want to avoid! */
-== ZDBAEB @3135 /* It's an earnest inquiry. Truly, am I the antagonist? */
-== BJAHEIR @3136 /* To me right now you are. If you're here to butcher animals for meat or to make them fight for your amusement, don't look to me for my blessing, Baeloth. */
+== BJAHEIR @10115 /* Keep testing my patience, drow, and you may feel its sting. */
 EXIT
 
 // Jan 1
@@ -651,7 +640,7 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEJan2","GLOBAL",0)~
 THEN ZDBAEB ZDBAEJan2
-@3392 /* This one time, a human, friend of the family you see, a turnip artist by trade crafted a Jansen family crest. As you might have guessed Aunt Petunia chased him out of the house with her rake and smashed the it to pieces even though it depicted a lovely turnip pair in a loving embrace and when you pulled the string ... Oh, Baeloth is looking at me again, maybe later. */ /* This one time, a human, friend of the family you see, a turnip artist by trade crafted a Jansen family crest. As you might have guessed Aunt Petunia chased him out of the house with her rake and smashed the it to pieces even though it depicted a lovely turnip pair in a loving embrace and when you pulled the string ... Oh, Baeloth is looking at me again, maybe later.~ */
+@3392 /* This one time, a human, friend of the family you see, a turnip artist by trade crafted a Jansen family crest. As you might have guessed Aunt Petunia chased him out of the house with her rake and smashed the it to pieces even though it depicted a lovely turnip pair in a loving embrace and when you pulled the string ... Oh, Baeloth is looking at me again, maybe later. */
 DO ~SetGlobal("ZDBAEJan2","GLOBAL",1)~
 == ZDBAEB @3393 /* I've got my eye on you my light-skinned Svirfneblin. */
 EXIT
