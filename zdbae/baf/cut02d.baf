@@ -1,0 +1,14 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+  CutSceneId("Gladiator")  // Gladiator
+  SmallWait(10)
+  AttackOneRound("GladiatorBear")  // Troll
+  AttackOneRound("GladiatorBear")  // Troll
+  MoveToPoint([2466.1339])
+  AttackOneRound("GladiatorBear")  // Troll
+  AttackOneRound("GladiatorBear")  // Troll
+  AttackOneRound("GladiatorBear")  // Troll
+  StartCutScene("zdintro")
+END
