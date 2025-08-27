@@ -259,23 +259,14 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEKeldorn1","GLOBAL",0)~
 THEN BKELDOR ZDBAEKeldorn1
-@3151 /* A Drow among us? What madness is this? */
+~You travel alongside a paladin without fear of retribution or judgment?~
 DO ~SetGlobal("ZDBAEKeldorn1","GLOBAL",1)~
-== ZDBAEB @3152 /* I'm not bad. I just detect that way. */
-== BKELDOR @3153 /* <Keldorn narrows his eyes suspiciously at Baeloth.> */
-== ZDBAEB @3154 /* You're a Paladin. I can tell. Big, strong type. Fondness for heavy armor and big swords. I'm a Sorcerer and look like something you were trained to -hate!- */
-== BKELDOR @3155 /* What is your point? */
-== ZDBAEB @3156 /* Oh, Keldorn, despite appearances, we're not so different - you and I. In fact, I think we'll get along -just fine.- */
-== BKELDOR @3157 /* What trickery is this? */
-== ZDBAEB @3158 /* I can tell you're sworn to eradicate demons, devils, deviants, beholders, and all sorts of baddies. I -too- want many of them dead. */
-== ZDBAEB @3159 /* In fact, I'd be -happy- to help point out many of them to you. -Plenty- of them pissed me off, and we can enjoy ridding the realms and the planes of them. Together. */
-== BKELDOR @3160 /* <Keldorn looks suspiciously at Baeloth.> What do you get from this? */
-== ZDBAEB @3161 /* Oh, I -know- you get pleasure from killing things and making these surface dwellers happier for it. -I- get the pleasure of making sure these -creatures- never ask me for money or favors again. It's win-win! */
-== BKELDOR @3162 /* What am I? Your muscle in a collections agency? */
-== ZDBAEB @3163 /* Oh, my dear Keldorn, your order has already made you that! You're a reaper of souls! You slay demons and devils and dragons and deviants of all sorts and collect their corpses as trophies to make Big Daddy Paladin in the order feel better. With me, you're just doing under my guidance and with my help. I won't even charge you for my services. */
-== BKELDOR @3164 /* I... see. Perhaps I was mistaken about you, Drow. But know this: I -will- strike you down at the first sign of betrayal! */
-== ZDBAEB @3165 /* I would expect nothing less from my righteous executioner! */
-== ZDBAEB @3166 /*  Come, my pet Paladin! There's some foul fiend who owes me its gold or its guts, and we're gonna collect - together! */
+== ZDBAEB ~Is there some scintillating reason why you should choose to smite me?~
+== BKELDOR ~Having heard a little of your sordid past, is there a reason why I should not?~
+== ZDBAEB ~I am not evil! I merely *detect* that way.~
+== BKELDOR ~And a difficult upbringing oft leads to making ill-informed choices. I accede to your point, Baeloth, but heed my warning.~
+== BKELDOR ~Tread carefully, and avoid further harming others with your actions, lest your antics summon true consequences.~
+== ZDBAEB ~Consequences? Not on my coarse conscience! Oh no.~
 EXIT
 
 // Korgan 1
@@ -289,23 +280,12 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEKorgan1","GLOBAL",0)~
 THEN BKORGAN ZDBAEKorgan1
-@3214 /* What do -you- know about fightin', Drow? All I've seen you carry around is a prissy little stick! */
+~Have you ever considered a career of chaos and carnage in my arena?~
 DO ~SetGlobal("ZDBAEKorgan1","GLOBAL",1)~
-== ZDBAEB @3215 /* Aw. Did someone wake up on the wrong side of the keg? Hmm? */
-== BKORGAN @3216 /* And I've ne'er seen ye cart around no holy symbols nor spellbooks, either. It's like you dance and prance around all prissy-like magic sparks come odda yer hands! */
-== ZDBAEB @3217 /* Aw! Is the short one jealous that he can't kill anything he'd please with a well-placed sneeze? */
-== BKORGAN @3218 /* I sneezed all over ye earlier. */
-== ZDBAEB @3219 /* It was downright -disgusting!- Rightfully -revolting!- */
-== BKORGAN @3220 /* Give it time, Drow. It'll still kill ye. */
-== ZDBAEB @3221 /* It's like you -want- me to hate you. Noticing more melancholy from your mediocre stature is amusing, at least! */
-== BKORGAN @3222 /* Alright, ye damned Drow. Ye pass. */
-== ZDBAEB @3223 /* With my usual panache, I assume. */
-== BKORGAN @3224 /* Ye've been sneezed at, pissed on, insulted, and survived my beer 'n' sausage farts. Ye got my respect, spell-slinger. */
-== ZDBAEB @3225 /* What a woeful pain it was at first, being subjected to your -primitive- palette of -pain.- */
-== BKORGAN @3226 /* Whaddaya mean? */
-== ZDBAEB @3227 /* Let's see. I've been disfigured, dismembered, disemboweled, dead, dishonored, depressed, diseased, and detritus. Your little disgusting ditty was... dainty. */
-== BKORGAN @3228 /* Whatever, Drow. Just do your prissy dancin' toward our enemies. Maybe they'll run away in fear or fall down laughin'. */
-== ZDBAEB @3229 /* Come, my dear Dwarf. I have -plans.- */
+== BKORGAN ~Blood an' gold in equal measure, eh? Aye, I might be interested. What's yer offer, drow?~
+== ZDBAEB ~Besides earning fame and fervent applause? Perhaps...ah! Five-hundred gold coins!~
+== BKORGAN ~Five hundred? Bah! Tavern brawls pay better. Ye couldnae afford me.~
+== ZDBAEB ~Not yet, my cocksure companion, but fortunes are fickle. Tomorrow's treasure may well tip the scales!~
 EXIT
 
 // Mazzy 1
@@ -319,22 +299,12 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEMazzy1","GLOBAL",0)~
 THEN ZDBAEB ZDBAEMazzy1
-@3230 /* What have we here? A light-skinned Svirfneblin? */
+~Ah! A halfling. For a moment I mistook you for a pale deep gnome with a stunted skull.~ 
 DO ~SetGlobal("ZDBAEMazzy1","GLOBAL",1)~
-== ZDBAEB @3231 /* No, the skull's slightly too small. */
-== BMAZZY @3232 /* I'm a Halfling, not a Gnome. */
-== ZDBAEB @3233 /* I was just about to say that! */
-== BMAZZY @3234 /* Drow, what is your point? I tolerated the decision of our leader for us to travel together. */
-== ZDBAEB @3235 /* Oh, I was just learning more about you surface folk. Apparently, we have a lot in common - besides skin color, of course! */
-== BMAZZY @3236 /* I think I know where this is going, but tell me anyway. */
-== ZDBAEB @3237 /* I am -so very glad- you asked! */
-== ZDBAEB @3238 /* We have plenty of -common enemies!- Being around the surface for so long has taught me that it seems -everyone- hates -everything- in the Underdark! */
-== BMAZZY @3239 /* -Hate- is a -strong- term, and maybe not the right one, but I see your point. We on the surface have had -strong suspicions- toward your malignant kind! */
-== ZDBAEB @3240 /* Any guesses as to why? */
-== BMAZZY @3241 /* Have you seen Beholders? Illithids? Demons? Devils? Liches? Many of them are rich, powerful, ugly-looking things that seem to be fighting amongst themselves for the chance to take over the surface as tyrants and puppet masters! */
-== ZDBAEB @3242 /* When you put it that way my dear Mazzy, I think we'll get along -just fine.- */
-== BMAZZY @3243 /* Just remember, BAELOTH: I am -not- your puppet! */
-== ZDBAEB @3244 /* No, but for now we're partners. Let's go cull the Underdark herd - together. Ready when you are! */
+== BMAZZY ~I do not take kindly to being mocked, Baeloth.~  
+== ZDBAEB ~Mockery? Never! I'm merely marveling at our uncommon companionship. <CHARNAME> keeps curious company.~ 
+== BMAZZY ~You mistake necessity for friendship. We travel together only by <CHARNAME>'s choice.~  
+== ZDBAEB ~Then lets call ourselves partners in peril, even if not in principle.~   
 EXIT
 
 // Minsc 1
@@ -356,9 +326,6 @@ DO ~SetGlobal("ZDBAEMinsc1","GLOBAL",1)~
 == BMINSC @3265 /* But why is my hamster dancing? */
 == ZDBAEB @3266 /* My skin secretes a scent sweet to the small creatures like him. I assumed it as an anomaly. */
 == BMINSC @3267 /* Well, so long as it doesn't prevent us from fighting the evil we need to fight, I think it's fine. */
-== BMINSC @3268 /* Come here, Boo! I need to teach you words to sing with your dance! Ha ha! */
-== ZDBAEB @3269 /* This seems like a very personal priority and I would prefer a -private- performance with the pair of you. */
-== BMINSC @3270 /* Ha ha! Minsc and Boo shall slay evil and sing and dance happily together! */
 EXIT
 
 // Nalia 1
@@ -673,6 +640,24 @@ DO ~SetGlobal("ZDBAEKeldorn2","GLOBAL",1)~
 == ZDBAEB @3179 /* An important inquiry, inquisitor. */
 == BKELDOR @3180 /* It is easier to make and break rules than it is to help those in need as they should be helped. Bringing about the greater good is my calling, even though I am still bound by certain oaths. */
 == ZDBAEB @3181 /* Wise words, my prudent paladin. */
+EXIT
+
+// Korgan 2
+CHAIN
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
+    InParty("KORGAN")
+    See("KORGAN")
+    !StateCheck("KORGAN", CD_STATE_NOTVALID)
+    !StateCheck("ZDBAE", CD_STATE_NOTVALID)
+    !AreaType(DUNGEON)
+    Global("ZDBAEKorgan2","GLOBAL",0)~
+THEN BKORGAN ZDBAEKorgan2
+~Spin me another bloody tale o' yer Black Pits, drow! I've a thirst for carnage, an' yer stories keeps me temper stoked 'til our next fight.~
+DO ~SetGlobal("ZDBAEKorgan2","GLOBAL",1)~
+== ZDBAEB ~No more gratis gore, my grim friend. Last time you claimed I couldn't afford you. Now, it seems, you cannot afford me.~
+== ZDBAEB ~Still, should you reconsider my offer, I shall spin more stories for you. Or, better yet, you can write them yourself upon the arena's sands.~
+== BKORGAN ~Ye drive a devil's bargain, Baeloth. I'll nae say no just yet.~
 EXIT
 
 // Mazzy 2
