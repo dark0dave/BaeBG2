@@ -259,14 +259,14 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEKeldorn1","GLOBAL",0)~
 THEN BKELDOR ZDBAEKeldorn1
-~You travel alongside a paladin without fear of retribution or judgment?~
+@10124 /* You travel alongside a paladin without fear of retribution or judgment? */
 DO ~SetGlobal("ZDBAEKeldorn1","GLOBAL",1)~
-== ZDBAEB ~Is there some scintillating reason why you should choose to smite me?~
-== BKELDOR ~Having heard a little of your sordid past, is there a reason why I should not?~
-== ZDBAEB ~I am not evil! I merely *detect* that way.~
-== BKELDOR ~And a difficult upbringing oft leads to making ill-informed choices. I accede to your point, Baeloth, but heed my warning.~
-== BKELDOR ~Tread carefully, and avoid further harming others with your actions, lest your antics summon true consequences.~
-== ZDBAEB ~Consequences? Not on my coarse conscience! Oh no.~
+== ZDBAEB @10125 /* Is there some scintillating reason why you should choose to smite me? */
+== BKELDOR @10126 /* Having heard a little of your sordid past, is there a reason why I should not? */
+== ZDBAEB @10127 /* I am not evil! I merely *detect* that way. */
+== BKELDOR @10128 /* And a difficult upbringing oft leads to making ill-informed choices. I accede to your point, Baeloth, but heed my warning. */
+== BKELDOR @10129 /* Tread carefully, and avoid further harming others with your actions, lest your antics summon true consequences. */
+== ZDBAEB @10130 /* Consequences? Not on my coarse conscience! Oh no. */
 EXIT
 
 // Korgan 1
@@ -280,12 +280,12 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEKorgan1","GLOBAL",0)~
 THEN BKORGAN ZDBAEKorgan1
-~Have you ever considered a career of chaos and carnage in my arena?~
+@10131 /* Have you ever considered a career of chaos and carnage in my arena? */
 DO ~SetGlobal("ZDBAEKorgan1","GLOBAL",1)~
-== BKORGAN ~Blood an' gold in equal measure, eh? Aye, I might be interested. What's yer offer, drow?~
-== ZDBAEB ~Besides earning fame and fervent applause? Perhaps...ah! Five-hundred gold coins!~
-== BKORGAN ~Five hundred? Bah! Tavern brawls pay better. Ye couldnae afford me.~
-== ZDBAEB ~Not yet, my cocksure companion, but fortunes are fickle. Tomorrow's treasure may well tip the scales!~
+== BKORGAN @10132 /* Blood an' gold in equal measure, eh? Aye, I might be interested. What's yer offer, drow? */
+== ZDBAEB @10133 /* Besides earning fame and fervent applause? Perhaps...ah! Five-hundred gold coins! */
+== BKORGAN @10134 /* Five hundred? Bah! Tavern brawls pay better. Ye couldnae afford me. */
+== ZDBAEB @10135 /* Not yet, my cocksure companion, but fortunes are fickle. Tomorrow's treasure may well tip the scales! */
 EXIT
 
 // Mazzy 1
@@ -299,12 +299,12 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEMazzy1","GLOBAL",0)~
 THEN ZDBAEB ZDBAEMazzy1
-~Ah! A halfling. For a moment I mistook you for a pale deep gnome with a stunted skull.~ 
+@10136 /* Ah! A halfling. For a moment I mistook you for a pale deep gnome with a stunted skull. */
 DO ~SetGlobal("ZDBAEMazzy1","GLOBAL",1)~
-== BMAZZY ~I do not take kindly to being mocked, Baeloth.~  
-== ZDBAEB ~Mockery? Never! I'm merely marveling at our uncommon companionship. <CHARNAME> keeps curious company.~ 
-== BMAZZY ~You mistake necessity for friendship. We travel together only by <CHARNAME>'s choice.~  
-== ZDBAEB ~Then lets call ourselves partners in peril, even if not in principle.~   
+== BMAZZY @10137 /* I do not take kindly to being mocked, Baeloth. */
+== ZDBAEB @10138 /* Mockery? Never! I'm merely marveling at our uncommon companionship. <CHARNAME> keeps curious company. */
+== BMAZZY @10139 /* You mistake necessity for friendship. We travel together only by <CHARNAME>'s choice. */
+== ZDBAEB @10140 /* Then lets call ourselves partners in peril, even if not in principle. */
 EXIT
 
 // Minsc 1
@@ -653,11 +653,11 @@ IF ~InParty("ZDBAE")
     !AreaType(DUNGEON)
     Global("ZDBAEKorgan2","GLOBAL",0)~
 THEN BKORGAN ZDBAEKorgan2
-~Spin me another bloody tale o' yer Black Pits, drow! I've a thirst for carnage, an' yer stories keeps me temper stoked 'til our next fight.~
+@10141 /* Spin me another bloody tale o' yer Black Pits, drow! I've a thirst for carnage, an' yer stories keeps me temper stoked 'til our next fight. */
 DO ~SetGlobal("ZDBAEKorgan2","GLOBAL",1)~
-== ZDBAEB ~No more gratis gore, my grim friend. Last time you claimed I couldn't afford you. Now, it seems, you cannot afford me.~
-== ZDBAEB ~Still, should you reconsider my offer, I shall spin more stories for you. Or, better yet, you can write them yourself upon the arena's sands.~
-== BKORGAN ~Ye drive a devil's bargain, Baeloth. I'll nae say no just yet.~
+== ZDBAEB @10142 /* No more gratis gore, my grim friend. Last time you claimed I couldn't afford you. Now, it seems, you cannot afford me. */
+== ZDBAEB @10143 /* Still, should you reconsider my offer, I shall spin more stories for you. Or, better yet, you can write them yourself upon the arena's sands. */
+== BKORGAN @10144 /* Ye drive a devil's bargain, Baeloth. I'll nae say no just yet. */
 EXIT
 
 // Mazzy 2

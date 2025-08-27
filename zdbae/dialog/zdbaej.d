@@ -83,32 +83,32 @@ END
 // Spellhold
 // Slayer Change
 I_C_T PLAYER1 3 ZDBAESLAY1
-== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Bravo! Such a savage spectacle! I call for an encore!~
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10145 /* Bravo! Such a savage spectacle! I call for an encore! */
 END
 
 // Elven City
 // Tree of Life approach
 EXTEND_BOTTOM PLAYER1 33
-IF ~InParty("ZDBAE") InMyArea("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) Global("ZDBAETreeOfLife","GLOBAL",0)~ 
+IF ~InParty("ZDBAE") InMyArea("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) Global("ZDBAETreeOfLife","GLOBAL",0)~
 EXTERN PLAYER1 ZDBAETREE1
 END
 
 CHAIN PLAYER1 ZDBAETREE1
-~Baeloth Barrityl, the drow sorcerer, an unlikely ally who has flung fire and unleashed his fury upon your foes. But is he truly prepared for the fight ahead?~
+@10146 /* Baeloth Barrityl, the drow sorcerer, an unlikely ally who has flung fire and unleashed his fury upon your foes. But is he truly prepared for the fight ahead? */
 DO ~SetGlobal("ZDBAETreeOfLife","GLOBAL",1)~
 END
-++ ~Baeloth, we have become friends, so you don't have to follow me any further. This isn't your fight.~ EXTERN ZDBAEJ ZDBAETREE2
-++ ~There's a chance we won't survive. Turn tail and flee if you're too cowardly to see this battle through.~ EXTERN ZDBAEJ  ZDBAETREE2
-++ ~We're nearing the end. I have to know that you're ready. There's no turning back.~ EXTERN ZDBAEJ ZDBAETREE2
+++ @10147 /* Baeloth, we have become friends, so you don't have to follow me any further. This isn't your fight. */ EXTERN ZDBAEJ ZDBAETREE2
+++ @10148 /* There's a chance we won't survive. Turn tail and flee if you're too cowardly to see this battle through. */ EXTERN ZDBAEJ  ZDBAETREE2
+++ @10149 /* We're nearing the end. I have to know that you're ready. There's no turning back. */ EXTERN ZDBAEJ ZDBAETREE2
 
 
 CHAIN ZDBAEJ ZDBAETREE2
-~I was preparing a particularly scorching fireball for these simpering elves. How they ever forced my kin beneath the ground is beyond comprehension.~  
-== ZDBAEJ ~But yes, yes, I hear you. I have resolved to remain. The spotlight beckons and I shan't miss my cue!~
+@10150 /* I was preparing a particularly scorching fireball for these simpering elves. How they ever forced my kin beneath the ground is beyond comprehension. */
+== ZDBAEJ @10151 /* But yes, yes, I hear you. I have resolved to remain. The spotlight beckons and I shan't miss my cue! */
 END
-COPY_TRANS PLAYER1 33 
+COPY_TRANS PLAYER1 33
 
 // Tree of Life, Irenicus is dead
 I_C_T PLAYER1 16 ZDBAEIREN1
-== ZDBAEJ IF ~InParty("ZDBAE") Range("ZDBAE",15) !StateCheck("ZDBAE",CD_STATE_NOTVALID)~ THEN ~Obviously, this was going to happen. Our triumph was assured with my superior sorcerous skills. ...Ah! What is this strange, nay sinister, sensation?~
+== ZDBAEJ IF ~InParty("ZDBAE") Range("ZDBAE",15) !StateCheck("ZDBAE",CD_STATE_NOTVALID)~ THEN @10152 /* Obviously, this was going to happen. Our triumph was assured with my superior sorcerous skills. ...Ah! What is this strange, nay sinister, sensation? */
 END
