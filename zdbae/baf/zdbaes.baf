@@ -103,28 +103,18 @@ END
 
 /* baeloth has the luxurious lizardskin leapers */
 IF
-  HasItem("zdbo02",Myself)
-  Global("zdbaeleapers","GLOBAL",0)
+    HasItem("zdbo02",Myself)
+    Global("zdbaeleapers","GLOBAL",0)
 THEN
 RESPONSE #100
     SetGlobal("zdbaeleapers","GLOBAL",1)
     StartDialogNoSet([PC])
 END
 
-/* baeloth has the sturdy leather boots */
-IF
-  HasItem("zdbo03",Myself)
-  Global("zdbaesturdy","GLOBAL",0)
-THEN
-RESPONSE #100
-    SetGlobal("zdbaesturdy","GLOBAL",1)
-    StartDialogNoSet([PC])
-END
-
 /* baeloth has the simple boots - how DARE you! */
 IF
-  HasItem("bootsthatdontexist",Myself)
-  Global("zdbaesimple","GLOBAL",0)
+    HasItem("bootsthatdontexist",Myself)
+    Global("zdbaesimple","GLOBAL",0)
 THEN
 RESPONSE #100
     SetGlobal("zdbaesimple","GLOBAL",1)
@@ -133,8 +123,8 @@ END
 
 /* baeloth has da boots with da fur */
 IF
-  HasItem("zdbo01",Myself)
-  Global("zdbaefurries","GLOBAL",0)
+    HasItem("zdbo01",Myself)
+    Global("zdbaefurries","GLOBAL",0)
 THEN
 RESPONSE #100
     SetGlobal("zdbaefurries","GLOBAL",1)
@@ -143,22 +133,22 @@ END
 
 /* entering the market district, baeloth wants new boots */
 IF
-InParty(Myself)
-See(Player1)
-!StateCheck(Player1,CD_STATE_NOTVALID) 
-!StateCheck(Myself,CD_STATE_NOTVALID)
-CombatCounter(0)
-AreaCheck("AR0700")           
-Global("ZDBaeBoots","GLOBAL",0)
+    InParty(Myself)
+    See(Player1)
+    !StateCheck(Player1,CD_STATE_NOTVALID)
+    !StateCheck(Myself,CD_STATE_NOTVALID)
+    CombatCounter(0)
+    AreaCheck("AR0700")
+    Global("ZDBaeBoots","GLOBAL",0)
 THEN
 RESPONSE #100
-SetGlobal("ZDBaeBoots","GLOBAL",1)
+    SetGlobal("ZDBaeBoots","GLOBAL",1)
 END
 
 IF
-  Global("ZDBaeBoots","GLOBAL",1)
- THEN
- RESPONSE #100
-  MoveToObject(Player1)
-  Dialogue(Player1)
-END 
+    Global("ZDBaeBoots","GLOBAL",1)
+THEN
+RESPONSE #100
+    MoveToObject(Player1)
+    Dialogue(Player1)
+END
