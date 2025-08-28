@@ -1,0 +1,27 @@
+IF
+  Global("ZDAuctionTrigger","GLOBAL",1)
+THEN
+RESPONSE #100
+  SetGlobal("ZDAuctionTrigger","GLOBAL",1)
+  // Actioneer
+  CreateCreature("ZDAUC",[1928.3425],N)
+  // Crowd
+  CreateCreature("NOBLE1",[1748.3319],S)
+  CreateCreature("NOBLE2",[1805.3313],S)
+  CreateCreature("NOBL4",[1874.3320],S)
+  CreateCreature("NOBL5",[1933.3324],S)
+  CreateCreature("NOBL6",[1976.3319],S)
+  CreateCreature("NOBLEW1",[2000. 3319],S)
+  CreateCreature("NOBLEW2",[2126.331],S)
+  Continue()
+END
+
+IF
+  Global("ZDAuctionTrigger","GLOBAL",3)
+THEN
+RESPONSE #100
+  SetGlobal("ZDAuctionTrigger","GLOBAL",4)
+  // Actioneer
+  ActionOverride("ZDAUC",DestroySelf())
+  Continue()
+END

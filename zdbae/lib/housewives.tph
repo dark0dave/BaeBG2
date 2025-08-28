@@ -1,0 +1,16 @@
+/// Real Housewives of Athkatla ///
+
+// Create Auctioneer
+COPY_EXISTING ~ANN01.CRE~ ~ZDAUC.CRE~
+  SAY NAME1 ~Auctioneer~
+  SAY NAME2 ~Auctioneer~
+  WRITE_ASCII SCRIPT_OVERRIDE ~zdauc~ #8
+  WRITE_ASCII DEATHVAR ~zdauc~ #32
+  WRITE_ASCII DIALOG ~zdauc~ #8
+
+// Script to Start
+EXTEND_TOP ~AR0700.BCS~ ~%MOD_FOLDER%/baf/ar0700.baf~
+  EVALUATE_BUFFER
+
+// Compile cutscene
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/cutscenes/zdcutauc.baf~

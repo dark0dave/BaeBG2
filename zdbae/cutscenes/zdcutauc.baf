@@ -1,0 +1,11 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneID(Player1)
+    ClearAllActions()
+    DisplayStringHead("Announcer","For those who value not only elegance but also refinement and sophistication, I present to you these magnificent ") /* ~~ */
+    EndCutSceneMode()
+    AddJournalEntry("You went to an auction with baeloth, who knew shopping could be so fun!",INFO) /* ~~ */
+    ActionOverride("ZDBAE",StartDialogueNoSet([PC]))
+END
