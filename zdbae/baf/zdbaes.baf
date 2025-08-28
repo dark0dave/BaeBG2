@@ -101,6 +101,27 @@ END
 
 // Boots
 
+// Timer
+IF
+    InParty("ZDBAE")
+    AreaCheck("AR0400")
+    Global("ZDCreateBootTimer","GLOBAL",0)
+THEN
+RESPONSE #100
+    SetGlobal("ZDCreateBootTimer","GLOBAL",1)
+    SetGlobalTimer("ZDBootTimer","AR0400", 3600)
+END
+
+// Trigger timer
+IF
+    GlobalTimerExpired("ZDBootTimer", "GLOBAL")
+    Global("ZDTriggerBoots","GLOBAL",0)
+THEN
+RESPONSE #100
+    SetGlobal("ZDTriggerBoots","GLOBAL",1)
+    StartDialogNoSet([PC])
+END
+
 /* baeloth has the luxurious lizardskin leapers */
 IF
     HasItem("zdbo02",Myself)
