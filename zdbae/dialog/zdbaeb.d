@@ -483,7 +483,7 @@ DO ~SetGlobal("ZDBAEWILSON1","GLOBAL",1)~
 == WILSON @3367 /* <Wilson snorts then snorts again.> */
 == ZDBAEB @3368 /* An obvious implementation of your unique ursine ability would be to properly prepare you as a pit fighter. Surely, you could satisfactorily shoulder such a shift! */
 == WILSON @3369 /* <Wilson whines.> */
-== ZDBAEB @3370 /* Worry not, my warrior. We can call you, 'The Ursine Usurper!' Eating opponents' innards is optional, obviously, however ostentatious. */ /* Worry not, my warrior. We can call you, "The Ursine Usurper!" Eating opponents' innards is optional, obviously, however ostentatious. */
+== ZDBAEB @3370 /* Worry not, my warrior. We can call you, 'The Ursine Usurper!' Eating opponents' innards is optional, obviously, however ostentatious. */
 EXIT
 
 // Yoshimo 1
@@ -814,7 +814,7 @@ DO ~SetGlobal("ZDBAENalia3","GLOBAL",1)~
 == BNALIA @3308 /* What should be done? */
 == ZDBAEB @3309 /* Use your noble noggin! What does your nation need now and later? */
 == BNALIA @3310 /* Thanks, but how do you know all this? */
-== ZDBAEB @3311 /* Being Baeloth the Entertainer meant my domain was a convert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain. */ /* Being Baeloth the Entertainer meant my domain was a covert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain. */
+== ZDBAEB @3311 /* Being Baeloth the Entertainer meant my domain was a convert blood sport. It's so similar to leading a surface nation, except your combatants are conquerors and you fight to survive instead of entirely to entertain. */
 EXIT
 
 // Keldorn 4

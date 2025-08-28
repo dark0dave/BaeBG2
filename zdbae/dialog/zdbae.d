@@ -10,7 +10,7 @@ IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_BEGIN","GLOBAL",0) Global(
 END
 
 IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_BEGIN","GLOBAL",1) Global("ZDBAE_SHUTUP","GLOBAL",1)~ THEN BEGIN ZDBAES
-  SAY @6 /* Eh? What do YOU want?~ [ZDBAEF] */
+  SAY @6 /* Eh? What do YOU want? */
   IF ~~ THEN REPLY @1001 /* Well met, I am <CHARNAME>. */ GOTO ZDBAE2
   IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY @1003 /* Baeloth! Do you remember me? */ GOTO ZDBAE3
   IF ~~ THEN REPLY @1017 /* I want you to die, drow! */ DO ~SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
@@ -38,13 +38,13 @@ END
 // Remember
 IF ~~ THEN BEGIN ZDBAE3
   SAY @2003 /* Ah, absolutely! How could one ever forget a countenance as... delicately distinctive as yours? Regardless, rest assured that I would never disregard the delightful pleasure of your companionship, revelling in the glory that is, well... me. */
-  IF ~Global("BPINBG","GLOBAL",1)~ THEN REPLY @1010 /* You should, Baeloth! Don’t you recognize your former champion? */ GOTO ZDBAE4
+  IF ~Global("BPINBG","GLOBAL",1)~ THEN REPLY @1010 /* You should, Baeloth! Don't you recognize your former champion? */ GOTO ZDBAE4
   IF ~~ THEN REPLY @1005 /* You don't remember me at all do you. */ GOTO ZDBAE4
 END
 
 IF ~~ THEN BEGIN ZDBAE4
   SAY @2004 /* My mirthful mate, let's not meander in minor matters. I am a dashing drow of discernment and delicious taste, indeed! */
-  IF ~~ THEN REPLY @1008 /* If you want real entertainment, Baeloth, perhaps you should join my party instead? */ GOTO ZDBAE5
+  IF ~~ THEN REPLY @1008 /* If it's real entertainment you're seeking, perhaps you'll join my party instead? */ GOTO ZDBAE5
 END
 
 // Reject
@@ -90,7 +90,7 @@ END
 
 // Exit
 IF ~~ THEN BEGIN ZDBAE12
-  SAY @2013 /* Is this your parting present, then? Leaving me languishing thusly in this loathsome stand like some lowly miscreant? You'll rue the day you dared deliver such a dire destiny. */
+  SAY @2013 /* It would be beneath you to so fervently fopp over a grudge for my erstwhile employment. Let bygones be bygones, as they say, Hmm? */
   IF ~~ THEN GOTO ZDBAE100
 END
 
@@ -108,14 +108,3 @@ INTERJECT ANNO1 0 ZDBAEINTRO0
   == ZDBAE IF ~~ THEN
   @4050 /* Oohoohoohoo! This should be good! */
 END ANNO1 1
-
-// TODO: Fire this after the pit fight
-//     ActionOverride("ZDBAE",StartDialogueNoSet([PC]))
-INTERJECT_COPY_TRANS ANNO1 2 ZDBAEINTRO1
-  == ZDBAE IF ~~ THEN
-  @2000 /* What a wretched waste! How boring and banal this brawl is! Were I to grace these grounds with my talents, tragedy would instead transform into triumph. I would bring power, prestige and panache to this pitiful pit. Someone should displace - dare I say depose - of the dullard who dared to direct such a dreary display. Perhaps... me? */
-  == NOBLE1 @1501 /* You have the right of it. */
-  == NOBLE2 @1502 /* I have not been entertained! */
-  == NOBLE1 @1503 /* If you've got a plan, I'm in. Can't be much harder starting a fight than watching one. */
-  == ZDBAE @2001 /* Then huddle close my hapless horde. The time of tedium is about to be terminated. */
-END

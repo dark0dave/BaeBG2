@@ -9,6 +9,7 @@ AUTO_TRA ~zdbae/tra/%s~
 LANGUAGE ~English~
          ~english~
          ~zdbae/tra/english/setup.tra~
+         ~zdbae/tra/english/journal.tra~
 
 // Main Component
 BEGIN ~Baeloth BG2~ DESIGNATED 0 LABEL ~zdbae~
