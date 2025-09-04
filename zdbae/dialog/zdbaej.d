@@ -215,7 +215,7 @@ END
   // Should be OR(2) & also check for SOD completion
   + ~Global("BPINBG","GLOBAL",1)~ + @10206 /* I was captured and tortured by a mage called Irenicus. I intend to find him and make him pay for his insolence. */ EXTERN ZDBAEJ BAEFT1.2
   + ~!Global("BPINBG","GLOBAL",1)~ + @10207 /* I was captured and tortured by a mage named Irenicus. I intend to find him and make him pay for his insolence. */ EXTERN ZDBAEJ BAEFT1.3
-  ++ @10208 /* Just fall in line, Baeloth, I’ve no intention of explaining my plans. */ EXTERN ZDBAEJ ZDBAEFT1.4
+  ++ @10208 /* Just fall in line, Baeloth, I’ve no intention of explaining my plans. */ EXTERN ZDBAEJ BAEFT1.4
 
 CHAIN ZDBAEJ BAEFT1.1
 @10209 /* Those conniving Cowled Ones? I applaud your audacity in opposing them. Any cause that confounds them is one I shall champion. Imagine trying to impose limits on my magic! */
@@ -231,7 +231,7 @@ CHAIN ZDBAEJ BAEFT1.4
 @10213 /* Then consider this conversation adjourned. */
 END
 
-CHAIN ZDBAEJ BAEFT1.5
+CHAIN ZDBAEJ BFAEFT1.5
   @10214 /* I chose wisely when I cast my lot in with you. Do not fret, I shall think of something suitable with which you can repay me. The pleasure of my company does have its price. */
 END
   + ~!NumInPartyGT(2)~ + @10215 /* Baeloth, you walk freely only due to my protection. */ EXTERN ZDBAEJ BAEFT1.6

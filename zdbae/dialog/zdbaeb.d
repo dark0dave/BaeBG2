@@ -416,9 +416,9 @@ IF ~InParty("ZDBAE")
 THEN ZDBAEB ZDBAEWILSON1
 @10162 /* A bear as a battle-brother. What role shall I bestow upon you, hmm? */
 DO ~SetGlobal("ZDBAEWILSON1","GLOBAL",1)~
-== BWILSON @10163 /* Snort. */
+== WILSON @10163 /* Snort. */
 == ZDBAEB @10164 /* What about...The Ursine Usurper! Crowds will roar as you crush challengers in my arena. */
-== BWILSON @10165 /* Grr! */
+== WILSON @10165 /* Grr! */
 == ZDBAEB @10166 /* Spoilsport. */
 EXIT
 
