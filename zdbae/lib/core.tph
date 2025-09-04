@@ -15,7 +15,10 @@ COPY ~%MOD_FOLDER%/eff~ ~override~
 // IBARING->ZDRING0
 COPY ~%MOD_FOLDER%/bam~ ~override~
 COPY ~%MOD_FOLDER%/sound~ ~override~
-COPY ~%MOD_FOLDER%/portraits~ ~override~
+COPY ~%MOD_FOLDER%/portrait/zdbael.bmp~ ~override/baelothl.bmp~
+COPY ~%MOD_FOLDER%/portrait/zdbael.bmp~ ~override/baelothm.bmp~
+COPY ~%MOD_FOLDER%/portrait/zdbael.bmp~ ~override/zdbael.bmp~
+COPY ~%MOD_FOLDER%/portrait/zdbael.bmp~ ~override/zdbaem.bmp~
 
 // CD_STATE_NOTVALID
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~

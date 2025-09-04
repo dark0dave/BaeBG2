@@ -20,3 +20,8 @@ INCLUDE ~zdbae/lib/core.tph~
 BEGIN ~crossmod~ DESIGNATED 1 LABEL ~crossmod~
 REQUIRE_COMPONENT ~zdbae.tp2~ "0" ~Requires main component~
 INCLUDE ~zdbae/lib/crossmod.tph~
+
+// Baeloth Alt Portrait
+BEGIN ~altportrait~ DESIGNATED 10 LABEL ~altportrait~
+REQUIRE_COMPONENT ~zdbae.tp2~ "0" ~Requires main component~
+INCLUDE ~zdbae/lib/altportrait.tph~
