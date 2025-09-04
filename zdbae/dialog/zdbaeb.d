@@ -15,7 +15,7 @@ DO ~SetGlobal("ZDBAEAerie1","GLOBAL",1)~
 == ZDBAEB @10019 /* Havoc? Hah! Why should I concern myself with those who can't appreciate the hypnotic hurricane of my magical histrionics? */
 == BAERIE @10020 /* I...I just think we should be careful. Magic is not something to be taken lightly. Someone can easily get hurt from a stray fireball. */
 == BAERIE @10021 /* We should use our powers for good. To protect, heal or aid others. */
-== ZDBAEB ~Limit yourself if you must, but know I will not. My power flows like a raging river, not a quaint rivulet.~
+== ZDBAEB @10130 /* Limit yourself if you must, but know I will not. My power flows like a raging river, not a quaint rivulet. */
 EXIT
 
 // Anomen 1, Lawful Neutral, hasn't been knighted
@@ -249,13 +249,13 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAEKeldorn1","GLOBAL",0)~
 THEN BKELDOR ZDBAEKeldorn1
-@10124 /* You travel alongside a paladin without fear of retribution or judgment? */
+@10124 /* Baeloth, we have become friends, so you don't have to follow me any further. This isn't your fight. */ /* You travel alongside a paladin without fear of retribution or judgment? */
 DO ~SetGlobal("ZDBAEKeldorn1","GLOBAL",1)~
-== ZDBAEB @10125 /* Is there some scintillating reason why you should choose to smite me? */
-== BKELDOR @10126 /* Having heard a little of your sordid past, is there a reason why I should not? */
-== ZDBAEB @10127 /* I am not evil! I merely *detect* that way. */
-== BKELDOR @10128 /* And a difficult upbringing oft leads to making ill-informed choices. I accede to your point, Baeloth, but heed my warning. */
-== BKELDOR @10129 /* Tread carefully, and avoid further harming others with your actions, lest your antics summon true consequences. */
+== ZDBAEB @10125 /* There's a chance we won't survive. Turn tail and flee if you're too cowardly to see this battle through. */ /* Is there some scintillating reason why you should choose to smite me? */
+== BKELDOR @10126 /* We're nearing the end. I have to know that you're ready. There's no turning back. */ /* Having heard a little of your sordid past, is there a reason why I should not? */
+== ZDBAEB @10127 /* I was preparing a particularly scorching fireball for these simpering elves. How they ever forced my kin beneath the ground is beyond comprehension. */ /* I am not evil! I merely *detect* that way. */
+== BKELDOR @10128 /* But yes, yes, I hear you. I have resolved to remain. The spotlight beckons and I shan't miss my cue! */ /* And a difficult upbringing oft leads to making ill-informed choices. I accede to your point, Baeloth, but heed my warning. */
+== BKELDOR @10129 /* Obviously, this was going to happen. Our triumph was assured with my superior sorcerous skills. ...Ah! What is this strange, nay sinister, sensation? */ /* Tread carefully, and avoid further harming others with your actions, lest your antics summon true consequences. */
 == ZDBAEB @10130 /* Consequences? Not on my coarse conscience! Oh no. */
 EXIT
 
@@ -305,13 +305,13 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAEMinsc1","GLOBAL",0)~
 THEN BMINSC ZDBAEMinsc1
-~See how Boo sniffs you, dark one? His nose knows evil!~
+@10131 /* See how Boo sniffs you, dark one? His nose knows evil! */
 DO ~SetGlobal("ZDBAEMinsc1","GLOBAL",1)~
-== ZDBAEB ~Perhaps he will reconsider? Behold, I brought candied hazelnuts! Your furry friend might find them delicious.~
-== BMINSC ~You will not buy Boo's trust with sweets! A hamster's sense of justice cannot be swayed!~
-== ZDBAEB ~Buy is such a blunt word. I prefer to call it cultivating camaraderie.~
-== BMINSC ~He is not happy with you. And when Boo is not happy, Minsc is not happy.~
-== ZDBAEB ~What a glower! Most magnificent! I'll stand way over there for a spell, shall I?~ 
+== ZDBAEB @10132 /* Perhaps he will reconsider? Behold, I brought candied hazelnuts! Your furry friend might find them delicious. */
+== BMINSC @10133 /* You will not buy Boo's trust with sweets! A hamster's sense of justice cannot be swayed! */
+== ZDBAEB @10134 /* Buy is such a blunt word. I prefer to call it cultivating camaraderie. */
+== BMINSC @10135 /* He is not happy with you. And when Boo is not happy, Minsc is not happy. */
+== ZDBAEB @10136 /* What a ghastly glower from gerbil and  a gentlemen. I'll stand way over there for a spell, shall I? */
 EXIT
 
 // Nalia 1
@@ -324,14 +324,14 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAENalia1","GLOBAL",0)~
 THEN ZDBAEB ZDBAENalia1
-~Nalia, what's nagged me about you, is that you know naught about navigating the knot of nomination. I thought you numbered amongst the nobility?~
+@10137 /* Nalia, what's nagged me about you, is that you know naught about navigating the knot of nomination. I thought you numbered amongst the nobility? */
 DO ~SetGlobal("ZDBAENalia1","GLOBAL",1)~
-== BNALIA ~I do but I cannot say I enjoy it.~
-== ZDBAEB ~Why would anyone dislike others being legally liable to wait on them?~
-== BNALIA ~Should I take pride in something I didn't choose? Something I earned through mere circumstace of my birth?~
-== BNALIA ~Day after day, I witness the unequality in the world. My life is worth no more than any other.~
-== ZDBAEB ~Ah, noble Nalia, ever hobbled by her heightened humanity. Ha!~
-== BNALIA ~What gives my life worth are my deeds. Nobility does not define who I am or what I'm capable of.~
+== BNALIA @10138 /* I do but I cannot say I enjoy it. */
+== ZDBAEB @10139 /* Why would anyone dislike others being legally liable to wait on them? */
+== BNALIA @10140 /* Should I take pride in something I didn't choose? Something I earned through mere circumstace of my birth? */
+== BNALIA @10141 /* Day after day, I witness the inequality in the world. My life is worth no more than any other. */
+== ZDBAEB @10142 /* Ah, noble Nalia, ever hobbled by her heightened humanity. Ha! */
+== BNALIA @10143 /* What gives my life worth are my deeds. Nobility does not define who I am or what I'm capable of. */
 EXIT
 
 // Neera 1
@@ -344,12 +344,12 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAENeera1","GLOBAL",0)~
 THEN ZDBAEB ZDBAENeera1
-~Half-elf, your wild magic is a magnificent maelstrom.~
+@10144 /* Half-elf, your wild magic is a magnificent maelstrom. */
 DO ~SetGlobal("ZDBAENeera1","GLOBAL",1)~
-== BNEERA ~Ha! Pull the other one. Usually people just pray I don't explode nearby.~
-== ZDBAEB ~You wield chaos as both curse and cover. Every miscast spell cloaks you with credible deniability for future accidents.~
-== BNEERA ~...So you admire me because I can screw up and pretend it wasn't my fault?~
-== BNEERA ~Figures. But, sure, I suppose that is a perk.~
+== BNEERA @10145 /* Ha! Pull the other one. Usually people just pray I don't explode nearby. */
+== ZDBAEB @10146 /* You wield chaos as both curse and cover. Every miscast spell cloaks you with credible deniability for future accidents. */
+== BNEERA @10147 /* ...So you admire me because I can screw up and pretend it wasn't my fault? */
+== BNEERA @10148 /* Figures. But, sure, I suppose that is a perk. */
 EXIT
 
 // Rasaad 1
@@ -362,12 +362,12 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAERasaad1","GLOBAL",0)~
 THEN BRASAAD ZDBAERasaad1
-~Why do you stare at me so intently, Baeloth?~
+@10149 /* Why do you stare at me so intently, Baeloth? */
 DO ~SetGlobal("ZDBAERasaad1","GLOBAL",1)~
-== ZDBAEB ~Because you bewilder me. Bare of armor, bereft of spells, and yet somehow still alive.~
-== BRASAAD ~I need not rely on armor nor sorcery. My body is my weapon, my discipline my shield.~
-== ZDBAEB ~A flimsy defense against fireballs or fiends. Neither of them pauses to meditate.~
-== BRASAAD ~Nor do they choose mercy. That is why I must.~
+== ZDBAEB @10150 /* Because you bewilder me. Bare of armor, bereft of spells, and yet somehow still alive. */
+== BRASAAD @10151 /* I need not rely on armor nor sorcery. My body is my weapon, my discipline my shield. */
+== ZDBAEB @10152 /* A flimsy defense against fireballs or fiends. Neither of them pauses to meditate. */
+== BRASAAD @10153 /* Nor do they choose mercy. That is why I must. */
 EXIT
 
 // Valygar 1
@@ -380,11 +380,11 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAEValygar1","GLOBAL",0)~
 THEN BVALYGA ZDBAEValygar1
-~I don't trust your kind, Baeloth. Magic corrupts and you revel in your power.~
+@10154 /* I don't trust your kind, Baeloth. Magic corrupts and you revel in your power. */
 DO ~SetGlobal("ZDBAEValygar1","GLOBAL",1)~
-== ZDBAEB ~Sorcery sings and simmers in my veins. Stifling it would be like trying to bottle lightning.~
-== BVALYGA ~And when it bursts, as it always does, innocent bystanders pay the price.~
-== BVALYGA ~I'll be watching you closely. Every step, every spell.~
+== ZDBAEB @10155 /* Sorcery sings and simmers in my veins. Stifling it would be like trying to bottle lightning. */
+== BVALYGA @10156 /* And when it bursts, as it always does, innocent bystanders pay the price. */
+== BVALYGA @10157 /* I'll be watching you closely. Every step, every spell. */
 EXIT
 
 // Viconia 1
@@ -397,11 +397,11 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAEViconia1","GLOBAL",0)~
 THEN BVICONI ZDBAEViconia1
-~What are you scheming now, lowly jaluk?~
+@10158 /* What are you scheming now, lowly jaluk? */
 DO ~SetGlobal("ZDBAEViconia1","GLOBAL",1)~
-== ZDBAEB ~We are both outcasts upon the surface. If nothing else, elg'caress, we are equals in exile.~
-== BVICONI ~Do not mistake exile for elevation.~
-== ZDBAEB ~Spare me the suffocating squabbles of priestesses and their pitiful, petty posturing.~
+== ZDBAEB @10159 /* We are both outcasts upon the surface. If nothing else, elg'caress, we are equals in exile. */
+== BVICONI @10160 /* Do not mistake exile for elevation. */
+== ZDBAEB @10161 /* Spare me the suffocating squabbles of priestesses and their pitiful, petty posturing. */
 EXIT
 
 // Wilson 1
@@ -414,12 +414,12 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAEWILSON1","GLOBAL",0)~
 THEN ZDBAEB ZDBAEWILSON1
-~A bear as a battle-brother. What role shall I bestow upon you, hmm?~
+@10162 /* A bear as a battle-brother. What role shall I bestow upon you, hmm? */
 DO ~SetGlobal("ZDBAEWILSON1","GLOBAL",1)~
-== BWILSON ~Snort.~
-== ZDBAEB ~What about...The Ursine Usurper! Crowds will roar as you crush challengers in my arena.~
-== BWILSON ~Grr!~
-== ZDBAEB ~Spoilsport.~
+== BWILSON @10163 /* Snort. */
+== ZDBAEB @10164 /* What about...The Ursine Usurper! Crowds will roar as you crush challengers in my arena. */
+== BWILSON @10165 /* Grr! */
+== ZDBAEB @10166 /* Spoilsport. */
 EXIT
 
 // Yoshimo 1
@@ -432,15 +432,15 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAEYoshimo1","GLOBAL",0)~
 THEN BYOSHIM ZDBAEYoshimo1
-~You are a hard man to miss, Baeloth. It's always a flourish with you, never a whisper.~
+@10167 /* You are a hard man to miss, Baeloth. It's always a flourish with you, never a whisper. */
 DO ~SetGlobal("ZDBAEYoshimo1","GLOBAL",1)~
-== ZDBAEB ~Subtlety is for thieves not sorcerers.~
-== BYOSHIM ~Shadows may lack spectacle, my friend, but they keep one alive.~
-== ZDBAEB ~I have survived plots, poisons, and priestesses of the Underdark. No danger the surface poses could daunt me.~
-== BYOSHIM ~Confidence is a fine shield...until the first blade slips past it.~
+== ZDBAEB @10168 /* Subtlety is for thieves not sorcerers. */
+== BYOSHIM @10169 /* Shadows may lack spectacle, my friend, but they keep one alive. */
+== ZDBAEB @10170 /* I have survived plots, poisons, and priestesses of the Underdark. No danger the surface poses could daunt me. */
+== BYOSHIM @10171 /* Confidence is a fine shield...until the first blade slips past it. */
 EXIT
 
-// Aerie 2 
+// Aerie 2
 CHAIN
 IF ~InParty("ZDBAE")
     See("ZDBAE")
@@ -472,12 +472,12 @@ IF ~InParty("ZDBAE")
     Global("ZDBAECernd1","GLOBAL", 1)
     Global("ZDBAECernd2","GLOBAL",0)~
 THEN CERNDJ ZDBAECernd1
-~I have been meditating on what you said about nature. How do you perceive it on the surface?~
+@10172 /* I have been meditating on what you said about nature. How do you perceive it on the surface? */
 DO ~SetGlobal("ZDBAECernd2","GLOBAL",1)~
-== ZDBAEB ~As a sun-drenched stage for the same savage symphony.~
-== CERNDJ ~You speak as though all is strife and struggle. That is your error, Baeloth, your past philosophies extend beyond the Underdark's tunnels. You see only the trees strangling one another for sunlight...~
-== CERNDJ ~Yet nature thrives in cycles. Rivers nourish forests, predators keep prey populations in check. Harmony is just as vital.~
-== ZDBAEB ~Perhaps your surface is less savage than I imagined albeit only marginally so.~
+== ZDBAEB @10173 /* As a sun-drenched stage for the same savage symphony. */
+== CERNDJ @10174 /* You speak as though all is strife and struggle. That is your error, Baeloth, your past philosophies extend beyond the Underdark's tunnels. You see only the trees strangling one another for sunlight... */
+== CERNDJ @10175 /* Yet nature thrives in cycles. Rivers nourish forests, predators keep prey populations in check. Harmony is just as vital. */
+== ZDBAEB @10176 /* Perhaps your surface is less savage than I imagined albeit only marginally so. */
 EXIT
 
 /* Edwin 2 - The Age-Old Sorcerer vs Mage rivalry */
@@ -508,11 +508,11 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAEKorgan2","GLOBAL",0)~
 THEN BKORGAN ZDBAEKorgan2
-~I've a thirst fer carnage ye ken? Yer stories drown me in feel'n the sweet rage 'til the next bout.~
+@10177 /* I've a thirst fer carnage ye ken? Yer stories drown me in feel'n the sweet rage 'til the next bout. */
 DO ~SetGlobal("ZDBAEKorgan2","GLOBAL",1)~
 == ZDBAEB @10142 /* No more gratis gore, my grim friend. Last time you claimed I couldn't afford you. Now, it seems, you cannot afford me. */
 == ZDBAEB @10143 /* Still, should you reconsider my offer, I shall spin more stories for you. Or, better yet, you can write them yourself upon the arena's sands. */
-== BKORGAN ~A devil's bargain, Baeloth. Nae be me quick answer, but you can glitter it wit' gold fer 'nother try.~
+== BKORGAN @10178 /* A devil's bargain, Baeloth. Nae be me quick answer, but you can glitter it wit' gold fer 'nother try. */
 EXIT
 
 /* Edwin 3 - Enter Edwina, Stage Right */
@@ -541,14 +541,14 @@ IF ~InParty("ZDBAE")
     !StateCheck("VICONIA", CD_STATE_NOTVALID)
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAEViconia3","GLOBAL",0)
-	OR(2)
-	Global"(ViconiaRomanceActive","GLOBAL",1)
-	Global"(ViconiaRomanceActive","GLOBAL",2)~
+    OR(2)
+    Global"(ViconiaRomanceActive","GLOBAL",1)
+    Global"(ViconiaRomanceActive","GLOBAL",2)~
 THEN BVICONI ZDBAEViconia3
-~Let me make one thing clear, jaluk: whatever delusions you fostered, there was never a chance for anything between us.~
+@10179 /* Let me make one thing clear, jaluk: whatever delusions you fostered, there was never a chance for anything between us. */
 DO ~SetGlobal("ZDBAEViconia3","GLOBAL",1)~
-== ZDBAEB ~Such putrid presumptions! I flirt with chaos not certain death.~
-== ZDBAEB ~Still watching you court a surfacer has been an endless source of entertainment.~
-== BVICONI ~Know your place, Barrityl. Another word and I will feed you your own tongue!~
-== ZDBAEB ~There it is! That classic drow charm. <CHARNAME> must be completely enchanted...or perhaps concussed.~
+== ZDBAEB @10180 /* Such putrid presumptions! I flirt with chaos not certain death. */
+== ZDBAEB @10181 /* Still watching you court a surfacer has been an endless source of entertainment. */
+== BVICONI @10182 /* Know your place, Barrityl. Another word and I will feed you your own tongue! */
+== ZDBAEB @10183 /* There it is! That classic drow charm. <CHARNAME> must be completely enchanted...or perhaps concussed. */
 EXIT

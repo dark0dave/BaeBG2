@@ -2,14 +2,14 @@ BEGIN ZDBAEJ
 
 /* real housewives of athkatla intro */
 IF ~Global("ZDBaeBoots","GLOBAL",1)~ THEN ZDBAETOSSACOINTOYOURBAELOTH
-SAY ~The bustle of the bazaar! Trinkets, treasures, and tantalizing wares aplenty. My boots, alas, are worn thin from all our wandering. Perhaps you should spend a coin or two and preserve your most precious pal?~
-++ ~All of that postering just to tell me your boots are falling apart!~ + ZDBAEBOOTS1 
-++ ~Then I suppose we could buy you a new pair.~ + ZDBAEBOOTS1
-++ ~You're here to sling spells, Baeloth, not bore me with your endless chatter.~ DO ~SetGlobal("ZDBAEBoots","GLOBAL",2)~ EXIT
+SAY @10116 /* The bustle of the bazaar! Trinkets, treasures, and tantalizing wares aplenty. My boots, alas, are worn thin from all our wandering. Perhaps you should spend a coin or two and preserve your most precious pal? */
+++ @10117 /* All of that postering just to tell me your boots are falling apart! */ + ZDBAEBOOTS1
+++ @10118 /* Then I suppose we could buy you a new pair. */ + ZDBAEBOOTS1
+++ @10119 /* You're here to sling spells, Baeloth, not bore me with your endless chatter. */ DO ~SetGlobal("ZDBAEBoots","GLOBAL",2)~ EXIT
 END
 
 IF ~~ ZDBAEBOOTS1
-SAY ~Precisely! What greater tragedy is there than Baeloth Barrityl being undone by shabby soles?~
+SAY @10120 /* Precisely! What greater tragedy is there than Baeloth Barrityl being undone by shabby soles? */
 IF ~~ DO ~AddJournalEntry(@1000001, QUEST) SetGlobal("ZDBAEBoots","GLOBAL",2)~ EXIT
 END
 
@@ -69,22 +69,22 @@ END CELVAN 1
 // Government District
 // Viconia intro
 I_C_T VICG1 1 ZDBAEMOB1
-== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Let's make ourselves scarce, shall we? Before their righteous rage redirects towards us.~ 
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10184 /* Let's make ourselves scarce, shall we? Before their righteous rage redirects towards us. */
 END
 
 I_C_T VICG1 2 ZDBAEMOB2
-== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Must I repeat myself, <CHARNAME>? No, no, that would be dreary indeed.~ 
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10185 /* Must I repeat myself, <CHARNAME>? No, no, that would be dreary indeed. */
 END
 
 I_C_T VICG1 5 ZDBAEMOB4
-== VICG1 IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Look! Over there, I spot another one!~ 
-== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Blast and bother.~
-== VICG2 IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~This is getting out of hand! Now there are two of them!~ 
-== VICG1 IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Then the invasion is truly upon us.~ 
+== VICG1 IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10186 /* Look! Over there, I spot another one! */
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10187 /* Blast and bother. */
+== VICG2 IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10188 /* This is getting out of hand! Now there are two of them! */
+== VICG1 IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10189 /* Then the invasion is truly upon us. */
 END
 
 I_C_T VICONI 11 ZDBAEMOB3
-== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~What a bother! ...But better her than me.~ 
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10190 /* What a bother! ...But better her than me. */
 END
 
 // Temple District (AR0900)
@@ -108,7 +108,7 @@ END
 // Circus, Aerie introduction
 // Thanks for being vague when telling us you sense something is off, Baeloth
 I_C_T AERIE 30 ZDBAECIRC1
-== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~The Weave twists and twirls around her. Such chaotic patterns require a cunning conductor. But, surely, that is why you keep *me* close.~ 
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10121 /* The Weave twists and twirls around her. Such chaotic patterns require a cunning conductor. But, surely, that is why you keep *me* close. */
 END
 
 // Docks District
@@ -125,126 +125,122 @@ END
 // Spellhold
 // Slayer Change
 I_C_T PLAYER1 3 ZDBAESLAY1
-== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Bravo! Such a savage spectacle! I call for an encore!~
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10122 /* Bravo! Such a savage spectacle! I call for an encore! */
 END
 
 // Underdark
 // Upon entry, speaking with Carlig, only if Viconia isn't present because we're stealing her drow-language line & reusing it for our own purposes
 I_C_T UDDUER01 0 ZDBAECARLIG
-== ZDBAEJ IF ~!InParty("VICONIA")  InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Lil waela lueth waela ragar brorna lueth wund nind, kyorlin elghinn! Sarn! Usstan uil Baeloth!~
-== UDDUER01 IF ~!InParty("VICONIA")  InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Of... of course, malla Baeloth. I am at your service in all matters.~
-== UDDUER02 IF ~NumInPartyGT(2) !InParty("VICONIA")  InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Wait, wait! Carlig, he bears no house insignia that I know. Look at his companions! He is an outcast!~
-== UDDUER02 IF ~!NumInPartyGT(2) !InParty("VICONIA")  InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Wait, wait! Carlig, he bears no house insignia that I know. Look at his companion! He is an outcast!~
-== UDDUER01 IF ~!InParty("VICONIA")  InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~It is not often that those not directly associated with a House pass this way.~
+== ZDBAEJ IF ~!InParty("VICONIA")  InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10191 /* Lil waela lueth waela ragar brorna lueth wund nind, kyorlin elghinn! Sarn! Usstan uil Baeloth! */
+== UDDUER01 IF ~!InParty("VICONIA")  InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10192 /* Of... of course, malla Baeloth. I am at your service in all matters. */
+== UDDUER02 IF ~NumInPartyGT(2) !InParty("VICONIA")  InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10193 /* Wait, wait! Carlig, he bears no house insignia that I know. Look at his companions! He is an outcast! */
+== UDDUER02 IF ~!NumInPartyGT(2) !InParty("VICONIA")  InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10194 /* Wait, wait! Carlig, he bears no house insignia that I know. Look at his companion! He is an outcast! */
+== UDDUER01 IF ~!InParty("VICONIA")  InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10195 /* It is not often that those not directly associated with a House pass this way. */
 END
 
 // Svirfneblin City Leader
 // Once again reusing lines otherwise pulled for Viconia
 EXTEND_TOP UDSVIR03 0 // Extend Top bad, I know, not sure if there's a better way to make this work though
-IF ~!InParty("VICONIA") InParty("ZDBAE") InMyArea("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID)~ 
+IF ~!InParty("VICONIA") InParty("ZDBAE") InMyArea("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID)~
 EXTERN UDSVIR03 ZDBAEDUER1
 END
 
 CHAIN UDSVIR03 ZDBAEDUER1
-~Surprising that you travel with the darkness of a drow. I mean no disrespect, but it is surprising.~
-== ZDBAEJ ~You svirfneblin continue to state the spectacularly self-evident! Are you dazzled and delighted by my presense? Or threatened instead?~
+@10196 /* Surprising that you travel with the darkness of a drow. I mean no disrespect, but it is surprising. */
+== ZDBAEJ @10197 /* You svirfneblin continue to state the spectacularly self-evident! Are you dazzled and delighted by my presence? Or threatened instead? */
 END
 IF ~~ DO ~EraseJournalEntry(57761)~ EXTERN UDSVIR03 3
 
 EXTEND_TOP UDSVIR03 16 // Extend Top bad, I know, not sure if there's a better way to make this work though
-IF ~!InParty("VICONIA") InParty("ZDBAE") InMyArea("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID)~ 
+IF ~!InParty("VICONIA") InParty("ZDBAE") InMyArea("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID)~
 EXTERN UDSVIR03 ZDBAEDUER2
 END
 
 CHAIN UDSVIR03 ZDBAEDUER2
-~No offense, malla drow, but I see you do not wear the symbols of any House that I know. You would fare no better in there, especially with your current companions.~
-== ZDBAEJ ~You underestimate my cunning, gnome, and my contacts. But tell us of your safe alternative.~
+@10198 /* No offense, malla drow, but I see you do not wear the symbols of any House that I know. You would fare no better in there, especially with your current companions. */
+== ZDBAEJ @10199 /* You underestimate my cunning, gnome, and my contacts. But tell us of your safe alternative. */
 END
 IF ~~ EXTERN UDSVIR03 18
 
 I_C_T UDSVIR03 23 ZDBAEDEUR3
-== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~We are dealing with the infamous intermediary then? How tedious.~
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10200 /* We are dealing with the infamous intermediary then? How tedious. */
 END
 
 // Svirfneblin Innkeeper
 I_C_T UDSVIR04 5 ZDBAEGNOMEINN
-== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Astutely observed. This pitiful place is beneath me...though, admittedly, most places are.~
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10201 /* Astutely observed. This pitiful place is beneath me...though, admittedly, most places are. */
 END
 
 // Svirfneblin Slaughter
 I_C_T UDSVIR08 1 ZDBAEDEEPGNOMES
-== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Smashing svirfneblin sounds sublime! To the slaughter!~
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10202 /* Smashing svirfneblin sounds sublime! To the slaughter! */
 END
 
 // Elven City
 // Tree of Life approach
 EXTEND_BOTTOM PLAYER1 33
-IF ~InParty("ZDBAE") InMyArea("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) Global("ZDBAETreeOfLife","GLOBAL",0)~ 
+IF ~InParty("ZDBAE") InMyArea("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) Global("ZDBAETreeOfLife","GLOBAL",0)~
 EXTERN PLAYER1 ZDBAETREE1
 END
 
 CHAIN PLAYER1 ZDBAETREE1
-~Baeloth Barrityl, the drow sorcerer, an unlikely ally who has flung fire and unleashed his fury upon your foes. But is he truly prepared for the fight ahead?~
+@10123 /* Baeloth Barrityl, the drow sorcerer, an unlikely ally who has flung fire and unleashed his fury upon your foes. But is he truly prepared for the fight ahead? */
 DO ~SetGlobal("ZDBAETreeOfLife","GLOBAL",1)~
 END
-++ ~Baeloth, we have become friends, so you don't have to follow me any further. This isn't your fight.~ EXTERN ZDBAEJ ZDBAETREE2
-++ ~There's a chance we won't survive. Turn tail and flee if you're too cowardly to see this battle through.~ EXTERN ZDBAEJ  ZDBAETREE2
-++ ~We're nearing the end. I have to know that you're ready. There's no turning back.~ EXTERN ZDBAEJ ZDBAETREE2
+++ @10124 /* Baeloth, we have become friends, so you don't have to follow me any further. This isn't your fight. */ EXTERN ZDBAEJ ZDBAETREE2
+++ @10125 /* There's a chance we won't survive. Turn tail and flee if you're too cowardly to see this battle through. */ EXTERN ZDBAEJ  ZDBAETREE2
+++ @10126 /* We're nearing the end. I have to know that you're ready. There's no turning back. */ EXTERN ZDBAEJ ZDBAETREE2
 
 
 CHAIN ZDBAEJ ZDBAETREE2
-~I was preparing a particularly scorching fireball for these simpering elves. How they ever forced my kin beneath the ground is beyond comprehension.~  
-== ZDBAEJ ~But yes, yes, I hear you. I have resolved to remain. The spotlight beckons and I shan't miss my cue!~
+@10127 /* I was preparing a particularly scorching fireball for these simpering elves. How they ever forced my kin beneath the ground is beyond comprehension. */
+== ZDBAEJ @10128 /* But yes, yes, I hear you. I have resolved to remain. The spotlight beckons and I shan't miss my cue! */
 END
-COPY_TRANS PLAYER1 33 
+COPY_TRANS PLAYER1 33
 
 // Tree of Life, Irenicus is dead
 I_C_T PLAYER1 16 ZDBAEIREN1
-== ZDBAEJ IF ~InParty("ZDBAE") Range("ZDBAE",15) !StateCheck("ZDBAE",CD_STATE_NOTVALID)~ THEN ~Obviously, this was going to happen. Our triumph was assured with my superior sorcerous skills. ...Ah! What is this strange, nay sinister, sensation?~
+  == ZDBAEJ IF ~InParty("ZDBAE") Range("ZDBAE",15) !StateCheck("ZDBAE",CD_STATE_NOTVALID)~ THEN @10129 /* Obviously, this was going to happen. Our triumph was assured with my superior sorcerous skills. ...Ah! What is this strange, nay sinister, sensation? */
 END
 
 /* friendship arc */
 
 // 1 - General check-in & check up (shortly after recruitment, pre-Spellhold)
 CHAIN IF ~Global("ZDBaeFriendshipTalks","GLOBAL",2)~ THEN ZDBAEJ BAEFT1
-~The Copper Coronet, ah, such squandered potential. An arena of note but without a noteworthy patron. The roar of the ravenous crowd, the screams of the soon-to-be-slain, my reign would have been renowned!~
-DO ~SetGlobal("ZDBaeFriendshipTalks","GLOBAL",3) RealSetGlobalTimer("ZDBaeFriendshipTalksTimer","GLOBAL",3600)~
-== ZDBAEJ ~Alas, my triumphant return to running fighting pits came to an abrupt close. But fortune favors the flexible. Plans may perish, yet possibilities persist! Tell me, <CHARNAME>, what mission moves our party onward?~
+  @10203 /* The Copper Coronet, ah, such squandered potential. An arena of note but without a noteworthy patron. The roar of the ravenous crowd, the screams of the soon-to-be-slain, my reign would have been renowned! */
+  DO ~SetGlobal("ZDBaeFriendshipTalks","GLOBAL",3) RealSetGlobalTimer("ZDBaeFriendshipTalksTimer","GLOBAL",3600)~
+  == ZDBAEJ @10204 /* Alas, my triumphant return to running fighting pits came to an abrupt close. But fortune favors the flexible. Plans may perish, yet possibilities persist! Tell me, <CHARNAME>, what mission moves our party onward? */
 END
-++ ~Imoen was kidnapped by the Cowled Wizards, we're trying to get her back.~ EXTERN ZDBAEJ BAEFT1.1
-// Should be OR(2) & also check for SOD completion 
-+ ~Global("BPINBG","GLOBAL",1)~ + ~I was captured and tortured by a mage called Irenicus. I intend to find him and make him pay for his insolence.~ EXTERN ZDBAEJ BAEFT1.2
-+ ~!Global("BPINBG","GLOBAL",1)~ + ~I was captured and tortured by a mage named Irenicus. I intend to find him and make him pay for his insolence.~ EXTERN ZDBAEJ BAEFT1.3
-++ ~Just fall in line, Baeloth, I’ve no intention of explaining my plans.~ EXTERN ZDBAEJ ZDBAEFT1.4
+  ++ @10205 /* Imoen was kidnapped by the Cowled Wizards, we're trying to get her back. */ EXTERN ZDBAEJ BAEFT1.1
+  // Should be OR(2) & also check for SOD completion
+  + ~Global("BPINBG","GLOBAL",1)~ + @10206 /* I was captured and tortured by a mage called Irenicus. I intend to find him and make him pay for his insolence. */ EXTERN ZDBAEJ BAEFT1.2
+  + ~!Global("BPINBG","GLOBAL",1)~ + @10207 /* I was captured and tortured by a mage named Irenicus. I intend to find him and make him pay for his insolence. */ EXTERN ZDBAEJ BAEFT1.3
+  ++ @10208 /* Just fall in line, Baeloth, I’ve no intention of explaining my plans. */ EXTERN ZDBAEJ ZDBAEFT1.4
 
 CHAIN ZDBAEJ BAEFT1.1
-~Those conniving Cowled Ones? I applaud your audacity in opposing them. Any cause that confounds them is one I shall champion. Imagine trying to impose limits on my magic!~
-== ZDBAEJ ~Oh, right, Imoen. Yes, yes, we’ll save her too, I suppose.~
-IF ~~ EXTERN ZDBAEJ BFAEFT1.5
+@10209 /* Those conniving Cowled Ones? I applaud your audacity in opposing them. Any cause that confounds them is one I shall champion. Imagine trying to impose limits on my magic! */
+== ZDBAEJ @10210 /* Oh, right, Imoen. Yes, yes, we’ll save her too, I suppose. */ EXTERN ZDBAEJ BFAEFT1.5
 
 CHAIN ZDBAEJ BAEFT1.2
-~Captured yet again? A dreadful habit and one you should cease. But this Irenicus intrigues me. He's powerful and presumptuous enough to seize you? You'll need formidable forces, and of course my magnificent magic, if you wish to see him suffer.~
-IF ~~ EXTERN ZDBAEJ BFAEFT1.5
+@10211 /* Captured yet again? A dreadful habit and one you should cease. But this Irenicus intrigues me. He's powerful and presumptuous enough to seize you? You'll need formidable forces, and of course my magnificent magic, if you wish to see him suffer. */ EXTERN ZDBAEJ BFAEFT1.5
 
 CHAIN ZDBAEJ BAEFT1.3
-~To stoke your vengeance, Irenicus must be a mage of means and malice indeed. Fear not, with me in your retinue, retribution is only a matter of time.~
-IF ~~ EXTERN ZDBAEJ BFAEFT1.5
+@10212 /* To stoke your vengeance, Irenicus must be a mage of means and malice indeed. Fear not, with me in your retinue, retribution is only a matter of time. */ EXTERN ZDBAEJ BFAEFT1.5
 
 CHAIN ZDBAEJ BAEFT1.4
-~Then consider this conversation adjourned.~
-DO ~~ EXIT
+@10213 /* Then consider this conversation adjourned. */
+END
 
 CHAIN ZDBAEJ BAEFT1.5
-~I chose wisely when I cast my lot in with you. Do not fret, I shall think of something suitable with which you can repay me. The pleasure of my company does have its price.~
+  @10214 /* I chose wisely when I cast my lot in with you. Do not fret, I shall think of something suitable with which you can repay me. The pleasure of my company does have its price. */
 END
-+ ~!NumInPartyGT(2)~ + ~Baeloth, you walk freely only due to my protection.~ EXTERN ZDBAEJ BAEFT1.6
-+ ~NumInPartyGT(2)~ + ~Baeloth, you walk freely only due to our protection.~ EXTERN ZDBAEJ BAEFT1.6
-++ ~From you, I would expect nothing less.~ EXTERN ZDBAEJ BAEFT1.6
-++ ~Keep making demands and I’ll stuff you into the Copper Coronet’s cages instead.~ EXTERN ZDBAEJ BAEFT1.6
-++ ~I assume your silence is a luxury I cannot afford then?~ EXTERN ZDBAEJ BAEFT1.6
+  + ~!NumInPartyGT(2)~ + @10215 /* Baeloth, you walk freely only due to my protection. */ EXTERN ZDBAEJ BAEFT1.6
+  + ~NumInPartyGT(2)~ + @10216 /* Baeloth, you walk freely only due to our protection. */ EXTERN ZDBAEJ BAEFT1.6
+  ++ @10217 /* From you, I would expect nothing less. */ EXTERN ZDBAEJ BAEFT1.6
+  ++ @10218 /* Keep making demands and I’ll stuff you into the Copper Coronet’s cages instead. */ EXTERN ZDBAEJ BAEFT1.6
+  ++ @10219 /* I assume your silence is a luxury I cannot afford then? */ EXTERN ZDBAEJ BAEFT1.6
 
 CHAIN ZDBAEJ BAEFT1.6
-~Now, onward! I tire of talking and thirst for other theatrics!~
-IF ~~ EXIT
-
-// 2 
+  @10220 /* Now, onward! I tire of talking and thirst for other theatrics! */
+END
+// 2
