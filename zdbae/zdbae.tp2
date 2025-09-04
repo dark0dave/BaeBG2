@@ -20,3 +20,8 @@ INCLUDE ~zdbae/lib/core.tph~
 BEGIN ~crossmod~ DESIGNATED 1 LABEL ~crossmod~
 REQUIRE_COMPONENT ~zdbae.tp2~ "0" ~Requires main component~
 INCLUDE ~zdbae/lib/crossmod.tph~
+
+// The Real House Wives Of Athkatla
+BEGIN ~housewives~ DESIGNATED 2 LABEL ~housewives~
+REQUIRE_COMPONENT ~zdbae.tp2~ "0" ~Requires main component~
+INCLUDE ~zdbae/lib/housewives.tph~
