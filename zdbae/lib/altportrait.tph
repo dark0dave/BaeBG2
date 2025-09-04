@@ -1,0 +1,6 @@
+
+// Consistent Baeloth portraits (thank you Zenblack and Trouveur)
+COPY ~%MOD_FOLDER%/altportrait/zdbael.bmp~ ~override/baelothl.bmp~
+COPY ~%MOD_FOLDER%/altportrait/zdbael.bmp~ ~override/baelothm.bmp~
+COPY ~%MOD_FOLDER%/altportrait/zdbael.bmp~ ~override/zdbael.bmp~
+COPY ~%MOD_FOLDER%/altportrait/zdbael.bmp~ ~override/zdbaem.bmp~
