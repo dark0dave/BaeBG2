@@ -1,0 +1,27 @@
+BACKUP ~weidu_external/backup/zdbae~
+AUTHOR ~dark0dave~
+README ~zdbae/readme.md~
+VERSION ~v0.13~
+AUTO_EVAL_STRINGS
+
+AUTO_TRA ~zdbae/tra/%s~
+
+LANGUAGE ~English~
+         ~english~
+         ~zdbae/tra/english/setup.tra~
+         ~zdbae/tra/english/journal.tra~
+
+// Main Component
+BEGIN ~Baeloth BG2~ DESIGNATED 0 LABEL ~zdbae~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ ~This mod cannot be installed on this game~
+INCLUDE ~zdbae/lib/core.tph~
+
+// Crossmod
+BEGIN ~crossmod~ DESIGNATED 1 LABEL ~crossmod~
+REQUIRE_COMPONENT ~zdbae.tp2~ "0" ~Requires main component~
+INCLUDE ~zdbae/lib/crossmod.tph~
+
+// Baeloth Alt Portrait
+BEGIN ~altportrait~ DESIGNATED 10 LABEL ~altportrait~
+REQUIRE_COMPONENT ~zdbae.tp2~ "0" ~Requires main component~
+INCLUDE ~zdbae/lib/altportrait.tph~

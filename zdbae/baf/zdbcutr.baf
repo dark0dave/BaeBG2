@@ -7,9 +7,9 @@ THEN
     SetGlobal("ZDBAE1_CUTSCENE_BREAKABLE","GLOBAL",1)
     SetCutSceneBreakable(TRUE)
     // NOBLE 1
-    DisplayStringPoint([2453.1575],@1504) /* ~A drow? Here?~ */
+    DisplayStringPoint([2453.1575],@101) /* ~A drow? Here?~ */
     Wait(1)
-    DisplayStringHead("Announcer",@1505) /* ~WHAT?! Security, Security!~ */
+    DisplayStringHead("Announcer",@102) /* ~WHAT?! Security, Security!~ */
     Wait(1)
     SetCutSceneBreakable(FALSE)
     IncrementGlobal("ZDBAE1_CUTSCENE_BREAKABLE","GLOBAL",1)
@@ -28,11 +28,11 @@ THEN
     SetCutSceneBreakable(TRUE)
     Wait(2)
     // NOBLE 2
-    DisplayStringPoint([2385.1533],@1506) /* ~Burn the drow!~ */
+    DisplayStringPoint([2385.1533],@103) /* ~Burn the drow!~ */
     Wait(2)
-    DisplayStringHead("Frankie",@1507) /* ~Kill the drow!~ */
+    DisplayStringHead("Frankie",@104) /* ~Kill the drow!~ */
     Wait(2)
-    DisplayStringHead("ZDBAE",@2008) /* ~Good people I uh... Lets be reasonable about this!~ */
+    DisplayStringHead("ZDBAE",@105) /* ~Good people I uh... Lets be reasonable about this!~ */
     Wait(2)
     SetCutSceneBreakable(FALSE)
     ActionOverride("zdfranki", DestroySelf())

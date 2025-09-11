@@ -3,16 +3,16 @@ IF
 THEN
   RESPONSE #100
   CutSceneId("ZDBAE") // BAE
-  DisplayStringHead("ZDBAE", @2000) /* What a wretched waste! How boring and banal this brawl is! Were I to grace these grounds with my talents, tragedy would instead transform into triumph. I would bring power, prestige and panache to this pitiful pit. Someone should displace - dare I say depose - of the dullard who dared to direct such a dreary display. Perhaps... me? */
+  DisplayStringHead("ZDBAE", @106) /* What a wretched waste! How boring and banal this brawl is! Were I to grace these grounds with my talents, tragedy would instead transform into triumph. I would bring power, prestige and panache to this pitiful pit. Someone should displace - dare I say depose - of the dullard who dared to direct such a dreary display. Perhaps... me? */
   Wait(5)
   // Fix Nobles with pos
-  DisplayStringHead("NOBLE1", @1501) /* You have the right of it. */
+  DisplayStringHead("NOBLE1", @107) /* You have the right of it. */
   Wait(2)
-  DisplayStringHead("NOBLE2", @1502) /* I have not been entertained! */
+  DisplayStringHead("NOBLE2", @108) /* I have not been entertained! */
   Wait(2)
-  DisplayStringHead("NOBLE1", @1503) /* If you've got a plan, I'm in. Can't be much harder starting a fight than watching one. */
+  DisplayStringHead("NOBLE1", @109) /* If you've got a plan, I'm in. Can't be much harder starting a fight than watching one. */
   Wait(3)
-  DisplayStringHead("ZDBAE", @2001) /* Then huddle close my hapless horde. The time of tedium is about to be terminated. */
+  DisplayStringHead("ZDBAE", @110) /* Then huddle close my hapless horde. The time of tedium is about to be terminated. */
   ActionOverride("NOBLE1",MoveToObject("ZDBAE"))
   ActionOverride("NOBLE2",MoveToObject("ZDBAE"))
   Wait(3)
