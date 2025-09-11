@@ -122,8 +122,8 @@ EXIT
 
 // Edwin 1, setting up the beginning of their rivalry, Baeloth needs to *know* Edwin can't help him so he can tease the HECK out of him instead
 CHAIN
-IF ~InParty("ZDBAEB")
-    See("ZDBAEB")
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
     Gender("Edwin",MALE)
     !StateCheck("EDWIN", CD_STATE_NOTVALID)
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
@@ -269,12 +269,12 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAEKorgan1","GLOBAL",0)~
 THEN ZDBAE ZDBAEKorgan1
-@10221 /* Have you ever considered a career of chaos and carnage in my arena? */
+~Have you ever considered a career of chaos and carnage in my arena?~
 DO ~SetGlobal("ZDBAEKorgan1","GLOBAL",1)~
-== BKORGAN @10222 /* Blood an' gold in equal measure, eh? Aye, I might be interested. What's yer offer, drow? */
-== ZDBAEB @10223 /* Besides earning fame and fervent applause? Perhaps...ah! Five-hundred gold coins! */
-== BKORGAN @10224 /* Five hundred? Bah! Tavern brawls pay better. Ye couldnae afford me. */
-== ZDBAEB @10225 /* Not yet, my cocksure companion, but fortunes are fickle. Tomorrow's treasure may well tip the scales! */
+== BKORGAN ~Blood an' gold in equal measure, eh? Aye, I might be interested. What's yer offer, drow?~
+== ZDBAEB ~Besides earning fame and fervent applause? Perhaps...ah! Five-hundred gold coins!~
+== BKORGAN ~Five hundred? Bah! Tavern brawls pay better. Ye couldnae afford me.~
+== ZDBAEB ~Not yet, my cocksure companion, but fortunes are fickle. Tomorrow's treasure may well tip the scales!~
 EXIT
 
 // Mazzy 1
@@ -287,12 +287,12 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAEMazzy1","GLOBAL",0)~
 THEN ZDBAEB ZDBAEMazzy1
-@10226 /* Ah! A halfling. For a moment I mistook you for a pale Svirfneblin with a stunted skull. */
+~Ah! A halfling. For a moment I mistook you for a pale Svirfneblin with a stunted skull.~
 DO ~SetGlobal("ZDBAEMazzy1","GLOBAL",1)~
-== BMAZZY @10227 /* I do not take kindly to being mocked, Baeloth. */
-== ZDBAEB @10228 /* Mockery? Never! I'm merely marveling at our uncommon companionship. <CHARNAME> keeps curious company. */
-== BMAZZY @10229 /* You mistake necessity for friendship. We travel together only by <CHARNAME>'s choice. */
-== ZDBAEB @10230 /* Then lets call ourselves partners in peril, even if not in principle. */
+== BMAZZY ~I do not take kindly to being mocked, Baeloth.~
+== ZDBAEB ~Mockery? Never! I'm merely marveling at our uncommon companionship. <CHARNAME> keeps curious company.~
+== BMAZZY ~You mistake necessity for friendship. We travel together only by <CHARNAME>'s choice.~
+== ZDBAEB ~Then lets call ourselves partners in peril, even if not in principle.~
 EXIT
 
 // Minsc 1
@@ -482,8 +482,8 @@ EXIT
 
 /* Edwin 2 - The Age-Old Sorcerer vs Mage rivalry */
 CHAIN
-IF ~InParty("ZDBAEB")
-    See("ZDBAEB")
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
     Gender("Edwin",MALE)
     !StateCheck("EDWIN", CD_STATE_NOTVALID)
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
@@ -510,15 +510,15 @@ IF ~InParty("ZDBAE")
 THEN BKORGAN ZDBAEKorgan2
 @10177 /* I've a thirst fer carnage ye ken? Yer stories drown me in feel'n the sweet rage 'til the next bout. */
 DO ~SetGlobal("ZDBAEKorgan2","GLOBAL",1)~
-== ZDBAEB @10231 /* No more gratis gore, my grim friend. Last time you claimed I couldn't afford you. Now, it seems, you cannot afford me. */
-== ZDBAEB @10232 /* Still, should you reconsider my offer, I shall spin more stories for you. Or, better yet, you can write them yourself upon the arena's sands. */
+== ZDBAEB ~No more gratis gore, my grim friend. Last time you claimed I couldn't afford you. Now, it seems, you cannot afford me.~
+== ZDBAEB ~Still, should you reconsider my offer, I shall spin more stories for you. Or, better yet, you can write them yourself upon the arena's sands.~
 == BKORGAN @10178 /* A devil's bargain, Baeloth. Nae be me quick answer, but you can glitter it wit' gold fer 'nother try. */
 EXIT
 
 /* Edwin 3 - Enter Edwina, Stage Right */
 CHAIN
-IF ~InParty("ZDBAEB")
-    See("ZDBAEB")
+IF ~InParty("ZDBAE")
+    See("ZDBAE")
     Gender("Edwin",FEMALE)
     !StateCheck("EDWIN", CD_STATE_NOTVALID)
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
@@ -542,8 +542,8 @@ IF ~InParty("ZDBAE")
     !StateCheck("ZDBAE", CD_STATE_NOTVALID)
     Global("ZDBAEViconia3","GLOBAL",0)
     OR(2)
-    Global"(ViconiaRomanceActive","GLOBAL",1)
-    Global"(ViconiaRomanceActive","GLOBAL",2)~
+    Global("ViconiaRomanceActive","GLOBAL",1)
+    Global("ViconiaRomanceActive","GLOBAL",2)~
 THEN BVICONI ZDBAEViconia3
 @10179 /* Let me make one thing clear, jaluk: whatever delusions you fostered, there was never a chance for anything between us. */
 DO ~SetGlobal("ZDBAEViconia3","GLOBAL",1)~

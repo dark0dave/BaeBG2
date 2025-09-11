@@ -2,19 +2,19 @@ BEGIN ZDBAE
 
 // Joining dialogue
 IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_BEGIN","GLOBAL",0) Global("ZDBAE_SHUTUP","GLOBAL",0)~ THEN BEGIN ZDBAE1
-  SAY @2002 /* Well, well, well, what whimsical wonder do we witness here? Another face amidst the multitude of mundane mediocrity. You, stand before the ineffable Baeloth the Entertainer. */
-  IF ~~ THEN REPLY @1001 /* Well met, I am <CHARNAME>. */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE2
-  IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY @1003 /* Baeloth! Do you remember me? */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE3
-  IF ~~ THEN REPLY @1004 /* Die, drow! */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1) SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
-  IF ~~ THEN REPLY @1011 /* Whatever mischief you're initiating, I want no part in it. */ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1) SetGlobal("ZDBAE_SHUTUP","GLOBAL",1)~ GOTO ZDBAEFU
+  SAY ~Well, well, well, what whimsical wonder do we witness here? Another face amidst the multitude of mundane mediocrity. You, stand before the ineffable Baeloth the Entertainer.~
+  IF ~~ THEN REPLY ~Well met, I am <CHARNAME>.~ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE2
+  IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY ~Baeloth! Do you remember me?~ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE3
+  IF ~~ THEN REPLY ~Die, drow!~ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1) SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
+  IF ~~ THEN REPLY ~Whatever mischief you're initiating, I want no part in it.~ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1) SetGlobal("ZDBAE_SHUTUP","GLOBAL",1)~ GOTO ZDBAEFU
 END
 
 IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_BEGIN","GLOBAL",1) Global("ZDBAE_SHUTUP","GLOBAL",1)~ THEN BEGIN ZDBAES
-  SAY @6 /* Eh? What do YOU want? */
-  IF ~~ THEN REPLY @1001 /* Well met, I am <CHARNAME>. */ GOTO ZDBAE2
-  IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY @1003 /* Baeloth! Do you remember me? */ GOTO ZDBAE3
-  IF ~~ THEN REPLY @1017 /* I want you to die, drow! */ DO ~SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
-  IF ~~ THEN REPLY @1015 /* I am not interested in your dog and pony show, drow. */ GOTO ZDBAEC
+  SAY ~Eh? What do YOU want?~
+  IF ~~ THEN REPLY ~Well met, I am <CHARNAME>.~ GOTO ZDBAE2
+  IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY ~Baeloth! Do you remember me?~ GOTO ZDBAE3
+  IF ~~ THEN REPLY ~I want you to die, drow!~DO ~SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
+  IF ~~ THEN REPLY ~I am not interested in your dog and pony show, drow.~ GOTO ZDBAEC
 END
 
 // Confused

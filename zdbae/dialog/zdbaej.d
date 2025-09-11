@@ -87,6 +87,11 @@ I_C_T VICONI 11 ZDBAEMOB3
 == ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10190 /* What a bother! ...But better her than me. */
 END
 
+// Corneil, Cowled Wizard selling licences
+I_C_T CORNEIL 6 ZDBAECORN1
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Listen to these Cowled Ones waving about their worthless warrants. Licenses for magic...how painfully pedestrian of them. I, Baeloth Barrityl, am beyond their banal barriers.~
+END
+
 // Temple District (AR0900)
 // Response: Listen to me, my brothers and sisters... heed my words. We have been chosen as the recipient of a most holy miracle, one that should neither be dismissed nor ignored!
 INTERJECT CSGAAL 0 ZDBAEGAAL0
@@ -108,7 +113,7 @@ END
 // Circus, Aerie introduction
 // Thanks for being vague when telling us you sense something is off, Baeloth
 I_C_T AERIE 30 ZDBAECIRC1
-== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10121 /* The Weave twists and twirls around her. Such chaotic patterns require a cunning conductor. But, surely, that is why you keep *me* close. */
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~The Weave twists and twirls around her. Such chaotic patterns require a cunning conductor. But, surely, that is why you keep *me* close.~
 END
 
 // Docks District
@@ -123,6 +128,16 @@ INTERJECT_COPY_TRANS JAHEIRAJ 247 ZDBAEJAHINTER0
 END
 
 // Spellhold
+// Yoshimo's Betrayal
+I_C_T YOSHJ 113 ZDBAEYOSB
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE", CD_STATE_NOTVALID)~ THEN ~I pride myself on my paranoia, yet even I failed to foresee this outcome.~
+END
+
+// Lonk is dealt with so we're gathering the team & charging Irenicus
+I_C_T PLAYER1 15 ZDBAELONK
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE", CD_STATE_NOTVALID)~ ~A fine flock of fodder you've freed. Shall we hurl them headlong into havoc then?~
+END
+
 // Slayer Change
 I_C_T PLAYER1 3 ZDBAESLAY1
 == ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN @10122 /* Bravo! Such a savage spectacle! I call for an encore! */
@@ -203,6 +218,28 @@ I_C_T PLAYER1 16 ZDBAEIREN1
   == ZDBAEJ IF ~InParty("ZDBAE") Range("ZDBAE",15) !StateCheck("ZDBAE",CD_STATE_NOTVALID)~ THEN @10129 /* Obviously, this was going to happen. Our triumph was assured with my superior sorcerous skills. ...Ah! What is this strange, nay sinister, sensation? */
 END
 
+// Entering the Hells
+I_C_T PLAYER1 25 ZDBAEHELL1
+== ZDBAEJ IF ~InParty("ZDBAE") Range("ZDBAE",15) !StateCheck("ZDBAE",CD_STATE_NOTVALID)~ THEN ~The Hells, is it? What a delightful arena for our next deadly duel!~
+END
+
+// Battling Irenicus in the Hells
+I_C_T HELLJON 7 ZDBAEHELL2
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Fight or flee, either way you fall!~ 
+END
+
+I_C_T HELLJON 8 ZDBAEHELL2
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Fight or flee, either way you fall!~ 
+END
+
+I_C_T HELLJON 9 ZDBAEHELL2
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Fight or flee, either way you fall!~ 
+END
+
+I_C_T HELLJON 10 ZDBAEHELL2
+== ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE",CD_STATE_NOTVALID) InMyArea("ZDBAE")~ THEN ~Fight or flee, either way you fall!~ 
+END
+
 /* friendship arc */
 
 // 1 - General check-in & check up (shortly after recruitment, pre-Spellhold)
@@ -211,11 +248,12 @@ CHAIN IF ~Global("ZDBaeFriendshipTalks","GLOBAL",2)~ THEN ZDBAEJ BAEFT1
   DO ~SetGlobal("ZDBaeFriendshipTalks","GLOBAL",3) RealSetGlobalTimer("ZDBaeFriendshipTalksTimer","GLOBAL",3600)~
   == ZDBAEJ @10204 /* Alas, my triumphant return to running fighting pits came to an abrupt close. But fortune favors the flexible. Plans may perish, yet possibilities persist! Tell me, <CHARNAME>, what mission moves our party onward? */
 END
-  ++ @10205 /* Imoen was kidnapped by the Cowled Wizards, we're trying to get her back. */ EXTERN ZDBAEJ BAEFT1.1
+  + ~NumInPartyGT(2)~ + @10205 /* Imoen was kidnapped by the Cowled Wizards, we're trying to get her back. */ EXTERN ZDBAEJ BAEFT1.1
+  + ~!NumInPartyGT(2)~ + ~Imoen was kidnapped by the Cowled Wizards, I'm trying to get her back.~ EXTERN ZDBAEJ BAEFT1.1
   // Should be OR(2) & also check for SOD completion
   + ~Global("BPINBG","GLOBAL",1)~ + @10206 /* I was captured and tortured by a mage called Irenicus. I intend to find him and make him pay for his insolence. */ EXTERN ZDBAEJ BAEFT1.2
   + ~!Global("BPINBG","GLOBAL",1)~ + @10207 /* I was captured and tortured by a mage named Irenicus. I intend to find him and make him pay for his insolence. */ EXTERN ZDBAEJ BAEFT1.3
-  ++ @10208 /* Just fall in line, Baeloth, I’ve no intention of explaining my plans. */ EXTERN ZDBAEJ BAEFT1.4
+  ++ @10208 /* Just fall in line, Baeloth, I've no intention of explaining my plans. */ EXTERN ZDBAEJ BAEFT1.4
 
 CHAIN ZDBAEJ BAEFT1.1
 @10209 /* Those conniving Cowled Ones? I applaud your audacity in opposing them. Any cause that confounds them is one I shall champion. Imagine trying to impose limits on my magic! */
@@ -243,4 +281,3 @@ END
 CHAIN ZDBAEJ BAEFT1.6
   @10220 /* Now, onward! I tire of talking and thirst for other theatrics! */
 END
-// 2
