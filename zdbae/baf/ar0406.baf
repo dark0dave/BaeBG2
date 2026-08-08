@@ -7,6 +7,18 @@ RESPONSE #100
   Continue()
 END
 
+// Destroy Baeloth if Hendak Released
+IF
+  Global("ZDBAEExists","GLOBAL",1)
+  GlobalLT("ZDBAE_BEGIN","GLOBAL",1)
+  Global("SpawnFreedGladiators","AR0406",1)
+  Global("ZDBAE_HOSTILE_DESTROY_SELF","GLOBAL",0)
+THEN
+RESPONSE #100
+  SetGlobal("ZDBAE_HOSTILE_DESTROY_SELF","GLOBAL",1)
+  ActionOverride("ZDBAE",DestroySelf())
+END
+
 IF
   Global("ZDBAE_REVEAL","GLOBAL",1)
 THEN
@@ -75,16 +87,4 @@ RESPONSE #100
   ActionOverride("Nobleman",DestroySelf())
   ActionOverride("Nobleman",DestroySelf())
   ActionOverride("Announcer",DestroySelf())
-END
-
-// Destroy Baeloth if Hendak Released
-IF
-  Global("ZDBAEExists","GLOBAL",1)
-  !Global("ZDBAE_BEGIN","GLOBAL",1)
-  Global("SpawnFreedGladiators","AR0406",1)
-  Global("ZDBAE_HOSTILE_DESTROY_SELF","GLOBAL",0)
-THEN
-RESPONSE #100
-  SetGlobal("ZDBAE_HOSTILE_DESTROY_SELF","GLOBAL",1)
-  ActionOverride("ZBAE",DestroySelf())
 END
