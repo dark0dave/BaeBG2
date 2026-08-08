@@ -1,0 +1,57 @@
+amends "package://github.com/jdx/hk/releases/download/v1.54.0/hk@1.54.0#/Config.pkl"
+import "package://github.com/jdx/hk/releases/download/v1.54.0/hk@1.54.0#/Builtins.pkl"
+
+local message = new Mapping<String, Step> {
+  ["check-conventional-commit"] = Builtins.check_conventional_commit
+}
+
+local builtins = new Mapping<String, Step> {
+  ["check-case-conflict"] = Builtins.check_case_conflict
+  ["check-merge-conflict"] = Builtins.check_merge_conflict
+  ["end-of-file-fixer"] = Builtins.newlines
+  ["mixed-line-ending"] = Builtins.mixed_line_ending
+  ["nix-fmt"] = Builtins.nix_fmt
+  ["trailing-whitespace"] = Builtins.trailing_whitespace
+  ["yamlfmt"] = Builtins.yamlfmt
+}
+
+local local_hooks = new Mapping<String, Step> {
+  ["codespell"] {
+    glob = List("*.tra", "*.tp2", "*.d", "readme.md")
+    exclude = List("hk.pkl")
+    check = "codespell -c {{files}} --config .codespellrc"
+    fix = "codespell -cw {{files}} --config .codespellrc"
+  }
+  ["check-case"] {
+    check = "test $(find zdbae -type f -name '*[[:upper:]]*' | wc -l) -eq 0"
+    fix = "scripts/fix-case.sh"
+  }
+  ["check-ie"] {
+    glob = List("*.bam","*.baf","*.cre","*.d","*.itm","*.spl","*.sto","*.wav","*.vvc")
+    check = "scripts/check-ie.sh {{files}}"
+  }
+  ["check-weidu"] {
+    glob = List("*.d","*.tp2","*.tpa","*.tpp")
+    exclude = List("docs/**/*")
+    check = "scripts/check-weidu.sh {{files}}"
+  }
+  ["weidu-list"] {
+    check = "weidu --nogame --list-components */*tp2 0 | grep -i zdbae/setup-zdbae"
+  }
+}
+
+hooks {
+  ["commit-msg"] {
+    steps {
+      ...message
+    }
+  }
+  ["pre-commit"] {
+    fix = true
+    stash = "git"
+    steps {
+      ...builtins
+      ...local_hooks
+    }
+  }
+}
