@@ -1,13 +1,18 @@
-name: main
+name: 'checks'
 on:
   pull_request:
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-      with:
-        set-safe-directory: true
-        fetch-depth: 0
-    - uses: actions/setup-python@v5
-    - uses: pre-commit/action@v3.0.1
+      - uses: actions/checkout@main
+      - uses: nixbuild/nix-quick-install-action@v35
+      - name: cache
+        uses: nix-community/cache-nix-action@v7
+        with:
+          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.nix', 'flake.lock') }}
+          restore-prefixes-first-match: nix-${{ runner.os }}-
+          gc-max-store-size-linux: 5G
+      - name: pre-commit
+        shell: 'nix develop -c bash -e {0}'
+        run: env HK_FIX=0 hk run pre-commit --all --no-fail-fast --stash none
