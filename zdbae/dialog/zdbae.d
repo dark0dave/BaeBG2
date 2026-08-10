@@ -6,7 +6,6 @@ IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_BEGIN","GLOBAL",0) Global(
   IF ~~ THEN REPLY ~Well met, I am <CHARNAME>.~ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE2
   IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY ~Baeloth, we travelled together before. Surely you remember me?~ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE3
   IF ~Global("BA_BEGIN","GLOBAL",1)~ THEN REPLY ~If it isn't my least favorite megalomaniac. Don't you remember me, drow?~ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE3
-  IF ~~ THEN REPLY ~Die, drow!~ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1)~ GOTO ZDBAE100
   IF ~~ THEN REPLY ~Whatever mischief you're planning, I'll play no part in it.~ DO ~SetGlobal("ZDBAE_BEGIN","GLOBAL",1) SetGlobal("ZDBAE_SHUTUP","GLOBAL",1)~ GOTO ZDBAEFU
 END
 
