@@ -7,7 +7,7 @@ THEN
         DisplayStringHead("ZDBAE", @106)  /* What a wretched waste! How boring and banal this brawl is! Were I to grace these grounds with my talents, tragedy would instead transform into triumph. I would bring power, prestige and panache to this pitiful pit. */
         Wait(12)
         DisplayStringHead("ZDBAE", @111)  /* Someone should displace - dare I say depose - of the dullard who dared to direct such a dreary display. Perhaps... me? */
-        Wait(8)
+        Wait(12)
         DisplayStringPoint([2385.1533], @107)  /* You have the right of it. */
         Wait(5)
         DisplayStringPoint([2453.1575], @108)  /* I have not been entertained! */

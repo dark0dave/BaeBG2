@@ -7,10 +7,10 @@ THEN
         SetGlobal("ZDBAE1_CUTSCENE_BREAKABLE", "GLOBAL", 1)
         SetCutSceneBreakable(TRUE)
         // NOBLE 1
-        ForceSpell("ZDBAE", FLASHY_4)
-        DisplayStringPoint([2453.1575], @101)  /* ~A drow? Here?~ */
+        ActionOverride("Frankie", ForceSpell("ZDBAE", FLASHY_4))
+        DisplayStringPoint([2453.1575], @101)  /* A drow? Here? */
         Wait(2)
-        DisplayStringHead("Announcer", @102)  /* ~WHAT?! Security, Security!~ */
+        DisplayStringHead("Announcer", @102)  /* WHAT?! Security, Security! */
         Wait(2)
         SetCutSceneBreakable(FALSE)
         IncrementGlobal("ZDBAE1_CUTSCENE_BREAKABLE", "GLOBAL", 1)
@@ -26,12 +26,15 @@ THEN
         SetCutSceneBreakable(TRUE)
         Wait(2)
         // NOBLE 2
-        DisplayStringPoint([2385.1533], @103)  /* ~Burn the drow!~ */
+        DisplayStringPoint([2385.1533], @103)  /* Burn the drow! */
         Wait(2)
-        DisplayStringHead("Frankie", @104)  /* ~Kill the drow!~ */
+        DisplayStringHead("Frankie", @104)  /* Kill the drow! */
         Wait(2)
-        DisplayStringHead("ZDBAE", @105)  /* ~Good, uh, people. Surely we can resolve this with wit and not...whatever this is?~ */
+        DisplayStringHead("ZDBAE", @105)  /* Good, uh, people. Surely we can resolve this with wit and not...whatever this is? */
         Wait(5)
+        ActionOverride("ZDBAE", ReallyForceSpellRES("SPWI408", "ZDBAE"))
+        ActionOverride("ZDBAE", ReallyForceSpellRES("SPWI212", "ZDBAE"))
+        ActionOverride("ZDBAE", Attack("copamb02"))
         SetCutSceneBreakable(FALSE)
         ActionOverride("zdfranki", DestroySelf())
         SetGlobal("ZDBAE1_CUTSCENE_BREAKABLE", "GLOBAL", 0)
