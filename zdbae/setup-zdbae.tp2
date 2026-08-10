@@ -1,27 +1,29 @@
-BACKUP ~weidu_external/backup/zdbae~
-AUTHOR ~dark0dave~
+BACKUP ~weidu_external/zdbae/backup~
+SUPPORT "https://github.com/dark0dave/BaeBG2/issues"
+VERSION ~v0.2.3~
 README ~zdbae/readme.md~
-VERSION ~v0.23~
+// MODDER "setup_tra" "warn" "area_variables" "warn" "missing_extern" "warn" "missing_resref" "warn" "ict2_actions" "warn" "missing_eval" "warn" "overwriting_file" "warn" "fun_args" "warn"
 AUTO_EVAL_STRINGS
 
-AUTO_TRA ~zdbae/tra/%s~
-
-LANGUAGE ~English~
-         ~english~
-         ~zdbae/tra/english/setup.tra~
-         ~zdbae/tra/english/journal.tra~
+LANGUAGE ~English~ ~english~ ~zdbae/tra/english/setup.tra~ ~zdbae/tra/english/journal.tra~
 
 // Main Component
-BEGIN ~Baeloth BG2~ DESIGNATED 0 LABEL ~zdbae~
+BEGIN ~Baeloth BG2~
+DESIGNATED 0
+LABEL ~zdbae~
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ ~This mod cannot be installed on this game~
 INCLUDE ~zdbae/lib/core.tph~
 
 // Crossmod
-// BEGIN ~crossmod~ DESIGNATED 1 LABEL ~crossmod~
+// BEGIN ~crossmod~
+// DESIGNATED 1
+// LABEL ~crossmod~
 // REQUIRE_COMPONENT ~zdbae.tp2~ "0" ~Requires main component~
 // INCLUDE ~zdbae/lib/crossmod.tph~
 
 // Baeloth Alt Portrait
-BEGIN ~altportrait~ DESIGNATED 10 LABEL ~altportrait~
+BEGIN ~altportrait~
+DESIGNATED 10
+LABEL ~altportrait~
 REQUIRE_COMPONENT ~zdbae.tp2~ "0" ~Requires main component~
 INCLUDE ~zdbae/lib/altportrait.tph~
