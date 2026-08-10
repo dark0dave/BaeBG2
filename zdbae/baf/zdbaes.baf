@@ -1,199 +1,199 @@
 IF
     InParty(Myself)
-    !Global("ZDBAE_LEFT","GLOBAL",1)
-    Global("ZDBAE_HOSTILE","GLOBAL",1)
-    Global("ZDBAE_JOINED","GLOBAL",2)
+    !Global("ZDBAE_LEFT", "GLOBAL", 1)
+    Global("ZDBAE_HOSTILE", "GLOBAL", 1)
+    Global("ZDBAE_JOINED", "GLOBAL", 2)
 THEN
-RESPONSE #100
-    SetGlobal("ZDBAE_HOSTILE","GLOBAL",1)
-    Enemy()
-    Continue()
+    RESPONSE #100
+        SetGlobal("ZDBAE_HOSTILE", "GLOBAL", 1)
+        Enemy()
+        Continue()
 END
 
 // First Time Join
 IF
     !InParty(Myself)
-    Global("ZDBAE_JOINED","GLOBAL",1)
-    Global("ZDBAE_JOINED_FIRST_TIME","GLOBAL",0)
+    Global("ZDBAE_JOINED", "GLOBAL", 1)
+    Global("ZDBAEJOINFIRST", "GLOBAL", 0)
 THEN
-RESPONSE #100
-    SetGlobal("ZDBAE_JOINED_FIRST_TIME","GLOBAL",1)
-    SetGlobal("ZDBAEJOINXP","GLOBAL",1)
-    JoinParty()
+    RESPONSE #100
+        SetGlobal("ZDBAEJOINFIRST", "GLOBAL", 1)
+        SetGlobal("ZDBAEJOINXP", "GLOBAL", 1)
+        JoinParty()
 END
 
 // Experience
 IF
-    Global("ZDBAEJOINXP","GLOBAL",0)
+    Global("ZDBAEJOINXP", "GLOBAL", 1)
     InParty(Myself)
-    XPGT(Player1,1249999)
-    XPLT(Myself,1250000)
+    XPGT(Player1, 1249999)
+    XPLT(Myself, 1250000)
 THEN
-RESPONSE #100
-    SetInterrupt(FALSE)
-    SetGlobal("ZDBAEJOINXP","GLOBAL",1)
-    ChangeStat(Myself,XP,1250000,SET)
-    SetInterrupt(TRUE)
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("ZDBAEJOINXP", "GLOBAL", 2)
+        ChangeStat(Myself, XP, 1250000, SET)
+        SetInterrupt(TRUE)
 END
 
 IF
-    Global("ZDBAEJOINXP","GLOBAL",0)
+    Global("ZDBAEJOINXP", "GLOBAL", 1)
     InParty(Myself)
-    XPGT(Player1,999999)
-    XPLT(Myself,1000000)
+    XPGT(Player1, 999999)
+    XPLT(Myself, 1000000)
 THEN
-RESPONSE #100
-    SetInterrupt(FALSE)
-    SetGlobal("ZDBAEJOINXP","GLOBAL",1)
-    ChangeStat(Myself,XP,1000000,SET)
-    SetInterrupt(TRUE)
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("ZDBAEJOINXP", "GLOBAL", 2)
+        ChangeStat(Myself, XP, 1000000, SET)
+        SetInterrupt(TRUE)
 END
 
 IF
-    Global("ZDBAEJOINXP","GLOBAL",0)
+    Global("ZDBAEJOINXP", "GLOBAL", 1)
     InParty(Myself)
-    XPGT(Player1,499999)
-    XPLT(Myself,500000)
+    XPGT(Player1, 499999)
+    XPLT(Myself, 500000)
 THEN
-RESPONSE #100
-    SetInterrupt(FALSE)
-    SetGlobal("ZDBAEJOINXP","GLOBAL",1)
-    ChangeStat(Myself,XP,500000,SET)
-    SetInterrupt(TRUE)
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("ZDBAEJOINXP", "GLOBAL", 2)
+        ChangeStat(Myself, XP, 500000, SET)
+        SetInterrupt(TRUE)
 END
 
 IF
-    Global("ZDBAEJOINXP","GLOBAL",0)
+    Global("ZDBAEJOINXP", "GLOBAL", 1)
     InParty(Myself)
-    XPGT(Player1,249999)
-    XPLT(Myself,250000)
+    XPGT(Player1, 249999)
+    XPLT(Myself, 250000)
 THEN
-RESPONSE #100
-    SetInterrupt(FALSE)
-    SetGlobal("ZDBAEJOINXP","GLOBAL",1)
-    ChangeStat(Myself,XP,250000,SET)
-    SetInterrupt(TRUE)
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("ZDBAEJOINXP", "GLOBAL", 2)
+        ChangeStat(Myself, XP, 250000, SET)
+        SetInterrupt(TRUE)
 END
 
 IF
-    Global("ZDBAEJOINXP","GLOBAL",0)
+    Global("ZDBAEJOINXP", "GLOBAL", 1)
     InParty(Myself)
-    XPGT(Player1,124999)
-    XPLT(Myself,125000)
+    XPGT(Player1, 124999)
+    XPLT(Myself, 125000)
 THEN
-RESPONSE #100
-    SetInterrupt(FALSE)
-    SetGlobal("ZDBAEJOINXP","GLOBAL",1)
-    ChangeStat(Myself,XP,125000,SET)
-    SetInterrupt(TRUE)
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("ZDBAEJOINXP", "GLOBAL", 2)
+        ChangeStat(Myself, XP, 125000, SET)
+        SetInterrupt(TRUE)
 END
 
 IF
-    Global("ZDBAEJOINXP","GLOBAL",0)
+    Global("ZDBAEJOINXP", "GLOBAL", 1)
     InParty(Myself)
-    XPLT(Player1,89001)
+    XPLT(Player1, 89001)
 THEN
-RESPONSE #100
-    SetInterrupt(FALSE)
-    SetGlobal("ZDBAEJOINXP","GLOBAL",1)
-    SetInterrupt(TRUE)
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("ZDBAEJOINXP", "GLOBAL", 2)
+        SetInterrupt(TRUE)
 END
 
 // Boots
 
 /* baeloth has the luxurious lizardskin leapers */
 IF
-    HasItem("zdbo02",Myself)
-    Global("zdbaeleapers","GLOBAL",0)
+    HasItem("zdbo02", Myself)
+    Global("zdbaeleapers", "GLOBAL", 0)
 THEN
-RESPONSE #100
-    SetGlobal("zdbaeleapers","GLOBAL",1)
-    StartDialogNoSet([PC])
+    RESPONSE #100
+        SetGlobal("zdbaeleapers", "GLOBAL", 1)
+        StartDialogNoSet([PC])
 END
 
 /* baeloth has the simple boots - how DARE you! */
 IF
-    HasItem("bootsthatdontexist",Myself)
-    Global("zdbaesimple","GLOBAL",0)
+    HasItem("bootsthatdontexist", Myself)
+    Global("zdbaesimple", "GLOBAL", 0)
 THEN
-RESPONSE #100
-    SetGlobal("zdbaesimple","GLOBAL",1)
-    StartDialogNoSet([PC])
+    RESPONSE #100
+        SetGlobal("zdbaesimple", "GLOBAL", 1)
+        StartDialogNoSet([PC])
 END
 
 /* baeloth has da boots with da fur */
 IF
-    HasItem("zdbo01",Myself)
-    Global("zdbaefurries","GLOBAL",0)
+    HasItem("zdbo01", Myself)
+    Global("zdbaefurries", "GLOBAL", 0)
 THEN
-RESPONSE #100
-    SetGlobal("zdbaefurries","GLOBAL",1)
-    StartDialogNoSet([PC])
+    RESPONSE #100
+        SetGlobal("zdbaefurries", "GLOBAL", 1)
+        StartDialogNoSet([PC])
 END
 
 /* entering the market district, baeloth wants new boots */
 IF
     InParty(Myself)
     See(Player1)
-    !StateCheck(Player1,CD_STATE_NOTVALID)
-    !StateCheck(Myself,CD_STATE_NOTVALID)
+    !StateCheck(Player1, CD_STATE_NOTVALID)
+    !StateCheck(Myself, CD_STATE_NOTVALID)
     CombatCounter(0)
     AreaCheck("AR0700")
-    Global("ZDBaeBoots","GLOBAL",0)
+    Global("ZDBaeBoots", "GLOBAL", 0)
 THEN
-RESPONSE #100
-    SetGlobal("ZDBaeBoots","GLOBAL",1)
+    RESPONSE #100
+        SetGlobal("ZDBaeBoots", "GLOBAL", 1)
 END
 
 IF
-    Global("ZDBaeBoots","GLOBAL",1)
+    Global("ZDBaeBoots", "GLOBAL", 1)
 THEN
-RESPONSE #100
-    MoveToObject(Player1)
-    Dialogue(Player1)
+    RESPONSE #100
+        MoveToObject(Player1)
+        Dialogue(Player1)
 END
 
 /* friendship path */
 IF
     InParty(Myself)
-    Global("ZDBaeFriendshipActive","GLOBAL",0)
+    Global("ZDBaeFriendshipActive", "GLOBAL", 0)
 THEN
-  RESPONSE #100
-    RealSetGlobalTimer("ZDBaeFriendshipTalksTimer","GLOBAL",1200)
-    SetGlobal("ZDBaeFriendshipTalks","GLOBAL",1)
-    SetGlobal("ZDBaeFriendshipActive","GLOBAL",1)
+    RESPONSE #100
+        RealSetGlobalTimer("ZDBaeFriendshipTalksTimer", "GLOBAL", 1200)
+        SetGlobal("ZDBaeFriendshipTalks", "GLOBAL", 1)
+        SetGlobal("ZDBaeFriendshipActive", "GLOBAL", 1)
 END
 
 IF
     InParty(Myself)
     See(Player1)
-    RealGlobalTimerExpired("ZDBaeFriendshipTalksTimer","GLOBAL")
-    !StateCheck(Player1,CD_STATE_NOTVALID)
-    !StateCheck(Myself,CD_STATE_NOTVALID)
+    RealGlobalTimerExpired("ZDBaeFriendshipTalksTimer", "GLOBAL")
+    !StateCheck(Player1, CD_STATE_NOTVALID)
+    !StateCheck(Myself, CD_STATE_NOTVALID)
     CombatCounter(0)
     !See([ENEMY])
-    Global("ZDBaeFriendshipActive","GLOBAL",1)
+    Global("ZDBaeFriendshipActive", "GLOBAL", 1)
     OR(4)
-      Global("ZDBaeFriendshipTalks","GLOBAL",1)
-      // Global("ZDBaeFriendshipTalks","GLOBAL",3)
+        Global("ZDBaeFriendshipTalks", "GLOBAL", 1)
+    // Global("ZDBaeFriendshipTalks","GLOBAL",3)
 THEN
-  RESPONSE #100
-    IncrementGlobal("ZDBaeFriendshipTalks","GLOBAL",1)
+    RESPONSE #100
+        IncrementGlobal("ZDBaeFriendshipTalks", "GLOBAL", 1)
 END
 
 IF
     InParty(Myself)
     See(Player1)
-    !StateCheck(Myself,CD_STATE_NOTVALID)
-    !StateCheck(Player1,CD_STATE_NOTVALID)
-    Global("ZDBaeFriendshipActive","GLOBAL",1)
+    !StateCheck(Myself, CD_STATE_NOTVALID)
+    !StateCheck(Player1, CD_STATE_NOTVALID)
+    Global("ZDBaeFriendshipActive", "GLOBAL", 1)
     CombatCounter(0)
     !See([ENEMY])
     OR(4)
-      Global("ZDBaeFriendshipTalks","GLOBAL",2)
-      // Global("ZDBaeFriendshipTalks","GLOBAL",4)
+        Global("ZDBaeFriendshipTalks", "GLOBAL", 2)
+    // Global("ZDBaeFriendshipTalks","GLOBAL",4)
 THEN
-  RESPONSE #100
-    MoveToObject(Player1)
-    Dialogue(Player1)
+    RESPONSE #100
+        MoveToObject(Player1)
+        Dialogue(Player1)
 END

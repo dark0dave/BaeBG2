@@ -1,20 +1,20 @@
 IF
-  True()
+    True()
 THEN
-  RESPONSE #100
-  CutSceneId("ZDBAE") // BAE
-  ActionOverride("GladiatorBear",EscapeArea())
-  DisplayStringHead("ZDBAE", @106) /* What a wretched waste! How boring and banal this brawl is! Were I to grace these grounds with my talents, tragedy would instead transform into triumph. I would bring power, prestige and panache to this pitiful pit. */
-  Wait(12)
-  DisplayStringHead("ZDBAE", @111) /* Someone should displace - dare I say depose - of the dullard who dared to direct such a dreary display. Perhaps... me? */
-  Wait(8)
-  DisplayStringPoint([2385.1533], @107) /* You have the right of it. */
-  Wait(5)
-  DisplayStringPoint([2453.1575], @108) /* I have not been entertained! */
-  Wait(5)
-  DisplayStringPoint([2385.1533], @109) /* If you've got a plan, I'm in. Can't be much harder starting a fight than watching one. */
-  Wait(8)
-  DisplayStringHead("ZDBAE", @110) /* Then huddle close my hapless horde. The time of tedium is about to be terminated. */
-  Wait(5)
-  StartDialogueNoSet(Player1)
+    RESPONSE #100
+        CutSceneId("ZDBAE")  // BAE
+        ActionOverride("GladiatorBear", EscapeArea())
+        DisplayStringHead("ZDBAE", @106)  /* What a wretched waste! How boring and banal this brawl is! Were I to grace these grounds with my talents, tragedy would instead transform into triumph. I would bring power, prestige and panache to this pitiful pit. */
+        Wait(12)
+        DisplayStringHead("ZDBAE", @111)  /* Someone should displace - dare I say depose - of the dullard who dared to direct such a dreary display. Perhaps... me? */
+        Wait(8)
+        DisplayStringPoint([2385.1533], @107)  /* You have the right of it. */
+        Wait(5)
+        DisplayStringPoint([2453.1575], @108)  /* I have not been entertained! */
+        Wait(5)
+        DisplayStringPoint([2385.1533], @109)  /* If you've got a plan, I'm in. Can't be much harder starting a fight than watching one. */
+        Wait(8)
+        DisplayStringHead("ZDBAE", @110)  /* Then huddle close my hapless horde. The time of tedium is about to be terminated. */
+        Wait(5)
+        StartDialogueNoSet(Player1)
 END
