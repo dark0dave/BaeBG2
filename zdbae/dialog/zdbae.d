@@ -13,7 +13,7 @@ END
 IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_BEGIN","GLOBAL",1) Global("ZDBAE_SHUTUP","GLOBAL",1)~ THEN BEGIN ZDBAES
   SAY ~Eh? What do YOU want?~ [zdbaef]
   IF ~~ THEN REPLY ~I could use your skills. Perhaps you'd consider joining me?~ GOTO ZDBAE5
-  IF ~~ THEN REPLY ~I want you to die, drow!~DO ~SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
+  IF ~~ THEN REPLY ~I want you to die, drow!~ DO ~SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
   IF ~~ THEN REPLY ~I am not interested in your dog and pony show.~ GOTO ZDBAEC
 END
 
@@ -50,7 +50,7 @@ END
 
 // Reject
 IF ~~ THEN BEGIN ZDBAE5
-  SAY ~No, no, no. I wish for splendor and spectacle. Not cavorting amongst the common rabble with...What did you say your name was again? Instead, you shall bear witness as this arena falls under my dazzling dominion!~
+  SAY ~No, no, no. I crave for splendor and spectacle. Not cavorting amongst the common rabble with...What did you say your name was again? Instead, you shall bear witness as this arena falls under my dazzling dominion!~
   IF ~~ THEN GOTO ZDBAE7
 END
 
