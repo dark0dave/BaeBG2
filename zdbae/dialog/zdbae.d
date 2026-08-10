@@ -10,7 +10,7 @@ IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_BEGIN","GLOBAL",0) Global(
 END
 
 IF ~!Global("ZDBAE_HOSTILE","GLOBAL",1) Global("ZDBAE_BEGIN","GLOBAL",1) Global("ZDBAE_SHUTUP","GLOBAL",1)~ THEN BEGIN ZDBAES
-  SAY ~Eh? What do YOU want?~ [zdbaef]
+  SAY @6 // ~Eh? What do YOU want?~ [zdbaef]
   IF ~~ THEN REPLY ~I could use your skills. Perhaps you'd consider joining me?~ GOTO ZDBAE5
   IF ~~ THEN REPLY ~I want you to die, drow!~ DO ~SetGlobal("ZDBAE_REVEAL","GLOBAL",1)~ GOTO ZDBAE100
   IF ~~ THEN REPLY ~I am not interested in your dog and pony show.~ GOTO ZDBAEC
@@ -83,7 +83,7 @@ IF ~~ THEN BEGIN ZDBAE11
 END
 
 IF ~~ THEN BEGIN ZDBAE100
-  SAY ~Oh, COME ON!~ [zdbae54]
+  SAY @50 // ~Oh, COME ON!~ [zdbae54]
   IF ~~ THEN DO ~
     SetGlobal("ZDBAE_HOSTILE","GLOBAL",1)
     ActionOverride("ZDBAE",ChangeAIScript("mage18c",CLASS))
