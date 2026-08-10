@@ -8,6 +8,7 @@ THEN
         SetCutSceneBreakable(TRUE)
         ActionOverride("ZDBAE", ForceSpell("ZDBAE", FLASHY_4))
         SmallWait(5)
+        // NOBLE 1
         DisplayStringPoint([2453.1575], @101)  /* A drow? Here? */
         Wait(2)
         DisplayStringHead("Announcer", @102)  /* WHAT?! Security, Security! */
