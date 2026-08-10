@@ -1,52 +1,51 @@
 IF
     InParty(Myself)
-    !Global("ZDBAE25_LEFT","GLOBAL",1)
-    !Global("ZDBAE25_HOSTILE","GLOBAL",1)
-    !Global("ZDBAE25_JOINED","GLOBAL",1)
+    !Global("ZDBAE25_LEFT", "GLOBAL", 1)
+    !Global("ZDBAE25_HOSTILE", "GLOBAL", 1)
+    !Global("ZDBAE25_JOINED", "GLOBAL", 1)
 THEN
-RESPONSE #101
-    SetGlobal("ZDBAE25_HOSTILE","GLOBAL",1)
-    Attack("ZDBAE25")
+    RESPONSE #101
+        SetGlobal("ZDBAE25_HOSTILE", "GLOBAL", 1)
+        Attack("ZDBAE25")
 END
 
 IF
     InParty(Myself)
-    !Global("ZDBAE25_LEFT","GLOBAL",1)
-    !Global("ZDBAE25_REMOVED","GLOBAL",1)
-    !Global("ZDBAE25_JOINED","GLOBAL",1)
+    !Global("ZDBAE25_LEFT", "GLOBAL", 1)
+    !Global("ZDBAE25_REMOVED", "GLOBAL", 1)
+    !Global("ZDBAE25_JOINED", "GLOBAL", 1)
 THEN
-RESPONSE #102
-    SetGlobal("ZDBAE25_REMOVED","GLOBAL",1)
+    RESPONSE #102
+        SetGlobal("ZDBAE25_REMOVED", "GLOBAL", 1)
 END
 
 IF
     !InParty(Myself)
-    Global("ZDBAE25_LEFT","GLOBAL",1)
-    !Global("ZDBAE25_JOINED","GLOBAL",1)
+    Global("ZDBAE25_LEFT", "GLOBAL", 1)
+    !Global("ZDBAE25_JOINED", "GLOBAL", 1)
 THEN
-RESPONSE #103
-    SetGlobal("ZDBAE25_LEFT","GLOBAL",0)
-    SetGlobal("ZDBAE25_REMOVED","GLOBAL",0)
-    JoinParty()
+    RESPONSE #103
+        SetGlobal("ZDBAE25_LEFT", "GLOBAL", 0)
+        SetGlobal("ZDBAE25_REMOVED", "GLOBAL", 0)
+        JoinParty()
 END
 
 // Experience
 IF
-    Global("ZDBAE25JOINXP","GLOBAL",0)
+    Global("ZDBAE25JOINXP", "GLOBAL", 0)
     InParty(Myself)
+    XPLT(Myself, 2500000)
 THEN
-RESPONSE #100
-    SetInterrupt(FALSE)
-    SetGlobal("ZDBAE25JOINXP","GLOBAL",1)
-    ChangeStat(Myself,XP,2500000,SET)
-    SetInterrupt(TRUE)
+    RESPONSE #100
+        SetGlobal("ZDBAE25JOINXP", "GLOBAL", 1)
+        ChangeStat(Myself, XP, 2500000, SET)
 END
 
 // Talk when summoned
 IF
-    Global("ZDBAE25Summoned","GLOBAL",1)
+    Global("ZDBAE25Summoned", "GLOBAL", 1)
 THEN
-RESPONSE #100
-    StartDialogueNoSet([PC])
-    Wait(1)
+    RESPONSE #100
+        StartDialogueNoSet([PC])
+        Wait(1)
 END
