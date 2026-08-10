@@ -8,12 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@main
         with:
           fetch-depth: 0
       - name: Create Release
         id: create_release
-        uses: ncipollo/release-action@v1.18.0
+        uses: ncipollo/release-action@main
         with:
           generateReleaseNotes: true
   call_workflow:
@@ -37,5 +37,5 @@ jobs:
       multi_autoupdate: true
       case_sensitive: false
       beautify: true
-      lower_case: false
+      lower_case: true
       include_submodules: 'false'
