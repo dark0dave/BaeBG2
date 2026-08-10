@@ -9,22 +9,19 @@ THEN
         // NOBLE 1
         ForceSpell("ZDBAE", FLASHY_4)
         DisplayStringPoint([2453.1575], @101)  /* ~A drow? Here?~ */
-        Wait(1)
+        Wait(2)
         DisplayStringHead("Announcer", @102)  /* ~WHAT?! Security, Security!~ */
-        Wait(1)
+        Wait(2)
         SetCutSceneBreakable(FALSE)
         IncrementGlobal("ZDBAE1_CUTSCENE_BREAKABLE", "GLOBAL", 1)
         CreateCreature("copamb02", [1850.1507], SSE)
         ActionOverride("copamb02", Attack("ZDBAE"))
-        ActionOverride("copamb02", MoveToPoint([2080.1520]))
         SmallWait(5)
         CreateCreature("copamb02", [1878.1500], SSE)
         ActionOverride("copamb02", Attack("ZDBAE"))
-        ActionOverride("copamb02", MoveToPoint([2108.1510]))
         SmallWait(5)
         CreateCreature("copamb02", [1890.1578], SSE)
         ActionOverride("copamb02", Attack("ZDBAE"))
-        ActionOverride("copamb02", MoveToPoint([2147.1484]))
         SmallWait(5)
         SetCutSceneBreakable(TRUE)
         Wait(2)
@@ -34,7 +31,7 @@ THEN
         DisplayStringHead("Frankie", @104)  /* ~Kill the drow!~ */
         Wait(2)
         DisplayStringHead("ZDBAE", @105)  /* ~Good, uh, people. Surely we can resolve this with wit and not...whatever this is?~ */
-        Wait(2)
+        Wait(5)
         SetCutSceneBreakable(FALSE)
         ActionOverride("zdfranki", DestroySelf())
         SetGlobal("ZDBAE1_CUTSCENE_BREAKABLE", "GLOBAL", 0)
