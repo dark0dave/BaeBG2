@@ -2,9 +2,10 @@
 set -euo pipefail
 
 function main() {
-  name=$(basename "${1}" | cut -f1 -d '.' | wc | awk '{ print $3}')
+  name=$(basename -z "${1}" | cut -f1 -d '.' | wc -m)
   if [[ "${name}" -gt 9 ]]; then
-    echo "Error found: ${1} which is larger than 8 characters" && exit 1;
+    echo "Error found: ${1} which is larger than 8 characters";
+    exit 1;
   fi
 }
 

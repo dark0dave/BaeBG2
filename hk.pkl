@@ -6,13 +6,19 @@ local message = new Mapping<String, Step> {
 }
 
 local builtins = new Mapping<String, Step> {
-  ["check-case-conflict"] = Builtins.check_case_conflict
-  ["check-merge-conflict"] = Builtins.check_merge_conflict
+  ["check-case-conflict"] = (Builtins.check_case_conflict) {
+    exclusive = true
+  }
+  ["check-merge-conflict"] = (Builtins.check_merge_conflict) {
+    exclusive = true
+  }
   ["end-of-file-fixer"] = Builtins.newlines
   ["mixed-line-ending"] = Builtins.mixed_line_ending
   ["nix-fmt"] = Builtins.nix_fmt
   ["trailing-whitespace"] = Builtins.trailing_whitespace
-  ["yamlfmt"] = Builtins.yamlfmt
+  ["yamlfmt"] = (Builtins.yamlfmt) {
+    exclusive = true
+  }
 }
 
 local local_hooks = new Mapping<String, Step> {
@@ -21,19 +27,25 @@ local local_hooks = new Mapping<String, Step> {
     exclude = List("hk.pkl")
     check = "codespell -c {{files}} --config .codespellrc"
     fix = "codespell -cw {{files}} --config .codespellrc"
+    exclusive = true
   }
   ["check-case"] {
     check = "test $(find zdbae -type f -name '*[[:upper:]]*' | wc -l) -eq 0"
-    fix = "scripts/fix-case.sh"
+    exclusive = true
   }
   ["check-ie"] {
     glob = List("*.bam","*.baf","*.cre","*.d","*.itm","*.spl","*.sto","*.wav","*.vvc")
-    check = "scripts/check-ie.sh {{files}}"
+    exclude = List("docs/*/*.d")
+    stdin = "{{ files_list | join(sep='\n') }}"
+    check = "xargs -I {} scripts/check-ie.sh {}"
+    exclusive = true
   }
   ["check-weidu"] {
     glob = List("*.d","*.tp2","*.tpa","*.tpp")
-    exclude = List("docs/**/*")
-    check = "scripts/check-weidu.sh {{files}}"
+    exclude = List("docs/*/*.d")
+    stdin = "{{ files_list | join(sep='\n') }}"
+    check = "xargs -I {} scripts/check-weidu.sh {}"
+    exclusive = true
   }
   ["weidu-list"] {
     check = "weidu --nogame --list-components */*tp2 0 | grep -i zdbae/setup-zdbae"

@@ -87,6 +87,29 @@ COPY ~%MOD_FOLDER%/items/zdbo03.itm~ ~override~
   - Protects against critical hits
   - Chance of Fabulousness!*/
 
+// Barrityl's Beauteous Boisterous Horn
+COPY ~%MOD_FOLDER%/items/zdho01.itm~ ~override~
+  SAY NAME1 ~Musical Horn~
+  SAY NAME2 ~Barrityl's Beauteous Boisterous Horn~
+  SAY UNIDENTIFIED_DESC ~It appears to be an elaborate musical horn.
+
+STATISTICS:
+
+Weight: 10~
+  SAY DESC ~Barrityl's Beauteous Boisterous Horn, is not merely a tool for playing music; it is a symbol of Baeloth's grandious persona. To the uninitiated, it may appear to be just an elaborate musical horn, but those who understand Baeloth's know its just a horn.
+
+  Obviously, no one but Baeloth may operate it.
+
+STATISTICS:
+
+Charge abilities:
+– DOOT once per day
+  Damage: 2d10 crushing (Save vs. Death for half)
+  Special: Slience for 2 rounds (Save vs. Paralysis negates)
+  Area of Effect: 15-ft. radius
+
+Weight: 10~
+
 /// Creature files ///
 // SoA
 COPY ~%MOD_FOLDER%/cre/zdbae.cre~ ~override~
