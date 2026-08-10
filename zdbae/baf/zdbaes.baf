@@ -91,11 +91,25 @@ END
 IF
     Global("ZDBAEJOINXP", "GLOBAL", 1)
     InParty(Myself)
-    XPLT(Player1, 89001)
+    XPGT(Player1, 99999)
+    XPLT(Myself, 100000)
 THEN
     RESPONSE #100
         SetInterrupt(FALSE)
         SetGlobal("ZDBAEJOINXP", "GLOBAL", 2)
+        ChangeStat(Myself, XP, 100000, SET)
+        SetInterrupt(TRUE)
+END
+
+IF
+    Global("ZDBAEJOINXP", "GLOBAL", 1)
+    InParty(Myself)
+    XPLT(Player1, 99999)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("ZDBAEJOINXP", "GLOBAL", 2)
+        ChangeStat(Myself, XP, 89000, SET)
         SetInterrupt(TRUE)
 END
 
