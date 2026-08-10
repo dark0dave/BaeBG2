@@ -1,14 +1,17 @@
 name: 'checks'
 on:
   pull_request:
+  push:
+    branches:
+      - 'main'
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      - uses: nixbuild/nix-quick-install-action@v35
-      - name: cache
-        uses: nix-community/cache-nix-action@v7
+      - uses: nixbuild/nix-quick-install-action@master
+      - name: nixcache
+        uses: nix-community/cache-nix-action@main
         with:
           primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.nix', 'flake.lock') }}
           restore-prefixes-first-match: nix-${{ runner.os }}-
