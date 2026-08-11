@@ -1,46 +1,39 @@
 BEGIN ZDBAEJ
 
-/* real housewives of athkatla intro */
+// Real HouseWives of Athkatla
 IF ~Global("ZDBaeBoots","GLOBAL",1)~ THEN ZDBAETOSSACOINTOYOURBAELOTH
-SAY ~The bustle of the bazaar! Trinkets, treasures, and tantalizing wares aplenty. My boots, alas, are worn thin from all our wandering. Perhaps you should spend a coin or two and preserve your most precious pal?~
-++ ~All of that postering just to tell me your boots are falling apart!~ + ZDBAEBOOTS1
-++ ~Then I suppose we could buy you a new pair.~ + ZDBAEBOOTS1
-++ ~You're here to sling spells, Baeloth, not bore me with your endless chatter.~ DO ~SetGlobal("ZDBAEBoots","GLOBAL",2)~ EXIT
+  SAY ~AHH, the bustle of the bazaar! Trinkets, treasures, and tantalizing trinkets aplenty. My boots, alas, are worn thin from all our wandering. Perhaps you should spend a coin or two and preserve your most precious pal?~
+  ++ ~All of that petty postering just to tell me your boots are falling apart!~ + ZDBAEBOOTS1
+  ++ ~Then I suppose we could buy you a new pair.~ + ZDBAEBOOTS1
+  ++ ~You're here to sling spells, Baeloth, not bore me with your endless chatter.~ DO ~SetGlobal("ZDBAEBoots","GLOBAL",2)~ EXIT
 END
 
-IF ~~ ZDBAEBOOTS1
-SAY ~Precisely! What greater tragedy is there than Baeloth Barrityl being undone by shabby soles?~
-IF ~~ DO ~AddJournalEntry(@1000001, QUEST) SetGlobal("ZDBAEBoots","GLOBAL",2)~ EXIT
+IF ~Global("ZDBAEBoots","GLOBAL",2)~ ZDBAEBOOTS1
+  SAY ~Precisely! What greater tragedy is there than Baeloth Barrityl being undone by shabby soles?~
+  IF ~~ DO ~AddJournalEntry(@1000001, QUEST) SetGlobal("ZDBAEBoots","GLOBAL",2)~ EXIT
 END
 
-/* item-based talks */
-/* luxurious lizardskin leapers are equipped */
-IF ~Global("zdbaeleapers","GLOBAL",1)~
-THEN zdbaeleapers
-  SAY ~Ah, the Luxurious Lizardskin Leapers! A splendid symphony of supple skin and sublime style. With these I shall sashay forward and even the stars shall seem subdued in comparison!~
-  IF ~~ THEN DO ~SetGlobal("zdbaeleapers","GLOBAL",2)~ EXIT
+IF ~Global("ZDAuctionTrigger", "GLOBAL", 6)~ ZDBAETRHWOABET
+  SAY ~Really?! Just what number is navigating through your noble nogin?~
+  IF ~PartyGoldGT(10000)~ REPLY ~Ten thousand, gold pieces.~ DO ~SetGlobal("ZDAuctionTrigger","GLOBAL",7)~ GOTO ZDBAEBIGMONEY10
+  IF ~PartyGoldGT(5000)~ REPLY ~Five thousand, gold pieces.~ DO ~SetGlobal("ZDAuctionTrigger","GLOBAL",7)~ GOTO ZDBAEBIGMONEY5
+  IF ~PartyGoldGT(2500)~ REPLY ~Two thousand, Five hundred, gold pieces.~ DO ~SetGlobal("ZDAuctionTrigger","GLOBAL",7)~ GOTO ZDBAEBIGMONEY2.5
+  IF ~~ REPLY ~Nevermind forget I said anything.~ EXIT
 END
 
-/* sturdy boots are equipped */
-IF ~Global("zdbaesturdy","GLOBAL",1)~
-THEN zdbaesturdy
-  SAY ~Simple, sturdy boots. Hmm, they will suffice, I suppose. Slightly too stodgy for my sophisticated sensibilities. Suitable for soldiers, perhaps, but scarcely for a sorcerer of my skill. How utterly uninspiring.~
-  IF ~~ THEN DO ~SetGlobal("zdbaesturdy","GLOBAL",2)~ EXIT
+IF ~Global("ZDAuctionTrigger","GLOBAL",7)~ ZDBAEBIGMONEY10
+  SAY ~Oooh, LET ME ENTERTAIN YOU. Sir I bid, Ten thousand, gold pieces.~
+  IF ~~ EXTERN ZDAUCTIO ZDDAUCTIGOT10
 END
 
-/* simple boots are equipped - how DARE you! */
-// commented out because this item doesn't exist
-//  IF ~Global("zdbaesimple","GLOBAL",1)~
-// THEN zdbaesimple
-//  SAY @~Blast these brutish boots! They are bereft of beauty and bland in design. They barely beguile the eye! Why am I, the brilliant Baeloth, forced to travel with such foul footwear?~
-//  IF ~~ THEN DO ~SetGlobal("zdbaesimple","GLOBAL",2)~ EXIT
-// END
+IF ~Global("ZDAuctionTrigger","GLOBAL",7)~ ZDBAEBIGMONEY5
+  SAY ~Excellent, let's elucidate the elite! Five thousand, gold pieces!~
+  IF ~~ EXTERN ZDAUCTIO ZDDAUCTIGOT5
+END
 
-/* boots with da fur are equipped */
-IF ~Global("zdbaefurries","GLOBAL",1)~
-THEN zdbaefurries
-  SAY ~Splendidly styled but too subtle for my taste. I dazzle, I delight. I refuse to be swallowed by the shadows like some sullen serf.~
-  IF ~~ THEN DO ~SetGlobal("zdbaefurries","GLOBAL",2)~ EXIT
+IF ~Global("ZDAuctionTrigger","GLOBAL",7)~ ZDBAEBIGMONEY2.5
+  SAY ~Ahhh what a titillating tithe! I bid, Two thousand, Five hundred, gold pieces.~
+  IF ~~ EXTERN ZDAUCTIO ZDDAUCTIGOT5
 END
 
 /* Obligatory Celvan Limerick */
@@ -101,7 +94,7 @@ END CSGAAL 1
 // Response: I say that the churches lie to you! They claim their gods are present when they do nothing other than require your coin to fill their pockets!
 INTERJECT_COPY_TRANS CSGAAL 3 ZDBAEGAAL1
   == ZDBAEJ IF ~InParty("ZDBAE") !StateCheck("ZDBAE", CD_STATE_NOTVALID)~ THEN
-  ~And I, I say listen to me Baeloth the Bright! Baeloth the Bedazzling!  Baeloth the ... Well in any event, don't listen to this blind bat, however brilliant his bids at bewilderment are. */ /* And I, I say listen to me Baeloth the Bright! Baeloth the Bedazzling!  Baeloth the ... Well in any event, don't listen to this blind bat, however brilliant his bids at bewilderment are~
+  ~And I, I say listen to me Baeloth the Bright! Baeloth the Bedazzling!  Baeloth the ... Well in any event, don't listen to this blind bat, however brilliant his bids at bewilderment are.~
 END
 // Response: Come, then! Those of you who wish to become the truly faithful, to witness the magnificence of the Unseeing Eye and the truth he brings... come with me!
 INTERJECT_COPY_TRANS CSGAAL 10 ZDBAEGAAL10

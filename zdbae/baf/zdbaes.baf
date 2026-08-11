@@ -113,39 +113,31 @@ THEN
         SetInterrupt(TRUE)
 END
 
-// Boots
-
-/* baeloth has the luxurious lizardskin leapers */
+// --------------------------------------
+// The Real House Wives of Athkatla Quest
+// --------------------------------------
 IF
-    HasItem("zdbo02", Myself)
-    Global("zdbaeleapers", "GLOBAL", 0)
+    InParty("ZDBAE")
+    Global("ZDCreateBootTimer", "GLOBAL", 0)
 THEN
     RESPONSE #100
-        SetGlobal("zdbaeleapers", "GLOBAL", 1)
-        StartDialogNoSet([PC])
+        SetGlobal("ZDCreateBootTimer", "GLOBAL", 1)
+        SetGlobalTimer("ZDBootTimer", "GLOBAL", 3600)
 END
 
-/* baeloth has the simple boots - how DARE you! */
+// Trigger Destroy Boots
 IF
-    HasItem("bootsthatdontexist", Myself)
-    Global("zdbaesimple", "GLOBAL", 0)
+    GlobalTimerExpired("ZDBootTimer", "GLOBAL")
+    AreaType(CITY)
+    Global("ZDBaeBoots", "GLOBAL", 0)
 THEN
     RESPONSE #100
-        SetGlobal("zdbaesimple", "GLOBAL", 1)
-        StartDialogNoSet([PC])
+        SetGlobal("ZDBaeBoots", "GLOBAL", 1)
+        ActionOverride("ZDBAE", DestroyItem("BOOT06"))
+        StartDialogNoSet(Player1)
 END
 
-/* baeloth has da boots with da fur */
-IF
-    HasItem("zdbo01", Myself)
-    Global("zdbaefurries", "GLOBAL", 0)
-THEN
-    RESPONSE #100
-        SetGlobal("zdbaefurries", "GLOBAL", 1)
-        StartDialogNoSet([PC])
-END
-
-/* entering the market district, baeloth wants new boots */
+// Trigger
 IF
     InParty(Myself)
     See(Player1)
@@ -153,42 +145,62 @@ IF
     !StateCheck(Myself, CD_STATE_NOTVALID)
     CombatCounter(0)
     AreaCheck("AR0700")
-    Global("ZDBaeBoots", "GLOBAL", 0)
-THEN
-    RESPONSE #100
-        SetGlobal("ZDBaeBoots", "GLOBAL", 1)
-END
-
-IF
+    Global("ZDBaeBootTrigger", "GLOBAL", 1)
     Global("ZDBaeBoots", "GLOBAL", 1)
 THEN
     RESPONSE #100
         MoveToObject(Player1)
-        Dialogue(Player1)
+        StartDialogNoSet(Player1)
 END
 
-// The Real House Wives of Athkatla Quest
+// Boots
+/* baeloth has da boots with da fur */
 IF
-    InParty("ZDBAE")
-    AreaCheck("AR0400")
-    Global("ZDCreateBootTimer", "GLOBAL", 0)
+    HasItem("zdbo01", Myself)
+    Global("ZDAuctionTrigger", "GLOBAL", 3)
+    Global("zdbaefurries", "GLOBAL", 0)
 THEN
     RESPONSE #100
-        SetGlobal("ZDCreateBootTimer", "GLOBAL", 1)
-        SetGlobalTimer("ZDBootTimer", "AR0400", 3600)
-END
-
-// Trigger timer
-IF
-    GlobalTimerExpired("ZDBootTimer", "GLOBAL")
-    Global("ZDTriggerBoots", "GLOBAL", 0)
-THEN
-    RESPONSE #100
-        SetGlobal("ZDTriggerBoots", "GLOBAL", 1)
+        SetGlobal("zdbaefurries", "GLOBAL", 1)
         StartDialogNoSet([PC])
 END
 
-/* friendship path */
+/* baeloth has the luxurious lizardskin leapers */
+IF
+    HasItem("zdbo02", Myself)
+    Global("ZDAuctionTrigger", "GLOBAL", 3)
+    Global("zdbaeleapers", "GLOBAL", 0)
+THEN
+    RESPONSE #100
+        SetGlobal("zdbaeleapers", "GLOBAL", 1)
+        StartDialogNoSet([PC])
+END
+
+/* sturdy boots are equipped */
+IF
+    HasItem("zdbo02", Myself)
+    Global("ZDAuctionTrigger", "GLOBAL", 3)
+    Global("zdbaesturdy", "GLOBAL", 0)
+THEN
+    RESPONSE #100
+        SetGlobal("zdbaesturdy", "GLOBAL", 1)
+        StartDialogNoSet([PC])
+END
+
+/* baeloth has the simple boots - how DARE you! */
+IF
+    HasItem("boot06", Myself)
+    Global("ZDAuctionTrigger", "GLOBAL", 3)
+    Global("zdbaesimple", "GLOBAL", 0)
+THEN
+    RESPONSE #100
+        SetGlobal("zdbaesimple", "GLOBAL", 1)
+        StartDialogNoSet([PC])
+END
+
+// --------------------------------------
+// Friendship
+// --------------------------------------
 IF
     InParty(Myself)
     Global("ZDBaeFriendshipActive", "GLOBAL", 0)

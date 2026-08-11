@@ -44,53 +44,14 @@ COPY ~%MOD_FOLDER%/items/zdring.itm~ ~override~
   - Can cast two extra spells of each level
   - THAC0: -5 penalty vs Genies
   - Damage: -5 penalty vs Genies */
-
-// Barrityl's Fur Boots
-COPY ~%MOD_FOLDER%/items/zdbo01.itm~ ~override~
-  SAY NAME1 @76 /* Fur Boots */
-  SAY NAME2 @77 /* Barrityl's Fur Boots */
-  SAY UNIDENTIFIED_DESC @78 /* A closer inspection of these boots leaves you more confused then when you started. */
-  SAY DESC @79 /* As expected from Baeloth, these leather fur boots are outrageously extravagant, expensive, and unique. The leather is deep, almost black, with an unusual texture that shifts in the light—somehow both smooth and rough at the same time. The dark fur lining is soft to the touch, yet surprisingly warm, providing an eerie contrast to the cold, smooth exterior. The fur appears to be woven into the leather, almost like it’s part of the material itself, giving the boots an added layer of mystery. Intricate stitching along the seams is done in a fine silver thread, adding an elegant, almost regal touch to the otherwise imposing design.
-
-  Baeloth often loudly remarks that these boots are a fusion of function and form, as they are magically enhanced, somehow conferring him with even more confidence and speechcraft, while protecting him from others' attempts to persuade or charm him.
-
-  Equipped abilities:
-  - Charisma: +1
-  - Saving Throws: +1
-  - Wearer is immune to Charm
-  - Protects against critical hits */
-
-// Barrityl's Fabulous Leather Boots
-COPY ~%MOD_FOLDER%/items/zdbo02.itm~ ~override~
-  SAY NAME1 @80 /* Leather Boots */
-  SAY NAME2 @81 /* Barrityl's Fabulous Boots */
-  SAY UNIDENTIFIED_DESC @78 /* A closer inspection of these boots leaves you more confused then when you started. */
-  SAY DESC @82 /* As expected from Baeloth, these leather boots are outrageously extravagant, expensive, and unique. Crafted from leather that seems to shift in color, they range from a deep, earthy brown to subtle hues of amber, changing with every step and angle, as though alive with some hidden magic. The texture is unlike any normal leather—smooth in some areas, rugged in others, giving the boots an almost sentient quality. The surface catches the light in curious ways, creating an illusion that the boots are constantly in motion, even when standing still.
-
-  Baeloth loudly remarks how gracefully grounded he feels. The boots grant an unnatural speed, enhancing agility and reflexes, while also imbuing him with immunity to movement-restricting spells.
-
-  Equipped abilities:
-  - Immunity to Stun, Hold Person and Paralyse
-  - Doubles movement rate
-  - Protects against critical hits */
-
-// Barrityl's Simple Boots
-COPY ~%MOD_FOLDER%/items/zdbo03.itm~ ~override~
-  SAY NAME1 @80 /* Leather Boots */
-  SAY NAME2 @83 /* Barrityl's Simple Boots */
-  SAY UNIDENTIFIED_DESC @78 /* A closer inspection of these boots leaves you more confused then when you started. */
-  SAY DESC @84 /* These boot elicit a sigh from Baeloth, as these boots are simple yet effective. A slightly upgraded version of boots of speed, but much to Baeloth's chagrin they are not unique or rare enough for him to feel noticed.
-
-  Equipped abilities:
-  - Charisma: -1
-  - Doubles movement rate
-  - Protects against critical hits
-  - Chance of Fabulousness!*/
+COPY ~%MOD_FOLDER%/bam/zdring1.bam~ ~override~
 
 // Barrityl's Beauteous Boisterous Horn
 COPY ~%MOD_FOLDER%/items/zdho01.itm~ ~override~
   SAY NAME1 ~Musical Horn~
   SAY NAME2 ~Barrityl's Beauteous Boisterous Horn~
+  WRITE_ASCII 0x3a ~zdbulli~ #8  // Inventory icon
+  WRITE_ASCII 0x58 ~zdbulld~ #8  // Description icon
   SAY UNIDENTIFIED_DESC ~It appears to be an elaborate musical horn.
 
 STATISTICS:
@@ -109,6 +70,8 @@ Charge abilities:
   Area of Effect: 15-ft. radius
 
 Weight: 10~
+COPY ~%MOD_FOLDER%/bam/zdbulld.bam~ ~override~
+COPY ~%MOD_FOLDER%/bam/zdbulli.bam~ ~override~
 
 /// Creature files ///
 // SoA
