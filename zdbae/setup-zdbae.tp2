@@ -1,6 +1,6 @@
 BACKUP ~weidu_external/zdbae/backup~
 SUPPORT "https://github.com/dark0dave/BaeBG2/issues"
-VERSION ~v0.2.3~
+VERSION ~v0.3.0~
 README ~zdbae/readme.md~
 // MODDER "setup_tra" "warn" "area_variables" "warn" "missing_extern" "warn" "missing_resref" "warn" "ict2_actions" "warn" "missing_eval" "warn" "overwriting_file" "warn" "fun_args" "warn"
 AUTO_EVAL_STRINGS
