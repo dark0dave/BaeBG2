@@ -21,8 +21,8 @@ INCLUDE ~zdbae/lib/core.tph~
 // REQUIRE_COMPONENT ~zdbae.tp2~ "0" ~Requires main component~
 // INCLUDE ~zdbae/lib/crossmod.tph~
 
-// The Real House Wives Of Athkatla
-// BEGIN ~housewives~
+// The Real House Wives Of Athkatla (ALPHA)
+// BEGIN ~The Real House Wives Of Athkatla~
 // DESIGNATED 2
 // LABEL ~housewives~
 // REQUIRE_COMPONENT ~zdbae.tp2~ "0" ~Requires main component~

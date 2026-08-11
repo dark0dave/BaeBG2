@@ -1,16 +1,112 @@
-/// Real Housewives of Athkatla ///
+// Real Housewives of Athkatla //
+
+// Give Baeloth Crap boots
+COPY_EXISTING ~zdbae.cre~ ~override~
+    ADD_CRE_ITEM ~BOOT06~ #0 #0 #0 ~identified&undroppable~ ~boots~ EQUIP
 
 // Create Auctioneer
-COPY_EXISTING ~ANN01.CRE~ ~ZDAUC.CRE~
-  SAY NAME1 ~Auctioneer~
-  SAY NAME2 ~Auctioneer~
-  WRITE_ASCII SCRIPT_OVERRIDE ~zdauc~ #8
-  WRITE_ASCII DEATHVAR ~zdauc~ #32
-  WRITE_ASCII DIALOG ~zdauc~ #8
+COPY_EXISTING ~annO1.cre~ ~override/zdauctio.cre~
+    SAY NAME1 ~Auctioneer~
+    SAY NAME2 ~Auctioneer~
+    WRITE_ASCII SCRIPT_OVERRIDE ~zdauctio~ #8
+    WRITE_ASCII DEATHVAR ~zdauctio~ #32
+    WRITE_ASCII DIALOG ~zdauctio~ #8
 
-// Scripts
-EXTEND_TOP ~AR0700.BCS~ ~%MOD_FOLDER%/baf/ar0700.baf~
-  EVALUATE_BUFFER
+// Scripts //
+EXTEND_TOP ~AR0700.BCS~ ~%MOD_FOLDER%/baf/ar0700.baf~ EVALUATE_BUFFER
 
-// Cutscene
-COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/cutscenes/zdcutauc.baf~
+// Cutscene //
+// COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/cutscene/zdcutauc.baf~
+
+// Items //
+// Stolid Simple Stampers
+COPY ~%MOD_FOLDER%/items/zdbo03.itm~ ~override~
+    SAY NAME1 @80  /* Leather Boots */
+    SAY NAME2 @83  /* Stolid Simple Stampers */
+    WRITE_LONG 0x34 1000  // Price
+    WRITE_ASCII 0x3a ~zdbsii~ #8  // Inventory icon
+    WRITE_ASCII 0x58 ~zdbsid~ #8  // Description icon
+    SAY UNIDENTIFIED_DESC @78  /* A closer inspection of these boots leaves you more confused then when you started. */
+    SAY DESC @84  /* These boot elicit a sigh from Baeloth, as these boots are simple yet effective. A slightly upgraded version of boots of speed, but much to Baeloth's chagrin they are not unique or rare enough for him to feel noticed.
+
+STATISTICS:
+
+Equipped abilities:
+  - Charisma: -2
+  - Doubles movement rate
+  - Chance of Fabulousness!
+
+Weight: 5 */
+    LPF ADD_ITEM_EFFECT // Only useable by baeloth
+        INT_VAR
+            optcode    = 319
+            power      = 1
+            parameter2 = 11
+        STR_VAR
+            resource = "ZDBAE"
+    END
+COPY ~%MOD_FOLDER%/bam/zdbsii.bam~ ~override~
+COPY ~%MOD_FOLDER%/bam/zdbsid.bam~ ~override~
+
+// Fabolous Furry Felts
+COPY ~%MOD_FOLDER%/items/zdbo01.itm~ ~override~
+    SAY NAME1 @76  /* Fur Boots */
+    SAY NAME2 @77  /* Fabolous Furry Felts */
+    WRITE_LONG 0x34 5000  // Price
+    WRITE_ASCII 0x3a ~zdbfuri~ #8  // Inventory icon
+    WRITE_ASCII 0x58 ~zdbfurd~ #8  // Description icon
+    SAY UNIDENTIFIED_DESC @78  /* A closer inspection of these boots leaves you more confused then when you started. */
+    SAY DESC @79  /* These leather fur boots are outrageously extravagant, expensive, and unique. The leather is deep, almost black, with an unusual texture that shifts in the light—somehow both smooth and rough at the same time. The dark fur lining is soft to the touch, yet surprisingly warm, providing an eerie contrast to the cold, smooth exterior. The fur appears to be woven into the leather, almost like it's part of the material itself, giving the boots an added layer of mystery. Intricate stitching along the seams is done in a fine silver thread, adding an elegant, almost regal touch to the otherwise imposing design.
+
+Baeloth often loudly remarks that these boots are a fusion of function and form, as they are magically enhanced, somehow conferring him with even more confidence and speechcraft, while protecting him from others' attempts to persuade or charm him.
+
+STATISTICS:
+
+Equipped abilities:
+- Charisma: +1
+- Saving Throws: +1
+- Wearer is immune to Charm
+- Protects against critical hits
+
+Weight: 5 */
+    LPF ADD_ITEM_EFFECT // Only useable by baeloth
+        INT_VAR
+            optcode    = 319
+            power      = 1
+            parameter2 = 11
+        STR_VAR
+            resource = "ZDBAE"
+    END
+COPY ~%MOD_FOLDER%/bam/zdbfuri.bam~ ~override~
+COPY ~%MOD_FOLDER%/bam/zdbfurd.bam~ ~override~
+
+// Luxurious Lizardskin Leapers
+COPY ~%MOD_FOLDER%/items/zdbo02.itm~ ~override~
+    SAY NAME1 @80  /* Leather Boots */
+    SAY NAME2 @81  /* Luxurious Lizardskin Leapers */
+    WRITE_LONG 0x34 10000  // Price
+    WRITE_ASCII 0x3a ~zdblei~ #8  // Inventory icon
+    WRITE_ASCII 0x58 ~zdbled~ #8  // Description icon
+    SAY UNIDENTIFIED_DESC @78  /* A closer inspection of these boots leaves you more confused then when you started. */
+    SAY DESC @82  /* These leather boots are outrageously extravagant, expensive, and unique. Crafted from a deep earthy brown leather with subtle hues of amber, these boots seem to scream decadence. The texture is unlike any normal leather—smooth in some areas, rugged in others, giving the boots an almost sentient quality. The surface catches the light in curious ways, creating an illusion that the boots are constantly in motion, even when standing still.
+
+Baeloth loudly remarks how gracefully grounded he feels. The boots grant an unnatural speed, enhancing agility and reflexes, while also imbuing him with immunity to movement-restricting spells.
+
+STATISTICS:
+
+Equipped abilities:
+  - Immunity to Stun, Hold Person and Paralyse
+  - Doubles movement rate
+  - Protects against critical hits
+
+Weight: 5 */
+    LPF ADD_ITEM_EFFECT // Only useable by baeloth
+        INT_VAR
+            optcode    = 319
+            power      = 1
+            parameter2 = 11
+        STR_VAR
+            resource = "ZDBAE"
+    END
+COPY ~%MOD_FOLDER%/bam/zdblei.bam~ ~override~
+COPY ~%MOD_FOLDER%/bam/zdbled.bam~ ~override~

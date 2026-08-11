@@ -4,7 +4,7 @@ THEN
     RESPONSE #100
         SetGlobal("ZDAuctionTrigger", "GLOBAL", 1)
         // Actioneer
-        CreateCreature("ZDAUC", [1928.3425], N)
+        CreateCreature("zdauctio", [1928.3425], N)
         // Crowd
         CreateCreature("NOBLE1", [1748.3319], S)
         CreateCreature("NOBLE2", [1805.3313], S)
@@ -17,11 +17,11 @@ THEN
 END
 
 IF
-    Global("ZDAuctionTrigger", "GLOBAL", 3)
+    Global("ZDAuctionTrigger", "GLOBAL", 10)
 THEN
     RESPONSE #100
-        SetGlobal("ZDAuctionTrigger", "GLOBAL", 4)
+        SetGlobal("ZDAuctionTrigger", "GLOBAL", 99)
         // Actioneer
-        ActionOverride("ZDAUC", DestroySelf())
+        ActionOverride("zdauctio", DestroySelf())
         Continue()
 END
