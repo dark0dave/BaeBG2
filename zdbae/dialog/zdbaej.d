@@ -10,7 +10,7 @@ END
 
 IF ~Global("ZDBAEBoots","GLOBAL",2)~ ZDBAEBOOTS1
   SAY ~Precisely! What greater tragedy is there than Baeloth Barrityl being undone by shabby soles?~
-  IF ~~ DO ~AddJournalEntry(@1000001, QUEST) SetGlobal("ZDBAEBoots","GLOBAL",2)~ EXIT
+  IF ~~ DO ~AddJournalEntry(@1000001, QUEST) SetGlobal("ZDBAEBoots","GLOBAL",3)~ EXIT
 END
 
 IF ~Global("ZDAuctionTrigger", "GLOBAL", 6)~ ZDBAETRHWOABET

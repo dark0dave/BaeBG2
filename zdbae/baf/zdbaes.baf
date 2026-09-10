@@ -220,8 +220,7 @@ IF
     CombatCounter(0)
     !See([ENEMY])
     Global("ZDBaeFriendshipActive", "GLOBAL", 1)
-    OR(4)
-        Global("ZDBaeFriendshipTalks", "GLOBAL", 1)
+    Global("ZDBaeFriendshipTalks", "GLOBAL", 1)
     // Global("ZDBaeFriendshipTalks","GLOBAL",3)
 THEN
     RESPONSE #100
@@ -236,8 +235,7 @@ IF
     Global("ZDBaeFriendshipActive", "GLOBAL", 1)
     CombatCounter(0)
     !See([ENEMY])
-    OR(4)
-        Global("ZDBaeFriendshipTalks", "GLOBAL", 2)
+    Global("ZDBaeFriendshipTalks", "GLOBAL", 2)
     // Global("ZDBaeFriendshipTalks","GLOBAL",4)
 THEN
     RESPONSE #100
