@@ -24,11 +24,12 @@
         {
           default =
             with pkgs;
-            mkShell rec {
+            mkShell {
               nativeBuildInputs = [
                 codespell
                 git
                 hk
+                nil
                 nixfmt
                 weidu
                 yamlfmt
