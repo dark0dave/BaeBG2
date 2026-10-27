@@ -6,7 +6,7 @@ END ELSE BEGIN
 END
   OUTER_FOR (i=1; i<=10; ++i) BEGIN
     OUTER_SET bg2_chapter = bg2_chapter + 1
-    OUTER_SPRINT name_source ~bg2_chapter_%i%~
+    OUTER_SPRINT name_source @113 /* bg2_chapter_%i% */
     OUTER_SET EVAL ~%name_source%~ = bg2_chapter
 END
 
@@ -30,34 +30,31 @@ UNLESS ~CD_STATE_NOTVALID~
 // Barrityl's Burden
 // IBARING->ZDRING0
 COPY ~%MOD_FOLDER%/items/zdring.itm~ ~override~
-  SAY NAME1 @71 /* Small Ring */
-  SAY NAME2 @72 /* Barrityl's Burden */
-  SAY UNIDENTIFIED_DESC @73 /* This ring promises power at a great cost. */
+  SAY NAME1 @71 /* Small Ring */ /* Small Ring */
+  SAY NAME2 @72 /* Barrityl's Burden */ /* Barrityl's Burden */
+  SAY UNIDENTIFIED_DESC @73 /* This ring promises power at a great cost. */ /* This ring promises power at a great cost. */
   SAY DESC @74 /* Created by a djinni as a "gift" to the drow sorcerer Baeloth Barrityl, this obsidian ring with blood-red ruby almost hypnotically draws the eye to it. Acting as additional storage space for magical knowledge, once placed upon a spellcaster's finger it imbues [him] with the ability to learn additional spells beyond what [his] skill normally allows.[2] It also gives the wearer the chance to spontaneously create wealth once a day in the form of some gemstone, but that is a double-edged sword; should the gem fail to materialize, the wearer endures a period of searing pain.
-
-  The djinni that created the ring, not entirely trusting the person to whom it was gifted, wove a curse into the black stone band. In battle with a djinni, the ring's wearer will find [him]self at an extreme disadvantage. Once donned, it cannot be removed from its wearer's finger, no matter how much [he] might wish it so.
-
-  Charge abilities:
-  - Create a random gem or damage the wearer, once per rest
-
-  Equipped abilities:
-  - Can cast two extra spells of each level
-  - THAC0: -5 penalty vs Genies
-  - Damage: -5 penalty vs Genies */
+The djinni that created the ring, not entirely trusting the person to whom it was gifted, wove a curse into the black stone band. In battle with a djinni, the ring's wearer will find [him]self at an extreme disadvantage. Once donned, it cannot be removed from its wearer's finger, no matter how much [he] might wish it so.
+Charge abilities:
+- Create a random gem or damage the wearer, once per rest
+Equipped abilities:
+- Can cast two extra spells of each level
+- THAC0: -5 penalty vs Genies
+- Damage: -5 penalty vs Genies */
 COPY ~%MOD_FOLDER%/bam/zdring1.bam~ ~override~
 
 // Barrityl's Beauteous Boisterous Horn
 COPY ~%MOD_FOLDER%/items/zdho01.itm~ ~override~
-  SAY NAME1 ~Musical Horn~
-  SAY NAME2 ~Barrityl's Beauteous Boisterous Horn~
+  SAY NAME1 @114 /* Musical Horn */
+  SAY NAME2 @115 /* Barrityl's Beauteous Boisterous Horn */
   WRITE_ASCII 0x3a ~zdbulli~ #8  // Inventory icon
   WRITE_ASCII 0x58 ~zdbulld~ #8  // Description icon
-  SAY UNIDENTIFIED_DESC ~It appears to be an elaborate musical horn.
+  SAY UNIDENTIFIED_DESC @116 /* It appears to be an elaborate musical horn.
 
 STATISTICS:
 
-Weight: 10~
-  SAY DESC ~Barrityl's Beauteous Boisterous Horn, is not merely a tool for playing music; it is a symbol of Baeloth's grandious persona. To the uninitiated, it may appear to be just an elaborate musical horn, but those who understand Baeloth's know its just a horn.
+Weight: 10 */
+  SAY DESC @117 /* Barrityl's Beauteous Boisterous Horn, is not merely a tool for playing music; it is a symbol of Baeloth's grandious persona. To the uninitiated, it may appear to be just an elaborate musical horn, but those who understand Baeloth's know its just a horn.
 
   Obviously, no one but Baeloth may operate it.
 
@@ -69,56 +66,57 @@ Charge abilities:
   Special: Slience for 2 rounds (Save vs. Paralysis negates)
   Area of Effect: 15-ft. radius
 
-Weight: 10~
+Weight: 10 */
 COPY ~%MOD_FOLDER%/bam/zdbulld.bam~ ~override~
 COPY ~%MOD_FOLDER%/bam/zdbulli.bam~ ~override~
 
 /// Creature files ///
 // SoA
 COPY ~%MOD_FOLDER%/cre/zdbae.cre~ ~override~
-  SAY NAME1 @99
-  SAY NAME2 @99
-  SAY BIO @100
-  SAY BATTLE_CRY1 @1
-  SAY BATTLE_CRY2 @14
-  SAY BATTLE_CRY3 @15
-  SAY BATTLE_CRY4 @16
-  SAY BATTLE_CRY5 @17
-  SAY LEADER @2
-  SAY TIRED @3
-  SAY BORED @4
-  SAY HURT @5
-  SAY DAMAGE @12
-  SAY DYING @13
-  SAY MORALE @18
-  SAY HAPPY @19
-  SAY UNHAPPY_ANNOYED @20
-  SAY UNHAPPY_SERIOUS @21
-  SAY UNHAPPY_BREAKING @22
-  SAY SELECT_COMMON1 @6
-  SAY SELECT_COMMON2 @7
-  SAY SELECT_COMMON3 @8
-  SAY SELECT_COMMON4 @23
-  SAY SELECT_COMMON5 @24
-  SAY SELECT_COMMON6 @25
-  SAY SELECT_ACTION1 @9
-  SAY SELECT_ACTION2 @10
-  SAY SELECT_ACTION3 @11
-  SAY SELECT_ACTION4 @26
-  SAY SELECT_ACTION5 @27
-  SAY SELECT_ACTION6 @28
-  SAY REACT_TO_DIE_GENERAL @29
-  SAY REACT_TO_DIE_SPECIFIC @30
-  SAY SELECT_RARE1 @31
-  SAY SELECT_RARE2 @32
-  SAY CRITICAL_HIT @33
-  SAY CRITICAL_MISS @34
-  SAY TARGET_IMMUNE @35
-  SAY INVENTORY_FULL @36
-  SAY PICKED_POCKET @37
-  SAY HIDDEN_IN_SHADOWS @38
-  SAY SPELL_DISRUPTED @39
-  SAY SET_A_TRAP @40
+  SAY NAME1 @99 /* Baeloth */
+  SAY NAME2 @99 /* Baeloth */
+  SAY BIO @100 /* When asked about his past, Baeloth Barrityl, or "Baeloth the Entertainer" as he prefers to be called, claims to be a drow sorcerer of some repute. While he keeps some of his earlier exploits vague, he brags excessively about his most recent endeavor, the Black Pits. While it all ended in failure, he maintains that it was "the best show in all the realms."
+The circumstances of his defeat within the pits are unclear; he claims dishonesty on the part of his combatants was a key factor. */
+  SAY BATTLE_CRY1 @1 /* Oohoohoohoo, I'm gonna work out some anger on you. */
+  SAY BATTLE_CRY2 @14 /* Fistfuls of flaming finality! */
+  SAY BATTLE_CRY3 @15 /* Death delivered! */
+  SAY BATTLE_CRY4 @16 /* Fight or flee, either way you fall! */
+  SAY BATTLE_CRY5 @17 /* You stand no chance. */
+  SAY LEADER @2 /* OBVIOUSLY, this was going to happen, but the amount of TIME it took borders on insanity! How do you function on a day-to-day basis? */
+  SAY TIRED @3 /* *yawn* I have little taste for sleeping in a dog pile with you rivvil. Find me an inn! */
+  SAY BORED @4 /* You wouldn't be interested in playing a little GAME, would you? Mmm? */
+  SAY HURT @5 /* Agh! Exit stage... left? */
+  SAY DAMAGE @12 /* Argh! */
+  SAY DYING @13 /* Augh... NOT AGAIN!! *gurgle* */
+  SAY MORALE @18 /* Run! Rapidly! Right now! */
+  SAY HAPPY @19 /* We do wonderful work! I'm impressed. */
+  SAY UNHAPPY_ANNOYED @20 /* What noble notions noodle through your noggin? */
+  SAY UNHAPPY_SERIOUS @21 /* This won't work. My path might pare off from yours presently. */
+  SAY UNHAPPY_BREAKING @22 /* Enough! Baeloth the Entertainer goes ELSEWHERE. */
+  SAY SELECT_COMMON1 @6 /* Eh? What do YOU want? */
+  SAY SELECT_COMMON2 @7 /* Is there REALLY no one else you can bother? */
+  SAY SELECT_COMMON3 @8 /* Touch someone else, you filthy swine! */
+  SAY SELECT_COMMON4 @23 /* Ask someone else! */
+  SAY SELECT_COMMON5 @24 /* What is it NOW? */
+  SAY SELECT_COMMON6 @25 /* Mmmm? */
+  SAY SELECT_ACTION1 @9 /* With my usual panache, I assume. */
+  SAY SELECT_ACTION2 @10 /* You must be loving this. */
+  SAY SELECT_ACTION3 @11 /* All right... but NOT because you TOLD me to. */
+  SAY SELECT_ACTION4 @26 /* I'm here, and I hear. */
+  SAY SELECT_ACTION5 @27 /* Alveus Malcanter? Never heard of him. */
+  SAY SELECT_ACTION6 @28 /* Let me entertain you! */
+  SAY REACT_TO_DIE_GENERAL @29 /* Another contender collapses! */
+  SAY REACT_TO_DIE_SPECIFIC @30 /* Sleep well, dalninil. */
+  SAY SELECT_RARE1 @31 /* I'm huge in the Underdark. */
+  SAY SELECT_RARE2 @32 /* Let me entertain you! */
+  SAY CRITICAL_HIT @33 /* And take that, vile villain! */
+  SAY CRITICAL_MISS @34 /* A fail. A flub! */
+  SAY TARGET_IMMUNE @35 /* My attacks atrophy. This isn't working. */
+  SAY INVENTORY_FULL @36 /* My bags are bursting! Had to drop it. */
+  SAY PICKED_POCKET @37 /* I've nabbed a knicknack! */
+  SAY HIDDEN_IN_SHADOWS @38 /* Invisible. */
+  SAY SPELL_DISRUPTED @39 /* My magic misfires! */
+  SAY SET_A_TRAP @40 /* Trap at your toes. Step softly. */
   WRITE_ASCII PORTRAIT_LARGE ~zdbael~ #8
   WRITE_ASCII PORTRAIT_SMALL ~zdbaem~ #8
   WRITE_ASCII SCRIPT_OVERRIDE ~zdbaes~ #8
@@ -171,7 +169,7 @@ UNLESS ~zdbae~
 
 // Epilogue
 COPY ~%MOD_FOLDER%/epilogue/zdbae.2da~ ~override/zdbae01.2da~
-REPLACE ~99999~ @60
+REPLACE ~99999~ @60 /* Baeloth burns down the Copper Cornet and builds a new arena. In its ashes! */
 
 // Spawn Baeloth in the Copper Cornet
 EXTEND_TOP ~AR0406.BCS~ ~%MOD_FOLDER%/baf/ar0406.baf~

@@ -98,15 +98,36 @@ Weight: 5~
 @99   = ~Baeloth~
 @100  = ~When asked about his past, Baeloth Barrityl, or "Baeloth the Entertainer" as he prefers to be called, claims to be a drow sorcerer of some repute. While he keeps some of his earlier exploits vague, he brags excessively about his most recent endeavor, the Black Pits. While it all ended in failure, he maintains that it was "the best show in all the realms."
 The circumstances of his defeat within the pits are unclear; he claims dishonesty on the part of his combatants was a key factor.~
-@101 = ~A drow? Here?~
-@102 = ~WHAT?! Security, Security!~
-@103 = ~Burn the drow!~
-@104 = ~Kill the drow!~
-@105 = ~Good, uh, people. Surely we can resolve this with wit and not...whatever this is?~
-@106 = ~What a wretched waste! How boring and banal this brawl is! Were I to grace these grounds with my talents, tragedy would instead transform into triumph. I would bring power, prestige and panache to this pitiful pit.~
-@107 = ~You have the right of it.~
-@108 = ~I have not been entertained!~
-@109 = ~If you've got a plan, I'm in. Can't be much harder starting a fight than watching one.~
-@110 = ~Then huddle close my hapless horde. The time of tedium is about to be terminated.~
-@111 = ~Someone should displace - dare I say depose - of the dullard who dared to direct such a dreary display. Perhaps... me?~
-@112 = ~Oh my! Tough crowd.~ [ZDBAE70]
+@101  = ~A drow? Here?~
+@102  = ~WHAT?! Security, Security!~
+@103  = ~Burn the drow!~
+@104  = ~Kill the drow!~
+@105  = ~Good, uh, people. Surely we can resolve this with wit and not...whatever this is?~
+@106  = ~What a wretched waste! How boring and banal this brawl is! Were I to grace these grounds with my talents, tragedy would instead transform into triumph. I would bring power, prestige and panache to this pitiful pit.~
+@107  = ~You have the right of it.~
+@108  = ~I have not been entertained!~
+@109  = ~If you've got a plan, I'm in. Can't be much harder starting a fight than watching one.~
+@110  = ~Then huddle close my hapless horde. The time of tedium is about to be terminated.~
+@111  = ~Someone should displace - dare I say depose - of the dullard who dared to direct such a dreary display. Perhaps... me?~
+@112  = ~Oh my! Tough crowd.~ [ZDBAE70]
+@113  = ~bg2_chapter_%i%~
+@114  = ~Musical Horn~
+@115  = ~Barrityl's Beauteous Boisterous Horn~
+@116  = ~It appears to be an elaborate musical horn.
+
+STATISTICS:
+
+Weight: 10~
+@117  = ~Barrityl's Beauteous Boisterous Horn, is not merely a tool for playing music; it is a symbol of Baeloth's grandious persona. To the uninitiated, it may appear to be just an elaborate musical horn, but those who understand Baeloth's know its just a horn.
+
+  Obviously, no one but Baeloth may operate it.
+
+STATISTICS:
+
+Charge abilities:
+– DOOT once per day
+  Damage: 2d10 crushing (Save vs. Death for half)
+  Special: Silence for 2 rounds (Save vs. Paralysis negates)
+  Area of Effect: 15-ft. radius
+
+Weight: 10~
